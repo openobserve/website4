@@ -1,0 +1,25 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+:root {
+  /* --theme-color-primary: #05a8e7;  88c6c6 #02aeae */
+  --theme-color-primary: #168a53;
+  /* #83C5BE; /* #395c35; /*#32908b; /* #80982A;*/
+  --theme-color-secondary: #126e42;
+  /*#006D77; /*#304960; /* #238FCA; #0971ad 056399 */
+  --theme-color-text-primary: #000000;
+  --theme-color-text-secondary: #3e5771;
+  --theme-color-text-primary-dark: #ffffff;
+  --nav-bar-top-margin: 6rem;
+  --nav-height: 100px;
+
+}
+
+body {
+  font-family: "Montserrat",Arial,sans-serif !important;
+  color: var(--theme-color-text-primary);
+  /* background-color: #ffffff !important; */
+
+  @dark: {
+    background: white !important;
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "authors": [
+      {
+        "name": "Example",
+        "slug": "example",
+        "img": "img/logo/logo.svg",
+        "bio": "Lorem Impsum",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "",
+        "linkedInUrl": "",
+        "instagramUrl": ""
+      }
+    ]
+  }
+  

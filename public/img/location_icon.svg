@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="113" height="113" viewBox="0 0 113 113">
+  <defs>
+    <filter id="Ellipse_4" x="0" y="0" width="113" height="113" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="location-icon" transform="translate(-691 -1286)">
+    <g transform="matrix(1, 0, 0, 1, 691, 1286)" filter="url(#Ellipse_4)">
+      <circle id="Ellipse_4-2" data-name="Ellipse 4" cx="26.5" cy="26.5" r="26.5" transform="translate(30 20)" fill="#fff"/>
+    </g>
+    <path id="_2205197_drop_locate_location_map_pin_icon" data-name="2205197_drop_locate_location_map_pin_icon" d="M11.609,25.623s9.609-8.939,9.609-16.015S16.916,0,11.609,0,2,2.533,2,9.609,11.609,25.623,11.609,25.623ZM6.8,8.007a4.8,4.8,0,1,1,4.8,4.8A4.8,4.8,0,0,1,6.8,8.007Z" transform="translate(736 1320)" fill="#3365c1"/>
+  </g>
+</svg>
