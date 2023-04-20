@@ -2,8 +2,9 @@
   <Section>
     <div
       class="w-full bg-no-repeat bg-cover h-full"
+      :style="{'background-image':'url(/img/cardbg2.svg)'}"
       :class="
-        backgroundImage ? 'bg-[url(\'/homepage/cardbg2.svg\')] py-40' : ''
+        backgroundImage ? `bg-[url(${backgroundImage})] py-40` : ''
       "
     >
       <SectionHeading
@@ -25,6 +26,7 @@
   </Section>
 </template>
 <script setup>
+const backgroundImage = "/img/cardbg2.svg"
 const props = defineProps({
   items: {
     type: Object,

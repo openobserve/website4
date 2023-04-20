@@ -67,7 +67,7 @@ const data3 = {
 const heroSection = {
   title: "10x" + "<span style='color:#5960B2;'> lower cost </span>" + "than your existing" + "<span style='color:#5960B2;'> observability</span>" + " tools.",
   subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
-  image: "/homepage/herosectionImage2.svg",
+  image: "/img/homepage/herosectionImage2.svg",
   btnText: "",
   backgroundImage: "/homepage/homepagebg3.svg",
 };
@@ -98,37 +98,37 @@ const cardItems = {
   subtitle:"Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
     items: [
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature1.svg",
       title: "Maintaining the System is a Breeze with No Hassles",
       desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
       btnText: "",
     },
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature2.svg",
       title: "Effortless Installation and User-Friendly Interface for Seamless Experience",
       desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
       btnText: "",
     },
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature3.svg",
       title: "Functionality and Features Excellently Designed to Optimize Efficiency and Performance",
       desc: "Zinc Labs has excellent features and functionality that make it highly usable from the get-go, providing excellent ROI on the invested time.",
       btnText: "",
     },
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature4.svg",
       title: "Affordable Pricing for Optimum Value",
       desc: "Zinc Labs believes that you should not have to spend a fortune to run their software, either in self-hosted mode or for the SaaS platform.",
       btnText: "",
     },
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature5.svg",
       title: "Seamless Learning Experience for all Users: Beginners to Advanced",
       desc: "Zinc Labs software is easy to set up and use, even for a beginner. Advanced users can use their existing skills to take advantage of the software's full potential.",
       btnText: "",
     },
     {
-      image: "/img/CardIcon.svg",
+      image: "/img/homepage/zinclabfeature6.svg",
       title: "Exceptional Performance with High Efficiency.",
       desc: "Zinc Labs software is highly performant, making it an excellent choice for most use cases in the real world. The software provides an excellent tradeoff value in return, making it generally acceptable to the majority of users.",
       btnText: "",

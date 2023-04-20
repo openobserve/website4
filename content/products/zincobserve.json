@@ -19,11 +19,12 @@
     }
   ],
   "heroSection": {
-    " title": "Making Data-Driven Decisions Easier than Ever!",
-    "subtitle": "",
-    "image": "/homepage/herosectionImage2.svg",
+    
+    "title": "",
+    "subtitle": "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+    "image": "/img/homepage/herosectionImage2.svg",
     "btnText": "",
-    "backgroundImage": "/homepage/homepagebg3.svg"
+    "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
   "items": {
     "heading": "ZincObserve Features",
@@ -33,26 +34,40 @@
   },
   "content": {
     "title": "ZincObserve Features",
-    "subtitle": "It provides a host of features that help you get up and running in minutes.",
+    "subtitle": "Discover the Game-Changing Features of ZincObserve:",
     "items": [
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "You can index large amounts of text Zinc and search instantly. Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data.",
+        "title": " Log Search and General Observability Solution",
+        "desc": "Don't let your logs go unnoticed. ZincObserve offers a search-around logs data feature that allows you to easily identify and fix any issues in your system.",
         "btnText": ""
       },
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data. No need to set up a separate GUI like Kibana.",
+        "title": "Storage-Efficient and Cost-Effective Logging",
+        "desc": "ZincObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. ",
         "btnText": ""
       },
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "High-Performant",
+        "desc": "ZincObserve is a cutting-edge observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/CardIcon.svg",
+        "title": "Comprehensive alerting mechanisms",
+        "desc": "With scheduled and real-time alerts, you can stay on top of critical problems as they happen.This means that you can quickly address any issues and keep your systems running smoothly.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/CardIcon.svg",
+        "title": "Advanced Data Analysis",
+        "desc": "With ZincObserve, dashboards can display data from logs, metrics, and traces,providing a complete picture of system behavior.",
         "btnText": ""
       }
+      
+
     ]
   },
   "faqData": [

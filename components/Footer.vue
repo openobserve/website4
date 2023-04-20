@@ -1,6 +1,6 @@
 <template>
   <div class="">
-  <div class="w-full bg-cover bg-[url('/homepage/footerbg5.svg')] bg-no-repeat h-full ">
+  <div class="w-full bg-cover bg-[url('/img/homepage/footerbg5.svg')] bg-no-repeat h-full ">
     <footer class="w-full body-font  py-20">
       <div class="lg:container px-6 py-10 lg:mx-auto flex md:items-center lg:items-start md:flex-row  flex-wrap flex-col w-full">
         <div class="w-full md:w-1/3 lg:w-1/4  md:mx-0 mx-auto md:text-left lg:mt-16">
