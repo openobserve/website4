@@ -16,12 +16,12 @@
             'text-center': align == 'center', 
             'text-right': align == 'right',
           }"
-          class="text-2xl text-theme-text-primary font-bold flex-1"
+          class="text-lg text-theme-text-primary font-bold flex-1"
         >
           {{ item.title }}
         </h4>
         <p
-          class="text-theme-text-secondary text-justify flex-1"
+          class="text-theme-text-secondary text-base text-justify flex-1"
         >
           {{ item.desc }}
         </p>

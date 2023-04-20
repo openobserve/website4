@@ -5,8 +5,8 @@
     <SlideIn>
       <Section>
         <SectionHeading
-          :title="cardItems.title"
-          :subtitle="cardItems.subtitle"
+          :title="data1.heading"
+          
         />
         <Feature variant="1:1" direction="left" :data="data1" />
         <Feature variant="1:1" direction="right" :data="data2" />
@@ -46,13 +46,16 @@ const seoData = {
   desc: "zinclab is a software products",
 };
 const data1 = {
-  title: "ZincObserve is Built for Full - Text Search",
-  desc: "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
+  heading:"Unveiling Our Top-Notch Products: See What's in Store!",
+  title: "Get More with ZincObserve- Logs, Metrics, Traces",
+  desc1: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes.",
+  desc2:"By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
   image: "/img/feature.svg",
 };
 const data2 = {
-  title: "ZincObserve is Built for Full - Text Search",
-  desc: "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
+  title: "Take your observability to the next level with ZPlane, built for the needs of larger enterprises.",
+  desc1: "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.",
+  desc2:"The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
   image: "/img/feature.svg",
 };
 const data3 = {
@@ -62,8 +65,8 @@ const data3 = {
   bgImage: "/img/featurebg3.svg",
 };
 const heroSection = {
-  title: "Making Data-Driven Decisions Easier than Ever!",
-  subtitle: "",
+  title: "10x" + "<span style='color:#5960B2;'> lower cost </span>" + "than your existing" + "<span style='color:#5960B2;'> observability</span>" + " tools.",
+  subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
   image: "/homepage/herosectionImage2.svg",
   btnText: "",
   backgroundImage: "/homepage/homepagebg3.svg",
@@ -91,44 +94,43 @@ const numbers = {
   ],
 };
 const cardItems = {
-  title: "ZincObserve Features",
-  subtitle:
-    "It provides a host of features that help you get up and running in minutes.",
-  items: [
+  title: "Why Choose Zinc Labs?",
+  subtitle:"Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
+    items: [
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "You can index large amounts of text Zinc and search instantly. Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data.",
+      title: "Maintaining the System is a Breeze with No Hassles",
+      desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
       btnText: "",
     },
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data. No need to set up a separate GUI like Kibana.",
+      title: "Effortless Installation and User-Friendly Interface for Seamless Experience",
+      desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
       btnText: "",
     },
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: "Functionality and Features Excellently Designed to Optimize Efficiency and Performance",
+      desc: "Zinc Labs has excellent features and functionality that make it highly usable from the get-go, providing excellent ROI on the invested time.",
       btnText: "",
     },
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: "Affordable Pricing for Optimum Value",
+      desc: "Zinc Labs believes that you should not have to spend a fortune to run their software, either in self-hosted mode or for the SaaS platform.",
       btnText: "",
     },
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: "Seamless Learning Experience for all Users: Beginners to Advanced",
+      desc: "Zinc Labs software is easy to set up and use, even for a beginner. Advanced users can use their existing skills to take advantage of the software's full potential.",
       btnText: "",
     },
     {
       image: "/img/CardIcon.svg",
-      title: "Full Text Search",
-      desc: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      title: "Exceptional Performance with High Efficiency.",
+      desc: "Zinc Labs software is highly performant, making it an excellent choice for most use cases in the real world. The software provides an excellent tradeoff value in return, making it generally acceptable to the majority of users.",
       btnText: "",
     },
   ],
