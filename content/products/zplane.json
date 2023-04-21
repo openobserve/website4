@@ -19,11 +19,11 @@
     }
   ],
   "heroSection": {
-    " title": "Making Data-Driven Decisions Easier than Ever!",
-    "subtitle": "",
-    "image": "/homepage/herosectionImage2.svg",
+    "title": "ZPlane",
+    "subtitle": "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+    "image": "/img/homepage/herosectionImage2.svg",
     "btnText": "",
-    "backgroundImage": "/homepage/homepagebg3.svg"
+    "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
   "items": {
     "heading":"ZincObserve Features",
@@ -32,7 +32,7 @@
     "image": "/img/feature.webp"
   },
   "content": {
-    "title": "ZincObserve Features",
+    "title": "ZPlane Features",
     "subtitle": "It provides a host of features that help you get up and running in minutes.",
     "items": [
       {

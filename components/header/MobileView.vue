@@ -5,7 +5,7 @@
                 <div>
                     <nuxt-link to="/">
                         <div class="">
-                            <img src="/img/logo/logo.svg" class="h-12 p-1" alt="zinclabs logo" />
+                            <img src="/img/logo/headerLogo.svg" class="h-12 p-1" alt="zinclabs logo" />
                         </div>
                     </nuxt-link>
                 </div>
@@ -36,7 +36,7 @@
             </div>
             <!-- <a href="/" target="_blank">Docs</a> -->
             <div class="" v-if="isOpen">
-                <Button variant="primary" to=""  href="https://cloud.zincsearch.com" classes="w-full text-center">Get Started For Free</Button>
+                <Button variant="primary" to="" target="_blank"  href="https://cloud.zincsearch.com" classes="w-full text-center">Get Started For Free</Button>
             </div>
         </div>
         <div>

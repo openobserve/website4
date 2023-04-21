@@ -12,7 +12,7 @@
 <script setup>
 const data = {
      heading:"We're Hiring",
-     subheading:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+     subheading:"At Zinc Labs, we are always on the lookout for passionate technology enthusiasts who are eager to work on cutting-edge tech stacks.",
      jobs:"Software Engineer - Rust (Remote)",
      btnText:"Apply Here",
      href:"https://apply.workable.com/zinc-labs-inc/?not_found=true"

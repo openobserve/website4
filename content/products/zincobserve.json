@@ -20,7 +20,7 @@
   ],
   "heroSection": {
     
-    "title": "",
+    "title": "ZincObserve",
     "subtitle": "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
     "image": "/img/homepage/herosectionImage2.svg",
     "btnText": "",
@@ -50,7 +50,7 @@
       },
       {
         "image": "/img/CardIcon.svg",
-        "title": "High-Performant",
+        "title": "Accelerate 10X fast performance",
         "desc": "ZincObserve is a cutting-edge observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease.",
         "btnText": ""
       },

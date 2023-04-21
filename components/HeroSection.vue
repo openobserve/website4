@@ -21,6 +21,7 @@
           <Button
             variant="primary"
             classes="mt-6 "
+            target="_blank"
             href="https://cloud.zincsearch.com"
             >Get Started For Free</Button
           >

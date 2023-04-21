@@ -2,11 +2,11 @@
   <Section>
     <div class="px-4 container mx-auto">
       <div :class="[directions[direction]]">
-        <div :class=[variation[variant].el1]  class="background object-contain">
-          <img :src="data.image" class="" alt="image" />
+        <div :class=[variation[variant].el1]  class="background object-contain p-16">
+          <img :src="data.image" class="object-contain" alt="image" />
         </div>
         <div :class='["md:pt-0 pt-5", direction == "left" ? "md:pl-8" : "md:pr-8", variation[variant].el2].join(" ")'>
-          <h2 class="text-base md:text-3xl text-center md:text-left font-bold mb-4 text-black inline-block ">{{ data.title }}</h2>
+          <h2 class="text-base md:text-3xl text-center md:text-left font-bold mb-4 text-black inline-block " v-html="data.title"></h2>
           <p class="text-justify text-sm lg:text-base font-normal leading-2 tracking-wider mt-1 md:mt-3">{{ data.desc1 }}</p>
           <p class="text-justify text-sm lg:text-base font-normal leading-2 tracking-wider mt-1 md:mt-3">{{ data.desc2 }}</p>
 

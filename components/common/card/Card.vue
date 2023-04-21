@@ -2,10 +2,7 @@
   <Section>
     <div
       class="w-full bg-no-repeat bg-cover h-full"
-      :style="{'background-image':'url(/img/cardbg2.svg)'}"
-      :class="
-        backgroundImage ? `bg-[url(${backgroundImage})] py-40` : ''
-      "
+        :class="bgImage"
     >
       <SectionHeading
         :title="items.title"
@@ -26,7 +23,7 @@
   </Section>
 </template>
 <script setup>
-const backgroundImage = "/img/cardbg2.svg"
+const image = "/img/cardbg2.svg"
 const props = defineProps({
   items: {
     type: Object,
@@ -36,4 +33,9 @@ const props = defineProps({
     default: true,
   },
 });
+const bgImage = computed(() => {
+
+  return props.backgroundImage ? "bg-[url('/img/cardbg2.svg')] py-40" : ""
+
+})
 </script>

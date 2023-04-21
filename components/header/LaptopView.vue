@@ -5,7 +5,7 @@
             <div class="">
                 <nuxt-link to="/">
                     <div class="flex items-center text-black">
-                        <img src="/img/logo/logo.svg" class="h-10 md:h-12 p-1 my-2  text-black" alt="zinclabs logo" />
+                        <img src="/img/logo/headerLogo.svg" class="h-10 md:h-12 p-1 my-2  text-black" alt="zinclabs logo" />
                     </div>
                 </nuxt-link>
             </div>
@@ -18,13 +18,13 @@
                     triggerMode="hover" onMode="hover" />
                 <div v-for="(item, index) in items.content">
                     <nuxt-link :to="item.link" :key="index">
-                        <Button variant="header">{{ item.title }}</Button>
+                        <Button variant="header" >{{ item.title }}</Button>
                     </nuxt-link>
                 </div>
                 <!-- <a href="/" target="_blank">Docs</a> -->
             </div>
             <div class="">
-                <Button variant="primary" to="" href="https://cloud.zincsearch.com">Get Started For Free</Button>
+                <Button variant="primary" to="" target="_blank" href="https://cloud.zincsearch.com">Get Started For Free</Button>
             </div>
         </div>
         <div>

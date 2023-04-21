@@ -29,9 +29,9 @@ const data = {
 const heroSection = {
   title: "Making Data-Driven Decisions Easier than Ever!",
   subtitle: "",
-  image: "/aboutus/abouthero.png",
+  image: "/img/aboutus/abouthero.png",
   btnText: "",
-  backgroundImage: "/aboutus/aboutusbg.png",
+  backgroundImage: "/img/aboutus/aboutusbg.png",
 };
 const content = {
   title: "What We Do",
@@ -42,13 +42,13 @@ const content = {
 };
 const items = {
   title: "Investors",
-  backgroundImage:"/homepage/cardbg2.svg",
+  backgroundImage:"/img/homepage/cardbg2.svg",
   images1:[
-    "/aboutus/Investor1.png",
-    "/aboutus/Investor1.png",
-    "/aboutus/Investor1.png",
+    "/img/aboutus/Investor1.png",
+    "/img/aboutus/Investor1.png",
+    "/img/aboutus/Investor1.png",
   ],
-  images2: ["/aboutus/Investor1.png", "/aboutus/Investor1.png"],
+  images2: ["/img/aboutus/Investor1.png", "/img/aboutus/Investor1.png"],
 };
 // const cardItems = {
 //   title: "ZincObserve Features",

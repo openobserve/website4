@@ -75,7 +75,7 @@ const currentYear = computed(() => {
   return new Date().getFullYear();
 });
 const footerData = {
-  logo: "/img/logo/logo.svg",
+  logo: "/img/logo/footerLogo.svg",
   address: "315,Montgomery St,10th Floor,San Francisco,California,94104, United States of America",
   quickLink: {
     title: "Quick Links",
