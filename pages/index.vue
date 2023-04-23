@@ -67,7 +67,9 @@ const heroSection = {
   title: "10x" + "<span class='highlight'> lower cost </span>" + "than your existing" + "<span class='highlight'> observability</span>" + " tools.",
   subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
   image: "/img/homepage/herosectionImage2.svg",
-  btnText: "",
+  btnText: "Get Started For Free",
+  btnTo: "https://observe.zinc.dev/",
+  btnTarget: "_blank",
   backgroundImage: "/img/homepage/homepagebg3.svg",
 };
 const numbers = {

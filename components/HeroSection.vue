@@ -21,10 +21,11 @@
           <Button
             variant="primary"
             classes="mt-6 "
-            target="_blank"
-            href="https://cloud.zincsearch.com"
-            >Get Started For Free</Button
+            :target="data.btnTarget"
+            :to="data.btnTo"
           >
+            {{ data.btnText }}
+          </Button>
         </div>
       </div>
       <div class="w-full md:w-1/2 md:h-full -mt-10 md:mt-0">
@@ -45,6 +46,16 @@ const directions = {
 const props = defineProps({
   data: {
     type: Object,
+    // sample data
+    // { 
+    //   title: "10x" + "<span class='highlight'> lower cost </span>" + "than your existing" + "<span class='highlight'> observability</span>" + " tools.",
+    //   subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+    //   image: "/img/homepage/herosectionImage2.svg",
+    //   btnText: "Get Started For Free",
+    //   btnTo: "https://observe.zinc.dev/",
+    //   btnTarget: "_blank",
+    //   backgroundImage: "/img/homepage/homepagebg3.svg",
+    // };
   },
   direction: {
     type: String,

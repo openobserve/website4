@@ -30,7 +30,9 @@ const heroSection = {
   title: "Making Data-Driven Decisions Easier than Ever!",
   subtitle: "",
   image: "/img/aboutus/abouthero.png",
-  btnText: "",
+  btnText: "Get Started For Free",
+  btnTo: "https://observe.zinc.dev/",
+  btnTarget: "_blank",
   backgroundImage: "/img/aboutus/aboutusbg.png",
 };
 const content = {

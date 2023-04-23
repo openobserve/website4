@@ -22,7 +22,9 @@
     "title": "ZPlane",
     "subtitle": "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
     "image": "/img/homepage/herosectionImage2.svg",
-    "btnText": "",
+    "btnText": "Get Started For Free",
+    "btnTo": "https://observe.zinc.dev/",
+    "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
   "items": {

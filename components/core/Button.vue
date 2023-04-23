@@ -6,7 +6,6 @@
       { 'cursor-not-allowed': disabled || loading },
     ]"
     :to="to"
-    :href="href"
     :target="target"
     :disabled="loading || disabled"
     @click="!loading && !disabled ? $emit('click', $event) : ''"
@@ -27,10 +26,6 @@ defineProps({
   // click behaviors
   to: {
     type: [String, Object],
-    default: null,
-  },
-  href: {
-    type: String,
     default: null,
   },
   target: {
