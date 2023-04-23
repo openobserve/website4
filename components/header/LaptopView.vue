@@ -24,7 +24,7 @@
                 <!-- <a href="/" target="_blank">Docs</a> -->
             </div>
             <div class="">
-                <Button variant="primary" to="" target="_blank" href="https://cloud.zincsearch.com">Get Started For Free</Button>
+                <Button variant="primary" target="_blank" to="https://cloud.zincsearch.com">Get Started For Free</Button>
             </div>
         </div>
         <div>
