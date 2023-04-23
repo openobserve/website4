@@ -15,8 +15,6 @@ defineProps({
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
-console.log(recentArticles.value);
-
 const blogItems = {
   title: "Latest Blog Posts",
   subtitle: "",
