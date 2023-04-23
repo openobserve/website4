@@ -21,6 +21,8 @@
         </div>
       </Section> -->
     <!-- <SlideIn> -->
+    <Card :items="useCases" />
+      
     <Section>
       <SectionHeading :title="blogItems.title" :subtitle="blogItems.subtitle" />
       <div class="grid grid-cols-1 md:grid-cols-3 container mx-auto px-4 gap-x-6 lg:gap-x-12 gap-y-10 md:gap-y-20">
@@ -40,13 +42,21 @@ const products = {
   title: "Products",
   items: [
     {
-      title: "Get More with <span class='highlight'>ZincObserve</span> - Logs, Metrics, Traces",
+      title: "<span class='highlight'>ZincObserve</span>",
+      subtitle: "Get more out of your Logs, Metrics & Traces",
       desc: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
       image: "/img/feature.svg",
+      btnText: "Get Started",
+      btnTo: "/products/zincobserve",
+      btnVariant: "secondary"
     }, {
-      title: "Take your observability to the next level with <span class='highlight'>zPlane</span> , built for the needs of larger enterprises.",
+      title: "<span class='highlight'>zPlane</span>",
+      subtitle: "Built for the needs of larger enterprises",
       desc: "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.<br /><br />The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
       image: "/img/feature.svg",
+      btnText: "Know More",
+      btnTo: "/products/zplane",
+      btnVariant: "secondary"
     }
   ]
 }
@@ -83,7 +93,7 @@ const numbers = {
   ],
 };
 const cardItems = {
-  title: "Why Choose Zinc Labs?",
+  title: "Features",
   subtitle: "Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
   items: [
     {
@@ -121,6 +131,33 @@ const cardItems = {
       title: "Exceptional Performance with High Efficiency.",
       desc: "Zinc Labs software is highly performant, making it an excellent choice for most use cases in the real world. The software provides an excellent tradeoff value in return, making it generally acceptable to the majority of users.",
       btnText: "",
+    },
+  ],
+};
+
+const useCases = {
+  title: "Use Cases",
+  subtitle: "Improve user experience with data-driven insights from observability",
+  items: [
+    {
+      image: "/img/homepage/zinclabfeature1.svg",
+      title: "Logs",
+      desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
+      to: "/usecases/logs"
+    },
+    {
+      image: "/img/homepage/zinclabfeature2.svg",
+      title: "Matrics",
+      desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
+      btnText: "",
+      to: "/usecases/metrices"
+    },
+    {
+      image: "/img/homepage/zinclabfeature3.svg",
+      title: "Traces",
+      desc: "Zinc Labs has excellent features and functionality that make it highly usable from the get-go, providing excellent ROI on the invested time.",
+      btnText: "",
+      to: "/usecases/traces"
     },
   ],
 };

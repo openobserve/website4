@@ -66,6 +66,8 @@ defineProps({
         "inline-block px-3 py-3 text-center rounded-lg text-white bg-emerald-700 focus:ring-2 ring-offset-1",
       primary:
         "inline-block px-4 py-3 text-base rounded-full cursor-pointer text-white bg-theme-primary hover:bg-theme-primary-600 border-theme-primary-500 focus:ring-2 ring-offset-1 ring-theme-primary-500",
+      secondary:
+        "inline-block px-6 py-2 font-bold text-base rounded-full cursor-pointer text-black hover:text-white border border-theme-primary hover:bg-theme-primary-600 focus:ring-2 ring-offset-1 ring-theme-primary-500",
       blog: "cursor-pointer mt-4 hover:text-theme-primary-400",
     }),
   },
