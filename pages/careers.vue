@@ -23,19 +23,15 @@ const seoData = {
 const data1 = {
   heading: "Company overview",
   title: "Revolutionizing the Way Businesses Optimize Their Systems",
-  desc1:
-    "Zinc Labs is a technology company that provides innovative solutions for modern businesses. Zinc Labs' mission is to empower organizations to optimize their systems, streamline their operations, and make data-driven decisions. The company's solutions are designed to help businesses unlock the full potential of their data by providing advanced search and observability technologies.",
-  desc2:
-    "Zinc Labs is committed to providing exceptional customer service and support to its customers. The company works closely with its customers to understand their unique business needs and provide tailored solutions that meet those needs. With Zinc Labs, businesses can rest assured that they have a reliable partner in their technology journey.",
+  desc:
+    "Zinc Labs is a technology company that provides innovative solutions for modern businesses. Zinc Labs' mission is to empower organizations to optimize their systems, streamline their operations, and make data-driven decisions. The company's solutions are designed to help businesses unlock the full potential of their data by providing advanced search and observability technologies.<br /><br />Zinc Labs is committed to providing exceptional customer service and support to its customers. The company works closely with its customers to understand their unique business needs and provide tailored solutions that meet those needs. With Zinc Labs, businesses can rest assured that they have a reliable partner in their technology journey.",
   image: "/img/feature.svg",
 };
 const data2 = {
   title:
     "Experience the Next Generation of Observability and Search Technology",
-  desc1:
-    "Zinc Labs' innovative products include ZincObserve, a cutting-edge open-source observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease. ZPlane offers an enterprise version of ZincObserve for large businesses to meet their complex requirements.",
-  desc2:
-    "Both products offer exceptional cost savings and top-notch performance, enabling businesses to gain valuable insights into their systems' health and ultimately improve their software's quality.",
+  desc:
+    "Zinc Labs' innovative products include ZincObserve, a cutting-edge open-source observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease. ZPlane offers an enterprise version of ZincObserve for large businesses to meet their complex requirements.<br /><br />Both products offer exceptional cost savings and top-notch performance, enabling businesses to gain valuable insights into their systems' health and ultimately improve their software's quality.",
   image: "/img/feature.svg",
 };
 const cardItems = {

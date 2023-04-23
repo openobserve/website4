@@ -4,11 +4,8 @@
     <Numbers :items="numbers" />
     <SlideIn>
       <Section>
-        <SectionHeading
-          :title="data1.heading"
-        />
-        <Feature variant="1:1" direction="left" :data="data1" />
-        <Feature variant="1:1" direction="right" :data="data2" />
+        <SectionHeading :title="products.title" />
+        <Feature v-for="(item, index) in products.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'" :data="item" />
       </Section>
     </SlideIn>
     <Card :items="cardItems" />
@@ -26,14 +23,8 @@
     <!-- <SlideIn> -->
     <Section>
       <SectionHeading :title="blogItems.title" :subtitle="blogItems.subtitle" />
-      <div
-        class="grid grid-cols-1 md:grid-cols-3 container mx-auto px-4 gap-x-6 lg:gap-x-12 gap-y-10 md:gap-y-20"
-      >
-        <Blog
-          :item="item"
-          :key="index"
-          v-for="(item, index) in blogItems.items"
-        />
+      <div class="grid grid-cols-1 md:grid-cols-3 container mx-auto px-4 gap-x-6 lg:gap-x-12 gap-y-10 md:gap-y-20">
+        <Blog :item="item" :key="index" v-for="(item, index) in blogItems.items" />
       </div>
     </Section>
     <FaqSection :items="faqData" />
@@ -44,25 +35,21 @@ const seoData = {
   title: "ZincLabs",
   desc: "zinclab is a software products",
 };
-const data1 = {
-  heading:"Our Products",
-  title: "Get More with <span class='highlight'>ZincObserve</span> - Logs, Metrics, Traces",
-  desc1: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes.",
-  desc2:"By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
-  image: "/img/feature.svg",
-};
-const data2 = {
-  title: "Take your observability to the next level with <span class='highlight'>zPlane</span> , built for the needs of larger enterprises.",
-  desc1: "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.",
-  desc2:"The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
-  image: "/img/feature.svg",
-};
-const data3 = {
-  title: "ZincObserve is Built for Full - Text Search",
-  desc: "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
-  image: "/img/feature.webp",
-  bgImage: "/img/featurebg3.svg",
-};
+
+const products = {
+  title: "Products",
+  items: [
+    {
+      title: "Get More with <span class='highlight'>ZincObserve</span> - Logs, Metrics, Traces",
+      desc: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
+      image: "/img/feature.svg",
+    }, {
+      title: "Take your observability to the next level with <span class='highlight'>zPlane</span> , built for the needs of larger enterprises.",
+      desc: "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.<br /><br />The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
+      image: "/img/feature.svg",
+    }
+  ]
+}
 const heroSection = {
   tagline: "Logs, Metrics, Traces and more in one platform",
   title: "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
@@ -97,8 +84,8 @@ const numbers = {
 };
 const cardItems = {
   title: "Why Choose Zinc Labs?",
-  subtitle:"Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
-    items: [
+  subtitle: "Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
+  items: [
     {
       image: "/img/homepage/zinclabfeature1.svg",
       title: "Maintaining the System is a Breeze with No Hassles",
@@ -147,7 +134,7 @@ const blogItems = {
       title: "Software Products",
       desc: "Top 5 Trends That Retailers Are Using In 2023",
       btnText: "Read More",
-      href:"#"
+      href: "#"
     },
     {
       image:
@@ -155,7 +142,7 @@ const blogItems = {
       title: "Software Products",
       desc: "Top 5 Trends That Retailers Are Using In 2023",
       btnText: "Read More",
-      href:"#"
+      href: "#"
 
     },
     {
@@ -164,7 +151,7 @@ const blogItems = {
       title: "Software Products",
       desc: "Top 5 Trends That Retailers Are Using In 2023",
       btnText: "Read More",
-      href:"#"
+      href: "#"
 
     },
     //  {
