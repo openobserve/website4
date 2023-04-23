@@ -42,7 +42,7 @@
 </template>
 <script setup>
 const seoData = {
-  title: "zinclab",
+  title: "ZincLabs",
   desc: "zinclab is a software products",
 };
 const data1 = {

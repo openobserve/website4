@@ -69,11 +69,11 @@ const pageChanged = (pageNo) => {
 };
 
 useHead({
-  title: "Blogs | ZincLab Website ",
+  title: "Blog",
   meta: [
     {
       name: "description",
-      content: "Sample Description",
+      content: "Blog Posts",
     },
   ],
 });
