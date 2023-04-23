@@ -3,7 +3,7 @@
     <div class="flex flex-col px-4 md:flex-row w-full h-full container mx-auto" :class="directions[direction]">
       <div class="w-full md:w-1/2 py-4 md:py-16 lg:py-24 md:px-6 lg:px-10">
         <div class="text-center md:text-left text-sm md:text-base lg:text-base mb-6">
-          <span class="bg-theme-primary-200 rounded-full text-black px-4 py-1" v-html="data.tagline">
+          <span class="bg-theme-primary-100 rounded-full text-black px-4 py-2" v-html="data.tagline">
           </span>
         </div>
         <h2 class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight"
