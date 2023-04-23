@@ -23,8 +23,8 @@
     <!-- <SlideIn> -->
     <Card :items="useCases" :backgroundImage="null" />
       
-    <LatestBlogPosts />
     <FaqSection :items="faqData" />
+    <LatestBlogPosts />
   </div>
 </template>
 <script setup>

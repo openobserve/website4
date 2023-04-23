@@ -13,6 +13,7 @@
     <Section>
       <FaqSection :items="data.faqData"/>
     </Section>
+    <LatestBlogPosts />
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {

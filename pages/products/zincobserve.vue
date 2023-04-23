@@ -9,6 +9,7 @@
   </Section> -->
   <Card :items="data.content" :backgroundImage="true"/>
   <FaqSection :items="data.faqData" />
+  <LatestBlogPosts />
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {
