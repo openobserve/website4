@@ -8,8 +8,8 @@
           </div>
           <div :class='["md:pt-0 pt-5", direction == "left" ? "md:pl-8" : "md:pr-8", variation[variant].el2]'>
             <div v-if="data.tagline" class="text-center md:text-left text-xs md:text-sm lg:text-sm mb-4">
-              <span class="bg-theme-primary-100 rounded-full text-gray-600 px-2 py-1" v-html="data.tagline">
-              </span>
+              <span class="bg-theme-primary-100 rounded-full text-theme-primary-600 px-4 py-1 tracking-widest capitalize">
+                {{ data.tagline }}</span>
             </div>
             <div>
               <h2 class="text-base md:text-3xl text-center md:text-left font-bold text-black inline-block "

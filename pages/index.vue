@@ -8,7 +8,17 @@
         <Feature v-for="(item, index) in products.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'" :data="item" />
       </Section>
     </SlideIn>
-    <Card :items="cardItems" />
+    <Card :items="useCases" />
+    
+    <SlideIn>
+      <Section>
+        <!-- <SectionHeading :title="cardItems.title" /> -->
+        <Feature v-for="(item, index) in cardItems.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'" :data="item" />
+      </Section>
+    </SlideIn>
+    <Card :items="useCases2" :background-image="null"/>
+
+    <!-- <Card :items="cardItems" /> -->
     <!-- <Section>
         <div class="bg-[url('/homepage/cardbg2.svg')]  w-full bg-no-repeat bg-cover py-40 ">
           <SectionHeading :title=cardItems.title :subtitle="cardItems.subtitle" align="center" />
@@ -21,7 +31,6 @@
         </div>
       </Section> -->
     <!-- <SlideIn> -->
-    <Card :items="useCases" :backgroundImage="null" />
       
     <FaqSection :items="faqData" />
     <LatestBlogPosts />
@@ -34,12 +43,12 @@ const seoData = {
 };
 
 const products = {
-  title: "Products",
+  title: "Unveiling Our Top-Notch Products",
   items: [
     {
       title: "<span class='highlight'>ZincObserve</span>",
       subtitle: "Get more out of your Logs, Metrics & Traces",
-      desc: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
+      desc: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in upto 140x lower storage costs, making it a cost-effective solution for managing observability.",
       image: "/img/feature.svg",
       btnText: "Get Started",
       btnTo: "/products/zincobserve",
@@ -58,7 +67,7 @@ const products = {
 const heroSection = {
   tagline: "Logs, Metrics, Traces and more in one platform",
   title: "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
-  subtitle: "Streamline your operations with worry-free observability",
+  subtitle: "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
   image: "/img/homepage/herosectionImage2.svg",
   btnText: "Get Started For Free",
   btnTo: "https://observe.zinc.dev/",
@@ -88,69 +97,99 @@ const numbers = {
   ],
 };
 const cardItems = {
-  title: "Features",
+  title: "Stay ahead of the curve with the Observability Stack",
   subtitle: "Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
   items: [
+    // {
+    //   image: "/img/homepage/zinclabfeature1.svg",
+    //   title: "Maintaining the System is a Breeze with No Hassles",
+    //   desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
+    //   btnText: "",
+    // },
+    // {
+    //   image: "/img/homepage/zinclabfeature2.svg",
+    //   title: "Effortless Installation and User-Friendly Interface for Seamless Experience",
+    //   desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
+    //   btnText: "",
+    // },
     {
-      image: "/img/homepage/zinclabfeature1.svg",
-      title: "Maintaining the System is a Breeze with No Hassles",
-      desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
+      image: "/img/feature.webp",
+      tagline: "EFFICIENT",
+      title: "Functionality and features exceptionally designed to optimize efficiency and performance",
+      desc: "We have excellent supporting functions such as Search around logs, VRL (Vector Remap Language) functions.  The advanced embedded UI and API are top-notch, providing an excellent user experience. The software provides visibility into your application with metrics and traces and the ability to correlate them. We have customized Dashboards that provide you with advanced data analytics.",
       btnText: "",
     },
     {
-      image: "/img/homepage/zinclabfeature2.svg",
-      title: "Effortless Installation and User-Friendly Interface for Seamless Experience",
-      desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
-      btnText: "",
-    },
-    {
-      image: "/img/homepage/zinclabfeature3.svg",
-      title: "Functionality and Features Excellently Designed to Optimize Efficiency and Performance",
-      desc: "Zinc Labs has excellent features and functionality that make it highly usable from the get-go, providing excellent ROI on the invested time.",
-      btnText: "",
-    },
-    {
-      image: "/img/homepage/zinclabfeature4.svg",
+      image: "/img/feature.webp",
+      tagline: "BUDGET FRIENDLY",
       title: "Affordable Pricing for Optimum Value",
-      desc: "Zinc Labs believes that you should not have to spend a fortune to run their software, either in self-hosted mode or for the SaaS platform.",
+      desc: "We believe that you should not have to spend a fortune to run their software, either in self-hosted mode or for the SaaS platform. ZincObserve has a distinct method of storing and organizing data that leads to a significant reduction in storage costs, up to 140 times lower than other options. As a result, it is an economical solution for overseeing and managing observability.",
       btnText: "",
     },
+    // {
+    //   image: "/img/feature.webp",
+    //   title: "Seamless Learning Experience for all Users: Beginners to Advanced",
+    //   desc: "Zinc Labs software is easy to set up and use, even for a beginner. Advanced users can use their existing skills to take advantage of the software's full potential.",
+    //   btnText: "",
+    // },
     {
-      image: "/img/homepage/zinclabfeature5.svg",
-      title: "Seamless Learning Experience for all Users: Beginners to Advanced",
-      desc: "Zinc Labs software is easy to set up and use, even for a beginner. Advanced users can use their existing skills to take advantage of the software's full potential.",
-      btnText: "",
-    },
-    {
-      image: "/img/homepage/zinclabfeature6.svg",
-      title: "Exceptional Performance with High Efficiency.",
-      desc: "Zinc Labs software is highly performant, making it an excellent choice for most use cases in the real world. The software provides an excellent tradeoff value in return, making it generally acceptable to the majority of users.",
+      image: "/img/feature.webp",
+      tagline: "SAMLESS USER EXPERIENCE",
+      title: "10x easier to operate",
+      desc: "Our software is designed to ensure that setting up and utilizing it is a straightforward and hassle-free experience for our users. You can install the self-hosted option or sign up for the SaaS platform in under two minutes. You can start ingesting data and observing the behavior of your applications without any major configuration.In addition, it supports hassle-free software upgrades, making it more convenient for users.",
       btnText: "",
     },
   ],
 };
 
 const useCases = {
+  title: "Search, Observe, and Analyze with ZincObserve",
+  subtitle: "Accelerate your cloud operations with ZincObserve's Search, Observability, and Analysis platform",
+  items: [
+    {
+      image: "/img/homepage/zinclabfeature1.svg",
+      title: "Search",
+      desc: "Enhance both customer satisfaction and employee productivity by utilizing powerful search capabilities to help everyone find what they need, precisely when they need it. This not only reduces costs and management overhead, but also enables you to concentrate on delivering exceptional search experiences.",
+      // to: "/usecases/logs"
+    },
+    {
+      image: "/img/homepage/zinclabfeature2.svg",
+      title: "Observe",
+      desc: "Leverage complete end-to-end visibility across all your applications and infrastructure to promptly identify and resolve issues before they have an adverse impact on your business. Streamline management processes and access historical data effortlessly, to perform in-depth root-cause analysis.",
+      btnText: "",
+      // to: "/usecases/metrices"
+    },
+    {
+      image: "/img/homepage/zinclabfeature3.svg",
+      title: "Analyze",
+      desc: "With the most widely deployed observability solution, you can trust in a tool built to unify metrics, logs, and traces, resulting in seamless visibility and valuable insights. Ready-to-Analyze dashboards and scheduled, real-time, and target-based alerting mechanisms simplify your analysis needs, allowing you to quickly and efficiently identify critical issues and take proactive measures to address them.",
+      btnText: "",
+      // to: "/usecases/traces"
+    },
+  ],
+};
+
+const useCases2 = {
   title: "Use Cases",
-  subtitle: "Improve user experience with data-driven insights from observability",
+  subtitle: "Get more from your data with ZincObserve",
   items: [
     {
       image: "/img/homepage/zinclabfeature1.svg",
       title: "Logs",
-      desc: "Zinc Labs ensures that their software is stable and can heal itself automatically in case of issues. The majority of users can start using the system efficiently with zero configuration.",
+      desc: "The software provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
       to: "/usecases/logs"
     },
     {
       image: "/img/homepage/zinclabfeature2.svg",
-      title: "Matrics",
-      desc: "Zinc Labs believes that setting up and using their software should be straightforward and hassle-free. With Zinc Labs, you can install the self-hosted option or sign up for the SaaS platform in under two minutes. ",
+      title: "Metrics",
+      desc: "The software offers long-term storage for Prometheus metrics in S3 with support for SQL and PromQL. Correlating logs and traces with metrics provides a comprehensive view of infrastructure, and high cardinality data storage offers a new level of functionality.",
       btnText: "",
       to: "/usecases/metrices"
     },
     {
       image: "/img/homepage/zinclabfeature3.svg",
       title: "Traces",
-      desc: "Zinc Labs has excellent features and functionality that make it highly usable from the get-go, providing excellent ROI on the invested time.",
+      desc: "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
       btnText: "",
       to: "/usecases/traces"
     },
