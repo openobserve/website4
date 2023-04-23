@@ -66,7 +66,7 @@ const data3 = {
 const heroSection = {
   tagline: "Logs, Metrics, Traces and more in one platform",
   title: "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
-  subtitle: "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+  subtitle: "Streamline your operations with worry-free observability",
   image: "/img/homepage/herosectionImage2.svg",
   btnText: "Get Started For Free",
   btnTo: "https://observe.zinc.dev/",
@@ -78,20 +78,20 @@ const numbers = {
   subtitle: "",
   items: [
     {
-      text: "lorem ipsum dollers nk bej",
-      number: "100+",
+      text: "Easier",
+      number: "10x",
     },
     {
-      text: "lorem ipsum dollers nk bej",
-      number: "50",
+      text: "Lower storage cost",
+      number: "140x",
     },
     {
-      text: "lorem ipsum dollers nk bej",
-      number: "1%",
+      text: "Scale",
+      number: "PB",
     },
     {
-      text: "lorem ipsum dollers nk bej",
-      number: "40",
+      text: "Install time",
+      number: "2m",
     },
   ],
 };
