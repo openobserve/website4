@@ -34,10 +34,8 @@ const heroSection = {
 };
 const content = {
   title: "What We Do",
-  para1:
+  description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ligula metus, molestie rutrum rhoncus sit amet, maximus sit amet augue. Donec non magna enim. Fusce maximus lobortis auctor. Duis pretium ipsum sed blandit sollicitudin. Curabitur venenatis sapien non laoreet ornare. Aliquam tincidunt pharetra commodo.",
-  para2:
-    "Phasellus bibendum, nulla sed euismod tristique, dui risus dignissim lorem, sed egestas purus tortor sit amet orci. Aliquam pharetra scelerisque convallis. Nulla vulputate interdum dignissim. Etiam sit amet dignissim elit. Fusce convallis varius ipsum, in suscipit sem faucibus et. In placerat faucibus porta. Suspendisse commodo facilisis orci, sit amet cursus mi sodales at. Fusce non ante facilisis, dignissim augue sit amet, semper mi. Integer accumsan maximus lobortis. Duis fringilla, sem vitae vestibulum ullamcorper,",
 };
 const items = {
   title: "Investors",

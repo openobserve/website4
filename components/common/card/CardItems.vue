@@ -15,8 +15,8 @@
               'text-right': align == 'right',
             }"
             class="text-lg text-theme-text-primary font-bold flex-1"
+            v-html="item.title"
           >
-            {{ item.title }}
           </h4>
           <p class="text-theme-text-secondary text-base text-justify flex-1">
             {{ item.desc }}
@@ -128,4 +128,9 @@ const props = defineProps({
     --gradY: 0%;
   }
 }
+
+.tag {
+  @apply border border-theme-primary-400 rounded-full px-2 py-1 text-xs bg-white text-theme-primary-500;
+}
+
 </style>

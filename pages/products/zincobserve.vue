@@ -1,13 +1,16 @@
 <template>
   <!-- <BreadCrumbs class="md:pt-0 pt-3" :title="data.title" :paths="data.breadcrumbs" /> -->
-  <HeroSection :data="data.heroSection"/>
-  <!-- <Section>
-    <SectionHeading :title=data.items.heading :subtitle="data.items.subheading" />
-    <Feature variant="1:1" direction="left" :data="data.items" />
-    <Feature variant="1:1" direction="right" :data="data.items" />
-    <Feature variant="1:1" direction="left" :data="data.items" />
-  </Section> -->
-  <Card :items="data.content" :backgroundImage="true"/>
+  <HeroSection :data="data.heroSection" />
+  <Feature :data="data.details" />
+  <SlideIn>
+    <Section>
+      <SectionHeading :title="data.content.title" />
+      <Feature v-for="(item, index) in data.content.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'"
+        :data="item" />
+    </Section>
+  </SlideIn>
+  <!-- <Card :items="data.content" :backgroundImage="true" /> -->
+  <Card :items="data.features" :backgroundImage="true" />
   <FaqSection :items="data.faqData" />
   <LatestBlogPosts />
 </template>

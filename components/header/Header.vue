@@ -51,7 +51,7 @@ const items = {
         {
             label: '',
             link: "/products/zincobserve",
-            productName: 'Zinc Observe',
+            productName: 'ZincObserve',
         },
         {
             label: '',

@@ -19,8 +19,8 @@
     }
   ],
   "heroSection": {
-    "title": "ZPlane",
-    "subtitle": "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+    "title": "zPlane",
+    "subtitle": "The zPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With zPlane, ZincObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
     "image": "/img/homepage/herosectionImage2.svg",
     "btnText": "Get Started For Free",
     "btnTo": "https://observe.zinc.dev/",
@@ -34,25 +34,31 @@
     "image": "/img/feature.webp"
   },
   "content": {
-    "title": "ZPlane Features",
-    "subtitle": "It provides a host of features that help you get up and running in minutes.",
+    "title": "zPlane Features",
+    "subtitle": "Entriprise features, on top of all the ZincObserve features",
     "items": [
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "You can index large amounts of text Zinc and search instantly. Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data.",
+        "title": "Elasticsearch API compatibility",
+        "desc": "Search and aggregation API compatibility with Elasticsearch",
         "btnText": ""
       },
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data. No need to set up a separate GUI like Kibana.",
+        "title": "SSO <span class='tag'>Coming Soon</span>",
+        "desc": "SSO enables users to use their existing enterprise identity providers for seamless and secure access to ZincObserve.",
         "btnText": ""
       },
       {
         "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+        "title": "Cross-cluster search <span class='tag'>Coming Soon</span>",
+        "desc": "Cross-cluster search allows users to search and analyze data across multiple ZincObserve clusters, providing a unified view of their observability data.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/CardIcon.svg",
+        "title": "Priority support with SLAs",
+        "desc": "We ensures that enterprise customers receive timely and effective support from ZincObserve's expert support team, helping to ensure the smooth operation of their observability platform.",
         "btnText": ""
       }
     ]
