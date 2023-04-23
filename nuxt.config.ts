@@ -1,5 +1,7 @@
 export default defineNuxtConfig({
-  extends: ["@nuxt-themes/docus", "./blog", 'nuxt-seo-kit'],
+  extends: [
+    // "@nuxt-themes/docus",
+    "./blog", 'nuxt-seo-kit'],
   modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts",'@vueuse/nuxt'],
   css: ["@/assets/css/main.css"],
   components: {
@@ -11,31 +13,24 @@ export default defineNuxtConfig({
       "~/components",
     ],
   },
-
   colorMode: {
     preference: 'light',
     fallback: 'light',
   },
-   runtimeConfig: {
+  runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://example.com',
-      siteName: 'Zinclab',
-      siteDescription: 'Welcome to ZincLab',
+      siteName: 'ZincLabs',
+      siteDescription: 'ZincObserve is a cloud native observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.',
       language: 'en',
-       titleSeparator: '|',
-         trailingSlash: false,
-       // prefer more explicit language codes like `en-AU` over `en`
+      titleSeparator: '|',
+      trailingSlash: false,
     },
-     runtimeConfig: {
     indexable: false
   },
-  },
-   linkChecker: {
+  linkChecker: {
     failOn404: true,
   },
-    unhead: {
-    ogTitleTemplate: '%s | My Website',
-  }
   // googleFonts: {
   //   families: {
   //     Montserrat: [400],
