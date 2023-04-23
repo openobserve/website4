@@ -17,10 +17,9 @@
         <p class="text-center md:text-left mt-6 text-xl font-medium text-black">
           {{ data.subtitle }}
         </p>
-        <div class="flex justify-center md:justify-start" v-show="required">
+        <div class="flex justify-center md:justify-start py-5" v-show="required">
           <Button
             variant="primary"
-            classes="mt-6 "
             :target="data.btnTarget"
             :to="data.btnTo"
           >
