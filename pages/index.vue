@@ -64,8 +64,9 @@ const data3 = {
   bgImage: "/img/featurebg3.svg",
 };
 const heroSection = {
-  title: "10x" + "<span class='highlight'> lower cost </span>" + "than your existing" + "<span class='highlight'> observability</span>" + " tools.",
-  subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
+  tagline: "Logs, Metrics, Traces and more in one platform",
+  title: "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
+  subtitle: "Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
   image: "/img/homepage/herosectionImage2.svg",
   btnText: "Get Started For Free",
   btnTo: "https://observe.zinc.dev/",
