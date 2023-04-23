@@ -2,7 +2,7 @@
   <div :style="{ backgroundImage: `url(${data.backgroundImage})` }" class="background">
     <div class="flex flex-col px-4 md:flex-row w-full h-full container mx-auto" :class="directions[direction]">
       <div class="w-full md:w-1/2 py-4 md:py-16 lg:py-24 md:px-6 lg:px-10">
-        <div class="text-center md:text-left text-sm md:text-base lg:text-base mb-6">
+        <div v-if="data.tagline" class="text-center md:text-left text-sm md:text-base lg:text-base mb-6">
           <span class="bg-theme-primary-100 rounded-full text-black px-4 py-2" v-html="data.tagline">
           </span>
         </div>
@@ -11,7 +11,7 @@
         <p class="text-center md:text-left mt-6 text-xl font-medium text-black">
           {{ data.subtitle }}
         </p>
-        <div class="flex justify-center md:justify-start py-5" v-show="required">
+        <div class="flex justify-center md:justify-start py-5" v-if="data.btnText">
           <Button variant="primary" :target="data.btnTarget" :to="data.btnTo">
             {{ data.btnText }}
           </Button>
