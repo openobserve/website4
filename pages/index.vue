@@ -21,7 +21,7 @@
         </div>
       </Section> -->
     <!-- <SlideIn> -->
-    <Card :items="useCases" />
+    <Card :items="useCases" :backgroundImage="null" />
       
     <LatestBlogPosts />
     <FaqSection :items="faqData" />
