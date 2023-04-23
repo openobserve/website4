@@ -6,7 +6,6 @@
       <Section>
         <SectionHeading
           :title="data1.heading"
-          
         />
         <Feature variant="1:1" direction="left" :data="data1" />
         <Feature variant="1:1" direction="right" :data="data2" />
@@ -47,13 +46,13 @@ const seoData = {
 };
 const data1 = {
   heading:"Our Products",
-  title: "Get More with <span style='color:#5960B2;'>ZincObserve</span> - Logs, Metrics, Traces",
+  title: "Get More with <span class='highlight'>ZincObserve</span> - Logs, Metrics, Traces",
   desc1: "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud,getting started takes less than two minutes.",
   desc2:"By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at a petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in 140x lower storage costs, making it a cost-effective solution for managing observability.",
   image: "/img/feature.svg",
 };
 const data2 = {
-  title: "Take your observability to the next level with <span style='color:#5960B2;'>zPlane</span> , built for the needs of larger enterprises.",
+  title: "Take your observability to the next level with <span class='highlight'>zPlane</span> , built for the needs of larger enterprises.",
   desc1: "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.",
   desc2:"The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
   image: "/img/feature.svg",
@@ -65,7 +64,7 @@ const data3 = {
   bgImage: "/img/featurebg3.svg",
 };
 const heroSection = {
-  title: "10x" + "<span style='color:#5960B2;'> lower cost </span>" + "than your existing" + "<span style='color:#5960B2;'> observability</span>" + " tools.",
+  title: "10x" + "<span class='highlight'> lower cost </span>" + "than your existing" + "<span class='highlight'> observability</span>" + " tools.",
   subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
   image: "/img/homepage/herosectionImage2.svg",
   btnText: "",
