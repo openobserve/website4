@@ -4,7 +4,12 @@ export default defineNuxtConfig({
     "./blog",
     "nuxt-seo-kit",
   ],
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@vueuse/nuxt"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxtjs/google-fonts",
+    "@vueuse/nuxt",
+    "@nuxt/devtools",
+  ],
   css: ["@/assets/css/main.css"],
   components: {
     // component directories with the subdirs listed first for using the default names
