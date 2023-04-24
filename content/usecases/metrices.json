@@ -18,33 +18,16 @@
       "disabled":true
     }
   ],
-  "items": {
-    "heading": "ZincObserve Features",
-    "title": "ZincObserve is Built for Full - Text Search",
-    "desc": "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
-    "image": "/img/feature.webp"
-  },
   "content": {
-    "title": "ZincObserve Features",
-    "subtitle": "It provides a host of features that help you get up and running in minutes.",
+    "title": "Tracking trends through metrics, unlocking insights.",
     "items": [
       {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "You can index large amounts of text Zinc and search instantly. Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data.",
-        "btnText": ""
+        "desc": "By leveraging long-term storage for Prometheus metrics in Amazon S3, you can more effectively identify and troubleshoot issues in your infrastructure. With support for SQL and PromQL, you can easily query and analyze your data, and custom dashboards make it simple to visualize and understand complex metrics.<br/><br/>Additionally, the ability to correlate metrics with logs and traces provides a comprehensive view of your system, making it easier to pinpoint issues and resolve them quickly.",
+        "image": "/img/feature.svg"
       },
       {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data. No need to set up a separate GUI like Kibana.",
-        "btnText": ""
-      },
-      {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "btnText": ""
+        "desc": "Finally, high cardinality data storage enables you to store and query a large number of metrics, giving you the flexibility and scalability to handle large-scale environments. Overall, long-term storage for Prometheus metrics in S3 can revolutionize the way you monitor and manage your infrastructure, providing powerful insights and unparalleled visibility.<br/><br/>Our observability solutions collect metrics at regular intervals and store them in a time-series database, offering users the ability to visualize, query, and set alerts based on the data. It gathers metrics from applications, services, the operating system, and third-party systems to provide a comprehensive view of the system's health and performance. Interactive dashboards enable better analysis and monitoring for optimized operations.",
+        "image": "/img/feature.svg"
       }
     ]
   },

@@ -18,36 +18,41 @@
       "disabled":true
     }
   ],
-  "items": {
-    "heading": "ZincObserve Features",
-    "title": "ZincObserve is Built for Full - Text Search",
-    "desc": "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
-    "image": "/img/feature.webp"
-  },
   "content": {
-    "title": "ZincObserve Features",
-    "subtitle": "It provides a host of features that help you get up and running in minutes.",
+    "title": "Troubleshoot performance issues with Traces",
     "items": [
       {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "You can index large amounts of text Zinc and search instantly. Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data.",
-        "btnText": ""
-      },
-      {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Zinc is a batteries-included setup. Embedded UI provides an easy way to get started and interact with your data. No need to set up a separate GUI like Kibana.",
-        "btnText": ""
-      },
-      {
-        "image": "/img/CardIcon.svg",
-        "title": "Full Text Search",
-        "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
-        "btnText": ""
+        "desc": "ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues. With distributed tracing, you can accurately locate performanc issues within your microservices architecture.<br/><br/>Traces are used to diagnose and debug performance issues in distributed systems by providing insights into the flow of requests and the time taken by each component to process the request. They can be used to identify bottlenecks, analyze the impact of changes, and optimize the performance of the system.",
+        "image": "/img/feature.svg"
       }
     ]
   },
+  "tracesData":{
+    "title":"How can tracing insights empower your applications?",
+    "items":[
+      {
+        "title":"Unified Tracing Interface",
+        "desc":"Quickly pinpoint the root causes of issues by viewing traces alongside logs, infrastructure metrics, database queries, network calls,and frontend telemetry in a single unified interface.",
+        "image":"/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Code Performance Analysis",
+        "desc": "Enhance code performance by gaining visibility into the resource usage and execution time of each method and line of code.",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Real-Time Performance Insights",
+        "desc": "Swiftly identify the root cause of service issues through a unified dashboard displaying health metrics, dependencies, and telemetry data from your infrastructure and databases.",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Code Vulnerability Scanning",
+        "desc": "Protect your cloud applications by proactively identifying live security threats and code vulnerabilities in production, enabling you to mitigate them before they result in breaches.",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      }
+    ]
+  },
+
   "faqData": [
     {
       "question": "How many programmers does it take to screw a lightbulb?",

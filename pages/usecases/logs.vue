@@ -1,19 +1,8 @@
 <template>
-   <BreadCrumbs class="md:pt-0 pt-3" :title="data.title" :paths="data.breadcrumbs" />
-       <Section>
-      <SectionHeading
-        :title="data.items.heading"
-        :subtitle="data.items.subheading"
-      />
-      <Feature variant="1:1" direction="left" :data="data.items" />
-      <Feature variant="1:1" direction="right" :data="data.items" />
-      <Feature variant="1:1" direction="left" :data="data.items" />
-    </Section>
-    <!-- <Card :items="data.content" /> -->
-    <Section>
+      <BreadCrumbs class="md:pt-0 pt-3" :title="data.title" :paths="data.breadcrumbs" />
+      <Feature :items="data.content.items" :title="data.content.title" />
       <FaqSection :items="data.faqData"/>
-    </Section>
-    <LatestBlogPosts />
+      <LatestBlogPosts />
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {

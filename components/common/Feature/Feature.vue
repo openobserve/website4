@@ -5,7 +5,7 @@
    </Section>
 </template>
 <script setup>
-defineProps({
+const props = defineProps({
   items:{
     type:String,
   },
