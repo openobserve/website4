@@ -12,7 +12,6 @@
     ]">
       {{ label }}
     </label>
-    <Tooltip side="right"></Tooltip>
 
     <p>
       <textarea v-bind="$attrs" :value="modelValue" :name="name" @input="

@@ -3,24 +3,24 @@
     <BreadCrumbs
       class="md:pt-0 pt-3"
       title="Pricing"
-      :paths="[{ name: 'Home', to: '/' }, { name: 'Pricing' }]"
+      :paths="data.breadcrumbs"
     />
 <section class="text-gray-600 body-font overflow-hidden">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
-       <section-heading :title="data.title" :subtitle="data.subtitle" />
+       <section-heading :title="data.data.title" :subtitle="data.data.subtitle" />
           <div class="flex mx-auto border-2 border-theme-primary rounded overflow-hidden mt-6">
 
             <button class="py-1 px-10  focus:outline-none" :class="selected == 'Monthly' ? 'bg-theme-primary text-white' : ''"
-              @click="selected = 'Monthly'">{{ data.btn.monthlyBtn }}</button>
+              @click="selected = 'Monthly'">{{ data.data.btn.monthlyBtn }}</button>
             <button class="py-1 px-4 focus:outline-none " :class="selected == 'Yearly' ? 'bg-theme-primary text-white' : ''"
-              @click="selected = 'Yearly'">{{ data.btn.annuallyBtn }}</button>
+              @click="selected = 'Yearly'">{{ data.data.btn.annuallyBtn }}</button>
         </div>
     </div>
      
       <div class="flex flex-wrap -m-4">
-        <div class="p-4 xl:w-1/4 md:w-1/2 w-full" v-for="(item, index) in data.carditems">
-          <div class="h-full p-6 rounded-lg border-2 border-theme-primary flex flex-col relative overflow-hidden">
+        <div class="p-4 xl:w-1/4 md:w-1/2 w-full" v-for="(item, index) in data.data.carditems">
+          <div class="h-full p-6 rounded-lg border-2 border-theme-primary flex flex-col relative overflow-hidden" :key="index">
             <h2 class="text-sm tracking-widest title-font mb-1 font-medium">{{ item.title }}</h2>
             <h1 class="text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">{{ selected == "Monthly" ?
               item.plan.Monthly : item.plan.Yearly }}</h1>
@@ -57,91 +57,18 @@
   </div>
 </section>
 <Section>
-  <FaqSection :items="faqData"/>
+  <FaqSection :items="data.faqData"/>
 </Section>
    </div>
 </template>
 <script setup>
-const seoData= {
-  title:"Pricing",
-  desc:""
-}
+
 const selected = ref('Monthly');
-const data = {
-  title: "Pricing",
-  subtitle: "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.",
-  btn: {
-    monthlyBtn: "CLOUD",
-    annuallyBtn: "SELF HOSTED",
-  },
-
-  carditems: [
-    {
-      title: "Start",
-      plan: {
-        Monthly: "Free",
-        Yearly: "Free"
-      },
-      feature: ["Vexillologist pitchfork", "Tumeric plaid portland", "Mixtape chillwave tumeric"],
-      btnText: "Purchase",
-      link: "/",
-      desc: "Literally you probably haven't heard of them jean shorts."
-    },
-    {
-      title: "Pro",
-      plan: {
-        Monthly: "$38/mo",
-        Yearly: "$200/yr"
-      },
-      label: "popular",
-      feature: ["Vexillologist pitchfork", "Tumeric plaid portland", "Mixtape chillwave tumeric"],
-      btnText: "Purchase",
-      link: "/",
-      desc: "Literally you probably haven't heard of them jean shorts."
-    },
-    {
-      title: "Business",
-      plan: {
-        Monthly: "$56/mo",
-        Yearly: "$300/yr"
-      },
-      feature: ["Vexillologist pitchfork", "Tumeric plaid portland", "Mixtape chillwave tumeric"],
-      btnText: "Purchase",
-      link: "/",
-      desc: "Literally you probably haven't heard of them jean shorts."
-    },
-    {
-      title: "Special",
-      plan: {
-        Monthly: "$72/mo",
-        Yearly: "$400/yr"
-      },
-      feature: ["Vexillologist pitchfork", "Tumeric plaid portland", "Mixtape chillwave tumeric"],
-      btnText: "Purchase",
-      link: "/",
-      desc: "Literally you probably haven't heard of them jean shorts."
-    },
-
-  ],
-
-}
-const faqData = [
-  {
-    question: "How many programmers does it take to screw a lightbulb?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-    open: true,
-  },
-  {
-    question: "Who is the most awesome person?",
-    answer: "You! The viewer!",
-    open: false,
-  },
-  {
-    question: "How many questions does it take to makes a succesful FAQ Page?",
-    answer: "This many!",
-    open: false,
-  },
-];
-useSeoMeta(seoData)
+const { data } = await useAsyncData(async () => {
+  return await queryContent("/pricing").findOne();
+});
+useSeoMeta({
+  title: data.title,
+  description: data.desc,
+});
 </script>

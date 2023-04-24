@@ -18,7 +18,6 @@
 const { data } = await useAsyncData(async () => {
   return await queryContent("/about").findOne();
 });
-console.log(data,"data");
 useSeoMeta({
   title: data.title,
   description: data.desc,

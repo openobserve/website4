@@ -5,7 +5,6 @@
     }">
       {{ label }}
     </label>
-    <Tooltip side="right"></Tooltip>
     <p>
       <input v-bind="$attrs" :value="modelValue" :type="type" @input="; (error = ''), $emit('update:modelValue', $event.target.value)"
         @focus="$emit('focus', $event)" @blur="$emit('blur', $event)" :class="[

@@ -33,12 +33,6 @@
     "desc": "The search-around logs data feature enables easy identification and fixing of issues in your system. ZincObserve offers customized log searches, scheduled and real-time alerts, and template-based alert targeting that allows dispatching alerts seamlessly to multiple platforms such as Slack and Teams. ZincObserve is equipped with high availability and clustering capabilities that ensure data is always accessible. It provides multiple language options and prebuilt binaries and container images for optimized processing. ZincObserve strikes a balance between storage efficiency and search performance, making it an ideal choice for high-tech professionals looking for a powerful observability platform that can help them unlock the full potential of their systems.<br /><br />With ZincObserve, users can quickly identify and fix issues in their applications through real-time monitoring and alerts. The platform's intuitive user interface and customizable dashboards provide a clear and holistic view of application performance, enabling proactive management of system health. ZincObserve is a reliable and efficient observability platform that delivers superior performance and cost savings, making it an ideal choice for high-tech professionals looking to optimize their application observability.",
     "image": "/img/feature.webp"
   },
-  "items": {
-    "heading": "ZincObserve Features",
-    "title": "ZincObserve is Built for Full - Text Search",
-    "desc": "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
-    "image": "/img/feature.webp"
-  },
   "content": {
     "title": "ZincObserve Features",
     "subtitle": "Discover the Game-Changing Features of ZincObserve:",

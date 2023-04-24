@@ -56,7 +56,7 @@ const items = {
         {
             label: '',
             link: "/products/zplane",
-            productName: 'zPlane',
+            productName: 'ZPlane',
         },
 
     ],

@@ -1,0 +1,39 @@
+{
+  "title": "Contact Us",
+  "desc": "",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "to": "/",
+      "disabled": false
+    },
+    {
+      "name": "Contact us",
+      "to": "#",
+      "disabled": true
+    }
+  ],
+  "content": {
+    "image": "/img/contactus.svg",
+    "title": "Contact Details",
+    "address": {
+      "title": "Address",
+      "icon": "/img/location_icon.svg",
+      "text": "315 Montgomery St, 10th Floor,San Francisco, California, 94104,United States of America"
+    },
+    "phone": {
+      "title": " Mobile No",
+      "icon": "/img/call_icon.svg",
+      "text": "**********"
+    },
+    "mail": {
+      "title": "Email",
+      "icon": "/img/email_icon.svg",
+      "text": "zinclabs@gmail.com"
+    },
+    "heading": "Let us know how we can help you with your needs for a search system",
+    "subheading": " We can help you architect your system to provide observability at scale with no associated drama and costs.<br/>Fill out the form below, and we will reach out shortly.<br/>You could also send us an email at hello@zinclabs.io",
+    "btnText":"SUBMIT",
+    "btnLink":""
+  }
+}

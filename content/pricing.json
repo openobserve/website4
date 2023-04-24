@@ -1,0 +1,102 @@
+{
+  "title": "Pricing",
+  "desc": "",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "to": "/"
+    },
+    {
+      "name": "Pricing"
+    }
+  ],
+  "data": {
+    "title": "Pricing",
+    "subtitle": "Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.",
+    "btn": {
+      "monthlyBtn": "CLOUD",
+      "annuallyBtn": "SELF HOSTED"
+    },
+    "carditems": [
+      {
+      "title": "Start",
+      "plan": {
+        "Monthly": "Free",
+        "Yearly": "Free"
+        },
+      "feature": [
+          "Vexillologist pitchfork",
+          "Tumeric plaid portland",
+          "Mixtape chillwave tumeric"
+        ],
+      "btnText": "Purchase",
+      "link": "/",
+      "desc": "Literally you probably haven't heard of them jean shorts."
+      },
+      {
+      "title": "Pro",
+      "plan": {
+        "Monthly": "$38/mo",
+        "Yearly": "$200/yr"
+        },
+      "label": "popular",
+      "feature": [
+          "Vexillologist pitchfork",
+          "Tumeric plaid portland",
+          "Mixtape chillwave tumeric"
+        ],
+      "btnText": "Purchase",
+      "link": "/",
+      "desc": "Literally you probably haven't heard of them jean shorts."
+      },
+      {
+      "title": "Business",
+      "plan": {
+        "Monthly": "$56/mo",
+        "Yearly": "$300/yr"
+        },
+      "feature": [
+          "Vexillologist pitchfork",
+          "Tumeric plaid portland",
+          "Mixtape chillwave tumeric"
+        ],
+      "btnText": "Purchase",
+      "link": "/",
+      "desc": "Literally you probably haven't heard of them jean shorts."
+      },
+      {
+      "title": "Special",
+      "plan": {
+        "Monthly": "$72/mo",
+        "Yearly": "$400/yr"
+        },
+      "feature": [
+          "Vexillologist pitchfork",
+          "Tumeric plaid portland",
+          "Mixtape chillwave tumeric"
+        ],
+      "btnText": "Purchase",
+      "link": "/",
+      "desc": "Literally you probably haven't heard of them jean shorts."
+      }
+    ]
+    
+  },
+  "faqData": [
+    {
+      "question": "How many programmers does it take to screw a lightbulb?",
+      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+      "open": true
+    },
+    {
+      "question": "Who is the most awesome person?",
+      "answer": "You! The viewer!",
+      "open": false
+    },
+    {
+      "question": "How many questions does it take to makes a succesful FAQ Page?",
+      "answer": "This many!",
+      "open": false
+    }
+  ]
+}
