@@ -3,7 +3,7 @@
     <XyzTransition appear-visible xyz="fade down-1 delay-2">
       <div class="px-4 container mx-auto xyz-nested">
         <div :class="[directions[direction]]">
-          <div :class=[variation[variant].el1] class="background object-contain p-16">
+          <div :class=[variation[variant].el1] class="background object-contain px-16">
             <img :src="data.image" class="object-contain" alt="image" />
           </div>
           <div :class='["md:pt-0 pt-5", direction == "left" ? "md:pl-8" : "md:pr-8", variation[variant].el2]'>
