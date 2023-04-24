@@ -22,6 +22,7 @@ watch(route, (value) => {
 const { y } = useWindowScroll();
 
 const items = {
+    logo:"/img/logo/zincwhiteLogo.svg",
     content: [
         {
             title: "About",

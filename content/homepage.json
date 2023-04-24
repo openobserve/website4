@@ -61,7 +61,7 @@
     "subtitle": "Stay Ahead of the Curve with Zinc Labs: The Revolutionary Log Search and Performance-Driven Software",
     "items": [
       {
-        "image": "/img/feature.webp",
+        "image": "/img/homepage/Efficient.svg",
         "tagline": "EFFICIENT",
         "title": "Functionality and features exceptionally designed to optimize efficiency and performance",
         "desc": "We have excellent supporting functions such as Search around logs, VRL (Vector Remap Language) functions.  The advanced embedded UI and API are top-notch, providing an excellent user experience. The software provides visibility into your application with metrics and traces and the ability to correlate them. We have customized Dashboards that provide you with advanced data analytics.",
@@ -88,19 +88,19 @@
     "subtitle": "Accelerate your cloud operations with ZincObserve's Search, Observability, and Analysis platform",
     "items": [
       {
-        "image": "/img/homepage/zinclabfeature1.svg",
+        "image": "/img/homepage/search.svg",
         "title": "Search",
         "desc": "Enhance both customer satisfaction and employee productivity by utilizing powerful search capabilities to help everyone find what they need, precisely when they need it. This not only reduces costs and management overhead, but also enables you to concentrate on delivering exceptional search experiences.",
         "to": "/usecases/logs"
       },
       {
-        "image": "/img/homepage/zinclabfeature2.svg",
+        "image": "/img/homepage/observe.svg",
         "title": "Observe",
         "desc": "Leverage complete end-to-end visibility across all your applications and infrastructure to promptly identify and resolve issues before they have an adverse impact on your business. Streamline management processes and access historical data effortlessly, to perform in-depth root-cause analysis.",
         "to": "/usecases/metrices"
       },
       {
-        "image": "/img/homepage/zinclabfeature3.svg",
+        "image": "/img/homepage/analyze.svg",
         "title": "Analyze",
         "desc": "With the most widely deployed observability solution, you can trust in a tool built to unify metrics, logs, and traces, resulting in seamless visibility and valuable insights. Ready-to-Analyze dashboards and scheduled, real-time, and target-based alerting mechanisms simplify your analysis needs, allowing you to quickly and efficiently identify critical issues and take proactive measures to address them.",
         "to": "/usecases/traces"
@@ -112,13 +112,13 @@
     "subtitle": "Get more from your data with ZincObserve",
     "items": [
       {
-        "image": "/img/homepage/zinclabfeature1.svg",
+        "image": "/img/homepage/Logs.svg",
         "title": "Logs",
         "desc": "The software provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
         "to": "/usecases/logs"
       },
       {
-        "image": "/img/homepage/zinclabfeature2.svg",
+        "image": "/img/homepage/Metrics.svg",
         "title": "Metrics",
         "desc": "The software offers long-term storage for Prometheus metrics in S3 with support for SQL and PromQL. Correlating logs and traces with metrics provides a comprehensive view of infrastructure, and high cardinality data storage offers a new level of functionality.",
         "to": "/usecases/metrices"

@@ -5,7 +5,7 @@
             <div class="">
                 <nuxt-link to="/">
                     <div class="flex items-center text-black">
-                        <img src="/img/logo/headerLogo.svg" class="h-10 md:h-12 p-1 my-2  text-black" alt="zinclabs logo" />
+                        <img :src="items.logo" class="h-10 md:h-12 p-1 my-2  text-black" alt="zinclabs logo" />
                     </div>
                 </nuxt-link>
             </div>
