@@ -2,36 +2,10 @@
   <div>
     <HeroSection :data="heroSection"></HeroSection>
     <Numbers :items="numbers" />
-    <SlideIn>
-      <Section>
-        <SectionHeading :title="products.title" />
-        <Feature v-for="(item, index) in products.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'" :data="item" />
-      </Section>
-    </SlideIn>
-    <Card :items="useCases" />
-    
-    <SlideIn>
-      <Section>
-        <!-- <SectionHeading :title="cardItems.title" /> -->
-        <Feature v-for="(item, index) in cardItems.items" :key="index" :direction="index % 2 == 0 ? 'left' : 'right'" :data="item" />
-      </Section>
-    </SlideIn>
-    <Card :items="useCases2" :background-image="null"/>
-
-    <!-- <Card :items="cardItems" /> -->
-    <!-- <Section>
-        <div class="bg-[url('/homepage/cardbg2.svg')]  w-full bg-no-repeat bg-cover py-40 ">
-          <SectionHeading :title=cardItems.title :subtitle="cardItems.subtitle" align="center" />
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 container mx-auto py-16 px-4">
-            <Card align="left" :item="item" :key="index" v-for="(item, index) in cardItems.items" />
-          </div>
-        </div>
-        <div class="flex flex-col space-y-2 md:space-y-0 md:flex-row container mx-auto px-4 mt-6">
-          <Card align="left" :item="item" :key="index" v-for="(item, index) in cardItems.items" />
-        </div>
-      </Section> -->
-    <!-- <SlideIn> -->
-      
+     <Feature :items="products.items" :title="products.title"/>
+    <Cards :items="useCases" />
+     <Feature :items="cardItems.items" :title="cardItems.title" :subtitle="cardItems.subtitle"/>
+    <Cards :items="useCases2" :background-image="null" />
     <FaqSection :items="faqData" />
     <LatestBlogPosts />
   </div>

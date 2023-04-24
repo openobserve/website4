@@ -9,6 +9,9 @@ export default defineNuxtConfig({
   components: {
     // component directories with the subdirs listed first for using the default names
     dirs: [
+      "~/components/common/card",
+      "~/components/common/FAQ",
+      "~/components/common/Feature",
       "~/components/core",
       "~/components/common",
       "~/components/header",

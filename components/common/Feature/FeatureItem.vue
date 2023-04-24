@@ -1,5 +1,5 @@
 <template>
-  <Section>
+ <Section>
     <XyzTransition appear-visible xyz="fade down-1 delay-2">
       <div class="px-4 container mx-auto xyz-nested">
         <div :class="[directions[direction]]">
