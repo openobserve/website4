@@ -1,5 +1,5 @@
 {
-  "title": "zPlane",
+  "title": "ZPlane",
   "desc":"",
   "breadcrumbs": [
     {
@@ -13,29 +13,23 @@
       "disabled":true
     },
     {
-      "name": "zPlane",
+      "name": "ZPlane",
       "to": "#",
       "disabled":true
     }
   ],
   "heroSection": {
-    "title": "zPlane",
-    "subtitle": "The zPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With zPlane, ZincObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
+    "title": "ZPlane",
+    "subtitle": "The ZPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With ZPlane, ZincObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
     "image": "/img/homepage/herosectionImage2.svg",
     "btnText": "Get Started For Free",
     "btnTo": "https://observe.zinc.dev/",
     "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
-  "items": {
-    "heading":"ZincObserve Features",
-    "title": "ZincObserve is Built for Full - Text Search",
-    "desc": "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
-    "image": "/img/feature.webp"
-  },
   "content": {
-    "title": "zPlane Features",
-    "subtitle": "Entriprise features, on top of all the ZincObserve features",
+    "title": "Zplane’s additional features",
+    "subtitle": "",
     "items": [
       {
         "image": "/img/CardIcon.svg",
