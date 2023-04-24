@@ -1,39 +1,39 @@
 {
-  "title":"Traces",
+  "title": "Traces",
   "desc": "",
   "breadcrumbs": [
     {
       "name": "Home",
       "to": "/",
-      "disabled":false
+      "disabled": false
     },
     {
       "name": "Use Cases",
       "to": "#",
-      "disabled":true
+      "disabled": true
     },
     {
       "name": "Traces",
       "to": "#",
-      "disabled":true
+      "disabled": true
     }
   ],
   "content": {
-    "title": "Troubleshoot performance issues with Traces",
     "items": [
       {
+        "title": "Troubleshoot performance issues with Traces",
         "desc": "ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues. With distributed tracing, you can accurately locate performanc issues within your microservices architecture.<br/><br/>Traces are used to diagnose and debug performance issues in distributed systems by providing insights into the flow of requests and the time taken by each component to process the request. They can be used to identify bottlenecks, analyze the impact of changes, and optimize the performance of the system.",
         "image": "/img/feature.svg"
       }
     ]
   },
-  "tracesData":{
-    "title":"How can tracing insights empower your applications?",
-    "items":[
+  "tracesData": {
+    "title": "How can tracing insights empower your applications?",
+    "items": [
       {
-        "title":"Unified Tracing Interface",
-        "desc":"Quickly pinpoint the root causes of issues by viewing traces alongside logs, infrastructure metrics, database queries, network calls,and frontend telemetry in a single unified interface.",
-        "image":"/img/homepage/zinclabfeature1.svg"
+        "title": "Unified Tracing Interface",
+        "desc": "Quickly pinpoint the root causes of issues by viewing traces alongside logs, infrastructure metrics, database queries, network calls,and frontend telemetry in a single unified interface.",
+        "image": "/img/homepage/zinclabfeature1.svg"
       },
       {
         "title": "Code Performance Analysis",
@@ -52,7 +52,6 @@
       }
     ]
   },
-
   "faqData": [
     {
       "question": "How many programmers does it take to screw a lightbulb?",

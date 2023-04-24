@@ -19,9 +19,9 @@
     }
   ],
   "content": {
-    "title": "Gain deeper insights into your applications with Logs",
     "items": [
       {
+        "title": "Gain deeper insights into your applications with Logs",
         "desc": "Our advanced embedded Graphical User Interface (GUI) for searching logs is designed to help you easily and quickly find the logs of significance that you need. With features like top 10, search around, SQL for queries, and custom Vector Remap Language (VRL) functions, our platform is user-friendly and accessible for beginners, while also providing advanced users with the ability to build and run highly sophisticated queries.In addition to our powerful search capabilities, our platform also includes ingest functions that allow you to enrich, redact, reduce, and process incoming logs.",
         "image": "/img/feature.svg"
       },

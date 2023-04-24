@@ -4,7 +4,7 @@
     :title="data.title"
     :paths="data.breadcrumbs"
   />
-  <Feature :items="data.content.items" :title="data.content.title"/>
+  <Feature :items="data.content.items" />
   <Cards :items="data.tracesData"/>
   <LatestBlogPosts />
 </template>

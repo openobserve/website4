@@ -19,9 +19,9 @@
     }
   ],
   "content": {
-    "title": "Tracking trends through metrics, unlocking insights.",
     "items": [
       {
+        "title":"Tracking trends through metrics, unlocking insights.",
         "desc": "By leveraging long-term storage for Prometheus metrics in Amazon S3, you can more effectively identify and troubleshoot issues in your infrastructure. With support for SQL and PromQL, you can easily query and analyze your data, and custom dashboards make it simple to visualize and understand complex metrics.<br/><br/>Additionally, the ability to correlate metrics with logs and traces provides a comprehensive view of your system, making it easier to pinpoint issues and resolve them quickly.",
         "image": "/img/feature.svg"
       },

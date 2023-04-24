@@ -1,6 +1,6 @@
 <template>
       <BreadCrumbs class="md:pt-0 pt-3" :title="data.title" :paths="data.breadcrumbs" />
-      <Feature :items="data.content.items" :title="data.content.title" />
+      <Feature :items="data.content.items" />
       <FaqSection :items="data.faqData"/>
       <LatestBlogPosts />
 </template>

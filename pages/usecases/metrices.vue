@@ -5,7 +5,7 @@
     :paths="data.breadcrumbs"
   />
 
-  <Feature :items="data.content.items" :title="data.content.title" />
+  <Feature :items="data.content.items" />
   <FaqSection :items="data.faqData" />
   <LatestBlogPosts />
 </template>

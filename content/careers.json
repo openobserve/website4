@@ -1,0 +1,75 @@
+{
+  "title":"Careers",
+  "desc":"",
+    "breadcrumbs": [
+      {
+        "name": "Home",
+        "to": "/",
+        "disabled": false
+      },
+      {
+        "name": "Careers",
+        "to": "#",
+        "disabled": true
+      }
+    ],
+  "content":{
+    "title":"Company overview",
+    "items":[
+      {
+        "title": "Revolutionizing the Way Businesses Optimize Their Systems",
+        "desc": "Zinc Labs is a technology company that provides innovative solutions for modern businesses. Zinc Labs' mission is to empower organizations to optimize their systems, streamline their operations, and make data-driven decisions. The company's solutions are designed to help businesses unlock the full potential of their data by providing advanced search and observability technologies<br/><br/>Zinc Labs is committed to providing exceptional customer service and support to its customers. The company works closely with its customers to understand their unique business needs and provide tailored solutions that meet those needs.With Zinc Labs, businesses can rest assured that they have a reliable partner intheir technology journey.",
+        "image": "/img/feature.svg"
+      },
+      {
+        "title":"Experience the Next Generation of Observability and Search Technology",
+        "desc": "Zinc Labs' innovative products include ZincObserve, a cutting-edge open-source observability platform designed for the cloud that allows you to monitor your logs,metrics, and traces with ease. ZPlane offers an enterprise version of ZincObserve for large businesses to meet their complex requirements. Both products offer exceptional cost savings and top-notch performance, enabling businesses to gain valuable insights into their systems' health and ultimately improve their software's quality.",
+        "image": "/img/feature.svg"
+      }
+    ]
+  },
+  "cardItems":{
+    "title":"Why Work With Us?",
+    "subtitle":"ZincLabs is the fastest-growing open source search engine backed by leading VCs and angel investors. You will be part of the team that is reinventing the search space.",
+    "items":[
+      {
+        "title":"Fully Remote",
+        "desc":"Flexibility to allow employees to take personal time with work",
+        "image":"/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Stock Options",
+        "desc": "We share our company's success by rewarding employees with our stocks",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Future of Search",
+        "desc": "We will drive with you through the exciting journey and opportunities to shape the future of search",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Latest Tech Stack",
+        "desc": "We provide you the flexibility to work on various latest tech stack used widely across the industry",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Fast-Growing Company",
+        "desc": "You will get diverse learning options to grow yourself along with the company",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      },
+      {
+        "title": "Flexible Timing",
+        "desc": "Employees have the privilege to manage their timings and get the work done",
+        "image": "/img/homepage/zinclabfeature1.svg"
+      }
+      
+    ]
+  },
+  "hiring":{
+    "title":"We're Hiring",
+    "subtitle":"At Zinc Labs, we are always on the lookout for passionate technology enthusiasts who are eager to work on cutting-edge tech stacks.",
+    "btnText":"Apply Here",
+    "href":"https://apply.workable.com/zinc-labs-inc/?not_found=true",
+    "jobs":"Software Engineer - Rust (Remote)"
+  }
+}
