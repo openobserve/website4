@@ -31,38 +31,38 @@
   "details": {
     "title": "Double the productivity with ZincObserve",
     "desc": "The search-around logs data feature enables easy identification and fixing of issues in your system. ZincObserve offers customized log searches, scheduled and real-time alerts, and template-based alert targeting that allows dispatching alerts seamlessly to multiple platforms such as Slack and Teams. ZincObserve is equipped with high availability and clustering capabilities that ensure data is always accessible. It provides multiple language options and prebuilt binaries and container images for optimized processing. ZincObserve strikes a balance between storage efficiency and search performance, making it an ideal choice for high-tech professionals looking for a powerful observability platform that can help them unlock the full potential of their systems.<br /><br />With ZincObserve, users can quickly identify and fix issues in their applications through real-time monitoring and alerts. The platform's intuitive user interface and customizable dashboards provide a clear and holistic view of application performance, enabling proactive management of system health. ZincObserve is a reliable and efficient observability platform that delivers superior performance and cost savings, making it an ideal choice for high-tech professionals looking to optimize their application observability.",
-    "image": "/img/feature.webp"
+    "image": "/img/products/doubleproductivity.svg"
   },
   "content": {
     "title": "ZincObserve Features",
     "subtitle": "Discover the Game-Changing Features of ZincObserve:",
     "items": [
       {
-        "image": "/img/feature.webp",
+        "image": "/img/products/fullstacksolution.svg",
         "title": "Full-stack observability Solution",
         "desc": "Don't let your logs go unnoticed. ZincObserve offers a search-around logs data feature that allows you to easily identify and fix any issues in your system. Advanced embedded GUI and Features like top 10, search around, SQL for query and custom VRL (Vector Remap Language) functions for searching logs allows finding logs of significance super fast.",
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/products/highlycompressedstorage.svg",
         "title": "Highly compressed data storage",
         "desc": "ZincObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. This strategy minimizes the compute requirements during data ingestion and results in highly efficient compression rates, translating into approximately upto 140 times lower storage costs.",
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/products/accelerateperformance.svg",
         "title": "Accelerate performance",
         "desc": "ZincObserve is a cutting-edge observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease. While ZincObserve's approach to data storage and indexing may be different from usual observability tools, full scan searches remain highly efficient due to the implementation of multiple optimization techniques, such as partitioning and caching.",
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/products/alertingmechnisem.svg",
         "title": "Comprehensive alerting mechanisms",
         "desc": "With scheduled and real-time alerts, you can stay on top of critical problems as they happen. This means that you can quickly address any issues and keep your systems running smoothly.  Additionally, it offers template-based alert targeting, enabling users to dispatch alerts seamlessly to multiple platforms such as Slack and Teams, among others. This feature enhances the user's system monitoring capabilities, enabling them to proactively track and manage their system's health.",
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/products/dataanalysis.svg",
         "title": "Advanced Data Analysis",
         "desc": "With ZincObserve, dashboards can display data from logs, metrics, and traces, providing a complete picture of system behavior. They provide a visual representation of real-time data, allowing users to quickly understand the health and performance of their systems.",
         "btnText": ""

@@ -68,14 +68,14 @@
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/homepage/budgetfriendly.svg",
         "tagline": "BUDGET FRIENDLY",
         "title": "Affordable Pricing for Optimum Value",
         "desc": "We believe that you should not have to spend a fortune to run their software, either in self-hosted mode or for the SaaS platform. ZincObserve has a distinct method of storing and organizing data that leads to a significant reduction in storage costs, up to 140 times lower than other options. As a result, it is an economical solution for overseeing and managing observability.",
         "btnText": ""
       },
       {
-        "image": "/img/feature.webp",
+        "image": "/img/homepage/seamlessexperiance.svg",
         "tagline": "SAMLESS USER EXPERIENCE",
         "title": "10x easier to operate",
         "desc": "Our software is designed to ensure that setting up and utilizing it is a straightforward and hassle-free experience for our users. You can install the self-hosted option or sign up for the SaaS platform in under two minutes. You can start ingesting data and observing the behavior of your applications without any major configuration.In addition, it supports hassle-free software upgrades, making it more convenient for users.",
@@ -124,7 +124,7 @@
         "to": "/usecases/metrices"
       },
       {
-        "image": "/img/homepage/zinclabfeature3.svg",
+        "image": "/img/homepage/Traces.svg",
         "title": "Traces",
         "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
         "to": "/usecases/traces"
