@@ -97,7 +97,7 @@
         "image": "/img/homepage/observe.svg",
         "title": "Observe",
         "desc": "Leverage complete end-to-end visibility across all your applications and infrastructure to promptly identify and resolve issues before they have an adverse impact on your business. Streamline management processes and access historical data effortlessly, to perform in-depth root-cause analysis.",
-        "to": "/usecases/metrices"
+        "to": "/usecases/metrics"
       },
       {
         "image": "/img/homepage/analyze.svg",
@@ -121,7 +121,7 @@
         "image": "/img/homepage/Metrics.svg",
         "title": "Metrics",
         "desc": "The software offers long-term storage for Prometheus metrics in S3 with support for SQL and PromQL. Correlating logs and traces with metrics provides a comprehensive view of infrastructure, and high cardinality data storage offers a new level of functionality.",
-        "to": "/usecases/metrices"
+        "to": "/usecases/metrics"
       },
       {
         "image": "/img/homepage/Traces.svg",

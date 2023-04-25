@@ -11,7 +11,7 @@
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {
-  return await queryContent("/usecases/metrices").findOne();
+  return await queryContent("/usecases/metrics").findOne();
 });
 useSeoMeta({
   title:data.seotitle,

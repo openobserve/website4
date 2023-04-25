@@ -79,8 +79,8 @@ const items = {
         },
         {
             label: '',
-            link: "/usecases/metrices",
-            productName: 'Metrices',
+            link: "/usecases/metrics",
+            productName: 'Metrics',
 
         },
         {
