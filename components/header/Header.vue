@@ -23,6 +23,10 @@ const { y } = useWindowScroll();
 
 const items = {
     logo:"/img/logo/zincwhiteLogo.svg",
+    btn:{
+        text:"Get started for free",
+        link:"https://cloud.zincsearch.com"
+    },
     content: [
         {
             title: "About",

@@ -29,7 +29,7 @@
     "title": "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
     "subtitle": "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
     "image": "/img/homepage/herosectionImage2.svg",
-    "btnText": "Get Started For Free",
+    "btnText": "Get started for free",
     "btnTo": "https://observe.zinc.dev/",
     "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
@@ -48,7 +48,7 @@
       },
       {
         "text": "Scale",
-        "number": "PB"
+        "number": "Petabyte"
       },
       {
         "text": "Install time",

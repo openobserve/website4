@@ -36,7 +36,7 @@
             </div>
             <!-- <a href="/" target="_blank">Docs</a> -->
             <div class="" v-if="isOpen">
-                <Button variant="primary" target="_blank" to="https://cloud.zincsearch.com" classes="w-full text-center">Get Started For Free</Button>
+                <Button variant="primary" target="_blank" :to="items.btn.link" classes="w-full text-center">{{ items.btn.text }}</Button>
             </div>
         </div>
         <div>
