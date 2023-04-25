@@ -33,6 +33,10 @@ const items = {
             link: "/about"
         },
         {
+            title: "FAQs",
+            link: "/faq"
+        },
+        {
             title: "Pricing",
             link: "/pricing"
         },
@@ -43,11 +47,6 @@ const items = {
         {
             title: "Blog",
             link: "/blog"
-        },
-
-        {
-            title: "FAQs",
-            link: "/faq"
         },
         {
             title: "Docs",
