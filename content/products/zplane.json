@@ -21,7 +21,7 @@
   "heroSection": {
     "title": "ZPlane",
     "subtitle": "The ZPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With ZPlane, ZincObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
-    "image": "/img/homepage/herosectionImage2.svg",
+    "image": "/img/homepage/zplane.svg",
     "btnText": "Get started for free",
     "btnTo": "https://observe.zinc.dev/",
     "btnTarget": "_blank",

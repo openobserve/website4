@@ -23,11 +23,11 @@
       {
         "title":"Tracking trends through metrics, unlocking insights.",
         "desc": "By leveraging long-term storage for Prometheus metrics in Amazon S3, you can more effectively identify and troubleshoot issues in your infrastructure. With support for SQL and PromQL, you can easily query and analyze your data, and custom dashboards make it simple to visualize and understand complex metrics.<br/><br/>Additionally, the ability to correlate metrics with logs and traces provides a comprehensive view of your system, making it easier to pinpoint issues and resolve them quickly.",
-        "image": "/img/feature.svg"
+        "image": "/img/usecases/metrics/trackingtrends.svg"
       },
       {
         "desc": "Finally, high cardinality data storage enables you to store and query a large number of metrics, giving you the flexibility and scalability to handle large-scale environments. Overall, long-term storage for Prometheus metrics in S3 can revolutionize the way you monitor and manage your infrastructure, providing powerful insights and unparalleled visibility.<br/><br/>Our observability solutions collect metrics at regular intervals and store them in a time-series database, offering users the ability to visualize, query, and set alerts based on the data. It gathers metrics from applications, services, the operating system, and third-party systems to provide a comprehensive view of the system's health and performance. Interactive dashboards enable better analysis and monitoring for optimized operations.",
-        "image": "/img/feature.svg"
+        "image": "/img/usecases/metrics/section2.svg"
       }
     ]
   },

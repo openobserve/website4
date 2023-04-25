@@ -23,16 +23,16 @@
       {
         "title": "Gain deeper insights into your applications with Logs",
         "desc": "Our advanced embedded Graphical User Interface (GUI) for searching logs is designed to help you easily and quickly find the logs of significance that you need. With features like top 10, search around, SQL for queries, and custom Vector Remap Language (VRL) functions, our platform is user-friendly and accessible for beginners, while also providing advanced users with the ability to build and run highly sophisticated queries.In addition to our powerful search capabilities, our platform also includes ingest functions that allow you to enrich, redact, reduce, and process incoming logs.",
-        "image": "/img/feature.svg"
+        "image": "/img/usecases/logs/GainDeeper.svg"
       },
       {
-        "desc": "This functionality gives you greater control over your logs, allowing you to tailor them to your specific needs and requirements.Furthermore, our platform also offers query time functions that allow you to run arbitrary functions on logs during query time. With this feature, you have access to the ultimate functionality,allowing you to fine-tune your searches and extract the most valuable insights from your logs. Whether you're a beginner or an advanced user, our platform provides the tools you need to efficiently and effectively manage your logs.",
-        "image": "/img/feature.svg"
+        "desc": "This functionality gives you greater control over your logs, allowing you to tailor them to your specific needs and requirements.Furthermore, our platform also offers query time functions that allow you to run arbitrary functions on logs during query time. With this usecases/logs/GainDeeper, you have access to the ultimate functionality,allowing you to fine-tune your searches and extract the most valuable insights from your logs. Whether you're a beginner or an advanced user, our platform provides the tools you need to efficiently and effectively manage your logs.",
+        "image": "/img/usecases/logs/section2.svg"
       },
       {
         "title": "Key Features of our log monitoring",
         "desc": "<ul class='list-disc'><li class='py-1'>Seamlessly deploy and manage petabyte-scale logs.</li><li class='py-1'>Obtain insights from any kind of logs in minutes.</li><li class='py-1'>Search everything with scalable search functionality.</li><li class='py-1'>Pinpoint performance and availability issues by detecting common patterns,trends, and outliers</li><li class='py-1'>Gain complete visibility into your servers, virtual machines, and containers with a purpose-built interface for log monitoring</li></ul>",
-        "image": "/img/feature.svg"
+        "image": "/img/usecases/logs/features.svg"
       }
     ]
   },
