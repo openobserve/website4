@@ -9,7 +9,7 @@
       <Feature :items="data.content.items" :title="data.content.title"/>
     </div>
     <Cards :items="data.cardItems" :background-image="null"/>
-    <Hiring :data="data.hiring"/>
+    <!-- <Hiring :data="data.hiring"/> -->
   </div>
 </template>
 <script setup>

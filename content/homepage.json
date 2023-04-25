@@ -14,7 +14,7 @@
         "btnVariant": "secondary"
       },
       {
-        "title": "<span class='highlight'>zPlane</span>",
+        "title": "<span class='highlight'>ZPlane</span>",
         "subtitle": "Built for the needs of larger enterprises",
         "desc": "ZPlane is a set of additional features that are only available in the enterprise version of ZincObserve. These features are designed to provide enhanced functionality and flexibility to meet the needs of larger organizations with more complex use cases.<br /><br />The zPlane features currently offered in the enterprise version of ZincObserve include Elasticsearch API compatibility, single sign-on (SSO), cross-cluster search, and priority support with service level agreements (SLAs).",
         "image": "/img/feature.svg",

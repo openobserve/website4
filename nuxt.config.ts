@@ -10,6 +10,13 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/devtools",
   ],
+  app:{
+    head:{
+       link: [
+      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
+    ]
+    }
+  },
   css: ["@/assets/css/main.css"],
   components: {
     // component directories with the subdirs listed first for using the default names

@@ -47,7 +47,7 @@
                 <h3 class="font-bold text-xl pb-2 text-center md:text-left">{{ footerData.items.title }}</h3>
                 <div class="flex justify-start hover:text-theme-secondary-300">
                 <img :src="footerData.items.emailicon" class="max-h-4 mt-1 mx-2" alt="Email"/>
-                <a class="font-bold text-sm md:text-base pb-2 text-center md:text-left" :href="'mailto:' + footerData.items.email">{{ footerData.items.email }}</a>
+                <a class="font-bold text-sm md:text-base pb-2 text-center md:text-left" :href="'mailto:' + footerData.items.email" target="_blank">{{ footerData.items.email }}</a>
                 </div>
                 <div class="flex justify-start hover:text-theme-secondary-300">
                 <img :src="footerData.items.callicon" class="max-h-4 mt-1 mx-2" alt="Phone"/>
