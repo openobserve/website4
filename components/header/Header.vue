@@ -46,6 +46,10 @@ const items = {
         },
 
         {
+            title: "FAQs",
+            link: "/faq"
+        },
+        {
             title: "Docs",
             link: ""
         },

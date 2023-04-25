@@ -1,20 +1,21 @@
 {
-  "seotitle":"FAQ",
-  "seodesc":"",
-    "breadcrumbs": [
-      {
-        "name": "Home",
-        "to": "/",
-        "disabled": false
-      },
-      {
-        "name": "FAQ's",
-        "to": "#",
-        "disabled": true
-      }
-    ],
-  "faqs":{
-    "title": "Frequently Asked Questions",
+  "seotitle": "Frequently Asked Questions",
+  "seodesc": "",
+  "title": "Frequently Asked Questions",
+  "breadcrumbs": [
+    {
+      "name": "Home",
+      "to": "/",
+      "disabled": false
+    },
+    {
+      "name": "FAQs",
+      "to": "#",
+      "disabled": true
+    }
+  ],
+  "faqs": {
+    "title": "",
     "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
