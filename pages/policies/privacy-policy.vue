@@ -5,13 +5,15 @@
       title="Privacy-Policy"
       :paths="[{ name: 'Home', to: '/' }, { name: 'Privacy-Policy' }]"
     />
-  <main>
-    <div class="prose container mx-auto p-4">
-      <ContentRenderer :value="data" />
-    </div>
-  </main>
+    <main>
+      <div class="prose container max-w-none mx-auto p-4">
+        <ContentRenderer :value="data" />
+      </div>
+    </main>
   </div>
 </template>
 <script setup>
-const { data } = await useAsyncData('privacy-policy', () => queryContent('/policies/privacy-policy').findOne())
+const { data } = await useAsyncData("privacy-policy", () =>
+  queryContent("/policies/privacy-policy").findOne()
+);
 </script>

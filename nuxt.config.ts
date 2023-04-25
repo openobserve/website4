@@ -27,6 +27,7 @@ export default defineNuxtConfig({
       "~/components/core",
       "~/components/common",
       "~/components/header",
+      "~/components/pricing",
       "~/components",
     ],
   },

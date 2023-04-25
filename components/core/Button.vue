@@ -61,7 +61,7 @@ defineProps({
       dropdownItem:
         "block px-4 py-2 rounded-lg hover:bg-gray-200 font-medium text-base text-black animate-left whitespace-nowrap",
       pricing:
-        "block items-center mt-auto text-white bg-theme-primary border-0 py-2 px-4 w-full focus:outline-none hover:bg-theme-primary-600 rounded",
+        "block items-center mt-auto text-white bg-theme-primary cursor-pointer border-0 py-2 px-4 w-full focus:outline-none hover:bg-theme-primary-600 rounded",
       headerBtn:
         "inline-block px-3 py-3 text-center rounded-lg text-white bg-emerald-700 focus:ring-2 ring-offset-1",
       primary:

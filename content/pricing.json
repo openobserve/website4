@@ -10,13 +10,39 @@
       "name": "Pricing"
     }
   ],
-  "data": {
-    "title": "Pricing",
+  "content": {
+    "title": "Zinc Cloud ",
     "subtitle": "",
     "btn": {
       "monthlyBtn": "CLOUD",
       "annuallyBtn": "SELF HOSTED"
     },
+    "priceItems":[
+      {
+        "heading":"For individuals",
+        "subtitle":"Developers",
+        "key":"secondary",
+        "image":"/img/developer.svg",
+        "label":"What's included",
+        "items":["200GB Ingestion","200GB Query Volume","30 Days Retention"],
+        "btnText":"Purchase",
+        "btnLink":""
+      },
+      {
+        "heading": "For individuals",
+        "subtitle": "Pro",
+        "key":"primary",
+        "image": "/img/pro.svg",
+        "label": "What's included",
+        "sublabel":"Everything in Developer Plan,plus",
+        "items": [
+          "Additional Ingestion($0.50/GB)",
+          "Additional Query Volume($5/TB)"
+        ],
+        "btnText": "Purchase",
+        "btnLink": ""
+      }
+    ],
     "carditems": [
       {
       "title": "Start",
