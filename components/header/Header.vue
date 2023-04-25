@@ -22,7 +22,7 @@ watch(route, (value) => {
 const { y } = useWindowScroll();
 
 const items = {
-    logo:"/img/logo/zincwhiteLogo.svg",
+    logo:"/img/logo/headerLogo.svg",
     btn:{
         text:"Get started for free",
         link:"https://cloud.zincsearch.com"

@@ -36,6 +36,7 @@
               <nav class="list-none mb-2 text-white text-center md:text-left" v-for="(item, index) in footerData.docs.content">
                 <li :key="index">
                   <nuxt-link :href="item.link"
+                  :target="item.text == 'Get Started For Free' ? '_blank':''"
                     class="font-medium text-sm md:text-base hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4">
                     {{ item.text }}
                   </nuxt-link>
@@ -75,7 +76,7 @@ const currentYear = computed(() => {
   return new Date().getFullYear();
 });
 const footerData = {
-  logo: "/img/logo/zincblackLogo.svg",
+  logo: "/img/logo/footerLogo.svg",
   address: "315, Montgomery St, 10th Floor, San Francisco, California,94104, United States of America",
   quickLink: {
     title: "Quick Links",
@@ -108,12 +109,12 @@ const footerData = {
     content: [
       {
         text: "Get Started For Free",
-        link: ""
+        link: "https://cloud.zincsearch.com"
       },
-      // {
-      //   text: "Server API",
-      //   link: "/docs/zincsearch"
-      // },
+      {
+        text: "Bug Bounty Program",
+        link: "/bug-bounting-program"
+      },
       {
         text: "Privacy Policy",
         link: "/policies/privacy-policy"
