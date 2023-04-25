@@ -1,10 +1,10 @@
 <template>
 	<Section>
 		<div class="container mx-auto px-4">
-			<SectionHeading title="Frequently Asked Questions"
-				subtitle="Everything you need to know so you can use ZincObserve as a FastSearch." align="center"/>
+			<SectionHeading :title="items.title"
+				:subtitle="items.subtitle" align="center"/>
 			<div class="mt-10">
-				<div v-for="(item, index) in items" class="w-full max-w-3xl m-auto my-2">
+				<div v-for="(item, index) in items.items" class="w-full max-w-3xl m-auto my-2">
 					<FaqItem :item="item" :key="index" :onToggle="() => handleclick(index)" :active="clicked === index" />
 				</div>
 			</div>
@@ -14,7 +14,7 @@
 <script setup>
 defineProps({
 	items:{
-		type:Array
+		type:Object
 	}
 })
 const clicked = ref(null);
