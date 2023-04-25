@@ -11,7 +11,7 @@
     }
   ],
   "content": {
-    "title": "Zinc Cloud ",
+    "title": "Simple, transparent pricing ",
     "subtitle": "",
     "btn": {
       "monthlyBtn": "CLOUD",
@@ -34,7 +34,7 @@
         "key":"primary",
         "image": "/img/pro.svg",
         "label": "What's included",
-        "sublabel":"Everything in Developer Plan,plus",
+        "sublabel":"Everything in Developer Plan, plus:",
         "items": [
           "Additional Ingestion($0.50/GB)",
           "Additional Query Volume($5/TB)"
