@@ -32,25 +32,25 @@
     "subtitle": "",
     "items": [
       {
-        "image": "/img/CardIcon.svg",
+        "image": "/img/products/zplane/Elasticsearch.svg",
         "title": "Elasticsearch API compatibility",
         "desc": "Search and aggregation API compatibility with Elasticsearch",
         "btnText": ""
       },
       {
-        "image": "/img/CardIcon.svg",
+        "image": "/img/products/zplane/sso.svg",
         "title": "SSO <span class='tag'>Coming Soon</span>",
         "desc": "SSO enables users to use their existing enterprise identity providers for seamless and secure access to ZincObserve.",
         "btnText": ""
       },
       {
-        "image": "/img/CardIcon.svg",
+        "image": "/img/products/zplane/CrossCluster.svg",
         "title": "Cross-cluster search <span class='tag'>Coming Soon</span>",
         "desc": "Cross-cluster search allows users to search and analyze data across multiple ZincObserve clusters, providing a unified view of their observability data.",
         "btnText": ""
       },
       {
-        "image": "/img/CardIcon.svg",
+        "image": "/img/products/zplane/PrioritySupport.svg",
         "title": "Priority support with SLAs",
         "desc": "We ensures that enterprise customers receive timely and effective support from ZincObserve's expert support team, helping to ensure the smooth operation of their observability platform.",
         "btnText": ""
