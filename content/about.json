@@ -18,12 +18,12 @@
       {
         "title": "ZincLab’s all-in-one observability solutions",
         "desc": "With ZincLabs, you can consolidate all of your security and observability data needs into one platform. As the world continues to evolve, ZincLabs delivers invaluable insights to foster innovation, strengthen security, and bolster resilien Trust in ZincLabs to help you stay ahead of the curve and achieve your goals",
-        "image": "/img/feature.svg"
+        "image": "/img/aboutus/zinclabsolution.svg"
       },
       {
         "title": "We offer productivity, Efficiency, budget-friendly solutions for your business needs",
         "desc": "<ul class='list-disc'><li class='py-1'>Upto 140x low storage costs</li><li class='py-1'>High speed and performance</li><li class='py-1'>Logs, metrics, traces all at one place</li><li class='py-1'>Alerts that can keep you up to date and save time</li><li class='py-1'>Advanced GUI</li><li class='py-1'>User defined Ingest and Query functions/outstanding features and extensive support for functions</li><li class='py-1'>Advanced data analytics with dashboards</li></ul>",
-        "image": "/img/feature.svg"
+        "image": "/img/aboutus/feature.svg"
       }
     ]
   },
