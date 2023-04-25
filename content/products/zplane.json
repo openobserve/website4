@@ -1,6 +1,6 @@
 {
-  "title": "ZPlane",
-  "desc":"The ZPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management.",
+  "seotitle": "ZPlane",
+  "seodesc":"The ZPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management.",
   "breadcrumbs": [
     {
       "name": "Home",

@@ -68,7 +68,7 @@ const { data } = await useAsyncData(async () => {
   return await queryContent("/pricing").findOne();
 });
 useSeoMeta({
-  title: data.title,
-  description: data.desc,
-});
+  title:data.seotitle,
+  description:data.seodesc
+})
 </script>

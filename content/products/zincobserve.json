@@ -1,6 +1,6 @@
 {
-  "title": "ZincObserve",
-  "desc": "ZincObserve is a cloud-based observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
+  "seotitle": "ZincObserve",
+  "seodesc": "ZincObserve is a cloud-based observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
   "breadcrumbs": [
     {
       "name": "Home",

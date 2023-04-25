@@ -13,7 +13,7 @@ const { data } = await useAsyncData(async () => {
   return await queryContent("/usecases/traces").findOne();
 });
 useSeoMeta({
-  title: data.title,
-  description: data.desc,
-});
+  title:data.seotitle,
+  description:data.seodesc
+})
 </script>

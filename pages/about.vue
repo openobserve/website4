@@ -19,9 +19,9 @@ const { data } = await useAsyncData(async () => {
   return await queryContent("/about").findOne();
 });
 useSeoMeta({
-  title: data.title,
-  description: data.desc,
-});
+  title:data.seotitle,
+  description:data.seodesc
+})
 
 </script>
 <style scoped>
