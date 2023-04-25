@@ -113,7 +113,7 @@ const footerData = {
       },
       {
         text: "Bug Bounty Program",
-        link: "/bug-bounting-program"
+        link: "/bug-bounty-program"
       },
       {
         text: "Privacy Policy",
