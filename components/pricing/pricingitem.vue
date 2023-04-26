@@ -5,12 +5,30 @@
     <div class="">
       <div class="flex flex-row justify-between">
         <div class="flex flex-row space-x-4">
-          <div class="rounded-xl" :class="item.key === 'primary'? 'bg-theme-primary-100' : 'bg-theme-secondary-100'">
-            <img :src="item.image" :alt="item.heading" class="p-4" />
+          <div
+            class="rounded-xl"
+            :class="
+              item.key === 'primary'
+                ? 'bg-theme-primary-100'
+                : 'bg-theme-secondary-100'
+            "
+          >
+            <img
+              :src="item.image"
+              :alt="item.heading"
+              class="p-4 h-20 w-20 object-contain"
+            />
           </div>
           <div class="flex flex-col">
             <h4 class="text-lg font-normal text-black">{{ item.heading }}</h4>
-            <h2 class="text-3xl font-bold" :class="item.key === 'primary'? 'text-theme-primary' : 'text-theme-secondary'">
+            <h2
+              class="text-3xl font-bold"
+              :class="
+                item.key === 'primary'
+                  ? 'text-theme-primary'
+                  : 'text-theme-secondary'
+              "
+            >
               {{ item.subtitle }}
             </h2>
           </div>
@@ -21,16 +39,26 @@
       </div>
       <div class="py-5">
         <h1 class="text-xl font-semibold text-black mb-4">{{ item.label }}</h1>
-        <h3 class="text-xl font-semibold text-black" v-show="item.sublabel">{{ item.sublabel }}</h3>
-
+        <h3 class="text-lg font-normal text-black" v-show="item.sublabel">
+          {{ item.sublabel }}
+        </h3>
       </div>
       <div class="py-6">
-        <div v-for="(it, index) in item.items" class="flex flex-row ">
-        
-          <p
-            :key="index"
-            class="text-black font-normal text-lg py-1"
-          >
+        <div v-for="(it, index) in item.items" class="flex flex-row py-1 items-center">
+          <span>
+            <img
+              src="/img/Check.svg"
+              alt="check icon"
+              class="p-2 rounded-full h-7 w-7"
+              :class="
+                item.key === 'primary'
+                  ? 'bg-theme-primary'
+                  : 'bg-theme-secondary'
+              "
+            />
+          </span>
+
+          <p :key="index" class="text-black font-normal text-base ml-2">
             {{ it }}
           </p>
         </div>
