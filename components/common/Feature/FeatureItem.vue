@@ -13,11 +13,11 @@
             </div>
             <div>
               <h2 class="text-base md:text-3xl text-center md:text-left font-bold text-black inline-block "
-                v-html="data.title"></h2>
+                v-html="data.title || ''"></h2>
             </div>
             <div>
               <h3 class="text-sm md:text-base text-center md:text-left italic mb-4 text-black inline-block "
-                v-html="data.subtitle"></h3>
+                v-html="data.subtitle || ''"></h3>
             </div>
             <p class="text-justify text-sm lg:text-base leading-loose font-normal mt-1 md:mt-3" v-html="data.desc"></p>
             <div v-if="data.btnText" class="flex justify-center md:justify-start py-5">
