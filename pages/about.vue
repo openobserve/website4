@@ -1,28 +1,22 @@
 <template>
   <HeroSection :data="data.heroSection"></HeroSection>
   <WhatWeDo :data="data.aboutus" />
-  <Section>
-    <div 
+  <div
     :style="{ backgroundImage: `url(${data.data.backgroundImage})` }"
-      class="background py-16"
+    class="background"
   >
-    <Feature  :items="data.data.items" :title="data.data.heading" />
+    <Feature :items="data.data.items" :title="data.data.heading" />
   </div>
-
-  </Section>
-  
-    <Investors :data="data.items" />
-
+  <Investors :data="data.items" />
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {
   return await queryContent("/about").findOne();
 });
 useSeoMeta({
-  title:data.seotitle,
-  description:data.seodesc
-})
-
+  title: data.seotitle,
+  description: data.seodesc,
+});
 </script>
 <style scoped>
 .background {

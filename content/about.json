@@ -29,14 +29,10 @@
   },
   "items": {
     "title": "Investors",
-    "images1": [
-      "/img/aboutus/Investor1.png",
-      "/img/aboutus/Investor1.png",
-      "/img/aboutus/Investor1.png"
-    ],
-    "images2": [
-      "/img/aboutus/Investor1.png",
-      "/img/aboutus/Investor1.png"
+    "images": [
+      "/img/aboutus/Investor1.svg",
+      "/img/aboutus/Investor2.svg"
     ]
+   
   }
 }

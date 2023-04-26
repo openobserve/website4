@@ -1,6 +1,6 @@
 <template>
  <Section>
-    <XyzTransition appear-visible xyz="fade down-1 delay-2">
+    <!-- <XyzTransition appear-visible xyz="fade down-1 delay-2"> -->
       <div class="px-4 container mx-auto xyz-nested">
         <div :class="[directions[direction]]">
           <div :class=[variation[variant].el1] class="background object-contain px-16">
@@ -28,7 +28,7 @@
           </div>
         </div>
       </div>
-    </XyzTransition>
+    <!-- </XyzTransition> -->
   </Section>
 </template>
 <script setup>
