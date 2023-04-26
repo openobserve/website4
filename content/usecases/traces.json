@@ -33,22 +33,22 @@
       {
         "title": "Unified Tracing Interface",
         "desc": "Quickly pinpoint the root causes of issues by viewing traces alongside logs, infrastructure metrics, database queries, network calls,and frontend telemetry in a single unified interface.",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/usecases/traces/UnifiedTracing.svg"
       },
       {
         "title": "Code Performance Analysis",
         "desc": "Enhance code performance by gaining visibility into the resource usage and execution time of each method and line of code.",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/usecases/traces/Codeperformance.svg"
       },
       {
         "title": "Real-Time Performance Insights",
         "desc": "Swiftly identify the root cause of service issues through a unified dashboard displaying health metrics, dependencies, and telemetry data from your infrastructure and databases.",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/usecases/traces/RealtimePerformance.svg"
       },
       {
         "title": "Code Vulnerability Scanning",
         "desc": "Protect your cloud applications by proactively identifying live security threats and code vulnerabilities in production, enabling you to mitigate them before they result in breaches.",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/usecases/traces/CodeVulnerability.svg"
       }
     ]
   },
