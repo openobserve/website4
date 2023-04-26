@@ -79,7 +79,7 @@ const props = defineProps({
   background-size: contain;
   object-fit: contain;
   /* width: 100vw; */
-  height: calc(90vh - 100px);
+  height: calc(95vh - 100px);
   background-position: center;
 }
 

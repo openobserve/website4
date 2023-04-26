@@ -6,8 +6,10 @@
       :paths="[{ name: 'Home', to: '/' }, { name: 'Privacy-Policy' }]"
     />
     <main>
-      <div class="prose container max-w-none mx-auto p-4">
-        <ContentRenderer :value="data" />
+      <div class="container mx-auto">
+        <div class="prose max-w-none p-4">
+          <ContentRenderer :value="data" />
+        </div>
       </div>
     </main>
   </div>

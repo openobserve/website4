@@ -1,7 +1,7 @@
 <template>
     <div class="text-white pattern-bg  ">
       <div
-        class="w-full h-full md:px-14 px-4 flex flex-col text-left justify-center py-6"
+        class="w-full h-full  px-4 flex flex-col text-left justify-center py-6"
       >
         <slot name="title" :title="title">
           <div v-if="title">
