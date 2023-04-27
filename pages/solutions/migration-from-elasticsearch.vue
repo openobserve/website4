@@ -5,19 +5,8 @@
       :title="data.title"
       :paths="data.breadcrumbs"
     />
-    <Section>
-      <SectionHeading
-        :title="data.items.heading"
-        :subtitle="data.items.subheading"
-      />
-      <Feature variant="1:1" direction="left" :data="data.items" />
-      <Feature variant="1:1" direction="right" :data="data.items" />
-      <Feature variant="1:1" direction="left" :data="data.items" />
-    </Section>
-    <!-- <Card :items="data.content" /> -->
-    <Section>
-      <FaqSection :items="data.faqData"/>
-    </Section>
+    <Feature :items="data.content.items" :title="data.content.title" :subtitle="data.content.subtitle"/>
+    <FaqSection :items="data.faqData" />
   </div>
 </template>
 <script setup>
@@ -27,7 +16,7 @@ const { data } = await useAsyncData(async () => {
   ).findOne();
 });
 useSeoMeta({
-  title:data.title,
-  description:data.desc
-})
+  title: data.title,
+  description: data.desc,
+});
 </script>

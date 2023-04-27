@@ -7,7 +7,7 @@
 <script setup>
 const props = defineProps({
   items:{
-    type:String,
+    type:Array,
   },
   title:{
     type:String

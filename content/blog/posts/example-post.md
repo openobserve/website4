@@ -2,7 +2,7 @@
 title: Example Post
 seoTitle: Example Post
 description: "this is an example post"
-img: img/feature.webp
+img: img/feature.svg
 alt: Zinc
 slug: example-post
 author: example
