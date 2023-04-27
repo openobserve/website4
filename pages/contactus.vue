@@ -36,11 +36,9 @@
                       <div class="font-semibold text-lg">
                         {{ data.content.mail.title }}
                       </div>
-                      <ul>
                         <a :href="'mailto:' + emails">{{
                           data.content.mail.text
                         }}</a>
-                      </ul>
                     </div>
                   </div>
                   <div class="flex">
@@ -49,11 +47,9 @@
                       <div class="font-semibold text-lg">
                         {{ data.content.phone.title }}
                       </div>
-                      <ul>
                         <a :href="'tel:' + mobile">{{
                           data.content.phone.text
                         }}</a>
-                      </ul>
                     </div>
                   </div>
                 </div>
