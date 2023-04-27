@@ -7,13 +7,13 @@
       <div class="py-2 md:py-10" v-for="(item, index) in items.items">
         <div class="flex justify-center py-2 items-center" :key="index">
           <h2
-            class="rounded-full text-white h-28 w-28 font-semibold text-center flex items-center justify-center text-5xl"
+            class="rounded-full text-white  font-semibold text-center flex items-center justify-center text-xl md:text-2xl lg:text-5xl"
           >
             {{ item.number }}
           </h2>
         </div>
         <div>
-          <p class="text-center text-white font-medium text-lg">
+          <p class="text-center text-white font-medium text-base md:text-lg">
             {{ item.text }}
           </p>
         </div>
