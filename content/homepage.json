@@ -49,7 +49,7 @@
       "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
       "subtitle": "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
-      "image": "/img/homepage/herosectionImage2.svg",
+      "image": "/img/homepage/hero3.png",
       "btnText": "Get started for free",
       "btnTo": "https://observe.zinc.dev/",
       "btnTarget": "_blank",

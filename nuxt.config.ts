@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   extends: [
-    // "@nuxt-themes/docus",
+    "@nuxt-themes/docus",
     "./blog",
     "nuxt-seo-kit",
   ],
