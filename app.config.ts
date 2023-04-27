@@ -9,6 +9,10 @@ export default defineAppConfig({
     },
     header:{
       logo: true,
+    },
+    main:{
+      fluid: true,
+      padded: true
     }
   }
 })
