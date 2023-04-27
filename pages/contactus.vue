@@ -13,14 +13,14 @@
           class="md:w-1/2 w-full overflow-hidden flex flex-col justify-start space-y-4 items-start md:px-10 px-2 py-5 md:ml-4 ml-0 md:mt-20 mt-0 md:mb-20 mb-0"
         >
           <!-- START Contact Details-->
-          <img :src="data.content.image" />
+          <img :src="data.content.image" :alt="data.content.title"/>
           <div>
             <div class="text-3xl">{{ data.content.title }}</div>
             <div>
               <div class="w-full flex flex-col items-center space-y-4 py-4">
                 <div class="w-full flex flex-col space-y-4">
                   <div class="flex">
-                    <img :src="data.content.address.icon" class="max-h-12" />
+                    <img :src="data.content.address.icon" class="max-h-12" :alt="data.content.address.title"/>
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.address.title }}
@@ -31,7 +31,7 @@
                     </div>
                   </div>
                   <div class="flex">
-                    <img :src="data.content.mail.icon" class="max-h-12" />
+                    <img :src="data.content.mail.icon" class="max-h-12"  :alt="data.content.mail.title"/>
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.mail.title }}
@@ -44,7 +44,7 @@
                     </div>
                   </div>
                   <div class="flex">
-                    <img :src="data.content.phone.icon" class="max-h-12" />
+                    <img :src="data.content.phone.icon" class="max-h-12" :alt="data.content.phone.title"/>
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.phone.title }}

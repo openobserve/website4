@@ -4,7 +4,7 @@
       <div class="px-4 container mx-auto xyz-nested">
         <div :class="[directions[direction]]">
           <div :class=[variation[variant].el1] class="background object-contain px-16">
-            <img :src="data.image" class="object-contain" alt="image" />
+            <img :src="data.image" class="object-contain" :alt="data.tagline" />
           </div>
           <div :class='["md:pt-0 pt-5", direction == "left" ? "md:pl-8" : "md:pr-8", variation[variant].el2]'>
             <div v-if="data.tagline" class="text-center md:text-left text-xs md:text-sm lg:text-sm mb-4">

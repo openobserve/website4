@@ -23,7 +23,7 @@
                 ? 'http://placehold.jp/24/bebebe/ffffff/600x300.png?text=.'
                 : getBlogImage(article)
             "
-            alt=""
+            alt="article image"
           />
           <div style="flex: 2" class="px-4 py-2">
             <div class="">
@@ -76,6 +76,7 @@
                     :src="`/${
                       authors?.find((a) => a.slug == article?.author)?.img
                     }`"
+                    alt="author image"
                     class="
                       mr-2
                       w-10

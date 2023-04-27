@@ -36,7 +36,7 @@
                     ? 'http://placehold.jp/24/bebebe/ffffff/600x300.png?text=.'
                     : getBlogImage(article)
                 "
-                alt=""
+                alt="blog recent post"
               />
             </div>
             <h2

@@ -73,7 +73,7 @@
           <img
             class="w-32 h-32 md:w-64 object-cover object-top md:h-auto md:rounded-l-xl md:rounded-r-none rounded-full mx-auto"
             :src="getAuthorImage(author)"
-            alt=""
+            alt="authorImage"
             width="384"
             height="512"
           />

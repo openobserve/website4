@@ -33,9 +33,9 @@
             </h2>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <img src="" alt="" />
-        </div>
+        </div> -->
       </div>
       <div class="py-5">
         <h1 class="text-xl font-semibold text-black mb-4">{{ item.label }}</h1>

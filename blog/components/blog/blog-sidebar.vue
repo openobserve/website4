@@ -181,6 +181,7 @@
                   :src="`/${
                     authors?.find((a) => a.slug == article?.author)?.img
                   }`"
+                  alt="authorImage"
                   class="
                     w-8
                     h-8
