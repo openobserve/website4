@@ -190,14 +190,4 @@ const footerData = {
 </script>
 
 <style scoped>
-.background {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  /* width: 100vw; */
-  /* height: calc(100vh - 100px); */
-  background-position: center;
-}
 </style>

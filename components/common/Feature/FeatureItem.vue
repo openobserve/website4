@@ -3,7 +3,7 @@
     <!-- <XyzTransition xyz="fade up big"> -->
       <div class="px-4 container mx-auto xyz-nested">
         <div :class="[directions[direction]]">
-          <div :class=[variation[variant].el1] class="flex items-center background object-contain px-16">
+          <div :class=[variation[variant].el1] class="flex items-center bg-no-repeat bg-auto object-contain px-16">
             <img :src="data.image" class="object-contain" :alt="data.tagline" />
           </div>
           <div :class='["md:pt-0 pt-5", direction == "left" ? "md:pl-8" : "md:pr-8", variation[variant].el2]'>
@@ -34,11 +34,11 @@
 <script setup>
 const variation = {
   "1:1": {
-    el1: "md:w-1/2 w-60 object-contain",
+    el1: "md:w-1/2 w-full object-contain",
     el2: "md:w-1/2"
   },
   "1:2": {
-    el1: "md:w-1/3 w-60 ",
+    el1: "md:w-1/3 w-full ",
     el2: "md:w-2/3"
   }
 };
@@ -70,9 +70,4 @@ const props = defineProps({
 })
 </script>
 <style scoped>
-.background {
-  background-repeat: no-repeat;
-  object-fit: contain;
-  background-size: auto;
-}
 </style>

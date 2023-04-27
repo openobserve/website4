@@ -3,7 +3,7 @@
   <WhatWeDo :data="data.aboutus" />
   <div
     :style="{ backgroundImage: `url(${data.data.backgroundImage})` }"
-    class="background"
+    class="bg-no-repeat bg-cover object-contain w-full h-full bg-center"
   >
     <Feature :items="data.data.items" :title="data.data.heading" />
   </div>
@@ -19,20 +19,4 @@ useSeoMeta({
 });
 </script>
 <style scoped>
-.background {
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  /* width: 100vw; */
-  /* height: calc(100vh - 100px); */
-  background-position: center;
-}
-/* @media only screen and (max-width: 768px) {
-  .background {
-    background-size: 100vw 100vh;
-    height: 100vh;
-  }
-} */
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="background">
+  <div class="bg-no-repeat bg-contain object-contain min-h-[calc(95vh-100px)] bg-center">
     <swiper-container
       pagination="true"
       navigation="true"
@@ -13,12 +13,4 @@
 
 <script setup></script>
 <style scoped>
-.background {
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: contain;
-  /* width: 100vw; */
-  height: calc(95vh - 100px);
-  background-position: center;
-}
 </style>

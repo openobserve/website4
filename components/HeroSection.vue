@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ backgroundImage: `url(${data.backgroundImage})` }"
-    class="background py-10"
+    class="bg-no-repeat bg-contain object-contain min-h-[calc(95vh-100px)] bg-center py-10"
   >
     <div
       class="flex flex-col px-4 md:flex-row w-full h-full container mx-auto"
@@ -74,19 +74,5 @@ const props = defineProps({
 });
 </script>
 <style scoped>
-.background {
-  background-repeat: no-repeat;
-  background-size: contain;
-  object-fit: contain;
-  /* width: 100vw; */
-  height: calc(95vh - 100px);
-  background-position: center;
-}
 
-@media only screen and (max-width: 768px) {
-  .background {
-    background-size: 100vw 100vh;
-    height: 100vh;
-  }
-}
 </style>
