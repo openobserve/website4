@@ -19,10 +19,10 @@
           </span>
         </div>
         <h2
-          class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight"
+          class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-semibold text-black leading-tight"
           v-html="data.title"
         ></h2>
-        <p class="text-center md:text-left mt-6 text-xl font-medium text-black">
+        <p class="text-center md:text-left mt-6 text-xl font-normal text-black">
           {{ data.subtitle }}
         </p>
         <div
