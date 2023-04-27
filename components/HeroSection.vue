@@ -38,7 +38,7 @@
         <img
           :src="data.image"
           alt="herosection image"
-          class="object-center h-full w-full"
+          class="object-center object-contain h-full w-full"
         />
       </div>
     </div>
