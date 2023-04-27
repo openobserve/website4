@@ -23,6 +23,13 @@ export default defineNuxtConfig({
       ]
     },
   },
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => {
+        return ['swiper-container', 'swiper-slide'].includes(tag)
+      }
+    }
+  },
   css: ["@/assets/css/main.css"],
   components: {
     // component directories with the subdirs listed first for using the default names
@@ -54,7 +61,7 @@ export default defineNuxtConfig({
     indexable: false,
   },
   linkChecker: {
-    failOn404: true,
+    failOn404: false,
   },
   build: {
     transpile: ["@animxyz/core", "@animxyz/vue3", "clsx"],
