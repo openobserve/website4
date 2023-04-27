@@ -17,9 +17,7 @@
                 <Dropdown :items="items.solutions" title="Solutions" direction="left" label="productName"
                     triggerMode="hover" onMode="hover" />
                 <div v-for="(item, index) in items.content">
-                    <nuxt-link :to="item.link" :key="index">
-                        <Button variant="header" >{{ item.title }}</Button>
-                    </nuxt-link>
+                        <Button variant="header" :to="item.link" :key="index">{{ item.title }}</Button>
                 </div>
                 <!-- <a href="/" target="_blank">Docs</a> -->
             </div>
