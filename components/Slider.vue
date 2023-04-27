@@ -1,13 +1,18 @@
 <template>
-  <swiper-container pagination="true" navigation="true" loop="true" autoplay-delay="5000" class="background">
-    <slot></slot>
-  </swiper-container>
+  <div class="background">
+    <swiper-container
+      pagination="true"
+      navigation="true"
+      loop="true"
+      autoplay-delay="5000"
+    >
+      <slot></slot>
+    </swiper-container>
+  </div>
 </template>
 
-<script setup>
-  
-</script>
-<style>
+<script setup></script>
+<style scoped>
 .background {
   background-repeat: no-repeat;
   background-size: contain;
