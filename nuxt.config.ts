@@ -10,12 +10,18 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/devtools",
   ],
-  app:{
-    head:{
-       link: [
-      { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }
-    ]
-    }
+  app: {
+    head: {
+      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      script: [
+        {
+          src: "https://buttons.github.io/buttons.js",
+          body: true,
+          async: true,
+          defer: true,
+        },
+      ]
+    },
   },
   css: ["@/assets/css/main.css"],
   components: {
