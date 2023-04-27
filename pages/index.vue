@@ -2,7 +2,7 @@
   <div>
     <Slider>
       <swiper-slide v-for="(item, index) in data.heroSection" :key="index">
-        <HeroSection :data="item"></HeroSection>
+        <HeroSection :data="item" backgroundBg="contain"></HeroSection>
       </swiper-slide>
     </Slider>
     <!-- <HeroSection :data="data.heroSection"></HeroSection> -->

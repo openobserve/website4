@@ -1,5 +1,8 @@
 <template>
-  <HeroSection :data="data.heroSection"></HeroSection>
+  <HeroSection
+    :data="data.heroSection"
+    backgroundBgType="fullWidth"
+  ></HeroSection>
   <WhatWeDo :data="data.aboutus" />
   <div
     :style="{ backgroundImage: `url(${data.data.backgroundImage})` }"
@@ -18,5 +21,4 @@ useSeoMeta({
   description: data.seodesc,
 });
 </script>
-<style scoped>
-</style>
+<style scoped></style>

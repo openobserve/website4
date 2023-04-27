@@ -1,7 +1,8 @@
 <template>
   <div
     :style="{ backgroundImage: `url(${data.backgroundImage})` }"
-    class="bg-no-repeat bg-contain object-contain min-h-[calc(95vh-100px)] bg-center py-10"
+    class="bg-no-repeat min-h-[calc(95vh-100px)] bg-center py-10"
+    :class="bgClasses[backgroundBgType]"
   >
     <div
       class="flex flex-col px-4 md:flex-row w-full h-full container mx-auto"
@@ -49,6 +50,12 @@ const directions = {
   left: "flex  flex-col md:flex-row items-center",
   right: "flex flex-col md:flex-row-reverse items-center ",
 };
+
+const bgClasses = {
+  cover: "bg-cover object-cover",
+  contain: "bg-contain object-contain",
+  fullWidth: "bg-[length:100%_100%]",
+};
 const props = defineProps({
   data: {
     type: Object,
@@ -71,8 +78,10 @@ const props = defineProps({
     type: Boolean,
     default: true,
   },
+  backgroundBgType: {
+    type: String,
+    default: "contain",
+  },
 });
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>
