@@ -25,7 +25,9 @@ body {
     background: white !important;
   }
 }
-
+.page-body{
+  width: 100%;
+}
 .highlight {
   color: #5960B2;
 }

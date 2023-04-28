@@ -14,7 +14,7 @@
           class="text-center md:text-left text-sm md:text-base lg:text-base mb-6"
         >
           <div
-            class="bg-theme-primary-100 rounded-full text-black px-4 py-2"
+            class="bg-theme-primary-100 rounded-full text-black px-4 py-2 inline-block"
             v-html="data.tagline"
           >
       </div>

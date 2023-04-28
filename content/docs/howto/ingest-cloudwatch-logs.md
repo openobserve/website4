@@ -1,6 +1,8 @@
 ---
 title: "Ingest-cloudwatch-logs"
 description: "Let's learn how to use my amazing module."
+bottom: false
+aside: true
 ---
 
 # Ingest Amazon Cloudwatch logs in ZincObserve

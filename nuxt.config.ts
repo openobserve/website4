@@ -22,6 +22,7 @@ export default defineNuxtConfig({
         },
       ]
     },
+    
   },
   vue: {
     compilerOptions: {
@@ -64,6 +65,7 @@ export default defineNuxtConfig({
     failOn404: false,
   },
   build: {
-    transpile: ["@animxyz/core", "@animxyz/vue3", "clsx"],
+    transpile: ["clsx"],
   },
+  
 });
