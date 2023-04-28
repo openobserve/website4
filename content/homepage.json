@@ -113,19 +113,19 @@
         "image": "/img/homepage/search.svg",
         "title": "Search",
         "desc": "Enhance both customer satisfaction and employee productivity by utilizing powerful search capabilities to help everyone find what they need, precisely when they need it. This not only reduces costs and management overhead, but also enables you to concentrate on delivering exceptional search experiences.",
-        "to": "/usecases/logs"
+        "to": ""
       },
       {
         "image": "/img/homepage/observe.svg",
         "title": "Observe",
         "desc": "Leverage complete end-to-end visibility across all your applications and infrastructure to promptly identify and resolve issues before they have an adverse impact on your business. Streamline management processes and access historical data effortlessly, to perform in-depth root-cause analysis.",
-        "to": "/usecases/metrics"
+        "to": ""
       },
       {
         "image": "/img/homepage/analyze.svg",
         "title": "Analyze",
         "desc": "With the most widely deployed observability solution, you can trust in a tool built to unify metrics, logs, and traces, resulting in seamless visibility and valuable insights. Ready-to-Analyze dashboards and scheduled, real-time, and target-based alerting mechanisms simplify your analysis needs, allowing you to quickly and efficiently identify critical issues and take proactive measures to address them.",
-        "to": "/usecases/traces"
+        "to": ""
       }
     ]
   },

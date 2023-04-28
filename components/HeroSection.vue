@@ -13,11 +13,11 @@
           v-if="data.tagline"
           class="text-center md:text-left text-sm md:text-base lg:text-base mb-6"
         >
-          <span
+          <div
             class="bg-theme-primary-100 rounded-full text-black px-4 py-2"
             v-html="data.tagline"
           >
-          </span>
+      </div>
         </div>
         <h2
           class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-semibold text-black leading-tight"
@@ -38,7 +38,7 @@
       <div class="w-full md:w-1/2 md:h-full -mt-10 md:mt-0">
         <img
           :src="data.image"
-          alt="herosection image"
+          :alt="data.title"
           class="object-center object-contain h-full w-full"
         />
       </div>
@@ -84,4 +84,3 @@ const props = defineProps({
   },
 });
 </script>
-<style scoped></style>

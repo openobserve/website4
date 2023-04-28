@@ -3,7 +3,7 @@
     <div
       class="w-full bg-cover bg-[url('/img/homepage/footerbg5.svg')] bg-no-repeat h-full"
     >
-      <footer class="w-full body-font py-20">
+      <footer class="w-full body-font pt-20">
         <div
           class="lg:container px-6 py-10 lg:mx-auto flex md:items-center lg:items-start md:flex-row flex-wrap flex-col w-full"
         >
@@ -75,7 +75,7 @@
                 </ul>
               </div>
               <div class="w-full">
-                <div class="flex flex-col text-left text-white cursor-pointer">
+                <div class="flex flex-col text-left text-white">
                   <h3 class="font-bold text-xl pb-2 text-center md:text-left">
                     {{ footerData.items.title }}
                   </h3>
