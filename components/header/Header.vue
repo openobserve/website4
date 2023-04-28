@@ -50,7 +50,7 @@ const items = {
         },
         {
             title: "Docs",
-            link: "/docs"
+            link: "/"
         },
 
     ],

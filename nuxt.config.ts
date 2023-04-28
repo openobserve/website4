@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   extends: [
-    "@nuxt-themes/docus",
+    // "@nuxt-themes/docus",
     "./blog",
     "nuxt-seo-kit",
   ],
@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     indexable: false,
   },
   linkChecker: {
-    failOn404: false,
+    failOn404: true,
   },
   build: {
     transpile: ["clsx"],

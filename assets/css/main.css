@@ -21,13 +21,9 @@ body {
   color: var(--theme-color-text-primary);
   /* background-color: #ffffff !important; */
 
-  @dark: {
-    background: white !important;
-  }
+  
 }
-.page-body{
-  width: 100%;
-}
+
 .highlight {
   color: #5960B2;
 }
