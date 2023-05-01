@@ -6,7 +6,7 @@
   />
 
   <Feature :items="data.content.items" />
-  <FaqSection :items="data.faqData" />
+  <!-- <FaqSection :items="data.faqData" /> -->
   <LatestBlogPosts />
 </template>
 <script setup>

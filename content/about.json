@@ -3,10 +3,10 @@
   "seodesc": "Making Data-Driven Decisions Easier than Ever!",
   "aboutus": {
     "title": "What We Do",
-    "description": "Looking for a better way to streamline search and optimize application performance?Look no further than ZincObserve - the leading provider of search-powered solutions.<br/><br/>Our suite of Enterprise Search, Observability, and Security solutions are designed to help you quickly and easily find the information you need, without sacrificing application performance. Trust in our open-source softwares, ZincObserve and Zplane to accelerate critical outcomes and improve overall efficiency."
+    "description": "We provide the simplest and most sophisticated open source observability platform. Our flagship product ZincObserve gives you a single unified platform to collect, process, and visualize all your logs, metrics, and traces. We are committed to building the best observability platform for developers and operators. We believe in open source and thrive on building a community around our products. We are a remote-first company with a globally distributed team. We are headquartered in Bangalore, India"
   },
   "heroSection": {
-    "title": "Making Data-Driven Decisions Easier than Ever!",
+    "title": "Simple & sophisticated observability!",
     "subtitle": "",
     "image": "/img/aboutus/aboutushero.svg",
     "backgroundImage": "/img/aboutus/aboutusbg.png"
@@ -16,12 +16,12 @@
     "heading": "Why We Do",
     "items": [
       {
-        "title": "ZincLab’s all-in-one observability solutions",
-        "desc": "With ZincLabs, you can consolidate all of your security and observability data needs into one platform. As the world continues to evolve, ZincLabs delivers invaluable insights to foster innovation, strengthen security, and bolster resilien Trust in ZincLabs to help you stay ahead of the curve and achieve your goals",
+        "title": "Unified observability platform",
+        "desc": "We built ZincObserve because we could not find a platform that could collect, process, and visualize all our logs, metrics, and traces in a single unified fashion. We wanted a platform that was easy to use, scalable, and cost-effective, based on open standards and covered all the pillars of observability.",
         "image": "/img/aboutus/zinclabsolution.svg"
       },
       {
-        "title": "We offer productivity, Efficiency, budget-friendly solutions for your business needs",
+        "title": "Efficiency, Ease of use, Features and Low cost",
         "desc": "<ul class='list-disc'><li class='py-1'>Upto 140x low storage costs</li><li class='py-1'>High speed and performance</li><li class='py-1'>Logs, metrics, traces all at one place</li><li class='py-1'>Alerts that can keep you up to date and save time</li><li class='py-1'>Advanced GUI</li><li class='py-1'>User defined Ingest and Query functions/outstanding features and extensive support for functions</li><li class='py-1'>Advanced data analytics with dashboards</li></ul>",
         "image": "/img/aboutus/feature.svg"
       }

@@ -19,35 +19,32 @@
     }
   ],
   "content": {
-    "title": "ZincObserve Features",
-    "subtitle": "Discover the Game-Changing Features of ZincObserve:",
+    "title": "Struggling with Elasticsearch/Opensearch",
+    "subtitle": "Discover 140x lower cost and extremely low maintenance of ZincObserve.",
     "items": [
       {
-        "title": "ZincObserve is Built for Full - Text Search",
-        "desc": "ZincObserve is a search engine that can be used for text data, logs, metrics, events, and more. It allows you to do a full-text search, among other things, including sending server logs to ZincObserve, pushing your application data, providing a full-text search, or building a search bar in your application.",
+        "title": "ZincObserve is Built for log search from ground up",
+        "desc": "ZincObserve was built from ground up for log search and is heavily optimized for it. It is not a general purpose search engine like Elasticsearch where log search and observability was an afterthought.",
+        "image": "/img/feature.svg"
+      },
+      {
+        "title": "Lower your storage cost of log strage by 140x",
+        "desc": "ZincObserve does not rely on indexing of the data. It stores un-indexed data in compressed format in local disk or object store in parquet columnar format. This allows for much lower compute requirement during data ingestion and very high compression rates resulting in ~140x lower storage cost. No indexing of data means that full scan searches may be slower than Elasticsearch but should still be fast due to multiple other techniques like partitioning and caching.",
+        "image": "/img/feature.svg"
+      },
+      {
+        "title": "Full Elasticsearch compatibility",
+        "desc": "APIs of ZincObserve are fully compatible with Elasticsearch. This means that you can use ZincObserve as a drop-in replacement for Elasticsearch. You can use ZincObserve with any existing tooling that works with Elasticsearch.",
+        "image": "/img/feature.svg"
+      },
+      {
+        "title": "Extremely low operational effort",
+        "desc": "Due to stateless nodes and no indexing, ZincObserve requires very low operational effort. You can run ZincObserve on Kubernetes or on bare metal. You can also run ZincObserve on AWS, GCP or Azure. ZincObserve is also available as a fully managed service on AWS and GCP.",
         "image": "/img/feature.svg"
       }
     ]
   },
    "faqData": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
-    "items": [
-      {
-        "question": "How many programmers does it take to screw a lightbulb?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-        "open": true
-      },
-      {
-        "question": "Who is the most awesome person?",
-        "answer": "You! The viewer!",
-        "open": false
-      },
-      {
-        "question": "How many questions does it take to makes a succesful FAQ Page?",
-        "answer": "This many!",
-        "open": false
-      }
-    ]
+
   }
 }

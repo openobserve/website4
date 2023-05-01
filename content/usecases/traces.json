@@ -21,8 +21,13 @@
   "content": {
     "items": [
       {
-        "title": "Troubleshoot performance issues with Traces",
-        "desc": "ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues. With distributed tracing, you can accurately locate performanc issues within your microservices architecture.<br/><br/>Traces are used to diagnose and debug performance issues in distributed systems by providing insights into the flow of requests and the time taken by each component to process the request. They can be used to identify bottlenecks, analyze the impact of changes, and optimize the performance of the system.",
+        "title": "Troubleshoot performance issues with distributed tracing",
+        "desc": "<ul class='list-disc'> <li class='py-1'>High fidelity tracing for complex distributed systems</li> <li class='py-1'>c++, .Net, Erlang, Elixir, Go, Java, Javascript, PHP, Ruby, Python, Rust, Swift and more supported </li> <li class='py-1'>Backend, frontend, and mobile performance monitoring - all in one</li> <li class='py-1'>Track performance using dashboards</li> </ul>",
+        "image": "/img/usecases/traces/troubleshoot.svg"
+      },
+      {
+        "title": "Open standards through Opentelemetry",
+        "desc": "<ul class='list-disc'> <li class='py-1'>Full opentelemetry support</li> <li class='py-1'>No vendor lock in</li> <li class='py-1'>Built with open source and open standards</li> </ul>",
         "image": "/img/usecases/traces/troubleshoot.svg"
       }
     ]
@@ -39,16 +44,6 @@
         "title": "Code Performance Analysis",
         "desc": "Enhance code performance by gaining visibility into the resource usage and execution time of each method and line of code.",
         "image": "/img/usecases/traces/Codeperformance.svg"
-      },
-      {
-        "title": "Real-Time Performance Insights",
-        "desc": "Swiftly identify the root cause of service issues through a unified dashboard displaying health metrics, dependencies, and telemetry data from your infrastructure and databases.",
-        "image": "/img/usecases/traces/RealtimePerformance.svg"
-      },
-      {
-        "title": "Code Vulnerability Scanning",
-        "desc": "Protect your cloud applications by proactively identifying live security threats and code vulnerabilities in production, enabling you to mitigate them before they result in breaches.",
-        "image": "/img/usecases/traces/CodeVulnerability.svg"
       }
     ]
   },

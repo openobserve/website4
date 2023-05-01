@@ -5,7 +5,7 @@
     :paths="data.breadcrumbs"
   />
   <Feature :items="data.content.items" />
-  <Cards :items="data.tracesData"/>
+  <Cards :items="data.tracesData" />
   <LatestBlogPosts />
 </template>
 <script setup>
@@ -13,7 +13,7 @@ const { data } = await useAsyncData(async () => {
   return await queryContent("/usecases/traces").findOne();
 });
 useSeoMeta({
-  title:data.seotitle,
-  description:data.seodesc
-})
+  title: data.seotitle,
+  description: data.seodesc,
+});
 </script>
