@@ -5,7 +5,6 @@
   ></HeroSection>
   <WhatWeDo :data="data.aboutus" />
   <div
-    :style="{ backgroundImage: `url(${data.data.backgroundImage})` }"
     class="bg-no-repeat bg-cover object-contain w-full h-full bg-center"
   >
     <Feature :items="data.data.items" :title="data.data.heading" />
