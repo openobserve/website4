@@ -69,6 +69,10 @@ defineProps({
       secondary:
         "inline-block px-6 py-2 font-bold text-base rounded-full cursor-pointer text-black hover:text-white border border-theme-primary hover:bg-theme-primary-600 focus:ring-2 ring-offset-1 ring-theme-primary-500",
       blog: "cursor-pointer mt-4 hover:text-theme-primary-400",
+      tryitfree:
+        "inline-block px-4 py-2 rounded-lg bg-theme-secondary-700 hover:bg-theme-secondary-500 font-normal text-base text-white animate-left whitespace-nowrap",
+      requestdemo:
+        "inline-block px-4 py-2 rounded-lg bg-theme-primary-700 hover:bg-theme-primary-500 font-normal text-base text-white animate-left whitespace-nowrap",
     }),
   },
 });

@@ -23,8 +23,10 @@
     "title": "ZincObserve",
     "subtitle": "ZincObserve is a cloud-based observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.ZincObserve's analytics capabilities can turn vast amounts of data into meaningful insights, and its user-defined ingest and query functions based on Lua scripting language provide unparalleled control over observability data.",
     "image": "/img/homepage/zincobservehero.png",
-    "btnText": "Get started for free",
-    "btnTo": "https://observe.zinc.dev/",
+    "btnText1": "Try it free",
+    "btnTo1": "https://observe.zinc.dev/",
+    "btnText2": "Request a demo",
+    "btnTo2": "https://observe.zinc.dev/",
     "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
