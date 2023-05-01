@@ -1,108 +1,97 @@
 <template>
-    <div class="sticky top-0  z-50 backdrop-blur-sm bg-white text-black transition-all duration-500"
-        :class="y > 20 ? 'drop-shadow-md' : ''">
-
-        <div class="lg:block hidden">
-            <LaptopView :items="items" />
-        </div>
-        <div class="lg:hidden block">
-            <MobileView :items="items" />
-        </div>
-
+  <div
+    class="sticky top-0 z-50 backdrop-blur-sm bg-white text-black transition-all duration-500"
+    :class="y > 20 ? 'drop-shadow-md' : ''"
+  >
+    <div class="lg:block hidden">
+      <LaptopView :items="items" />
     </div>
+    <div class="lg:hidden block">
+      <MobileView :items="items" />
+    </div>
+  </div>
 </template>
 <script setup>
-import { useWindowScroll } from '@vueuse/core'
+import { useWindowScroll } from "@vueuse/core";
 const isOpen = ref(false);
 const route = useRoute();
 watch(route, (value) => {
-    isOpen.value = false;
-
+  isOpen.value = false;
 });
 const { y } = useWindowScroll();
 
 const items = {
-    logo:"/img/logo/headerLogo.svg",
-    btn:{
-        text:"Get started for free",
-        link:"https://cloud.zincsearch.com"
+  logo: "/img/logo/headerLogo.svg",
+  btn: {
+    text: "Get started for free",
+    link: "https://cloud.zincsearch.com",
+  },
+  content: [
+    {
+      title: "About",
+      link: "/about",
     },
-    content: [
-        {
-            title: "About",
-            link: "/about"
-        },
-        {
-            title: "FAQs",
-            link: "/faq"
-        },
-        {
-            title: "Pricing",
-            link: "/pricing"
-        },
-        {
-            title: "Careers",
-            link: "/careers"
-        },
-        {
-            title: "Blog",
-            link: "/blog"
-        },
-        {
-            title: "Docs",
-            link: "/"
-        },
+    {
+      title: "FAQs",
+      link: "/faq",
+    },
+    {
+      title: "Pricing",
+      link: "/pricing",
+    },
+    {
+      title: "Careers",
+      link: "/careers",
+    },
+    {
+      title: "Blog",
+      link: "/blog",
+    },
+    {
+      title: "Docs",
+      link: "/",
+    },
+  ],
 
-    ],
+  product: {
+    link: "/products/zincobserve",
+    productName: "Product",
+  },
 
-    products: [
-        {
-            label: '',
-            link: "/products/zincobserve",
-            productName: 'ZincObserve',
-        },
-        {
-            label: '',
-            link: "/products/zplane",
-            productName: 'zPlane',
-        },
-
-    ],
-    useCases: [
-        // {
-        //     label: '',
-        //     link: "",
-        //     productName: 'Observability',
-        //     type:'group'
-        // },
-        {
-            label: '',
-            link: "/usecases/logs",
-            productName: 'Logs',
-        },
-        {
-            label: '',
-            link: "/usecases/metrics",
-            productName: 'Metrics',
-
-        },
-        {
-            label: '',
-            link: "/usecases/traces",
-            productName: 'Traces',
-        },
-        // {
-        //     label: '',
-        //     link: "/usecases/appsearch",
-        //     productName: 'App Search',
-        // },
-    ],
-    solutions: [
-        {
-            label: '',
-            link: "/solutions/migration-from-elasticsearch",
-            productName: 'Migration from Elasticsearch',
-        },
-    ]
-}
+  useCases: [
+    // {
+    //     label: '',
+    //     link: "",
+    //     productName: 'Observability',
+    //     type:'group'
+    // },
+    {
+      label: "",
+      link: "/usecases/logs",
+      productName: "Logs",
+    },
+    {
+      label: "",
+      link: "/usecases/metrics",
+      productName: "Metrics",
+    },
+    {
+      label: "",
+      link: "/usecases/traces",
+      productName: "Traces",
+    },
+    // {
+    //     label: '',
+    //     link: "/usecases/appsearch",
+    //     productName: 'App Search',
+    // },
+  ],
+  solutions: [
+    {
+      label: "",
+      link: "/solutions/migration-from-elasticsearch",
+      productName: "Migration from Elasticsearch",
+    },
+  ],
+};
 </script>
