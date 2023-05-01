@@ -27,11 +27,14 @@
           {{ data.subtitle }}
         </p>
         <div
-          class="flex justify-center md:justify-start py-5"
-          v-if="data.btnText"
+          class="flex flex-row space-x-4 justify-center md:justify-start py-5"
+          v-if="data.btnText1 && data.btnText2"
         >
-          <Button variant="primary" :target="data.btnTarget" :to="data.btnTo">
-            {{ data.btnText }}
+          <Button variant="tryitfree" :target="data.btnTarget" :to="data.btnTo1">
+            {{ data.btnText1 }}
+          </Button>
+          <Button variant="requestdemo" :target="data.btnTarget" :to="data.btnTo2">
+            {{ data.btnText2 }}
           </Button>
         </div>
       </div>
@@ -59,16 +62,6 @@ const bgClasses = {
 const props = defineProps({
   data: {
     type: Object,
-    // sample data
-    // {
-    //   title: "10x" + "<span class='highlight'> lower cost </span>" + "than your existing" + "<span class='highlight'> observability</span>" + " tools.",
-    //   subtitle: " Streamline Your Operations with Worry-Free Observability - Logs,Metrics, Traces and More in One Platform",
-    //   image: "/img/homepage/herosectionImage2.svg",
-    //   btnText: "Get Started For Free",
-    //   btnTo: "https://observe.zinc.dev/",
-    //   btnTarget: "_blank",
-    //   backgroundImage: "/img/homepage/homepagebg3.svg",
-    // };
   },
   direction: {
     type: String,

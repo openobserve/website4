@@ -46,7 +46,7 @@
       <div class="flex items-center space-x-1">
         <GithubCount />
         <GithubForkCount />
-        <Button variant="primary" target="_blank" :to="items.btn.link">{{
+        <Button variant="requestdemo" target="_blank" :to="items.btn.link">{{
           items.btn.text
         }}</Button>
       </div>

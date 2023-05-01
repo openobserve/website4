@@ -30,8 +30,10 @@
       "title": "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
       "subtitle": "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
       "image": "/img/homepage/hero1.png",
-      "btnText": "Get started for free",
-      "btnTo": "https://observe.zinc.dev/",
+      "btnText1": "Try it free",
+      "btnTo1": "https://observe.zinc.dev/",
+      "btnText2": "Request a demo",
+      "btnTo2": "https://observe.zinc.dev/",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     },
@@ -40,8 +42,10 @@
       "title": "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
       "subtitle": "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
       "image": "/img/homepage/hero2.png",
-      "btnText": "Get started for free",
-      "btnTo": "https://observe.zinc.dev/",
+      "btnText1": "Try it free",
+      "btnTo1": "https://observe.zinc.dev/",
+      "btnText2": "Request a demo",
+      "btnTo2": "https://observe.zinc.dev/",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     },
@@ -50,8 +54,10 @@
       "title": "10x <span class='highlight'>lower cost</span> than your existing <span class='highlight'>observability</span> tools",
       "subtitle": "Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes.",
       "image": "/img/homepage/hero3.png",
-      "btnText": "Get started for free",
-      "btnTo": "https://observe.zinc.dev/",
+      "btnText1": "Try it free",
+      "btnTo1": "https://observe.zinc.dev/",
+      "btnText2": "Request a demo",
+      "btnTo2": "https://observe.zinc.dev/",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     }
