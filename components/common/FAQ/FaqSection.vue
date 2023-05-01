@@ -5,7 +5,7 @@
 				:subtitle="items.subtitle"/>
 			<div class="mt-10">
 				<div v-for="(item, index) in items.items" class="w-full max-w-3xl m-auto my-2">
-					<FaqItem :item="item" :key="index" />
+					<FaqItem :item="item" :key="index" :active="clicked === index" :onToggle="() => handleclick(index)"/>
 				</div>
 			</div>
 		</div>
