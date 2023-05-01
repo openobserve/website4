@@ -5,7 +5,7 @@
 				:subtitle="items.subtitle"/>
 			<div class="mt-10">
 				<div v-for="(item, index) in items.items" class="w-full max-w-3xl m-auto my-2">
-					<FaqItem :item="item" :key="index" :active="clicked === index" :onToggle="() => handleclick(index)"/>
+					<FaqItem :item="item" :key="index" />
 				</div>
 			</div>
 		</div>
@@ -17,12 +17,6 @@ defineProps({
 		type:Object
 	}
 })
-const clicked = ref(null);
-const handleclick = (index) => {
-	if (clicked.value === index) {
-		return clicked.value = null;
-	}
-	return clicked.value = index;
-}
+
 
 </script>
