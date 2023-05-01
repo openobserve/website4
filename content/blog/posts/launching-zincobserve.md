@@ -137,7 +137,9 @@ Instead of using raft/paxos for cluster coordination, we chose to use etcd which
 ### Conclusion
 There are over four dozen observability tools out there (probably a lot more), some of which are open source, some are closed source, and others are available only as SaaS. But we still see people struggling with these existing tools for one or more reasons (feature, cost, difficulty in management, and so on).
 
-So we have decided to build ZincObserve to allow teams to do their job efficiently, solve problems effectively, and sleep well at night. To quote one of my mentors, Anand Babu Periasamy (CEO - MinIO), on entering the crowded market of observability - “Why build another mouse trap when so many already exist? Because the rodent problem still exists (and existing mouse traps are not solving the problem).“
+So we have decided to build ZincObserve to allow teams to do their job efficiently, solve problems effectively, and sleep well at night. To quote one of my mentors, Anand Babu Periasamy (CEO - MinIO), on entering the crowded market of observability - 
+
+> Why build another mouse trap when so many already exist? **Because the rodent problem still exists (and existing mouse traps are not solving the problem)**.
 
 Check the [documentation](https://docs.zinc.dev/) to install ZincObserve in under two minutes or simply try the [Zinc cloud platform](https://observe.zinc.dev/).
 
