@@ -40,10 +40,6 @@ const items = {
       link: "/pricing",
     },
     {
-      title: "Careers",
-      link: "/careers",
-    },
-    {
       title: "Blog",
       link: "/blog",
     },
