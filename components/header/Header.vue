@@ -21,40 +21,83 @@ watch(route, (value) => {
 const { y } = useWindowScroll();
 
 const items = {
-    logo:"/img/logo/headerLogo.svg",
-    btn:{
-        text:"Get started for free",
-        link:"https://cloud.zincsearch.com"
+  logo: "/img/logo/headerLogo.svg",
+  btn: {
+    text: "Get started for free",
+    link: "https://cloud.zincsearch.com",
+  },
+  content: [
+    {
+      title: "About",
+      link: "/about",
     },
-    content: [
-        {
-            title: "About",
-            link: "/about"
-        },
-        {
-            title: "FAQs",
-            link: "/faq"
-        },
-        {
-            title: "Pricing",
-            link: "/pricing"
-        },
-        {
-            title: "Blog",
-            link: "/blog"
-        },
-        {
-            title: "Docs",
-            link: "/"
-        },
-
-    ],
+    {
+      title: "FAQs",
+      link: "/faq",
+    },
+    {
+      title: "Pricing",
+      link: "/pricing",
+    },
+    {
+      title: "Careers",
+      link: "/careers",
+    },
+    {
+      title: "Blog",
+      link: "/blog",
+    },
+    {
+      title: "Docs",
+      link: "/",
+    },
+  ],
 
   product: {
     link: "/products/zincobserve",
     productName: "Product",
   },
+  product: {
+    link: "/products/zincobserve",
+    productName: "Product",
+  },
 
+  useCases: [
+    // {
+    //     label: '',
+    //     link: "",
+    //     productName: 'Observability',
+    //     type:'group'
+    // },
+    {
+      label: "",
+      link: "/usecases/logs",
+      productName: "Logs",
+    },
+    {
+      label: "",
+      link: "/usecases/metrics",
+      productName: "Metrics",
+    },
+    {
+      label: "",
+      link: "/usecases/traces",
+      productName: "Traces",
+    },
+    // {
+    //     label: '',
+    //     link: "/usecases/appsearch",
+    //     productName: 'App Search',
+    // },
+  ],
+  solutions: [
+    {
+      label: "",
+      link: "/solutions/migration-from-elasticsearch",
+      productName: "Migration from Elasticsearch",
+    },
+  ],
+};
   useCases: [
     // {
     //     label: '',
