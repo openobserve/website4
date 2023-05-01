@@ -62,7 +62,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <p class="mt-2 text-gray-600">
+              <p class="mt-2 text-gray-600 text-sm">
                 {{ truncate(article.description) }}
               </p>
             </div>
