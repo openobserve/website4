@@ -1,6 +1,6 @@
 ---
-title: Launching Zincobserve
-seoTitle: Launching Zincobserve
+title: Elasticsearch alternative in rust with 140x lower storage cost - ZincObserve
+seoTitle: Elasticsearch alternative in rust with 140x lower storage cost - ZincObserve
 description: "ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: img/homepage/hero1.png
 alt: Zincobserve
@@ -8,15 +8,19 @@ slug: launching-zincobserve
 author: prabhat
 publishDate: 2023-04-27
 categories:
-  - Category 1
-  - Category 2
+  - launch
+  - cost
+  - observability
 tags:
-  - Tag 1
-  - Tag 2
-  - Tag 3
+  - launch
+  - cost
+  - observability
+  - logs
+  - metrics
+  - traces
 ---
 
-### <a name="_d1be84otpjcp"></a>Introduction
+### Introduction
 ‘ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs.
 
 We built “ZincObserve” with the following design principles and architecture in mind:
@@ -31,7 +35,7 @@ We built “ZincObserve” with the following design principles and architecture
 1. Core engine designed to offer **a complete observability solution** (logs, metrics, traces) from the ground up and not just some features as an afterthought retrofitting things
 
 We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But now let’s take a look at why we even thought of building ZincObserve in the first place.
-### <a name="_wl92k840ruto"></a>Yet another log search engine!!! Why?
+### Yet another log search engine!!! Why?
 When I built [ZincSearch](https://github.com/zinclabs/zincsearch) back in 2021, I did not expect that it would go on to get more than 14k stars on GitHub in about a year and become one of the [fastest growing projects of 2022 on GitHub](https://runacap.com/ross-index/annual-2022/). ZincSearch is currently used by hundreds of organizations in production for log search and analysis despite its minimal feature set.
 
 Why did these organizations choose ZincSearch? The vast majority of customers indicated the following pain points with their existing observability solutions:
@@ -71,7 +75,7 @@ We also saw the limitations of SaaS platforms like Datadog, Loggly, Papertrail, 
 Drawing on the experience of our team members and mine working with hundreds of AWS customers as an AWS Solutions Architect, we built a system that's both simple for beginners and sophisticated for advanced users. 
 
 Unlike existing systems built with outdated technologies, we're building a full observability platform using modern technologies that encompasses logs, metrics, and traces.
-### <a name="_yswd4hghjtn8"></a>Guiding principles
+### Guiding principles
 When we decided to finally build, we had the following principles that we wanted to uphold:
 
 1. Day 1: Ease of getting started
@@ -95,7 +99,7 @@ When we decided to finally build, we had the following principles that we wanted
    1. Performance is generally a tradeoff. In situations of tradeoffs, it should be generally acceptable to the majority of the users with excellent tradeoff value in return.
 
 Next step was to build the actual system which took us several months.
-### <a name="_etfocu41vokx"></a>So what am I getting?
+### So what am I getting?
 We built an open source observability platform “ZincObserve” that is:
 
 1. Super easy to use
@@ -124,13 +128,13 @@ We built an open source observability platform “ZincObserve” that is:
 Below is the result of storage utilization when we ingested our kubernetes cluster logs in both ZincObserve and Elasticsearch for a couple of hours.
 
 ![](/img/blog/blog1.png)
-### <a name="_vt8vfxqqjwr4"></a>Trade Offs
+### Trade Offs
 We chose to do certain things differently that may affect how it will perform in your environment.
 
 ZincObserve does not index data like Elasticsearch, but compresses it and stores it on S3. This results in extremely low storage cost and very lower computing power requirement during ingestion, but requires more compute power during search. ZincObserve should use lower compute power for analytics queries and be faster due to its columnar storage. We will be running benchmarks in due course to assert this.
 
 Instead of using raft/paxos for cluster coordination, we chose to use etcd which allows much better scaling and cluster coordination. However this introduces etcd management. Etcd management is much easier due to its small footprint compared to full-fledged databases, but nevertheless, there is some work involved in taking backups and keeping it up and running. We plan to provide a hosted etcd that users can use to alleviate this in due course.
-### <a name="_52wg3id900td"></a>Conclusion
+### Conclusion
 There are over four dozen observability tools out there (probably a lot more), some of which are open source, some are closed source, and others are available only as SaaS. But we still see people struggling with these existing tools for one or more reasons (feature, cost, difficulty in management, and so on).
 
 So we have decided to build ZincObserve to allow teams to do their job efficiently, solve problems effectively, and sleep well at night. To quote one of my mentors, Anand Babu Periasamy (CEO - MinIO), on entering the crowded market of observability - “Why build another mouse trap when so many already exist? Because the rodent problem still exists (and existing mouse traps are not solving the problem).“

@@ -17,48 +17,78 @@
   "faqs": {
     "items": [
       {
-        "question": "How many programmers does it take to screw a lightbulb?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "question": "What do you do?",
+        "answer": "Zinc Labs Inc is the maker of ZincObserve, an open source observability tool for logs, metrics and traces.",
         "open": true
       },
       {
-        "question": "Who is the most awesome person?",
-        "answer": "You! The viewer!",
-        "open": false
-      },
-      {
-        "question": "How many questions does it take to makes a succesful FAQ Page?",
-        "answer": "This many!",
-        "open": false
-      },
-      {
-        "question": "How many programmers does it take to screw a lightbulb?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "question": "What is ZincObserve?",
+        "answer": "ZincObserve is an open-source observability platform that provides a unified view of logs, metrics and traces.",
         "open": true
       },
       {
-        "question": "Who is the most awesome person?",
-        "answer": "You! The viewer!",
+        "question": "How do I send my logs to ZincObserve?",
+        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, etc. or using the ZincObserve API.",
         "open": false
       },
       {
-        "question": "How many questions does it take to makes a succesful FAQ Page?",
-        "answer": "This many!",
-        "open": false
-      },
-      {
-        "question": "How many programmers does it take to screw a lightbulb?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "question": "How do I send metrics data to ZincObserve?",
+        "answer": "You can send metrics data to ZincObserve using prometheus remote-write API or using the ZincObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
         "open": true
       },
       {
-        "question": "Who is the most awesome person?",
-        "answer": "You! The viewer!",
+        "question": "How do I send traces to ZincObserve?",
+        "answer": "You can use opentelemetry libraries to instrument your application and send traces to ZincObserve. You can also use the ZincObserve API to send traces.",
         "open": false
       },
       {
-        "question": "How many questions does it take to makes a succesful FAQ Page?",
-        "answer": "This many!",
+        "question": "Do I need to install ZincObserve to use it?",
+        "answer": "You can choose to install ZincObserve on your own infrastructure or use the Zinc cloud.",
+        "open": false
+      },
+      {
+        "question": "Where does ZincObserve store data?",
+        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZinObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for ingle node installation and in etcd for HA installation.",
+        "open": true
+      },
+      {
+        "question": "Can I build dashboards in ZincObserve?",
+        "answer": "Yes, You can build dashboards in ZincObserve. For Logs and traces data you can use SQL like queries to build dashboards. For metrics data you can use both PromQL and SQL to build dashboards. You can have data from logs, metrics and traces in the same dashboard giving you a unified view of all data.",
+        "open": false
+      },
+      {
+        "question": "Can ZincObserve send alerts?",
+        "answer": "Yes, ZincObserve can send alerts using webhooks. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data. You can configure ZincObserve to send alerts to many sources like slack, teams, prometheus alertmanager and more.",
+        "open": false
+      },
+      {
+        "question": "Is ZinObserve mult-tenant?",
+        "answer": "Yes, You can use ZincObserve in a multi-tenant mode. You can create multiple organizations and each organization can have multiple users. Each organizations users and data are isolated for that organization.",
+        "open": false
+      },
+      {
+        "question": "Can I deploy ZincObserve on Kubernetes?",
+        "answer": "Yes, You can use the official helm chart to deploy ZincObserve on Kubernetes. You can also use the zctl to deploy ZincObserve on Kubernetes.",
+        "open": false
+      },
+      {
+        "question": "What are ingest functions?",
+        "answer": "Ingest functions in ZincObserve are created using VRL a javascript like language. Ingest functions can be used to parse, filter, transform and enrich data at the time of ingestion. You can use ingest functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Ingest functions run on the incoming data before it is stored in ZincObserve",
+        "open": false
+      },
+      {
+        "question": "What are query functions?",
+        "answer": "Query functions in ZincObserve are created using VRL a javascript like language. Query functions can be used to parse, filter, transform and enrich data. You can use query functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Query functions are used at the time of query when data has already been ingested into ZincObserve.",
+        "open": false
+      },
+      {
+        "question": "Does ZincObserve provide a Web UI?",
+        "answer": "ZincObserve  provide a very advanced WebUI. You can use the WebUI to build dashboards, alerts, ingest functions, query functions and more. You can also use the WebUI to view logs, metrics and traces data.",
+        "open": false
+      },
+      {
+        "question": "How does ZincObserve compare to Elasticsearch?",
+        "answer": "ZincObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes ZincObserve can scale much faster than Elasticsearch. ZincObserve has been written in rust and enjoys its high performance and low memory footprint. ZincObserve is also much easier to operate than Elasticsearch. ZincObserve has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
         "open": false
       }
     ]
