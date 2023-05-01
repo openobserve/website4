@@ -7,7 +7,6 @@
       <SectionHeading
         :title="items.title"
         :subtitle="items.subtitle"
-        align="center"
       />
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-20 container mx-auto py-16 px-4"
