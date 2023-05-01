@@ -57,18 +57,8 @@ const items = {
     link: "/products/zincobserve",
     productName: "Product",
   },
-  product: {
-    link: "/products/zincobserve",
-    productName: "Product",
-  },
-
+ 
   useCases: [
-    // {
-    //     label: '',
-    //     link: "",
-    //     productName: 'Observability',
-    //     type:'group'
-    // },
     {
       label: "",
       link: "/usecases/logs",
@@ -83,48 +73,7 @@ const items = {
       label: "",
       link: "/usecases/traces",
       productName: "Traces",
-    },
-    // {
-    //     label: '',
-    //     link: "/usecases/appsearch",
-    //     productName: 'App Search',
-    // },
-  ],
-  solutions: [
-    {
-      label: "",
-      link: "/solutions/migration-from-elasticsearch",
-      productName: "Migration from Elasticsearch",
-    },
-  ],
-};
-  useCases: [
-    // {
-    //     label: '',
-    //     link: "",
-    //     productName: 'Observability',
-    //     type:'group'
-    // },
-    {
-      label: "",
-      link: "/usecases/logs",
-      productName: "Logs",
-    },
-    {
-      label: "",
-      link: "/usecases/metrics",
-      productName: "Metrics",
-    },
-    {
-      label: "",
-      link: "/usecases/traces",
-      productName: "Traces",
-    },
-    // {
-    //     label: '',
-    //     link: "/usecases/appsearch",
-    //     productName: 'App Search',
-    // },
+    }
   ],
   solutions: [
     {
