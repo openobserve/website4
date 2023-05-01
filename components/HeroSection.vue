@@ -11,7 +11,7 @@
       <div class="w-full md:w-1/2 py-4 md:py-16 lg:py-24 md:px-6 lg:px-10">
         <div
           v-if="data.tagline"
-          class="text-center md:text-left text-sm md:text-base lg:text-base mb-6"
+          class="text-center md:text-left text-sm mb-6"
         >
           <div
             class="bg-theme-primary-100 rounded-full text-black px-4 py-2 inline-block"
@@ -23,7 +23,7 @@
           class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-semibold text-black leading-tight"
           v-html="data.title"
         ></h2>
-        <p class="text-center md:text-left mt-6 text-xl font-normal text-black">
+        <p class="text-center md:text-left mt-6 text-base md:text-xl font-normal text-black">
           {{ data.subtitle }}
         </p>
         <div

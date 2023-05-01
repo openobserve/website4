@@ -43,7 +43,7 @@
                       <nuxt-link
                         :href="item.link"
                         :key="index"
-                        class="text-center font-medium tetx-white text-sm md:text-base hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                        class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
                       >
                         {{ item.text }}
                       </nuxt-link>
@@ -67,7 +67,7 @@
                           item.text == 'Get Started For Free' ? '_blank' : ''
                         "
                         :key="index"
-                        class="font-medium text-sm md:text-base hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                        class="font-medium text-sm  hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
                       >
                         {{ item.text }}
                       </nuxt-link>
@@ -88,7 +88,7 @@
                       alt="Email"
                     />
                     <a
-                      class="font-bold text-sm md:text-base pb-2 text-center md:text-left"
+                      class="font-bold text-sm  pb-2 text-center md:text-left"
                       :href="'mailto:' + footerData.items.email"
                       target="_blank"
                       >{{ footerData.items.email }}</a
@@ -103,7 +103,7 @@
                       alt="Phone"
                     />
                     <a
-                      class="font-boldtext-sm md:text-base pb-2 text-center md:text-left"
+                      class="font-boldtext-sm pb-2 text-center md:text-left"
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >

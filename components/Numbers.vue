@@ -13,7 +13,7 @@
           </h2>
         </div>
         <div>
-          <p class="text-center text-white font-medium text-base md:text-lg">
+          <p class="text-center text-white font-medium text-sm">
             {{ item.text }}
           </p>
         </div>

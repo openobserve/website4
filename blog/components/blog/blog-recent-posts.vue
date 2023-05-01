@@ -44,7 +44,7 @@
             >
               {{ article.title }}
             </h2>
-            <p class="text-base leading-relaxed mt-2 px-4 py-1">
+            <p class="text-sm leading-relaxed mt-2 px-4 py-1">
               {{ truncate(article.description) }}
             </p>
             <a

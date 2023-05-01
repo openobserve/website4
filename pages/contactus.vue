@@ -25,7 +25,7 @@
                       <div class="font-semibold text-lg">
                         {{ data.content.address.title }}
                       </div>
-                      <div class="text-base">
+                      <div class="text-sm">
                         <p>{{ data.content.address.text }}</p>
                       </div>
                     </div>
