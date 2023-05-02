@@ -23,6 +23,7 @@
   "dependencies": {
     "@nuxtjs/google-fonts": "^3.0.0",
     "@tailwindcss/typography": "^0.5.9",
-    "swiper": "^9.2.4"
+    "swiper": "^9.2.4",
+    "vue-github-button": "^3.1.0"
   }
 }
