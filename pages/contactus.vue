@@ -13,14 +13,18 @@
           class="md:w-1/2 w-full overflow-hidden flex flex-col justify-start space-y-4 items-start md:px-10 px-2 py-5 md:ml-4 ml-0 md:mt-20 mt-0 md:mb-20 mb-0"
         >
           <!-- START Contact Details-->
-          <img :src="data.content.image" :alt="data.content.title"/>
+          <img :src="data.content.image" :alt="data.content.title" />
           <div>
             <div class="text-3xl">{{ data.content.title }}</div>
             <div>
               <div class="w-full flex flex-col items-center space-y-4 py-4">
                 <div class="w-full flex flex-col space-y-4">
                   <div class="flex">
-                    <img :src="data.content.address.icon" class="max-h-12" :alt="data.content.address.title"/>
+                    <img
+                      :src="data.content.address.icon"
+                      class="max-h-12"
+                      :alt="data.content.address.title"
+                    />
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.address.title }}
@@ -31,25 +35,33 @@
                     </div>
                   </div>
                   <div class="flex">
-                    <img :src="data.content.mail.icon" class="max-h-12"  :alt="data.content.mail.title"/>
+                    <img
+                      :src="data.content.mail.icon"
+                      class="max-h-12"
+                      :alt="data.content.mail.title"
+                    />
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.mail.title }}
                       </div>
-                        <a :href="'mailto:' + emails">{{
-                          data.content.mail.text
-                        }}</a>
+                      <a :href="'mailto:' + data.content.mail.text">{{
+                        data.content.mail.text
+                      }}</a>
                     </div>
                   </div>
                   <div class="flex">
-                    <img :src="data.content.phone.icon" class="max-h-12" :alt="data.content.phone.title"/>
+                    <img
+                      :src="data.content.phone.icon"
+                      class="max-h-12"
+                      :alt="data.content.phone.title"
+                    />
                     <div class="flex-1">
                       <div class="font-semibold text-lg">
                         {{ data.content.phone.title }}
                       </div>
-                        <a :href="'tel:' + mobile">{{
-                          data.content.phone.text
-                        }}</a>
+                      <a :href="'tel:' + data.content.phone.text">{{
+                        data.content.phone.text
+                      }}</a>
                     </div>
                   </div>
                 </div>
@@ -90,6 +102,13 @@
             label="Phone"
             v-model="formValue.phone"
           />
+          <Input
+            id="websiteurl"
+            name="websiteurl"
+            label="Websiteurl"
+            type="url"
+            v-model="formValue.websitelink"
+          />
           <TextArea
             id="message"
             name="message"
@@ -97,10 +116,12 @@
             label="Message"
             v-model="formValue.message"
           ></TextArea>
-          <div
-            class="flex justify-center md:justify-start py-5 w-full"
-          >
-            <Button @click="(e) => submitdata(e)" variant="primary" classes="px-6">
+          <div class="flex justify-center md:justify-start py-5 w-full">
+            <Button
+              @click="(e) => submitdata(e)"
+              variant="primary"
+              classes="px-6"
+            >
               {{ data.content.btnText }}
             </Button>
           </div>
@@ -116,22 +137,43 @@ const formValue = reactive({
   email: "",
   phone: "",
   message: "",
+  websitelink: "",
 });
-const submitdata = (e) => {
+const submitdata = async (e) => {
   e.preventDefault();
-  console.log(formValue);
-  (formValue.name = ""),
-    (formValue.email = ""),
-    (formValue.message = ""),
-    (formValue.phone = "");
+  try {
+    fetch(
+      " https://1qlewft2ie.execute-api.us-west-2.amazonaws.com/default/triggerEmail",
+
+      {
+        method: "POST",
+        body: JSON.stringify({
+          senderName: formValue.name,
+          senderEmail: formValue.email,
+          senderWebsite: formValue.websitelink,
+          senderMobile: formValue.phone,
+          senderMessage: formValue.message,
+        }),
+      }
+    ).then((response) => {
+      console.log(response);
+    });
+  } catch (error) {
+    console.log(error);
+  }
+  formValue.name = "";
+  formValue.email = "";
+  formValue.message = "";
+  formValue.phone = "";
+  formValue.websitelink = "";
 };
 const { data } = await useAsyncData(async () => {
   return await queryContent("/contactus").findOne();
 });
 useSeoMeta({
-  title:data.seotitle,
-  description:data.seodesc
-})
+  title: data.seotitle,
+  description: data.seodesc,
+});
 </script>
 
 <style scoped></style>
