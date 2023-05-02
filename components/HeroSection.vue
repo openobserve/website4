@@ -33,7 +33,7 @@
           <Button variant="tryitfree" :target="data.btnTarget" :to="data.btnTo1">
             {{ data.btnText1 }}
           </Button>
-          <Button variant="requestdemo" :target="data.btnTarget" :to="data.btnTo2">
+          <Button variant="requestdemo" :to="data.btnTo2">
             {{ data.btnText2 }}
           </Button>
         </div>

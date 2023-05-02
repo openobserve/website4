@@ -23,7 +23,7 @@ const { y } = useWindowScroll();
 const items = {
   logo: "/img/logo/headerLogo.svg",
   btn: {
-    text: "Get started for free",
+    text: "Try it free",
     link: "https://cloud.zincsearch.com",
   },
   content: [

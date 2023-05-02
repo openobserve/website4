@@ -33,7 +33,7 @@
       "btnText1": "Try it free",
       "btnTo1": "https://observe.zinc.dev/",
       "btnText2": "Request a demo",
-      "btnTo2": "https://observe.zinc.dev/",
+      "btnTo2": "/contactus",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     },
@@ -45,7 +45,7 @@
       "btnText1": "Try it free",
       "btnTo1": "https://observe.zinc.dev/",
       "btnText2": "Request a demo",
-      "btnTo2": "https://observe.zinc.dev/",
+      "btnTo2": "/contactus",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     },
@@ -57,7 +57,7 @@
       "btnText1": "Try it free",
       "btnTo1": "https://observe.zinc.dev/",
       "btnText2": "Request a demo",
-      "btnTo2": "https://observe.zinc.dev/",
+      "btnTo2": "/contactus",
       "btnTarget": "_blank",
       "backgroundImage": "/img/homepage/homepagebg3.svg"
     }
