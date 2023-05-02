@@ -6,7 +6,6 @@
       :paths="data.breadcrumbs"
     />
     <Pricing :items="data.content" />
-    <FaqSection :items="data.faqData" />
   </div>
 </template>
 <script setup>
