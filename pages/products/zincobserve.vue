@@ -2,9 +2,9 @@
   <!-- <BreadCrumbs class="md:pt-0 pt-3" :title="data.title" :paths="data.breadcrumbs" /> -->
   <HeroSection :data="data.heroSection" />
   <FeatureItem :data="data.details" />
-  <Feature :items="data.content.items" :title="data.content.title" />
+  <!-- <Feature :items="data.content.items" :title="data.content.title" /> -->
   <Cards :items="data.features" :backgroundImage="true" />
-  <FaqSection :items="data.faqData" />
+  <!-- <FaqSection :items="data.faqData" /> -->
   <LatestBlogPosts />
 </template>
 <script setup>

@@ -43,12 +43,12 @@
       },
       {
         "question": "Do I need to install ZincObserve to use it?",
-        "answer": "You can choose to install ZincObserve on your own infrastructure or use the Zinc cloud.",
+        "answer": "You can choose to install ZincObserve in your own infrastructure or use the Zinc cloud.",
         "open": false
       },
       {
         "question": "Where does ZincObserve store data?",
-        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZinObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for ingle node installation and in etcd for HA installation.",
+        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZincObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for ingle node installation and in etcd for HA installation.",
         "open": true
       },
       {
@@ -58,11 +58,11 @@
       },
       {
         "question": "Can ZincObserve send alerts?",
-        "answer": "Yes, ZincObserve can send alerts using webhooks. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data. You can configure ZincObserve to send alerts to many sources like slack, teams, prometheus alertmanager and more.",
+        "answer": "Yes, ou can send alerts to many sources like slack, teams, prometheus alertmanager and more.. ZincObserve can send alerts to various destinations using its highly configurable destination builder. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data.",
         "open": false
       },
       {
-        "question": "Is ZinObserve mult-tenant?",
+        "question": "Is ZincObserve multi-tenant?",
         "answer": "Yes, You can use ZincObserve in a multi-tenant mode. You can create multiple organizations and each organization can have multiple users. Each organizations users and data are isolated for that organization.",
         "open": false
       },
@@ -82,7 +82,7 @@
         "open": false
       },
       {
-        "question": "Does ZincObserve provide a Web UI?",
+        "question": "Does ZincObserve provide a GUI?",
         "answer": "ZincObserve  provide a very advanced WebUI. You can use the WebUI to build dashboards, alerts, ingest functions, query functions and more. You can also use the WebUI to view logs, metrics and traces data.",
         "open": false
       },

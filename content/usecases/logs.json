@@ -22,7 +22,7 @@
     "items": [
       {
         "title": "Log everything",
-        "desc": "<ul class='list-disc'> <li class='py-1'>Pay as you go, with 10x lower costs of other log providers</li> <li class='py-1'>30 day default storage and much longer storage capabilities</li> <li class='py-1'>No worries of hot vs cold tier for storage</li> <li class='py-1'>Search everything with scalable search functionality</li> </ul>",
+        "desc": "<ul class='list-disc'> <li class='py-1'>Pay as you go, with 140x lower storage costs of other log providers</li> <li class='py-1'>30 day default storage and much longer storage capabilities</li> <li class='py-1'>No worries of hot vs cold tier for storage</li> <li class='py-1'>Search everything with scalable search functionality</li> </ul>",
         "image": "/img/usecases/logs/features.svg"
       },
       {

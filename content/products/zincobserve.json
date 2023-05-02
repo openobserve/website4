@@ -21,7 +21,7 @@
   "heroSection": {
     "tagline": "",
     "title": "ZincObserve",
-    "subtitle": "ZincObserve is a cloud-based observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.ZincObserve's analytics capabilities can turn vast amounts of data into meaningful insights, and its user-defined ingest and query functions based on Lua scripting language provide unparalleled control over observability data.",
+    "subtitle": "Observe Everything. Bare metal, VMs, Containers, AWS, GCP, Azure, Kubernetes, Serverless.",
     "image": "/img/homepage/zincobservehero.png",
     "btnText1": "Try it free",
     "btnTo1": "https://observe.zinc.dev/",
@@ -31,8 +31,8 @@
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
   "details": {
-    "title": "Double the productivity with ZincObserve",
-    "desc": "The search-around logs data feature enables easy identification and fixing of issues in your system. ZincObserve offers customized log searches, scheduled and real-time alerts, and template-based alert targeting that allows dispatching alerts seamlessly to multiple platforms such as Slack and Teams. ZincObserve is equipped with high availability and clustering capabilities that ensure data is always accessible. It provides multiple language options and prebuilt binaries and container images for optimized processing. ZincObserve strikes a balance between storage efficiency and search performance, making it an ideal choice for high-tech professionals looking for a powerful observability platform that can help them unlock the full potential of their systems.<br /><br />With ZincObserve, users can quickly identify and fix issues in their applications through real-time monitoring and alerts. The platform's intuitive user interface and customizable dashboards provide a clear and holistic view of application performance, enabling proactive management of system health. ZincObserve is a reliable and efficient observability platform that delivers superior performance and cost savings, making it an ideal choice for high-tech professionals looking to optimize their application observability.",
+    "title": "Logs, Metrics, Traces",
+    "desc": "A single unified platform for logs, metrics and traces that you can get started with in under 2 minutes. It can be deployed on-prem or in the cloud. It is built in rust for high performance and safety.",
     "image": "/img/products/zincobserve/doubleproductivity.svg"
   },
   "content": {
@@ -42,19 +42,25 @@
       {
         "image": "/img/products/zincobserve/fullstacksolution.svg",
         "title": "Full-stack observability Solution",
-        "desc": "Don't let your logs go unnoticed. ZincObserve offers a search-around logs data feature that allows you to easily identify and fix any issues in your system. Advanced embedded GUI and Features like top 10, search around, SQL for query and custom VRL (Vector Remap Language) functions for searching logs allows finding logs of significance super fast.",
+        "desc": "Observe everything. Front end, back end, microservices written in any language.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/fullstacksolution.svg",
+        "title": "140x Lower Storage Costs",
+        "desc": "ZincObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. This strategy minimizes the compute requirements during data ingestion and results in highly efficient compression rates, translating into approximately upto 140 times lower storage costs.",
         "btnText": ""
       },
       {
         "image": "/img/products/zincobserve/highlycompressedstorage.svg",
-        "title": "Highly compressed data storage",
-        "desc": "ZincObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. This strategy minimizes the compute requirements during data ingestion and results in highly efficient compression rates, translating into approximately upto 140 times lower storage costs.",
+        "title": "Dynamic Schema Evolution",
+        "desc": "You do not need to worry about schema changes. ZincObserve supports dynamic schema evolution, which allows you to ingest logs without worrying about schema of the logs.",
         "btnText": ""
       },
       {
         "image": "/img/products/zincobserve/accelerateperformance.svg",
         "title": "Accelerate performance",
-        "desc": "ZincObserve is a cutting-edge observability platform designed for the cloud that allows you to monitor your logs, metrics, and traces with ease. While ZincObserve's approach to data storage and indexing may be different from usual observability tools, full scan searches remain highly efficient due to the implementation of multiple optimization techniques, such as partitioning and caching.",
+        "desc": "SIMD support and columnar storage format enables ZincObserve to deliver high performance. This is available both on x86 and ARM processors.",
         "btnText": ""
       },
       {
@@ -78,13 +84,13 @@
       {
         "image": "/img/homepage/logs.svg",
         "title": "Logs",
-        "desc": "Provides a search-around logs data feature within logs data to quickly detect and resolve system issues.",
+        "desc": "Provides efficient search for logs using advanced GUI, search-around and more.",
         "btnText": ""
       },
       {
         "image": "/img/products/zincobserve/SQL.svg",
         "title": "SQL based query language",
-        "desc": "Offers SQL query language support to make your search efficient.",
+        "desc": "Utilize what you already know. Nothing new to learn here.",
         "btnText": ""
       },
       {
@@ -101,8 +107,8 @@
       },
       {
         "image": "/img/products/zincobserve/DataStorage.svg",
-        "title": "Data Storage",
-        "desc": "Provides Storage functionality support in local Disk, s3, MinIO, GCS",
+        "title": "Data Storage in Obect Storage",
+        "desc": "Provides Storage functionality support in local Disk, s3, MinIO, GCS resulting in 140x lower storage cost.",
         "btnText": ""
       },
       {
@@ -137,13 +143,13 @@
       },
       {
         "image": "/img/homepage/Traces.svg",
-        "title": "Traces <span class='tag'>Under Development</span>",
+        "title": "Traces",
         "desc": "Helps to troubleshoot performance issues easily in your microservices architecture.",
         "btnText": ""
       },
       {
         "image": "/img/homepage/Metrics.svg",
-        "title": "Metrics <span class='tag'>Under Development</span>",
+        "title": "Metrics",
         "desc": "Long-term storage for Prometheus metrics in S3 with support for SQL and PromQL.",
         "btnText": ""
       }
@@ -154,19 +160,9 @@
       "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
-        "question": "How many programmers does it take to screw a lightbulb?",
-        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "question": "q1?",
+        "answer": "a1.",
         "open": true
-      },
-      {
-        "question": "Who is the most awesome person?",
-        "answer": "You! The viewer!",
-        "open": false
-      },
-      {
-        "question": "How many questions does it take to makes a succesful FAQ Page?",
-        "answer": "This many!",
-        "open": false
       }
     ]
   }
