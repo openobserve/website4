@@ -22,25 +22,46 @@
         "heading":"For individuals",
         "subtitle":"Developers",
         "key":"secondary",
+        "free":"FREE",
+        "recommed":false,
+        "recommandText": "",
         "image":"/img/developer.svg",
         "label":"What's included",
         "items":["200GB Ingestion","200GB Query Volume","30 Days Retention"],
-        "btnText":"Get started for free",
-        "btnLink":""
+        "btnText":"Try for free",
+        "btnLink":"https://cloud.zincsearch.com"
       },
       {
         "heading": "For startups",
         "subtitle": "Pro",
         "key":"primary",
         "image": "/img/pro.svg",
+        "recommed": true,
+        "recommandText":"Recommended",
         "label": "What's included",
         "sublabel":"Everything in Developer Plan, plus:",
         "items": [
           "Additional Ingestion($0.50/GB)",
           "Additional Query Volume($5/TB)"
         ],
-        "btnText": "Purchase",
+        "btnText": "Get Started",
         "btnLink": ""
+      },
+      {
+        "heading": "For enterprise",
+        "subtitle": "Enterprise",
+        "key": "primary",
+        "image": "/img/pro.svg",
+        "recommed": false,
+        "recommandText": "",
+        "label": "What's included",
+        "sublabel": "Everything in Pro Plan, plus:",
+        "items": [
+          "Custom Prices",
+          "Additional Query Volume($5/TB)"
+        ],
+        "btnText": "Get In Touch",
+        "btnLink": "/contactus"
       }
     ],
     "carditems": [
