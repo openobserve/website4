@@ -1,7 +1,7 @@
 <template>
   <div
     :style="{ backgroundImage: `url(${data.backgroundImage})` }"
-    class="bg-no-repeat min-h-[calc(95vh-100px)] bg-center py-10"
+    class="bg-no-repeat object-contain bg-center py-10"
     :class="bgClasses[backgroundBgType]"
   >
     <div
