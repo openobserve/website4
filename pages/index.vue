@@ -15,7 +15,6 @@
       :subtitle="data.cardItems.subtitle"
     />
     <Cards :items="data.useCases2" :background-image="null" />
-    <FaqSection :items="data.faqData" />
     <LatestBlogPosts />
   </div>
 </template>
