@@ -81,7 +81,7 @@
             class="pt-6 md:p-4 text-center md:text-left flex flex-col justify-between"
           >
             <blockquote>
-              <p class="text-lg font-semibold">
+              <p class="text-base font-normal">
                 {{ author.bio }}
               </p>
             </blockquote>
@@ -200,7 +200,7 @@ useHead({
 
 :deep(.nuxt-content p),
 .blog-content p {
-  @apply text-justify text-lg leading-7 mb-4;
+  @apply text-justify text-base leading-7 mb-4;
 }
 
 :deep(.nuxt-content ol li) {
