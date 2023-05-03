@@ -107,7 +107,7 @@
       },
       {
         "image": "/img/products/zincobserve/DataStorage.svg",
-        "title": "Data Storage in Obect Storage",
+        "title": "Data Storage in Obect Store",
         "desc": "Provides Storage functionality support in local Disk, s3, MinIO, GCS resulting in 140x lower storage cost.",
         "btnText": ""
       },
