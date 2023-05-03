@@ -17,9 +17,6 @@
         <Button variant="header" :to="items.product.link">{{
           items.product.productName
         }}</Button>
-
-        <!-- <Dropdown :items="items.products" title="Products" direction="left" label="productName" triggerMode="hover"
-                    onMode="hover" /> -->
         <Dropdown
           :items="items.useCases"
           title="Use Cases"
@@ -28,14 +25,14 @@
           triggerMode="hover"
           onMode="hover"
         />
-        <Dropdown
+        <!-- <Dropdown
           :items="items.solutions"
           title="Solutions"
           direction="left"
           label="productName"
           triggerMode="hover"
           onMode="hover"
-        />
+        /> -->
         <div v-for="(item, index) in items.content">
           <Button variant="header" :to="item.link" :key="index">{{
             item.title

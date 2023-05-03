@@ -64,14 +64,14 @@
         triggerMode="click"
         onMode="expand"
       />
-      <Dropdown
+      <!-- <Dropdown
         :items="items.solutions"
         title="Solutions"
         direction="left"
         label="productName"
         triggerMode="click"
         onMode="expand"
-      />
+      /> -->
       <div v-for="(item, index) in items.content">
         <nuxt-link :to="item.link" :key="index">
           <Button variant="header">{{ item.title }}</Button>

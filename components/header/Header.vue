@@ -45,7 +45,7 @@ const items = {
     },
     {
       title: "Docs",
-      link: "/",
+      link: "/docs",
     },
   ],
 
