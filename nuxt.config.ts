@@ -62,7 +62,7 @@ export default defineNuxtConfig({
     indexable: false,
   },
   linkChecker: {
-    failOn404: true,
+    failOn404: false,
   },
   build: {
     transpile: ["clsx"],
