@@ -28,7 +28,7 @@
       },
       {
         "question": "How do I send my logs to ZincObserve?",
-        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, etc. or using the ZincObserve API.",
+        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat,cloudwatch logs using Kinesis Firehose etc. or using the ZincObserve API.",
         "open": false
       },
       {
