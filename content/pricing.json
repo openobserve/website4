@@ -44,7 +44,7 @@
           "Additional Ingestion($0.50/GB)",
           "Additional Query Volume($5/TB)"
         ],
-        "btnText": "Get Started",
+        "btnText": "Get started",
         "btnLink": ""
       },
       {
@@ -57,10 +57,9 @@
         "label": "What's included",
         "sublabel": "Everything in Pro Plan, plus:",
         "items": [
-          "Custom Prices",
-          "Additional Query Volume($5/TB)"
+          "Custom Prices"
         ],
-        "btnText": "Get In Touch",
+        "btnText": "Get in touch",
         "btnLink": "/contactus"
       }
     ],
