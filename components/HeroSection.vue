@@ -57,7 +57,7 @@ const directions = {
 const bgClasses = {
   cover: "bg-cover object-cover",
   contain: "bg-contain object-contain",
-  fullWidth: "bg-[length:100%_100%]",
+  fullWidth: "object-contain",
 };
 const props = defineProps({
   data: {
