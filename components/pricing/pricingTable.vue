@@ -55,7 +55,7 @@
                           src="/img/Check.svg"
                           alt="check icon"
                           class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
-                          v-if="it.startup === true"
+                          v-if="it.pro === true"
                         />
                       </div>
                     </td>
