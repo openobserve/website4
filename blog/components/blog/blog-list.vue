@@ -8,11 +8,8 @@
           py-2
           bg-white
           rounded-lg
-          shadow-xl
-          hover:shadow-2xl
           transition-all
           duration-200
-          border
         "
       >
         <div class="flex flex-col md:flex-row items-stretch">
@@ -31,7 +28,7 @@
                 :to="'/blog/' + article.slug"
                 class="
                   text-2xl text-gray-700
-                  font-bold
+                  font-semibold
                   hover:text-theme-primary
                   transition-all
                   duration-200
@@ -39,7 +36,7 @@
               >
                 {{ article.title }}
               </nuxt-link>
-              <div class="flex justify-between items-center">
+              <div v-if="false" class="flex justify-between items-center mt-1">
                 <div class="my-1">
                   <nuxt-link
                     v-for="(category, index) in article.categories"
@@ -50,9 +47,9 @@
                       py-1
                       mr-2
                       text-sm text-theme-text-secondary
-                      border border-theme-primary-400
-                      bg-theme-primary-100
-                      hover:bg-theme-primary-300
+                      border border-theme-primary-200
+                      bg-theme-primary-50
+                      hover:bg-theme-primary-200
                       transition-all
                       duration-150
                       rounded-full
@@ -62,7 +59,7 @@
                   </nuxt-link>
                 </div>
               </div>
-              <p class="mt-2 text-gray-600 text-sm">
+              <p class="mt-2 text-gray-600 text-sm leading-6">
                 {{ truncate(article.description) }}
               </p>
             </div>
@@ -144,7 +141,7 @@ const getBlogImage = (article) => {
   return article && `/${article.img}`;
 };
 const truncate = (str) => {
-  return str?.replace(/^(.{125}[^\s]*).*/, "$1...");
+  return str?.replace(/^(.{500}[^\s]*).*/, "$1...");
 };
 const getCategorySlugFromName = (name) => {
   return props.categories.find((it) => it?.name == name)?.slug;

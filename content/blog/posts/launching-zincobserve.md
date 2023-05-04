@@ -7,10 +7,6 @@ alt: Zincobserve
 slug: launching-zincobserve
 author: prabhat
 publishDate: 2023-04-27
-categories:
-  - launch
-  - cost
-  - observability
 tags:
   - launch
   - cost

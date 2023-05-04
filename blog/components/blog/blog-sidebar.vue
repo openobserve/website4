@@ -1,7 +1,7 @@
 <template>
   <div class="-mx-8 w-4/12 hidden lg:block">
     <div class="">
-      <div class="mt-1 px-8">
+      <div v-if="false" class="mt-1 px-8">
         <h4 class="mb-4 text-xl font-bold text-gray-700">Categories</h4>
         <div
           class="
@@ -53,7 +53,7 @@
           </ul>
         </div>
       </div>
-      <div class="mt-10 px-8">
+      <div class="mt-1 px-8">
         <h4 class="mb-4 text-xl font-bold text-gray-700">Tags</h4>
         <div
           class="
