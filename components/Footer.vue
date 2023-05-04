@@ -103,7 +103,7 @@
                       alt="Phone"
                     />
                     <a
-                      class="font-semibold text-sm pb-2 text-center md:text-left"
+                      class="font-semibold text-sm pb-2 text-center md:text-left whitespace-nowrap"
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >
