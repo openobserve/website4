@@ -12,7 +12,7 @@
             <img
               :src="item"
               alt="Investors"
-              class="p-4 block mx-auto object-contain object-center "
+              class="p-4 block mx-auto w-72 h-72 object-contain object-center "
             />
           </div>
         </div>
