@@ -4,7 +4,7 @@
 
     <div class="container mx-auto">
       <div class="flex flex-col">
-        <div class="-my-2  sm:-mx-6 lg:-mx-8">
+        <div class="-my-2 sm:-mx-6 lg:-mx-8">
           <div
             class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
           >
@@ -17,7 +17,7 @@
                     <th
                       v-for="(item, index) in items.tableHeading"
                       :key="index"
-                      class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      class="px-2 py-3 md:px-6 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
                       {{ item }}
                     </th>
@@ -29,34 +29,45 @@
                     :key="index"
                   >
                     <td
-                      class="px-6 py-4 whitespace-pre-wrap text-sm font-medium text-gray-900"
+                      class="px-2 py-2 md:px-6 md:py-4 whitespace-pre-wrap text-sm font-medium text-gray-900"
                     >
                       {{ it.title }}
                     </td>
-                    <td class="px-6 py-4" >
-                      <img
-                        src="/img/Check.svg"
-                        alt="check icon"
-                        class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
-                        v-if="it.developer === true"
-                        
-                      />
+                    <td class="px-2 py-2 md:px-6 md:py-4">
+                      <div
+                        class="flex justify-center items-center h-full w-full"
+                      >
+                        <img
+                          src="/img/Check.svg"
+                          alt="check icon"
+                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          v-if="it.developer === true"
+                        />
+                      </div>
                     </td>
-                     <td class="px-6 py-4">
-                      <img
-                        src="/img/Check.svg"
-                        alt="check icon"
-                        class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
-                         v-if="it.startup === true"
-                      />
+                    <td class="px-2 py-2 md:px-6 md:py-4">
+                       <div
+                        class="flex justify-center items-center h-full w-full"
+                      >
+                        <img
+                          src="/img/Check.svg"
+                          alt="check icon"
+                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          v-if="it.startup === true"
+                        />
+                      </div>
                     </td>
-                     <td class="px-6 py-4">
-                      <img
-                        src="/img/Check.svg"
-                        alt="check icon"
-                        class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
-                         v-if="it.enterprise === true"
-                      />
+                    <td class="px-2 py-2 md:px-6 md:py-4">
+                      <div
+                        class="flex justify-center items-center h-full w-full"
+                      >
+                        <img
+                          src="/img/Check.svg"
+                          alt="check icon"
+                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          v-if="it.enterprise === true"
+                        />
+                      </div>
                     </td>
                   </tr>
                 </tbody>
