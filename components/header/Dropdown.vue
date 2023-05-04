@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-if="isMenuOpen" tabindex="-1" class="fixed inset-0 h-screen w-screen cursor-default "
+    <div v-if="isMenuOpen" tabindex="-1" class="fixed inset-0 h-screen w-full cursor-default "
       @click="isMenuOpen = false" @mouseenter="triggerMode == 'hover' ? isMenuOpen = false : null">
     </div>
     <div class="relative h-full my-2 font-medium z-50" @mouseleave="triggerMode == 'hover' ? isMenuOpen = false : null"
@@ -39,7 +39,7 @@
   </div>
 </template>
 <script setup>
-const isMenuOpen = ref(false);
+const isMenuOpen = ref(true);
 const directions = {
   right: "right-0",
   left: "left-0",
