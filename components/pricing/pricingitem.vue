@@ -32,15 +32,12 @@
               <img
                 :src="item.image"
                 :alt="item.heading"
-                class="p-4 h-24 w-24 object-contain"
+                class="p-4 h-20 w-20 object-contain"
               />
             </div>
             <div class="">
-              <h4 class="text-lg font-normal text-black">
-                {{ item.heading }}
-              </h4>
               <h2
-                class="text-3xl font-bold leading-none"
+                class="text-3xl font-bold leading-none mt-2"
                 :class="
                   item.key === 'primary'
                     ? 'text-theme-primary'
