@@ -12,7 +12,7 @@
               class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
             >
               <table class="min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50 sticky">
+                <thead class="bg-gray-50">
                   <tr>
                     <th
                       v-for="(item, index) in items.tableHeading"
@@ -28,6 +28,7 @@
                   <tr
                     v-for="(it, index) in items.tableBody.featureData"
                     :key="index"
+                    class="hover:bg-gray-100 transition-all"
                   >
                     <td
                       class="px-2 py-2 md:px-6 md:py-4 whitespace-pre-wrap text-sm font-medium text-gray-900"
