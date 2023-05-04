@@ -84,7 +84,7 @@ defineProps({
         container: "",
         label: "",
         tooltipHint: "",
-        textarea: "border border-theme-primary focus:ring-1 focus:bg-white",
+        textarea: "border  focus:ring-1 focus:bg-white",
         error: "",
       },
       material: {
