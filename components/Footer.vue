@@ -88,7 +88,7 @@
                       alt="Email"
                     />
                     <a
-                      class="font-bold text-sm  pb-2 text-center md:text-left"
+                      class="font-semibold text-sm  pb-2 text-center md:text-left"
                       :href="'mailto:' + footerData.items.email"
                       target="_blank"
                       >{{ footerData.items.email }}</a
@@ -103,7 +103,7 @@
                       alt="Phone"
                     />
                     <a
-                      class="font-boldtext-sm pb-2 text-center md:text-left"
+                      class="font-semibold text-sm pb-2 text-center md:text-left"
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >
@@ -182,9 +182,9 @@ const footerData = {
   items: {
     title: "Get In Touch",
     emailicon: "/img/gmail.svg",
-    email: "zinclabs@gmail.com",
+    email: "hello@zinclabs.io",
     callicon: "/img/phone-call.svg",
-    phone: "37647 84875",
+    phone: "+1 (415) 429-6096",
   },
 };
 </script>
