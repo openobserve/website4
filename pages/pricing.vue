@@ -6,6 +6,7 @@
       :paths="data.breadcrumbs"
     />
     <Pricing :items="data.content" />
+    <PricingTable :items="data.tableData" />
   </div>
 </template>
 <script setup>

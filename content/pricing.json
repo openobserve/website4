@@ -17,29 +17,33 @@
       "monthlyBtn": "CLOUD",
       "annuallyBtn": "SELF HOSTED"
     },
-    "priceItems":[
+    "priceItems": [
       {
-        "heading":"For individuals",
-        "subtitle":"Developers",
-        "key":"secondary",
-        "free":"FREE",
-        "recommed":false,
+        "heading": "For individuals",
+        "subtitle": "Developers",
+        "key": "secondary",
+        "free": "FREE",
+        "recommed": false,
         "recommandText": "",
-        "image":"/img/developer.svg",
-        "label":"What's included",
-        "items":["200GB Ingestion","200GB Query Volume","30 Days Retention"],
-        "btnText":"Try for free",
-        "btnLink":"https://cloud.zincsearch.com"
+        "image": "/img/developer.svg",
+        "label": "What's included",
+        "items": [
+          "200GB Ingestion/month",
+          "200GB Query Volume/month",
+          "30 Days Retention"
+        ],
+        "btnText": "Try for free",
+        "btnLink": "https://cloud.zincsearch.com"
       },
       {
         "heading": "For startups",
         "subtitle": "Pro",
-        "key":"primary",
+        "key": "primary",
         "image": "/img/pro.svg",
         "recommed": true,
-        "recommandText":"Recommended",
+        "recommandText": "Recommended",
         "label": "What's included",
-        "sublabel":"Everything in Developer Plan, plus:",
+        "sublabel": "Everything in Developer Plan, plus:",
         "items": [
           "Additional Ingestion($0.50/GB)",
           "Additional Query Volume($5/TB)"
@@ -62,69 +66,200 @@
         "btnText": "Get in touch",
         "btnLink": "/contactus"
       }
-    ],
-    "carditems": [
-      {
-      "title": "Start",
-      "plan": {
-        "Monthly": "Free",
-        "Yearly": "Free"
-        },
-      "feature": [
-          "Vexillologist pitchfork",
-          "Tumeric plaid portland",
-          "Mixtape chillwave tumeric"
-        ],
-      "btnText": "Purchase",
-      "link": "/",
-      "desc": "Literally you probably haven't heard of them jean shorts."
-      },
-      {
-      "title": "Pro",
-      "plan": {
-        "Monthly": "$38/mo",
-        "Yearly": "$200/yr"
-        },
-      "label": "popular",
-      "feature": [
-          "Vexillologist pitchfork",
-          "Tumeric plaid portland",
-          "Mixtape chillwave tumeric"
-        ],
-      "btnText": "Purchase",
-      "link": "/",
-      "desc": "Literally you probably haven't heard of them jean shorts."
-      },
-      {
-      "title": "Business",
-      "plan": {
-        "Monthly": "$56/mo",
-        "Yearly": "$300/yr"
-        },
-      "feature": [
-          "Vexillologist pitchfork",
-          "Tumeric plaid portland",
-          "Mixtape chillwave tumeric"
-        ],
-      "btnText": "Purchase",
-      "link": "/",
-      "desc": "Literally you probably haven't heard of them jean shorts."
-      },
-      {
-      "title": "Special",
-      "plan": {
-        "Monthly": "$72/mo",
-        "Yearly": "$400/yr"
-        },
-      "feature": [
-          "Vexillologist pitchfork",
-          "Tumeric plaid portland",
-          "Mixtape chillwave tumeric"
-        ],
-      "btnText": "Purchase",
-      "link": "/",
-      "desc": "Literally you probably haven't heard of them jean shorts."
-      }
     ]
+  },
+  "tableData": {
+    "title": "Compare features",
+    "tableHeading": [
+      "Feature",
+      "developers",
+      "startup",
+      "enterprise"
+    ],
+    "tableBody": {
+      "title": "Feature",
+      "featureData": [
+        {
+          "title": "Log search",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Highly compressed storage of data",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Dynamic evolution of schema",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Out of the box authentication",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Support of S3, MinIO and GCS for data storage",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Advanced GUI",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "SQL based query language",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Support for very high cardinality data",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Search-around logs data",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "User defined Ingest and Query functions (Lua based)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Multi-tenancy",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Ingestion API compatibility with Elasticsearch",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Search and aggregation API compatibility with Elasticsearch",
+          "developer":false,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Scheduled Alerts (Based on logs)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Real time Alerts (Based on logs)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "High Availability (HA) and clustering",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Stateless nodes",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Localization for multiple languages",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Prebuilt binaries for multiple platforms",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Prebuilt container images for multiple platforms",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Prebuilt container images for with SIMD acceleration",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "SIMD support for vectorized processing (AVX512 and Neon)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Dashboards",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Metrics",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Traces",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "WASM based ingest and query functions",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Alerts (Based on metrics)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Alerts (Based on metrics)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Template based alert target (Allows alerting to slack, teams and many more)",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        },
+        {
+          "title": "Send alerts to Prometheus alertmanager",
+          "developer": true,
+          "startup": true,
+          "enterprise": true
+        }
+      ]
+    }
   }
 }
