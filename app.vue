@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="overflow-y-hidden">
     <SeoKit />
     <OgImageScreenshot />
     <Header />
@@ -7,6 +7,4 @@
     <Footer />
   </div>
 </template>
-<script setup>
-
-</script>
+<script setup></script>
