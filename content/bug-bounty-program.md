@@ -64,7 +64,7 @@ To report a vulnerability, please email us at admin@zinclabs.io with the followi
 
 # Rewards:
 
-Rewards for eligible vulnerabilities will be determined by the severity and impact of the vulnerability, as assessed by Zinc Labs' security team. Rewards will range from $100 to $5,000, with higher rewards granted for more severe vulnerabilities. We reserve the right to adjust reward amounts based on other factors, such as the quality of the report or the complexity of the vulnerability.
+Rewards for eligible vulnerabilities will be determined by the severity and impact of the vulnerability, as assessed by Zinc Labs' security team. Rewards will range from $100 to $1,500, with higher rewards granted for more severe vulnerabilities. We reserve the right to adjust reward amounts based on other factors, such as the quality of the report or the complexity of the vulnerability and impact on the business.
 
 # Terms and conditions:
 
