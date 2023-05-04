@@ -32,8 +32,10 @@
 
 <script setup>
 import _ from "lodash";
-import { ref } from 'vue';
-defineProps({
+
+const error = ref('');
+
+const props = defineProps({
   modelValue: String,
   label: {
     type: String,
@@ -51,7 +53,7 @@ defineProps({
   regex: {
     type: String,
   },
-  validationError: {
+  props: {
     type: String,
   },
   tooltipHint: {
@@ -99,16 +101,20 @@ defineProps({
   },
 })
 const validate = () => {
-  if (required && isEmpty(modelValue)) {
-    error = requiredError;
+  if (props.required && _.isEmpty(props.modelValue)) {
+    error.value = props.requiredError;
     return false;
   }
-  if (regex && !new RegExp(regex).test(modelValue)) {
-    error = validationError;
+  if (props.regex && !new RegExp(props.regex).test(props.modelValue)) {
+    error.value = props.validationError;
     return false;
   }
   return true;
 };
+
+defineExpose({
+  validate
+})
    
 
 </script>

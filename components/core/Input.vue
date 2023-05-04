@@ -91,27 +91,31 @@ const props = defineProps({
   },
 })
 const validate = () => {
-  if (required) {
-    if (props.type === 'number' && !_.isNumber(value)) {
-      error = props.requiredError
+  if (props.required) {
+    if (props.type === 'number' && !_.isNumber(props.modelValue)) {
+      error.value = props.requiredError
       // console.log(1)
       return false
     }
     // for strings
-    if (props.type !== 'number' && _.isEmpty(value)) {
+    if (props.type !== 'number' && _.isEmpty(props.modelValue)) {
       // console.log(2)
-      error = props.requiredError
+      error.value = props.requiredError
       return false
     }
   }
 
   // check for regex validation
-  if (props.regex && !new RegExp(props.regex).test(value)) {
-    error = props.validationError
+  if (props.regex && !new RegExp(props.regex).test(props.modelValue)) {
+    error.value = props.validationError
     return false
   }
   return true
 };
+
+defineExpose({
+  validate
+})
 
 </script>
 
