@@ -23,7 +23,7 @@
     "title": "ZincObserve",
     "subtitle": "Observe Everything. Bare metal, VMs, Containers, AWS, GCP, Azure, Kubernetes, Serverless.",
     "image": "/img/homepage/zincobservehero.png",
-    "btnText1": "Try it free",
+    "btnText1": "Get started for free",
     "btnTo1": "https://observe.zinc.dev/",
     "btnText2": "Request a demo",
     "btnTo2": "/contactus",
@@ -156,8 +156,8 @@
     ]
   },
   "faqData": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
         "question": "q1?",
