@@ -185,7 +185,7 @@ useHead({
 <style lang="postcss" scoped>
 :deep(.nuxt-content h1),
 .blog-content h1 {
-  @apply text-5xl mb-4 text-theme-primary-600 font-semibold;
+  @apply text-2xl md:text-5xl mb-4 text-theme-primary-600 font-semibold;
 }
 
 :deep(.nuxt-content h2),
