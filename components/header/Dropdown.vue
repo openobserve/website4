@@ -39,7 +39,7 @@
   </div>
 </template>
 <script setup>
-const isMenuOpen = ref(true);
+const isMenuOpen = ref(false);
 const directions = {
   right: "right-0",
   left: "left-0",
