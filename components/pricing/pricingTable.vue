@@ -17,7 +17,8 @@
                     <th
                       v-for="(item, index) in items.tableHeading"
                       :key="index"
-                      class="px-2 py-3 md:px-6 md:py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      class="px-2 py-3 md:px-6 md:py-3 text-xs font-medium text-gray-500 uppercase tracking-wider"
+                      :class="index == 0 ? 'text-left' : 'text-center'"
                     >
                       {{ item }}
                     </th>
