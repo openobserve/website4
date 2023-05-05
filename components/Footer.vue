@@ -80,30 +80,30 @@
                     {{ footerData.items.title }}
                   </h3>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-secondary-300 py-3"
                   >
                     <img
                       :src="footerData.items.emailicon"
-                      class="max-h-4 mt-1 mx-2"
+                      class="max-h-4 mx-2"
                       alt="Email"
                     />
                     <a
-                      class="font-semibold text-sm  pb-2 text-center md:text-left"
+                      class="font-semibold text-sm   text-center md:text-left"
                       :href="'mailto:' + footerData.items.email"
                       target="_blank"
                       >{{ footerData.items.email }}</a
                     >
                   </div>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-secondary-300 "
                   >
                     <img
                       :src="footerData.items.callicon"
-                      class="max-h-4 mt-1 mx-2"
+                      class="max-h-4 mx-2"
                       alt="Phone"
                     />
                     <a
-                      class="font-semibold text-sm pb-2 text-center md:text-left whitespace-nowrap"
+                      class="font-semibold text-sm  text-center md:text-left md:whitespace-nowrap"
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >
