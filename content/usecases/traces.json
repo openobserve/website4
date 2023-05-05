@@ -43,7 +43,7 @@
       {
         "title": "Code Performance Analysis",
         "desc": "Enhance code performance by gaining visibility into the resource usage and execution time of each method and line of code.",
-        "image": "/img/usecases/traces/Codeperformance.svg"
+        "image": "/img/usecases/traces/CodePerformance.svg"
       }
     ]
   },
