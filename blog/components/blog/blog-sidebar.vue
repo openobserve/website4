@@ -1,8 +1,8 @@
 <template>
-  <div class="-mx-8 w-4/12 hidden lg:block">
+  <div class="-mx-8 w-3/12 hidden lg:block">
     <div class="">
       <div v-if="false" class="mt-1 px-8">
-        <h4 class="mb-4 text-xl font-bold text-gray-700">Categories</h4>
+        <h4 class="mb-4 text-xl font-medium text-gray-700">Categories</h4>
         <div
           class="
             flex flex-col
@@ -23,7 +23,7 @@
             >
               <nuxt-link
                 :to="'/blog/category/' + category.slug"
-                class="text-gray-700 font-bold"
+                class="text-gray-700"
               >
                 <div class="flex flex-row">
                   <div>&gt;&nbsp;&nbsp;</div>
@@ -54,24 +54,22 @@
         </div>
       </div>
       <div class="mt-1 px-8">
-        <h4 class="mb-4 text-xl font-bold text-gray-700">Tags</h4>
+        <h4 class="mb-4 text-xl font-medium text-gray-700">Tags</h4>
         <div
           class="
             flex flex-col
             bg-white
-            px-4
             py-6
             max-w-sm
             mx-auto
             rounded-lg
-            border
           "
         >
           <ul>
             <li v-for="(tag, index) in tags" :key="index" class="mb-2">
               <nuxt-link
                 :to="'/blog/tag/' + tag.slug"
-                class="text-gray-700 font-bold"
+                class="text-gray-700"
               >
                 <div class="flex flex-row">
                   <div>&gt;&nbsp;&nbsp;</div>
@@ -102,24 +100,21 @@
         </div>
       </div>
       <div class="mt-10 px-8">
-        <h4 class="mb-4 text-xl font-bold text-gray-700">Archives</h4>
+        <h4 class="mb-4 text-xl font-medium text-gray-700">Archives</h4>
         <div
           class="
             flex flex-col
             bg-white
-            px-4
-            py-6
             max-w-sm
             mx-auto
             rounded-lg
-            border
           "
         >
           <select
             v-model="dataVariables.selectedMonth"
             name="archiveMonths"
             id="archiveMonths"
-            class="py-2 mb-2"
+            class="py-2 mb-2 border rounded px-2"
           >
             <option disabled value="">Select</option>
             <option
@@ -138,7 +133,7 @@
             >
               <nuxt-link
                 :to="'/blog/' + article.slug"
-                class="text-gray-700 font-bold"
+                class="text-gray-700 font-normal"
               >
                 <div class="flex flex-row">
                   <div>&gt;&nbsp;&nbsp;</div>
@@ -154,19 +149,19 @@
         </div>
       </div>
       <div class="mt-10 px-8">
-        <h4 class="mb-4 text-xl font-bold text-gray-700">Recent Posts</h4>
-        <div class="max-w-sm mx-auto rounded-lg border divide-y">
+        <h4 class="mb-4 text-xl font-medium text-gray-700">Recent Posts</h4>
+        <div class="max-w-sm mx-auto">
           <div
             v-for="(article, index) in recentArticles"
             :key="index"
-            class="flex flex-col px-8 py-6"
+            class="flex flex-col py-2 mb-5"
           >
             <div class="">
               <nuxt-link
                 :to="`/blog/${article.slug}`"
                 class="
-                  text-lg text-gray-700
-                  font-medium
+                  text-base text-gray-700
+                  font-normal
                   hover:text-theme-primary
                   transition-all
                   duration-150
@@ -177,7 +172,7 @@
             </div>
             <div class="flex justify-between items-center mt-4">
               <div class="flex items-center">
-                <img
+                <!-- <img
                   :src="`/${
                     authors?.find((a) => a.slug == article?.author)?.img
                   }`"
@@ -190,11 +185,10 @@
                     hidden
                     sm:block
                   "
-                />
-
+                /> -->
                 <nuxt-link
                   :to="'/blog/author/' + article.author"
-                  class="text-gray-700 text-sm mx-3 hover:underline"
+                  class="text-gray-700 text-sm font-light mr-3 hover:underline"
                 >
                   {{ authors?.find((a) => a.slug == article?.author)?.name }}
                 </nuxt-link>

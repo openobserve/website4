@@ -51,7 +51,7 @@
           class="prose prose-lg prose-slate max-w-none text-sm"
         />
 
-        <div class="border"></div>
+        <div class="border my-6"></div>
 
         <div class="mt-2">
           <div class="flex flex-row flex-wrap">
@@ -185,7 +185,7 @@ useHead({
 <style lang="postcss" scoped>
 :deep(.nuxt-content h1),
 .blog-content h1 {
-  @apply text-2xl md:text-5xl mb-4 text-theme-primary-600 font-semibold;
+  @apply text-2xl md:text-4xl mb-4 text-theme-primary-600 font-medium;
 }
 
 :deep(.nuxt-content h2),

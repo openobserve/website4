@@ -3,7 +3,6 @@
     <div v-for="(article, index) in articles" :key="index" class="mb-10">
       <div
         class="
-          max-w-4xl
           px-2
           py-2
           bg-white
@@ -13,22 +12,14 @@
         "
       >
         <div class="flex flex-col md:flex-row items-stretch">
-          <img
-            class="rounded-lg border md:w-64 mr-2 object-cover md:flex-1"
-            :src="
-              article.img == undefined || article.img == null
-                ? 'http://placehold.jp/24/bebebe/ffffff/600x300.png?text=.'
-                : getBlogImage(article)
-            "
-            alt="article image"
-          />
+          
           <div style="flex: 2" class="px-4 py-2">
             <div class="">
               <nuxt-link
                 :to="'/blog/' + article.slug"
                 class="
                   text-2xl text-gray-700
-                  font-semibold
+                  font-medium
                   hover:text-theme-primary
                   transition-all
                   duration-200
@@ -104,6 +95,7 @@
               </nuxt-link>
             </div>
           </div>
+          
         </div>
       </div>
     </div>
