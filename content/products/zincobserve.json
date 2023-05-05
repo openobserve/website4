@@ -22,7 +22,7 @@
     "tagline": "",
     "title": "ZincObserve",
     "subtitle": "Observe Everything. Bare metal, VMs, Containers, AWS, GCP, Azure, Kubernetes, Serverless.",
-    "image": "/img/homepage/zincobservehero.png",
+    "image": "/img/products/zincobserve/zincobservehero.png",
     "btnText1": "Get started for free",
     "btnTo1": "https://observe.zinc.dev/",
     "btnText2": "Request a demo",
