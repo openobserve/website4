@@ -28,11 +28,12 @@
         "recommandText": "",
         "image": "/img/developer.svg",
         "label": "What's included",
-        "sublabel": " ",
+        "sublabel": "",
         "items": [
           "200GB Ingestion/month",
           "200GB Query Volume/month",
-          "30 Days Retention"
+          "15 Days Retention",
+          "10 users"
         ],
         "btnText": "Get started for free",
         "btnLink": "https://cloud.zincsearch.com"
@@ -40,8 +41,9 @@
       {
         "id": "pro",
         "heading": "For startups",
-        "subtitle": "Professional",
+        "subtitle": "Pro",
         "key": "primary",
+        "free": "$19/Month",
         "image": "/img/pro.svg",
         "recommed": true,
         "recommandText": "Recommended",
@@ -49,8 +51,9 @@
         "sublabel": "Everything in Developer Plan, plus:",
         "items": [
           "Additional Ingestion($0.50/GB)",
-          "Additional Query Volume($5/TB)",
-          ""
+          "Additional Query Volume($0.01/GB)",
+          "30 Days Retention",
+          "Unlimited users"
         ],
         "btnText": "Get started",
         "btnLink": ""
@@ -67,7 +70,7 @@
         "sublabel": "Everything in Pro Plan, plus:",
         "items": [
           "Custom Prices",
-          "",
+          "Volume discounts",
           ""
         ],
         "btnText": "Get in touch",
@@ -105,13 +108,7 @@
           "enterprise": true
         },
         {
-          "title": "Dynamic evolution of schema",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Out of the box authentication",
+          "title": "Dashboards",
           "developer": true,
           "pro": true,
           "enterprise": true
@@ -147,67 +144,19 @@
           "enterprise": true
         },
         {
-          "title": "High Availability (HA) and clustering",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Stateless nodes",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
           "title": "Localization for multiple languages",
           "developer": true,
           "pro": true,
           "enterprise": true
         },
         {
-          "title": "Prebuilt container images for multiple platforms",
+          "title": "Scheduled & Realtime Alerts (logs, metrics)",
           "developer": true,
           "pro": true,
           "enterprise": true
         },
         {
-          "title": "Dashboards",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Scheduled Alerts (Based on logs)",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Real time Alerts (Based on logs)",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Scheduled Alerts (Based on metrics)",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Scheduled Alerts (Based on metrics)",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Template based alert target (Allows alerting to slack, teams and many more)",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
-          "title": "Send alerts to Prometheus alertmanager",
+          "title": "Template based alert target (Allows alerting to slack, teams and anywhere else)",
           "developer": true,
           "pro": true,
           "enterprise": true
@@ -220,14 +169,14 @@
         },
         {
           "title": "Ingestion API compatibility with Elasticsearch",
-          "developer": false,
+          "developer": true,
           "pro": true,
           "enterprise": true
         },
         {
-          "title": "Email support",
+          "title": "Search and aggregation API compatibility with Elasticsearch",
           "developer": false,
-          "pro": true,
+          "pro": false,
           "enterprise": true
         },
         {
@@ -236,6 +185,13 @@
           "pro": false,
           "enterprise": true
         },
+        {
+          "title": "Email support",
+          "developer": false,
+          "pro": true,
+          "enterprise": true
+        },
+        
         {
           "title": "Phone support",
           "developer": false,
