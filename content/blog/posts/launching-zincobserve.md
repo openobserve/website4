@@ -1,6 +1,6 @@
 ---
-title: Open source observability for everyone
-seoTitle: Open source observability for everyone
+title: Simple, yet sophisticated - Introducing ZincObserve
+seoTitle: Simple, yet sophisticated - Introducing ZincObserve
 description: "ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: img/homepage/hero1.png
 alt: Zincobserve
@@ -32,7 +32,7 @@ We built “ZincObserve” with the following design principles and architecture
 
 We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But now let’s take a look at why we even thought of building ZincObserve in the first place.
 ### Yet another log search engine!!! Why?
-When I built [ZincSearch](https://github.com/zinclabs/zincsearch) back in 2021, I did not expect that it would go on to get more than 14k stars on GitHub in about a year and become one of the [fastest growing projects of 2022 on GitHub](https://runacap.com/ross-index/annual-2022/). ZincSearch is currently used by hundreds of organizations in production for log search and analysis despite its minimal feature set.
+When I built [ZincSearch](https://github.com/zincsearch/zincsearch) back in 2021, I did not expect that it would go on to get more than 14k stars on GitHub in about a year and become one of the [fastest growing projects of 2022 on GitHub](https://runacap.com/ross-index/annual-2022/). ZincSearch is currently used by hundreds of organizations in production for log search and analysis despite its minimal feature set.
 
 Why did these organizations choose ZincSearch? The vast majority of customers indicated the following pain points with their existing observability solutions:
 
@@ -63,8 +63,8 @@ Why did these organizations choose ZincSearch? The vast majority of customers in
    1. Datadog has its own query language.
 1. Performance: This was an area where fewer people complained considering they could just throw in a couple more servers if all other things are working fine. Nevertheless, this was a concern for many. Lower performance either results in degraded performance,  elevated compute costs, or sometimes a simple inability to do the job at all when the query times out. Performance includes the following items:
    1. Ingestion: How fast can the user ingest
-   1. Search: For example, ‘search for “error” in all of the log data’
-   1. Aggregations: For example, ‘give me totals for HTTP status codes from NGINX logs’
+   1. Search: e.g. search for **error** in all of the log data
+   1. Aggregations: e.g. give me totals for HTTP status codes from NGINX logs’
 
 We also saw the limitations of SaaS platforms like Datadog, Loggly, Papertrail, Splunk, and Sumologic, which can be expensive and lack necessary features. In addition, many users prefer to keep their data private in their own data centers or AWS accounts. Our team took these challenges into account, and designed a system from the ground up that addresses each one. 
 
@@ -85,7 +85,7 @@ When we decided to finally build, we had the following principles that we wanted
    1. Upgrades should be easy and smooth and account for differences in different versions, and not cause system downtime or data loss.
 1. Features and Usability
    1. System should be highly usable from the get go - providing excellent ROI on the invested time. A great UI and API are important to achieve it.
-   1. Logs themselves do not provide visibility into the application. Users need metrics and traces as well.
+   1. **Logs** themselves do not provide visibility into the application. Users need **metrics** and **traces** as well.
 1. Cost
    1. Users should not have to mortgage houses or company assets in order to run the system either in a self-hosted option (with or without licensing cost) or for SaaS platform.
 1. Learning curve
@@ -114,9 +114,10 @@ We built an open source observability platform “ZincObserve” that is:
    1. We use automatic and manual partitioning of data for better performance.
    1. We also use in-memory caching where we store the compressed data in memory and can store 1 TB of data in under 35 GB RAM (at 30x compression).
 1. Advanced features:
+   1. Logs, Metrics, Traces, Dashboards, Alerts, Functions, and more.
    1. Multi-tenancy
    1. Embedded scripting
-      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enhancement of log data as it enters ZincObserve. Users could preprocess log records as they are entering the system. Users could build whatever function they can imagine.
+      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enrichment of log data as it enters ZincObserve. Users could preprocess log records as they are entering the system. Users could build whatever function they can imagine.
       1. Query functions - think of it like a lambda function that can run on every log line during query after log records have already been ingested. E.g. if a user has a log record like “1.2.3.4 - POST prabhat@zinc https://zinc.dev”, you could parse it during query time and filter against it at query time. Users could build whatever function they can imagine.
 
 1. Sleep better at night knowing your system will keep running even if the nodes crash through autohealing.

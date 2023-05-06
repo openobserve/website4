@@ -172,20 +172,6 @@
             </div>
             <div class="flex justify-between items-center mt-4">
               <div class="flex items-center">
-                <!-- <img
-                  :src="`/${
-                    authors?.find((a) => a.slug == article?.author)?.img
-                  }`"
-                  alt="authorImage"
-                  class="
-                    w-8
-                    h-8
-                    object-cover object-top
-                    rounded-full
-                    hidden
-                    sm:block
-                  "
-                /> -->
                 <nuxt-link
                   :to="'/blog/author/' + article.author"
                   class="text-gray-700 text-sm font-light mr-3 hover:underline"

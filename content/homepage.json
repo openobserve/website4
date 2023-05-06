@@ -103,7 +103,7 @@
     ]
   },
   "useCases": {
-    "title": "Logs, Infrastructure monitoring and APM",
+    "title": "Logs, Metrics and Traces",
     "subtitle": "Accelerate your cloud operations with ZincObserve's Search, Observability, and Analysis platform",
     "items": [
       {
