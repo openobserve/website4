@@ -30,8 +30,8 @@
         "label": "What's included",
         "sublabel": "",
         "items": [
-          "200GB Ingestion/month",
-          "200GB Query Volume/month",
+          "200 GB Ingestion/month",
+          "200 GB Query Volume/month",
           "15 Days Retention",
           "10 users"
         ],
@@ -63,14 +63,16 @@
         "heading": "For enterprise",
         "subtitle": "Enterprise",
         "key": "primary",
+        "free": "Let's talk",
         "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
         "label": "What's included",
         "sublabel": "Everything in Pro Plan, plus:",
         "items": [
-          "Custom Prices",
           "Volume discounts",
+          "SLAs",
+          "Phone support",
           ""
         ],
         "btnText": "Get in touch",
@@ -186,12 +188,17 @@
           "enterprise": true
         },
         {
+          "title": "Community support",
+          "developer": true,
+          "pro": true,
+          "enterprise": true
+        },
+        {
           "title": "Email support",
           "developer": false,
           "pro": true,
           "enterprise": true
         },
-        
         {
           "title": "Phone support",
           "developer": false,
@@ -199,7 +206,7 @@
           "enterprise": true
         },
         {
-          "title": "SLA",
+          "title": "SLAs",
           "developer": false,
           "pro": false,
           "enterprise": true
