@@ -19,6 +19,7 @@
     },
     "priceItems": [
       {
+        "id": "developer",
         "heading": "For individuals",
         "subtitle": "Developer",
         "key": "secondary",
@@ -27,6 +28,7 @@
         "recommandText": "",
         "image": "/img/developer.svg",
         "label": "What's included",
+        "sublabel": " ",
         "items": [
           "200GB Ingestion/month",
           "200GB Query Volume/month",
@@ -36,6 +38,7 @@
         "btnLink": "https://cloud.zincsearch.com"
       },
       {
+        "id": "pro",
         "heading": "For startups",
         "subtitle": "Professional",
         "key": "primary",
@@ -46,12 +49,14 @@
         "sublabel": "Everything in Developer Plan, plus:",
         "items": [
           "Additional Ingestion($0.50/GB)",
-          "Additional Query Volume($5/TB)"
+          "Additional Query Volume($5/TB)",
+          ""
         ],
         "btnText": "Get started",
         "btnLink": ""
       },
       {
+        "id": "enterprise",
         "heading": "For enterprise",
         "subtitle": "Enterprise",
         "key": "primary",
@@ -61,7 +66,9 @@
         "label": "What's included",
         "sublabel": "Everything in Pro Plan, plus:",
         "items": [
-          "Custom Prices"
+          "Custom Prices",
+          "",
+          ""
         ],
         "btnText": "Get in touch",
         "btnLink": "/contactus"
@@ -218,15 +225,15 @@
           "enterprise": true
         },
         {
-          "title": "SAML authentication",
-          "developer": false,
-          "pro": false,
-          "enterprise": true
-        },
-        {
           "title": "Email support",
           "developer": false,
           "pro": true,
+          "enterprise": true
+        },
+        {
+          "title": "SAML authentication",
+          "developer": false,
+          "pro": false,
           "enterprise": true
         },
         {

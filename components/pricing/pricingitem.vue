@@ -60,8 +60,8 @@
           <h1 class="text-xl font-semibold text-black mb-2">
             {{ item.label }}
           </h1>
-          <h3 class="text-lg font-normal text-black" v-show="item.sublabel">
-            {{ item.sublabel }}
+          <h3 class="text-lg font-normal text-black">
+            {{ item.sublabel }}&nbsp;
           </h3>
         </div>
         <div class="py-6">
@@ -75,9 +75,11 @@
                 alt="check icon"
                 class="p-2 rounded-full h-7 w-7"
                 :class="
-                  item.key === 'primary'
+                  [item.key === 'primary'
                     ? 'bg-theme-primary'
-                    : 'bg-theme-secondary'
+                    : 'bg-theme-secondary',
+                    !it ? 'invisible' : ''
+                  ]
                 "
               />
             </span>
@@ -85,6 +87,26 @@
             <p :key="index" class="text-black font-normal text-base ml-2">
               {{ it }}
             </p>
+          </div>
+        </div>
+      </div>
+      <div class="space-y-2 mt-4 mb-8">
+        <div class="font-semibold">Key Features</div>
+        <div v-for="(feature,index) in features" :key="index" class="">
+          <div class="flex flex-row items-center">
+            <img
+              v-if="feature[item.id]"
+              src="/img/feature-check.svg"
+              alt="check icon"
+              class="p-1 mr-2 rounded-full h-5 w-5 "
+            />
+            <img
+              v-if="!feature[item.id]"
+              src="/img/feature-no.svg"
+              alt="check icon"
+              class="p-0.5 mr-2 rounded-full h-5 w-5 "
+            />
+            <span class="text-sm" :class="!feature[item.id] ? 'text-gray-500' : ''">{{ feature.title }}</span>
           </div>
         </div>
       </div>
@@ -111,6 +133,9 @@
 defineProps({
   item: {
     type: Object,
+  },
+  features: {
+    type: Array
   },
 });
 </script>
