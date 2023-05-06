@@ -32,6 +32,7 @@
         "items": [
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
+          "100 minutes functions execution",
           "15 Days Retention",
           "10 users"
         ],
@@ -50,8 +51,9 @@
         "label": "What's included",
         "sublabel": "Everything in Developer Plan, plus:",
         "items": [
-          "Additional Ingestion($0.50/GB)",
-          "Additional Query Volume($0.01/GB)",
+          "Ingestion ($0.50/GB)",
+          "Query Volume ($0.01/GB)",
+          "Functions execution ($0.01/minute)",
           "30 Days Retention",
           "Unlimited users"
         ],
@@ -71,6 +73,7 @@
         "sublabel": "Everything in Pro Plan, plus:",
         "items": [
           "Volume discounts",
+          "Custom Retention",
           "SLAs",
           "Phone support",
           ""
@@ -177,6 +180,12 @@
         },
         {
           "title": "Search and aggregation API compatibility with Elasticsearch",
+          "developer": false,
+          "pro": false,
+          "enterprise": true
+        },
+        {
+          "title": "Role Based Access Control (RBAC)",
           "developer": false,
           "pro": false,
           "enterprise": true
