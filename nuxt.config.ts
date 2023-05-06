@@ -52,7 +52,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://zinc.dev/",
-      siteName: "ZincLabs",
+      siteName: "Zinc Labs",
       siteDescription:
         "ZincObserve is a cloud native observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.",
       language: "en",

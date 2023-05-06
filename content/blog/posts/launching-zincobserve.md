@@ -1,6 +1,6 @@
 ---
-title: Elasticsearch alternative in rust with 140x lower storage cost - ZincObserve
-seoTitle: Elasticsearch alternative in rust with 140x lower storage cost - ZincObserve
+title: Open source observability for everyone
+seoTitle: Open source observability for everyone
 description: "ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: img/homepage/hero1.png
 alt: Zincobserve

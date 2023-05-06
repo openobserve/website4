@@ -99,7 +99,7 @@
           </ul>
         </div>
       </div>
-      <div class="mt-10 px-8">
+      <!-- <div class="mt-10 px-8">
         <h4 class="mb-4 text-xl font-medium text-gray-700">Archives</h4>
         <div
           class="
@@ -147,7 +147,7 @@
             </li>
           </ul>
         </div>
-      </div>
+      </div> -->
       <div class="mt-10 px-8">
         <h4 class="mb-4 text-xl font-medium text-gray-700">Recent Posts</h4>
         <div class="max-w-sm mx-auto">

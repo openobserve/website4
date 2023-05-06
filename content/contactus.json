@@ -31,8 +31,8 @@
       "icon": "/img/email_icon.svg",
       "text": "hello@zinclabs.io"
     },
-    "heading": "Let us know how we can help you with your needs for a search system",
-    "subheading": " We can help you architect your system to provide observability at scale with no associated drama and costs.<br/>Fill out the form below, and we will reach out shortly.<br/>You could also send us an email at hello@zinclabs.io",
+    "heading": "Let's talk",
+    "subheading": "Get personalzed help from our team",
     "btnText":"Submit",
     "btnLoadingText":"Submitting...",
     "btnLink":""

@@ -18,7 +18,7 @@
     "items": [
       {
         "question": "What do you do?",
-        "answer": "Zinc Labs Inc is the maker of ZincObserve, an open source observability tool for logs, metrics and traces.",
+        "answer": "We are building the easiest, most efficient and sophisticated open source tool to monitor all your applications and infarstructure. You get a unified view of logs, metrics and traces. A tool that is easy to operate, has great UX, and scales to petabytes of data. ",
         "open": true
       },
       {
@@ -27,28 +27,33 @@
         "open": true
       },
       {
-        "question": "How do I send my logs to ZincObserve?",
-        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat,cloudwatch logs using Kinesis Firehose etc. or using the ZincObserve API.",
+        "question": "How do I send/ingest logs to/in ZincObserve?",
+        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the ZincObserve API.",
         "open": false
       },
       {
-        "question": "How do I send metrics data to ZincObserve?",
+        "question": "How do I send/ingest metrics data to/in ZincObserve?",
         "answer": "You can send metrics data to ZincObserve using prometheus remote-write API or using the ZincObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
         "open": true
       },
       {
-        "question": "How do I send traces to ZincObserve?",
+        "question": "How can I ingest Amazon cloudwatch logs into ZincObserve?",
+        "answer": "You can ingest amazon cloudwatch logs into ZincObserve by subscribing a cloudwatch log-group to a kinesis firehose stream. You can then use HTTP delivery of kinesis firehose to send any logs to ZincObserve.",
+        "open": false
+      },
+      {
+        "question": "How do I send/ingest traces to/in ZincObserve?",
         "answer": "You can use opentelemetry libraries to instrument your application and send traces to ZincObserve. You can also use the ZincObserve API to send traces.",
         "open": false
       },
       {
         "question": "Do I need to install ZincObserve to use it?",
-        "answer": "You can choose to install ZincObserve in your own infrastructure or use the Zinc cloud.",
+        "answer": "You can choose to install ZincObserve in your own infrastructure or use Zinc cloud. With Zinc cloud you do not have to worry about installing, maintaining and keep up ZincObserve yourself. Zinc cloud provides generous free tier suitable for most individuals and startups.",
         "open": false
       },
       {
         "question": "Where does ZincObserve store data?",
-        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZincObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for ingle node installation and in etcd for HA installation.",
+        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZincObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for single node installation and in etcd for HA installation.",
         "open": true
       },
       {
@@ -92,8 +97,8 @@
         "open": false
       },
       {
-        "question": "How does ZincObserve compare to Elasticsearch?",
-        "answer": "ZincObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes ZincObserve can scale much faster than Elasticsearch. ZincObserve has been written in rust and enjoys its high performance and low memory footprint. ZincObserve is also much easier to operate than Elasticsearch. ZincObserve has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
+        "question": "Can I install ZincObserve on my laptop?",
+        "answer": "Yes, You can install ZincObserve on your laptop and get started in under 2 minutes. Follow the quickstart guide in documentation.",
         "open": false
       }
     ]

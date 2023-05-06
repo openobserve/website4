@@ -60,7 +60,7 @@
             <Input ref="inputName" id="name" name="name" required label="Name" v-model="formValue.name" />
             <Input ref="inputEmail" id="email" name="email" required label="Email" v-model="formValue.email" />
             <Input ref="inputPhone" id="phone" name="phone" label="Phone" v-model="formValue.phone" />
-            <Input ref="inputWebsiteUrl" id="websiteurl" name="websiteurl" label="Websiteurl" type="url"
+            <Input ref="inputWebsiteUrl" id="websiteurl" name="websiteurl" label="Website" type="url"
               v-model="formValue.websitelink" />
             <TextArea ref="inputMessage" id="message" name="message" required label="Message"
               v-model="formValue.message"></TextArea>
