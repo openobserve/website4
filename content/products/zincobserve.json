@@ -109,13 +109,13 @@
       {
         "image": "/img/products/zincobserve/schemaevolution.svg",
         "title": "Dynamic Schema Evolution",
-        "desc": "Supports dynamic schema evolution that allows for seamless modification of data schemas without downtime.",
+        "desc": "Ingest any and all logs without worrying about schema changes.",
         "btnText": ""
       },
       {
         "image": "/img/products/zincobserve/Security.svg",
         "title": "Security",
-        "desc": "Provides out of the box authentication methods to secure access to the platform.",
+        "desc": "Fine grained role based access control (RBAC) for users and teams.",
         "btnText": ""
       },
       {

@@ -11,7 +11,7 @@
     }
   ],
   "content": {
-    "title": "Simple, transparent pricing ",
+    "title": "Zinc Cloud",
     "subtitle": "",
     "btn": {
       "monthlyBtn": "CLOUD",
@@ -32,7 +32,7 @@
         "items": [
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
-          "100 minutes functions execution",
+          "100 million records function execution",
           "15 Days Retention",
           "10 users"
         ],
@@ -53,7 +53,7 @@
         "items": [
           "Ingestion ($0.50/GB)",
           "Query Volume ($0.01/GB)",
-          "Functions execution ($0.01/minute)",
+          "Functions execution ($0.1/mllion records)",
           "30 Days Retention",
           "Unlimited users"
         ],
