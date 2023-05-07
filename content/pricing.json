@@ -52,7 +52,7 @@
         "label": "What's included",
         "sublabel": "Everything in Developer Plan, plus:",
         "items": [
-          "Ingestion ($0.4/GB)",
+          "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.5/1M records)",
           "Alert evaluations ($0.1/1M records)",
@@ -78,6 +78,7 @@
           "Custom Retention",
           "SLAs",
           "Phone support",
+          "",
           ""
         ],
         "btnText": "Get in touch",
