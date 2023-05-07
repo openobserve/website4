@@ -17,8 +17,8 @@
   "faqs": {
     "items": [
       {
-        "question": "What do you do?",
-        "answer": "We are building the easiest, most efficient and sophisticated open source tool to monitor all your applications and infarstructure. You get a unified view of logs, metrics and traces. A tool that is easy to operate, has great UX, and scales to petabytes of data. ",
+        "question": "What are yu folks building?",
+        "answer": "We are building the easiest, most efficient and sophisticated observability tool to monitor all your applications and infrastructure. You get a unified view of logs, metrics and traces and ability to easily navigate and correlate them. We are building a tool that is easy to operate, has great UX, and that you can start with mega bytes of data and scale to peta bytes of data. You can run this tool using a single binary on your laptop with less than 100 MB RAM.",
         "open": true
       },
       {
