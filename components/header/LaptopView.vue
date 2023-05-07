@@ -19,7 +19,7 @@
         }}</Button>
         <Dropdown
           :items="items.useCases"
-          title="Use Cases"
+          title="Features"
           direction="left"
           label="productName"
           triggerMode="hover"

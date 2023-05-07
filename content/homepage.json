@@ -110,43 +110,43 @@
         "image": "/img/homepage/Logs.svg",
         "title": "Logs",
         "desc": "The software provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
-        "to": "/usecases/logs"
+        "to": "/features/logs"
       },
       {
         "image": "/img/homepage/Metrics.svg",
         "title": "Metrics",
         "desc": "The software offers long-term storage for Prometheus metrics in S3 with support for SQL and PromQL. Correlating logs and traces with metrics provides a comprehensive view of infrastructure, and high cardinality data storage offers a new level of functionality.",
-        "to": "/usecases/metrics"
+        "to": "/features/metrics"
       },
       {
         "image": "/img/homepage/Traces.svg",
         "title": "Traces",
         "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
-        "to": "/usecases/traces"
+        "to": "/features/traces"
       }
     ]
   },
   "useCases2": {
-    "title": "Use Cases",
+    "title": "Features",
     "subtitle": "Get more from your data with ZincObserve",
     "items": [
       {
         "image": "/img/homepage/Logs.svg",
         "title": "Logs",
         "desc": "The software provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
-        "to": "/usecases/logs"
+        "to": "/features/logs"
       },
       {
         "image": "/img/homepage/Metrics.svg",
         "title": "Metrics",
         "desc": "The software offers long-term storage for Prometheus metrics in S3 with support for SQL and PromQL. Correlating logs and traces with metrics provides a comprehensive view of infrastructure, and high cardinality data storage offers a new level of functionality.",
-        "to": "/usecases/metrics"
+        "to": "/features/metrics"
       },
       {
         "image": "/img/homepage/Traces.svg",
         "title": "Traces",
         "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
-        "to": "/usecases/traces"
+        "to": "/features/traces"
       }
     ]
   }

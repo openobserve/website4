@@ -1,6 +1,6 @@
 <template>
   <div
-    class=" sticky top-0 z-50 backdrop-blur-sm bg-white text-black transition-all duration-500"
+    class="sticky top-0 z-50 backdrop-blur-sm bg-white text-black transition-all duration-500"
     :class="y > 20 ? 'drop-shadow-md ' : ''"
   >
     <div class="lg:block hidden">
@@ -53,23 +53,23 @@ const items = {
     link: "/products/zincobserve",
     productName: "Product",
   },
- 
+
   useCases: [
     {
       label: "",
-      link: "/usecases/logs",
+      link: "/features/logs",
       productName: "Logs",
     },
     {
       label: "",
-      link: "/usecases/metrics",
+      link: "/features/metrics",
       productName: "Metrics",
     },
     {
       label: "",
-      link: "/usecases/traces",
+      link: "/features/traces",
       productName: "Traces",
-    }
+    },
   ],
   solutions: [
     {

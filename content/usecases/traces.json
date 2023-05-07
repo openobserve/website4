@@ -8,7 +8,7 @@
       "disabled": false
     },
     {
-      "name": "Use Cases",
+      "name": "Features",
       "to": "#",
       "disabled": true
     },
@@ -23,12 +23,12 @@
       {
         "title": "Troubleshoot performance issues with distributed tracing",
         "desc": "<ul class='list-disc'> <li class='py-1'>High fidelity tracing for complex distributed systems</li> <li class='py-1'>c++, .Net, Erlang, Elixir, Go, Java, Javascript, PHP, Ruby, Python, Rust, Swift and more supported </li> <li class='py-1'>Backend, frontend, and mobile performance monitoring - all in one</li> <li class='py-1'>Track performance using dashboards</li> </ul>",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/features/traces/troubleshoot.svg"
       },
       {
         "title": "Open standards through Opentelemetry",
         "desc": "<ul class='list-disc'> <li class='py-1'>Full opentelemetry support</li> <li class='py-1'>No vendor lock in</li> <li class='py-1'>Built with open source and open standards</li> </ul>",
-        "image": "/img/usecases/traces/troubleshoot.svg"
+        "image": "/img/features/traces/troubleshoot.svg"
       }
     ]
   },
@@ -38,18 +38,18 @@
       {
         "title": "Unified Tracing Interface",
         "desc": "Quickly pinpoint the root causes of issues by viewing traces alongside logs, infrastructure metrics, database queries, network calls,and frontend telemetry in a single unified interface.",
-        "image": "/img/usecases/traces/UnifiedTracing.svg"
+        "image": "/img/features/traces/UnifiedTracing.svg"
       },
       {
         "title": "Code Performance Analysis",
         "desc": "Enhance code performance by gaining visibility into the resource usage and execution time of each method and line of code.",
-        "image": "/img/usecases/traces/CodePerformance.svg"
+        "image": "/img/features/traces/CodePerformance.svg"
       }
     ]
   },
   "faqData": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
         "question": "How many programmers does it take to screw a lightbulb?",

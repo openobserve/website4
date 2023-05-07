@@ -1,61 +1,61 @@
 {
-  "seotitle":"Matrices",
+  "seotitle": "Matrices",
   "seodesc": "Tracking trends through metrics, unlocking insights.Finally, high cardinality data storage enables you to store and query a large number of metrics, giving you the flexibility and scalability to handle large-scale environments. Overall, long-term storage for Prometheus metrics in S3 can revolutionize the way you monitor and manage your infrastructure, providing powerful insights and unparalleled visibility.",
   "breadcrumbs": [
     {
       "name": "Home",
       "to": "/",
-      "disabled":false
+      "disabled": false
     },
     {
-      "name": "Use Cases",
+      "name": "Features",
       "to": "#",
-      "disabled":true
+      "disabled": true
     },
     {
       "name": "Metrics",
       "to": "#",
-      "disabled":true
+      "disabled": true
     }
   ],
   "content": {
     "items": [
       {
-        "title":"Monitor everything",
+        "title": "Monitor everything",
         "desc": "<ul class='list-disc'> <li class='py-1'>Monitor every stack</li> <li class='py-1'>Kubernetes, AWS, GCP, Azure</li> <li class='py-1'>On Premise, Hybrid, IoT</li> </ul>",
-        "image": "/img/usecases/metrics/trackingtrends.svg"
+        "image": "/img/features/metrics/trackingtrends.svg"
       },
       {
         "title": "Easiest way to monitor",
         "desc": "<ul class='list-disc'> <li class='py-1'>No need of extensive training</li> <li class='py-1'>Use your existing knowledge, use SQL or PromQL for query</li> <li class='py-1'>Use OpenTelemetry and prometheus to send data</li> <li class='py-1'>Build high fidelity dashboards</li> <li class='py-1'>Correlate with logs and traces</li> </ul>",
-        "image": "/img/usecases/metrics/section2.svg"
+        "image": "/img/features/metrics/section2.svg"
       },
       {
         "title": "Built to scale",
         "desc": "<ul class='list-disc'> <li class='py-1'>Long term highly available storage for prometheus</li> <li class='py-1'>Store and query high cardinality metrics</li> <li class='py-1'>Build fantastic dashboards with drag and drop feature</li> </ul>",
-        "image": "/img/usecases/metrics/section2.svg"
+        "image": "/img/features/metrics/section2.svg"
       }
     ]
   },
-"faqData": {
-  "title": "Frequently Asked Questions",
-  "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
-  "items": [
-    {
-      "question": "How many programmers does it take to screw a lightbulb?",
-      "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
-      "open": true
-    },
-    {
-      "question": "Who is the most awesome person?",
-      "answer": "You! The viewer!",
-      "open": false
-    },
-    {
-      "question": "How many questions does it take to makes a succesful FAQ Page?",
-      "answer": "This many!",
-      "open": false
-    }
-  ]
-}
+  "faqData": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "items": [
+      {
+        "question": "How many programmers does it take to screw a lightbulb?",
+        "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pharetra lorem eu dolor rhoncus, at scelerisque ligula gravida. Sed porta id mi sit amet convallis. Etiam iaculis massa sit amet lacus blandit sodales. Nulla ultrices velit a diam placerat congue. Pellentesque iaculis, ipsum quis eleifend dapibus, est dui eleifend ante, quis fermentum mi ligula quis nisl. Ut et ex dui. Integer id venenatis quam.",
+        "open": true
+      },
+      {
+        "question": "Who is the most awesome person?",
+        "answer": "You! The viewer!",
+        "open": false
+      },
+      {
+        "question": "How many questions does it take to makes a succesful FAQ Page?",
+        "answer": "This many!",
+        "open": false
+      }
+    ]
+  }
 }

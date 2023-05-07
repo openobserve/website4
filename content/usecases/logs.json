@@ -8,7 +8,7 @@
       "disabled": false
     },
     {
-      "name": "Use Cases",
+      "name": "Features",
       "to": "#",
       "disabled": true
     },
@@ -23,22 +23,22 @@
       {
         "title": "Log everything",
         "desc": "<ul class='list-disc'> <li class='py-1'>Pay as you go, with 140x lower storage costs of other log providers</li> <li class='py-1'>30 day default storage and much longer storage capabilities</li> <li class='py-1'>No worries of hot vs cold tier for storage</li> <li class='py-1'>Search everything with scalable search functionality</li> </ul>",
-        "image": "/img/usecases/logs/features.svg"
+        "image": "/img/features/logs/features.svg"
       },
       {
         "title": "Find and fix your problems faster",
         "desc": "<ul class='list-disc'> <li class='py-1'>Search logs quickly with advanced GUI</li> <li class='py-1'>Quickly see logs, metrics and traces and a single dashboard </li> <li class='py-1'>Pinpoint performance and availability issues by detecting common patterns,trends, and outliers</li> <li class='py-1'>Gain complete visibility into your servers, virtual machines, and containers with a purpose-built interface for log monitoring</li> </ul>",
-        "image": "/img/usecases/logs/GainDeeper.svg"
+        "image": "/img/features/logs/GainDeeper.svg"
       },
       {
         "title": "Process, enrich, redact, and reduce logs",
         "desc": "<ul class='list-disc'> <li class='py-1'>Enrich log data</li> <li class='py-1'>Process incoming logs. Join fields, drop fields and more</li> <li class='py-1'>Remove unwanted fields cutting noise and storage costs</li> </ul>",
-        "image": "/img/usecases/logs/section2.svg"
+        "image": "/img/features/logs/section2.svg"
       },
       {
         "title": "Ensure automated compliance",
         "desc": "<ul class='list-disc'> <li class='py-1'>Redact sensitive data like SSN, email and more</li> <li class='py-1'>Use existing patterns or build your own</li> <li class='py-1'>Stop haggling with developers on compliance</li> </ul>",
-        "image": "/img/usecases/logs/section2.svg"
+        "image": "/img/features/logs/section2.svg"
       }
     ]
   },

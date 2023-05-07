@@ -58,7 +58,7 @@
                 onMode="expand" /> -->
       <Dropdown
         :items="items.useCases"
-        title="Use Cases"
+        title="Features"
         direction="left"
         label="productName"
         triggerMode="click"
