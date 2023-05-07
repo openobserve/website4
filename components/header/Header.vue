@@ -27,10 +27,10 @@ const items = {
     link: "https://cloud.zincsearch.com",
   },
   content: [
-    {
-      title: "About",
-      link: "/about",
-    },
+    // {
+    //   title: "About",
+    //   link: "/about",
+    // },
     {
       title: "FAQs",
       link: "/faq",

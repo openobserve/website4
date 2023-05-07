@@ -19,7 +19,7 @@
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "Full stack observability",
-      "subtitle": "Observe front end, back end and everything in between",
+      "subtitle": "Observe front end, back end, databases, network and more",
       "image": "/img/homepage/hero3.png",
       "btnText1": "Get started for free",
       "btnTo1": "https://observe.zinc.dev/",

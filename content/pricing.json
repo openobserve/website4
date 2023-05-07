@@ -32,7 +32,7 @@
         "items": [
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
-          "100 million records function execution",
+          "25 million records function execution",
           "15 Days Retention",
           "10 users"
         ],
@@ -51,9 +51,9 @@
         "label": "What's included",
         "sublabel": "Everything in Developer Plan, plus:",
         "items": [
-          "Ingestion ($0.50/GB)",
+          "Ingestion ($0.4/GB)",
           "Query Volume ($0.01/GB)",
-          "Functions execution ($0.1/mllion records)",
+          "Functions execution ($0.5/1M records)",
           "30 Days Retention",
           "Unlimited users"
         ],
@@ -143,7 +143,7 @@
           "enterprise": true
         },
         {
-          "title": "User defined Ingest and Query functions (VRL based)",
+          "title": "User defined functions",
           "developer": true,
           "pro": true,
           "enterprise": true
@@ -161,8 +161,14 @@
           "enterprise": true
         },
         {
-          "title": "Template based alert target (Allows alerting to slack, teams and anywhere else)",
+          "title": "Alerting to slack, teams, email",
           "developer": true,
+          "pro": true,
+          "enterprise": true
+        },
+        {
+          "title": "Template based alert destinations",
+          "developer": false,
           "pro": true,
           "enterprise": true
         },
