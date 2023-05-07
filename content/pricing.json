@@ -32,7 +32,8 @@
         "items": [
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
-          "25 million records function execution",
+          "25M records function executions/month",
+          "25M alert evaluations/month",
           "15 Days Retention",
           "10 users"
         ],
@@ -54,6 +55,7 @@
           "Ingestion ($0.4/GB)",
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.5/1M records)",
+          "Alert evaluations ($0.1/1M records)",
           "30 Days Retention",
           "Unlimited users"
         ],
@@ -143,12 +145,6 @@
           "enterprise": true
         },
         {
-          "title": "User defined functions",
-          "developer": true,
-          "pro": true,
-          "enterprise": true
-        },
-        {
           "title": "Localization for multiple languages",
           "developer": true,
           "pro": true,
@@ -181,6 +177,12 @@
         {
           "title": "Ingestion API compatibility with Elasticsearch",
           "developer": true,
+          "pro": true,
+          "enterprise": true
+        },
+        {
+          "title": "Export logs data",
+          "developer": false,
           "pro": true,
           "enterprise": true
         },
