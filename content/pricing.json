@@ -33,9 +33,9 @@
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
           "25M records function executions/month",
-          "25M alert evaluations/month",
           "15 Days Retention",
-          "10 users"
+          "10 users",
+          ""
         ],
         "btnText": "Get started for free",
         "btnLink": "https://cloud.zincsearch.com"
@@ -55,8 +55,8 @@
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.5/1M records)",
-          "Alert evaluations ($0.1/1M records)",
-          "30 Days Retention",
+          "30 days retention for logs and traces",
+          "120 days retention for metrics",
           "Unlimited users"
         ],
         "btnText": "Get started",
@@ -129,6 +129,12 @@
         },
         {
           "title": "SQL based query language",
+          "developer": true,
+          "pro": true,
+          "enterprise": true
+        },
+        {
+          "title": "PromQL for metrics querying",
           "developer": true,
           "pro": true,
           "enterprise": true
