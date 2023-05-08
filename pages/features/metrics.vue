@@ -1,11 +1,11 @@
 <template>
-  <BreadCrumbs
+  <!-- <BreadCrumbs
     class="md:pt-0 pt-3"
     :title="data.title"
     :paths="data.breadcrumbs"
-  />
+  /> -->
 
-  <Feature :items="data.content.items" />
+  <Feature :items="data.content.items" :title="data.content.title"/>
   <!-- <FaqSection :items="data.faqData" /> -->
   <LatestBlogPosts />
 </template>

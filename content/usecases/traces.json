@@ -19,6 +19,7 @@
     }
   ],
   "content": {
+    "title":"Traces",
     "items": [
       {
         "title": "Troubleshoot performance issues with distributed tracing",

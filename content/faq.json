@@ -1,7 +1,6 @@
 {
   "seotitle": "Frequently Asked Questions",
   "seodesc": "",
-  "title": "Frequently Asked Questions",
   "breadcrumbs": [
     {
       "name": "Home",
@@ -15,6 +14,8 @@
     }
   ],
   "faqs": {
+    "title":"Frequently Asked Questions",
+    "subtitle":"Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
         "question": "What are you folks building?",
