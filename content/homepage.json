@@ -10,8 +10,13 @@
         "desc": "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud, getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in upto 140x lower storage costs, making it a cost-effective solution for managing observability.",
         "image": "/img/homepage/zincobserve1.png",
         "btnText": "Get Started",
-        "btnTo": "/products/zincobserve",
+        "btnTo": "#",
         "btnVariant": "secondary"
+      },
+      {
+        "title": "<span class='highlight'>Logs, Metrics, Traces</span>",
+        "desc": "Zincobserve is an observability platform that allows you to monitor logs, metrics, and traces efficiently. ZincObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
+        "image": "/img/products/zincobserve/doubleproductivity.svg"
       }
     ]
   },
@@ -147,6 +152,66 @@
         "title": "Traces",
         "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
         "to": "/features/traces"
+      }
+    ]
+  },
+  "features": {
+    "title": "ZincObserve Features",
+    "subtitle": "Explore the transformative functionalities of ZincObserve and experience a new level of data observation",
+    "items": [
+      {
+        "image": "/img/products/zincobserve/SQL.svg",
+        "title": "SQL based query language",
+        "desc": "Utilize what you already know. Nothing new to learn here.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/Alerts.svg",
+        "title": "Alerts",
+        "desc": "Provides scheduled and real-time alerts that allow users to promptly address critical issues and dispatch alerts to multiple platforms using templates, which improves system monitoring capabilities.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/dashboard.svg",
+        "title": "Dashboards",
+        "desc": "Dashboards provide a comprehensive view of system behavior by presenting real-time data from logs, metrics, and traces in a visually appealing and efficient manner.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/DataStorage.svg",
+        "title": "Data Storage in Obect Store",
+        "desc": "Provides Storage functionality support in local Disk, s3, MinIO, GCS resulting in 140x lower storage cost.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/schemaevolution.svg",
+        "title": "Dynamic Schema Evolution",
+        "desc": "Ingest any and all logs without worrying about schema changes.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/Security.svg",
+        "title": "Security",
+        "desc": "Fine grained role based access control (RBAC) for users and teams.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/AdvancedGUI.svg",
+        "title": "Advanced GUI",
+        "desc": "Provides a user-friendly and intuitive graphical user interface for easier navigation and use of the platform.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/UserDefined.svg",
+        "title": "User defined Ingest & Query functions",
+        "desc": "Offers efficient data analysis by transforming large datasets into valuable insights while enabling users to customize ingestion and querying functions using the Lua scripting language.",
+        "btnText": ""
+      },
+      {
+        "image": "/img/products/zincobserve/Localization.svg",
+        "title": "Localization",
+        "desc": "Supports 10+ popular languages for the UI.",
+        "btnText": ""
       }
     ]
   }

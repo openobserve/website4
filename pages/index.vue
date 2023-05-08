@@ -14,6 +14,8 @@
       :title="data.cardItems.title"
       :subtitle="data.cardItems.subtitle"
     />
+    <Cards :items="data.features" />
+
     <!-- <Cards :items="data.useCases2" :background-image="null" /> -->
     <LatestBlogPosts />
   </div>

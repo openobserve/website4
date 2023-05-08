@@ -50,8 +50,8 @@ const items = {
   ],
 
   product: {
-    link: "/products/zincobserve",
-    productName: "Product",
+    //link: "/products/zincobserve",
+    //productName: "Product",
   },
 
   useCases: [
