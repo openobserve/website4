@@ -51,9 +51,9 @@
       class="py-4 border-b flex flex-col min-h-screen container px-16"
       v-if="isOpen"
     >
-      <Button variant="header" :to="items.product.link">{{
+      <!-- <Button variant="header" :to="items.product.link">{{
         items.product.productName
-      }}</Button>
+      }}</Button> -->
       <!-- <Dropdown :items="items.products" title="Products" direction="left" label="productName" triggerMode="click"
                 onMode="expand" /> -->
       <Dropdown

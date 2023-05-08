@@ -14,9 +14,9 @@
         </nuxt-link>
       </div>
       <div class="flex md:space-x-0 lg:space-x-5 xl:space-x-7">
-        <Button variant="header" :to="items.product.link">{{
+        <!-- <Button variant="header" :to="items.product.link">{{
           items.product.productName
-        }}</Button>
+        }}</Button> -->
         <Dropdown
           :items="items.useCases"
           title="Features"
