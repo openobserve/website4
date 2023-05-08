@@ -110,7 +110,7 @@
                   </div>
                   <div class="flex flex-row space-x-4">
                     <div
-                      class="mt-4"
+                      class="mt-4 flex flex-row justify-between"
                       v-for="(item, index) in footerData.social"
                     >
                       <nuxt-link :to="item.link" :key="index">
