@@ -153,6 +153,13 @@
       "title": "Feature",
       "featureData": [
         {
+          "title": "Users",
+          "developer": "10",
+          "pro": "Unlimited",
+          "business": "Unlimited",
+          "enterprise": "Unlimited"
+        },
+        {
           "title": "Logs",
           "developer": true,
           "pro": true,
