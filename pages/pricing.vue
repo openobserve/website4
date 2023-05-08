@@ -1,10 +1,10 @@
 <template>
   <div>
-    <BreadCrumbs
+    <!-- <BreadCrumbs
       class="md:pt-0 pt-3"
       title="Pricing"
       :paths="data.breadcrumbs"
-    />
+    /> -->
     <Pricing :items="data.content" />
     <PricingTable :items="data.tableData" />
   </div>

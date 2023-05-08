@@ -59,6 +59,18 @@
                         />
                       </div>
                     </td>
+                     <td class="px-2 py-2 md:px-6 md:py-4">
+                       <div
+                        class="flex justify-center items-center h-full w-full"
+                      >
+                        <img
+                          src="/img/Check.svg"
+                          alt="check icon"
+                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          v-if="it.business === true"
+                        />
+                      </div>
+                    </td>
                     <td class="px-2 py-2 md:px-6 md:py-4">
                       <div
                         class="flex justify-center items-center h-full w-full"
