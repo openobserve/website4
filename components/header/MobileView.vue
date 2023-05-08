@@ -72,10 +72,8 @@
         triggerMode="click"
         onMode="expand"
       /> -->
-      <div v-for="(item, index) in items.content">
-        <nuxt-link :to="item.link" :key="index">
-          <Button variant="header">{{ item.title }}</Button>
-        </nuxt-link>
+      <div v-for="(item, index) in items.content" :key="index">
+        <Button variant="header" :class="currentRoute == item.link ? '!font-bold' : ''" :to="item.link">{{ item.title }}</Button>
       </div>
       <!-- <a href="/" target="_blank">Docs</a> -->
       <div class="" v-if="isOpen">
@@ -105,4 +103,7 @@ defineProps({
     required: true,
   },
 });
+
+const router = useRouter()
+const currentRoute = computed(() => router.currentRoute.value.path)
 </script>

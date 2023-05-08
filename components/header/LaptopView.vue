@@ -33,8 +33,8 @@
           triggerMode="hover"
           onMode="hover"
         /> -->
-        <div v-for="(item, index) in items.content">
-          <Button variant="header" :to="item.link" :key="index">{{
+        <div v-for="(item, index) in items.content" :key="index">
+          <Button variant="header" :class="currentRoute == item.link ? '!font-bold' : ''" :to="item.link">{{
             item.title
           }}</Button>
         </div>
@@ -60,4 +60,7 @@ defineProps({
     required: true,
   },
 });
+
+const router = useRouter()
+const currentRoute = computed(() => router.currentRoute.value.path)
 </script>
