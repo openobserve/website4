@@ -108,19 +108,19 @@
                       >{{ footerData.items.phone }}</a
                     >
                   </div>
-                  
+                  <div class="flex flex-row space-x-4">
                     <div
                       class="mt-4"
                       v-for="(item, index) in footerData.social"
                     >
-                      
-                    <Link :href="item.link" :key="index">
-                      <img
-                        :src="item.icon"
-                        class="max-h-4 mr-2 flex justify-between"
-                        alt="social media icon"
-                      />
-                    </Link>
+                      <nuxt-link :to="item.link" :key="index">
+                        <img
+                          :src="item.icon"
+                          class="max-h-6 flex justify-between"
+                          alt="social media icon"
+                        />
+                      </nuxt-link>
+                    </div>
                   </div>
                 </div>
               </div>
