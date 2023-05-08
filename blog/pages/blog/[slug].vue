@@ -48,7 +48,7 @@
 
         <ContentRenderer
           :value="article"
-          class="prose prose-lg prose-slate max-w-none text-sm"
+          class="prose prose-lg prose-slate max-w-none text-base"
         />
 
         <div class="border my-6"></div>
