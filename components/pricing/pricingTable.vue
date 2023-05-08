@@ -45,6 +45,7 @@
                           class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
                           v-if="it.developer === true"
                         />
+                        <div v-show="typeof(it.developer) === 'string'">{{ it.developer }}</div>
                       </div>
                     </td>
                     <td class="px-2 py-2 md:px-6 md:py-4">
@@ -57,6 +58,8 @@
                           class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
                           v-if="it.pro === true"
                         />
+                        <div v-show="typeof(it.pro) === 'string'">{{ it.pro }}</div>
+
                       </div>
                     </td>
                      <td class="px-2 py-2 md:px-6 md:py-4">
@@ -69,6 +72,8 @@
                           class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
                           v-if="it.business === true"
                         />
+                        <div v-show="typeof(it.business) === 'string'">{{ it.business }}</div>
+
                       </div>
                     </td>
                     <td class="px-2 py-2 md:px-6 md:py-4">
@@ -81,6 +86,8 @@
                           class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
                           v-if="it.enterprise === true"
                         />
+                        <div v-show="typeof(it.enterprise) === 'string'">{{ it.enterprise }}</div>
+
                       </div>
                     </td>
                   </tr>

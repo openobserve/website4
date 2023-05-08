@@ -83,7 +83,7 @@
                 "
               />
 
-            <p :key="index" class="text-black font-normal text-base ml-2">
+            <p :key="index" class="text-black font-normal text-sm ml-2">
               {{ it }}
             </p>
           </div>
