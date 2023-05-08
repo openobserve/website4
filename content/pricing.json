@@ -23,12 +23,12 @@
         "heading": "For individuals",
         "subtitle": "Developer",
         "key": "secondary",
-        "free": "FREE",
+        "price": "$0",
+        "priceUnit":"per month",
         "recommed": false,
         "recommandText": "",
         "image": "/img/developer.svg",
         "label": "What's included",
-        "sublabel": "",
         "items": [
           "200 GB Ingestion/month",
           "200 GB Query Volume/month",
@@ -36,6 +36,14 @@
           "15 Days Retention",
           "10 users",
           ""
+        ],
+        "sublabel": "",
+        "features": [
+          "feature1",
+          "feature2",
+          "feature3",
+          "feature4",
+          "feature5"
         ],
         "btnText": "Get started for free",
         "btnLink": "https://cloud.zincsearch.com"
@@ -45,12 +53,12 @@
         "heading": "For startups",
         "subtitle": "Pro",
         "key": "primary",
-        "free": "$19/Month",
+        "price": "$19",
+        "priceUnit":"per month",
         "image": "/img/pro.svg",
         "recommed": true,
         "recommandText": "Recommended",
         "label": "What's included",
-        "sublabel": "Everything in Developer Plan, plus:",
         "items": [
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
@@ -59,6 +67,14 @@
           "120 days retention for metrics",
           "Unlimited users"
         ],
+        "sublabel": "Everything in Developer Plan, plus:",
+        "features": [
+          "feature1",
+          "feature2",
+          "feature3",
+          "feature4",
+          "feature5"
+        ],
         "btnText": "Get started",
         "btnLink": ""
       },
@@ -66,13 +82,13 @@
         "id": "business",
         "heading": "For business",
         "subtitle": "Business",
-        "key": "secondary",
-        "free": "$19/Month",
-        "image": "/img/developer.svg",
+        "key": "primary",
+        "price": "$19",
+        "priceUnit":"per month",
+        "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
         "label": "What's included",
-        "sublabel": "Everything in Pro Plan, plus:",
         "items": [
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
@@ -80,6 +96,14 @@
           "30 days retention for logs and traces",
           "120 days retention for metrics",
           "Unlimited users"
+        ],
+        "sublabel": "Everything in Pro Plan, plus:",
+        "features": [
+          "feature1",
+          "feature2",
+          "feature3",
+          "feature4",
+          "feature5"
         ],
         "btnText": "Get started",
         "btnLink": ""
@@ -89,12 +113,12 @@
         "heading": "For enterprise",
         "subtitle": "Enterprise",
         "key": "primary",
-        "free": "Let's talk",
+        "price": "$19",
+        "priceUnit":"per month",
         "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
         "label": "What's included",
-        "sublabel": "Everything in Business Plan, plus:",
         "items": [
           "Volume discounts",
           "Custom Retention",
@@ -102,6 +126,14 @@
           "Phone support",
           "",
           ""
+        ],
+        "sublabel": "Everything in Business Plan, plus:",
+        "features": [
+          "feature1",
+          "feature2",
+          "feature3",
+          "feature4",
+          "feature5"
         ],
         "btnText": "Get in touch",
         "btnLink": "/contactus"

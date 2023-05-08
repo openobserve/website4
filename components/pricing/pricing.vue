@@ -6,7 +6,7 @@
         class="grid grid-cols-1 md:grid-cols-2  gap-x-4 gap-y-4"
         :class="items.priceItems.length <= 2 ? 'lg:grid-cols-2 lg:px-40':'lg:grid-cols-4'"
       >
-        <Pricingitem :item="item" :key="index" :features="features" v-for="(item, index) in items.priceItems"/>
+        <Pricingitem :item="item" :key="index" v-for="(item, index) in items.priceItems"/>
       </div>
     </div>
   </Section>

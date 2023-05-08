@@ -5,7 +5,7 @@
       title="Pricing"
       :paths="data.breadcrumbs"
     />
-    <Pricing :items="data.content" :features="data.tableData?.tableBody?.featureData" />
+    <Pricing :items="data.content" />
     <PricingTable :items="data.tableData" />
   </div>
 </template>
