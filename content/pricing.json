@@ -63,6 +63,28 @@
         "btnLink": ""
       },
       {
+        "id": "business",
+        "heading": "For business",
+        "subtitle": "Business",
+        "key": "secondary",
+        "free": "$19/Month",
+        "image": "/img/developer.svg",
+        "recommed": false,
+        "recommandText": "",
+        "label": "What's included",
+        "sublabel": "Everything in Pro Plan, plus:",
+        "items": [
+          "Ingestion ($0.3/GB)",
+          "Query Volume ($0.01/GB)",
+          "Functions execution ($0.5/1M records)",
+          "30 days retention for logs and traces",
+          "120 days retention for metrics",
+          "Unlimited users"
+        ],
+        "btnText": "Get started",
+        "btnLink": ""
+      },
+      {
         "id": "enterprise",
         "heading": "For enterprise",
         "subtitle": "Enterprise",
@@ -72,7 +94,7 @@
         "recommed": false,
         "recommandText": "",
         "label": "What's included",
-        "sublabel": "Everything in Pro Plan, plus:",
+        "sublabel": "Everything in Business Plan, plus:",
         "items": [
           "Volume discounts",
           "Custom Retention",

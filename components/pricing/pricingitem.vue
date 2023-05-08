@@ -69,7 +69,6 @@
             v-for="(it, index) in item.items"
             class="flex flex-row py-1 items-center"
           >
-            <span>
               <img
                 src="/img/Check.svg"
                 alt="check icon"
@@ -82,7 +81,6 @@
                   ]
                 "
               />
-            </span>
 
             <p :key="index" class="text-black font-normal text-base ml-2">
               {{ it }}
