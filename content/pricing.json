@@ -123,138 +123,161 @@
           "title": "Logs",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Metrics",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Traces",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Dashboards",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Advanced GUI",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "SQL based query language",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "PromQL for metrics querying",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Support for very high cardinality data",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Search-around logs data",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Localization for multiple languages",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Scheduled & Realtime Alerts (logs, metrics)",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Alerting to slack, teams, email",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Template based alert destinations",
           "developer": false,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Multi-tenancy",
           "developer": false,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Ingestion API compatibility with Elasticsearch",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Export logs data",
           "developer": false,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Search and aggregation API compatibility with Elasticsearch",
           "developer": false,
           "pro": false,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Role Based Access Control (RBAC)",
           "developer": false,
           "pro": false,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "SAML authentication",
           "developer": false,
           "pro": false,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Community support",
           "developer": true,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Email support",
           "developer": false,
           "pro": true,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "Phone support",
           "developer": false,
           "pro": false,
+          "business": true,
           "enterprise": true
         },
         {
           "title": "SLAs",
           "developer": false,
           "pro": false,
+          "business": true,
           "enterprise": true
         }
       ]
