@@ -75,16 +75,16 @@
                 </ul>
               </div>
               <div class="w-full">
-                <div class="flex flex-col text-left text-white">
-                  <h3 class="font-bold text-xl pb-2 text-center md:text-left">
+                <div class="flex flex-col space-y-2  text-white">
+                  <h3 class="font-bold text-xl  text-center md:text-left">
                     {{ footerData.items.title }}
                   </h3>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300 py-3"
+                    class="flex justify-start hover:text-theme-secondary-300"
                   >
                     <img
                       :src="footerData.items.emailicon"
-                      class="max-h-4 mx-2"
+                      class="max-h-4 mr-2"
                       alt="Email"
                     />
                     <a
@@ -94,12 +94,13 @@
                       >{{ footerData.items.email }}</a
                     >
                   </div>
+
                   <div
                     class="flex justify-start hover:text-theme-secondary-300 "
                   >
                     <img
                       :src="footerData.items.callicon"
-                      class="max-h-4 mx-2"
+                      class="max-h-4 mr-2"
                       alt="Phone"
                     />
                     <a
@@ -107,6 +108,12 @@
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >
+                  </div>
+                  <div class="flex justify-between mt-3">
+                    <img :src="footerData.items.github" alt="github icon" />
+                    <img :src="footerData.items.slack" alt="slack icon" />
+                    <img :src="footerData.items.linkdn" alt="linkdn icon" />
+                    <img :src="footerData.items.twitter" alt="twitter icon" />
                   </div>
                 </div>
               </div>
@@ -185,6 +192,10 @@ const footerData = {
     email: "hello@zinclabs.io",
     callicon: "/img/phone-call.svg",
     phone: "+1 (415) 429-6096",
+    linkdn:"/img/linkdin.svg",
+    slack:"/img/slack.svg",
+    github:"/img/github.svg",
+    twitter:"/img/twitter.svg",
   },
 };
 </script>
