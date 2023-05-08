@@ -12,8 +12,10 @@
 const { data } = await useAsyncData(async () => {
   return await queryContent("/usecases/traces").findOne();
 });
+const seotitle = "Traces";
+const seodesc ="Troubleshoot performance issues with Traces.ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues."
 useSeoMeta({
-  title: data.seotitle,
-  description: data.seodesc,
-});
+  title:seotitle,
+  description:seodesc
+})
 </script>

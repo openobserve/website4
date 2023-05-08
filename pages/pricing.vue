@@ -14,8 +14,10 @@ const selected = ref("Monthly");
 const { data } = await useAsyncData(async () => {
   return await queryContent("/pricing").findOne();
 });
+const seotitle = "Pricing";
+const seodesc =""
 useSeoMeta({
-  title: data.seotitle,
-  description: data.seodesc,
-});
+  title:seotitle,
+  description:seodesc
+})
 </script>

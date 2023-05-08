@@ -150,10 +150,12 @@ const submitdata = async (e) => {
 const { data } = await useAsyncData(async () => {
   return await queryContent("/contactus").findOne();
 });
+const seotitle = "Contact Us";
+const seodesc ="Let us know how we can help you with your needs for a search system"
 useSeoMeta({
-  title: data.seotitle,
-  description: data.seodesc,
-});
+  title:seotitle,
+  description:seodesc
+})
 </script>
 
 <style scoped></style>

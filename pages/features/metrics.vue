@@ -13,8 +13,10 @@
 const { data } = await useAsyncData(async () => {
   return await queryContent("/usecases/metrics").findOne();
 });
+const seotitle = "Metrics";
+const seodesc ="Tracking trends through metrics, unlocking insights.Finally, high cardinality data storage enables you to store and query a large number of metrics, giving you the flexibility and scalability to handle large-scale environments. Overall, long-term storage for Prometheus metrics in S3 can revolutionize the way you monitor and manage your infrastructure, providing powerful insights and unparalleled visibility."
 useSeoMeta({
-  title:data.seotitle,
-  description:data.seodesc
+  title:seotitle,
+  description:seodesc
 })
 </script>

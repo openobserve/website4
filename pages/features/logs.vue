@@ -11,8 +11,10 @@
 const { data } = await useAsyncData(async () => {
   return await queryContent("/usecases/logs").findOne();
 });
+const seotitle = "Logs";
+const seodesc ="Gain deeper insights into your applications with Logs.Our advanced embedded Graphical User Interface (GUI) for searching logs is designed to help you easily and quickly find the logs of significance that you need."
 useSeoMeta({
-  title: data.seotitle,
-  description: data.seodesc,
-});
+  title:seotitle,
+  description:seodesc
+})
 </script>

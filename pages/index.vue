@@ -24,8 +24,11 @@
 const { data } = await useAsyncData(async () => {
   return await queryContent("/homepage").findOne();
 });
+const seotitle = "ZincLabs";
+const seodesc ="Logs, Metrics, Traces and more in one platform.Streamline your operations with worry-free observability and simplify your observability setup in just 2 minutes. 140x lower storage cost than your existing observability tools"
 useSeoMeta({
-  title: data.seotitle,
-  description: data.seodesc,
-});
+  title:seotitle,
+  description:seodesc
+})
+
 </script>

@@ -33,7 +33,7 @@ const items = {
     // },
     {
       title: "FAQs",
-      link: "/faq",
+      link: "/faqs",
     },
     {
       title: "Pricing",
