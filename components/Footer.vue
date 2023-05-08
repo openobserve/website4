@@ -40,14 +40,14 @@
                     class="list-none mb-2 text-white text-center md:text-left"
                     v-for="(item, index) in footerData.quickLink.content"
                   >
-                      <nuxt-link
-                        :href="item.link"
-                        :key="index"
-                        class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
-                      >
-                        {{ item.text }}
-                      </nuxt-link>
-                    </li>
+                    <nuxt-link
+                      :href="item.link"
+                      :key="index"
+                      class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                    >
+                      {{ item.text }}
+                    </nuxt-link>
+                  </li>
                 </ul>
               </div>
               <div class="w-full">
@@ -61,22 +61,22 @@
                     class="list-none mb-2 text-white text-center md:text-left"
                     v-for="(item, index) in footerData.docs.content"
                   >
-                      <nuxt-link
-                        :href="item.link"
-                        :target="
-                          item.text == 'Get Started For Free' ? '_blank' : ''
-                        "
-                        :key="index"
-                        class="font-medium text-sm  hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
-                      >
-                        {{ item.text }}
-                      </nuxt-link>
-                    </li>
+                    <nuxt-link
+                      :href="item.link"
+                      :target="
+                        item.text == 'Get Started For Free' ? '_blank' : ''
+                      "
+                      :key="index"
+                      class="font-medium text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                    >
+                      {{ item.text }}
+                    </nuxt-link>
+                  </li>
                 </ul>
               </div>
               <div class="w-full">
-                <div class="flex flex-col space-y-2  text-white">
-                  <h3 class="font-bold text-xl  text-center md:text-left">
+                <div class="flex flex-col space-y-2 text-white">
+                  <h3 class="font-bold text-xl text-center md:text-left">
                     {{ footerData.items.title }}
                   </h3>
                   <div
@@ -88,15 +88,14 @@
                       alt="Email"
                     />
                     <a
-                      class="font-semibold text-sm   text-center md:text-left"
+                      class="font-semibold text-sm text-center md:text-left"
                       :href="'mailto:' + footerData.items.email"
                       target="_blank"
                       >{{ footerData.items.email }}</a
                     >
                   </div>
-
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300 "
+                    class="flex justify-start hover:text-theme-secondary-300"
                   >
                     <img
                       :src="footerData.items.callicon"
@@ -104,16 +103,24 @@
                       alt="Phone"
                     />
                     <a
-                      class="font-semibold text-sm  text-center md:text-left md:whitespace-nowrap"
+                      class="font-semibold text-sm text-center md:text-left md:whitespace-nowrap"
                       :href="'tel:' + footerData.items.phone"
                       >{{ footerData.items.phone }}</a
                     >
                   </div>
-                  <div class="flex justify-between mt-3">
-                    <img :src="footerData.items.github" alt="github icon" />
-                    <img :src="footerData.items.slack" alt="slack icon" />
-                    <img :src="footerData.items.linkdn" alt="linkdn icon" />
-                    <img :src="footerData.items.twitter" alt="twitter icon" />
+                  
+                    <div
+                      class="mt-4"
+                      v-for="(item, index) in footerData.social"
+                    >
+                      
+                    <Link :href="item.link" :key="index">
+                      <img
+                        :src="item.icon"
+                        class="max-h-4 mr-2 flex justify-between"
+                        alt="social media icon"
+                      />
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -192,13 +199,30 @@ const footerData = {
     email: "hello@zinclabs.io",
     callicon: "/img/phone-call.svg",
     phone: "+1 (415) 429-6096",
-    linkdn:"/img/linkdin.svg",
-    slack:"/img/slack.svg",
-    github:"/img/github.svg",
-    twitter:"/img/twitter.svg",
+    linkdn: "",
+    slack: "/img/slack.svg",
+    github: "/img/github.svg",
+    twitter: "/img/twitter.svg",
   },
+  social: [
+    {
+      icon: "/img/github.svg",
+      link: "https://github.com/zinclabs/zincobserve",
+    },
+    {
+      icon: "/img/slack.svg",
+      link: "https://zincobserve.slack.com/",
+    },
+    {
+      icon: "/img/linkdin.svg",
+      link: "https://www.linkedin.com/company/zinclabsinc/",
+    },
+    {
+      icon: "/img/twitter.svg",
+      link: "https://twitter.com/ZincLabsInc",
+    },
+  ],
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
