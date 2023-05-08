@@ -113,7 +113,7 @@
                       class="mt-4 flex flex-row justify-between"
                       v-for="(item, index) in footerData.social"
                     >
-                      <nuxt-link :to="item.link" :key="index">
+                      <nuxt-link :to="item.link" :key="index" target="_blank">
                         <img
                           :src="item.icon"
                           class="max-h-6 flex justify-between"
