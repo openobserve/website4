@@ -42,7 +42,7 @@
             ></h3>
           </div>
           <p
-            class="text-justify text-sm leading-relaxed font-normal mt-1 md:mt-3"
+            class="text-justify text-base leading-relaxed font-normal mt-1 md:mt-3"
             v-html="data.desc"
           ></p>
           <div
