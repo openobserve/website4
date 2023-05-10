@@ -177,7 +177,7 @@ const footerData = {
     content: [
       {
         text: "Get Started For Free",
-        link: "https://cloud.zincsearch.com",
+        link: "https://observe.zinc.dev",
       },
       {
         text: "Bug Bounty Program",

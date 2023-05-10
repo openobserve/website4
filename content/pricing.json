@@ -24,7 +24,7 @@
         "subtitle": "Developer",
         "key": "secondary",
         "price": "$0",
-        "priceUnit":"per month",
+        "priceUnit": "per month",
         "recommed": false,
         "recommandText": "",
         "image": "/img/developer.svg",
@@ -51,7 +51,7 @@
           "Scheduled & realtime alerts"
         ],
         "btnText": "Get started for free",
-        "btnLink": "https://cloud.zincsearch.com"
+        "btnLink": "https://observe.zinc.dev"
       },
       {
         "id": "pro",
@@ -59,7 +59,7 @@
         "subtitle": "Pro",
         "key": "primary",
         "price": "$19",
-        "priceUnit":"per month",
+        "priceUnit": "per month",
         "image": "/img/pro.svg",
         "recommed": true,
         "recommandText": "Most popular",
@@ -88,7 +88,7 @@
         "subtitle": "Business",
         "key": "primary",
         "price": "$199",
-        "priceUnit":"per month",
+        "priceUnit": "per month",
         "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
@@ -116,7 +116,7 @@
         "subtitle": "Enterprise",
         "key": "primary",
         "price": "",
-        "priceUnit":"",
+        "priceUnit": "",
         "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
