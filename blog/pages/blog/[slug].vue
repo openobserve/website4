@@ -237,8 +237,20 @@ useHead({
   @apply inline text-xl tracking-wide leading-8 text-blue-700;
 }
 
-:deep(.nuxt-content a) {
-  @apply underline text-theme-primary;
+:deep(.blog-content a) {
+  @apply no-underline text-[#0000ee] font-normal;
+}
+
+:deep(.blog-content a:hover) {
+  @apply underline;
+}
+
+:deep(.blog-content h1 a),
+:deep(.blog-content h2 a),
+:deep(.blog-content h3 a),
+:deep(.blog-content h4 a),
+:deep(.blog-content h5 a) {
+  @apply no-underline text-black;
 }
 
 /* SOCIAL MEDIA ICONS TAKEN FROM http://svgicons.sparkk.fr/ */
