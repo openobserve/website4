@@ -46,6 +46,7 @@ const items = {
     {
       title: "Docs",
       link: "/docs",
+      target: "_blank"
     },
   ],
 

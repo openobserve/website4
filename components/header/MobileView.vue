@@ -73,7 +73,7 @@
         onMode="expand"
       /> -->
       <div v-for="(item, index) in items.content" :key="index">
-        <Button variant="header" :class="currentRoute == item.link ? '!font-bold' : ''" :to="item.link">{{ item.title }}</Button>
+        <Button variant="header" :class="currentRoute == item.link ? '!font-bold' : ''" :to="item.link" :target="item.target">{{ item.title }}</Button>
       </div>
       <!-- <a href="/" target="_blank">Docs</a> -->
       <div class="" v-if="isOpen">
