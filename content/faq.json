@@ -14,8 +14,8 @@
     }
   ],
   "faqs": {
-    "title":"Frequently Asked Questions",
-    "subtitle":"Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
     "items": [
       {
         "question": "What are you folks building?",
@@ -28,12 +28,12 @@
         "open": true
       },
       {
-        "question": "How do I send/ingest logs to/in ZincObserve?",
+        "question": "How do I send logs to/in ZincObserve?",
         "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the ZincObserve API.",
         "open": false
       },
       {
-        "question": "How do I send/ingest metrics data to/in ZincObserve?",
+        "question": "How do I send metrics data to/in ZincObserve?",
         "answer": "You can send metrics data to ZincObserve using prometheus remote-write API or using the ZincObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
         "open": true
       },
@@ -43,7 +43,7 @@
         "open": false
       },
       {
-        "question": "How do I send/ingest traces to/in ZincObserve?",
+        "question": "How do I send traces to/in ZincObserve?",
         "answer": "You can use opentelemetry libraries to instrument your application and send traces to ZincObserve. You can also use the ZincObserve API to send traces.",
         "open": false
       },
