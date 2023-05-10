@@ -39,11 +39,16 @@
         ],
         "sublabel": "",
         "features": [
-          "feature1",
-          "feature2",
-          "feature3",
-          "feature4",
-          "feature5"
+          "Logs",
+          "Metrics & PromQL",
+          "Very high cardinality data",
+          "Advanced GUI",
+          "SQL based query language",
+          "Alerts",
+          "Traces",
+          "Dashboards",
+          "Ingest & query functions",
+          "Scheduled & realtime alerts"
         ],
         "btnText": "Get started for free",
         "btnLink": "https://cloud.zincsearch.com"
@@ -57,7 +62,7 @@
         "priceUnit":"per month",
         "image": "/img/pro.svg",
         "recommed": true,
-        "recommandText": "Recommended",
+        "recommandText": "Most popular",
         "label": "What's included",
         "items": [
           "Ingestion ($0.3/GB)",
@@ -69,11 +74,10 @@
         ],
         "sublabel": "Everything in Developer Plan, plus:",
         "features": [
-          "feature1",
-          "feature2",
-          "feature3",
-          "feature4",
-          "feature5"
+          "Multi-tenancy",
+          "Export logs data",
+          "Template based alert destinations",
+          "Email support"
         ],
         "btnText": "Get started",
         "btnLink": ""
@@ -83,7 +87,7 @@
         "heading": "For business",
         "subtitle": "Business",
         "key": "primary",
-        "price": "$19",
+        "price": "$199",
         "priceUnit":"per month",
         "image": "/img/pro.svg",
         "recommed": false,
@@ -93,17 +97,15 @@
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.5/1M records)",
-          "30 days retention for logs and traces",
-          "120 days retention for metrics",
+          "60 days retention for logs and traces",
+          "13 months retention for metrics",
           "Unlimited users"
         ],
         "sublabel": "Everything in Pro Plan, plus:",
         "features": [
-          "feature1",
-          "feature2",
-          "feature3",
-          "feature4",
-          "feature5"
+          "Role Based Access Control (RBAC)",
+          "SAML authentication",
+          "Phone support"
         ],
         "btnText": "Get started",
         "btnLink": ""
@@ -113,8 +115,8 @@
         "heading": "For enterprise",
         "subtitle": "Enterprise",
         "key": "primary",
-        "price": "$19",
-        "priceUnit":"per month",
+        "price": "",
+        "priceUnit":"",
         "image": "/img/pro.svg",
         "recommed": false,
         "recommandText": "",
@@ -129,11 +131,11 @@
         ],
         "sublabel": "Everything in Business Plan, plus:",
         "features": [
-          "feature1",
-          "feature2",
-          "feature3",
-          "feature4",
-          "feature5"
+          "Search and aggregation API compatibility with Elasticsearch",
+          "SLAs",
+          "Custom contract",
+          "Single tenancy",
+          "Privatelink"
         ],
         "btnText": "Get in touch",
         "btnLink": "/contactus"

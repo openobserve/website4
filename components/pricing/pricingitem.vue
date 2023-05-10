@@ -8,7 +8,7 @@
           : 'invisible'
       "
     >
-      Recommended
+      Most popular
     </div>
     <div
       class="flex flex-col h-full p-4 rounded-b-xl border bg-white shadow relative overflow-hidden"

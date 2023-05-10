@@ -57,7 +57,7 @@ Why did these organizations choose ZincSearch? The vast majority of customers in
       1. Compute: How many servers does the user need for search and analysis.
       1. Storage: How much storage is the user using for observability data (logs and traces data can quickly become huge). EBS volumes can become very expensive at large scale. (Planning for volumes and their lifecycle management is yet another headache.) This also puts constraints on the duration of data you can actually store, as the cost of data stored can exceed the perceived value it provides.
    1. Human resources: Generally relates to two kind of roles:
-      1. DevOps / administration employees who need to spend time setting up and making sure that the system is up and running.
+      1. DevOps/SRE/administration employees who need to spend time setting up and making sure that the system is up and running.
       1. Developers who are being told that they need to decide on how much observability data they can push and keep them manageable by keeping a tight watch on what they are logging. It is also the time spent to learn the vagaries of the platform like index mapping, query syntax, cardinality, etc. together with admins.
    1. For most SaaS platforms, the pricing is based on the amount of data that you throw at it.
 1. Learning curve: As much as I enjoy learning things, I hate learning different ways of doing the same thing for different tools. I also dislike learning things that can possibly be avoided. All the logging engines seem to bring their own query language for advanced querying.
@@ -108,7 +108,7 @@ We built an open source observability platform “ZincObserve” that is:
 1. Super easy to use
    1. Users can try it on a laptop in less than two minutes and notice the superior performance.
    1. Users can install it in a k8s cluster in under two minutes and get the system up and running.
-   1. Users will love the full featured no-nonsense GUI which will only get more powerful as we continue to add more functionality.
+   1. Users will love the full featured no-nonsense powerful GUI.
    1. Users can use their existing skills of SQL for advanced query if they wish to do so.
 1. Low operational overheads
    1. All user data goes to S3 (or stays local, as specified by user), nothing to manage there.
@@ -119,7 +119,7 @@ We built an open source observability platform “ZincObserve” that is:
 1. High performance engine
    1. ZincObserve is built in Rust, leveraging its high performance.
    1. We use automatic and manual partitioning of data for better performance.
-   1. We also use in-memory caching where we store the compressed data in memory and can store 1 TB of data in under 35 GB RAM (at 30x compression).
+   1. We also use in-memory caching where we store the compressed data in memory and can store 1 TB of data in under 35 GB RAM (at ~30x compression, although you get much higher compression for real life logs).
 1. Advanced features:
 
    1. Logs, Metrics, Traces, Dashboards, Alerts, Functions, and more.
