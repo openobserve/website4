@@ -6,7 +6,7 @@
             <span v-else> <img src="/img/icons/Plus.svg" alt="plusicon" /> </span> -->
         </div>
         <div class="container mx-auto px-5 text-black">
-            <div className="text-sm py-2 leading-2 tracking-wider" >{{ item.answer }}</div>
+            <div className="text-sm py-2 leading-2 tracking-wider" v-html="item.answer" ></div>
         </div>
     </div>
 </template>
