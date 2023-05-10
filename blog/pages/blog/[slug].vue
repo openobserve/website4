@@ -199,8 +199,8 @@ useHead({
 }
 
 :deep(.nuxt-content p),
-.blog-content p {
-  @apply text-justify text-base leading-7 mb-4;
+:deep(.blog-content p) {
+  @apply text-justify text-base leading-relaxed mb-4;
 }
 
 :deep(.nuxt-content ol li) {

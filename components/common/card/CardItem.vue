@@ -18,7 +18,7 @@
             v-html="item.title"
           >
           </h4>
-          <p class="text-theme-text-secondary text-base text-justify flex-1">
+          <p class="text-theme-text-secondary text-base text-justify flex-1 leading-relaxed">
             {{ item.desc }}
           </p>
         </div>
