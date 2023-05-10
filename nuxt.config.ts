@@ -22,7 +22,6 @@ export default defineNuxtConfig({
         },
       ]
     },
-    
   },
   vue: {
     compilerOptions: {
@@ -45,9 +44,18 @@ export default defineNuxtConfig({
       "~/components",
     ],
   },
-  colorMode: {
-    preference: "light",
-    fallback: "light",
+  googleFonts: {
+    display: 'swap',
+    prefetch: true,
+    preconnect: true,
+    preload: true,
+    download: false,
+    families: {
+      Roboto: {
+        wght: [100, 300, 400, 500, 700, 900],
+        ital: [100, 300, 400, 500, 700, 900]
+      },
+    }
   },
   runtimeConfig: {
     public: {
