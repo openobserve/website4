@@ -42,6 +42,7 @@
                   >
                     <nuxt-link
                       :href="item.link"
+                      :target="item.target"
                       :key="index"
                       class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
                     >
@@ -169,6 +170,11 @@ const footerData = {
       {
         text: "Blog",
         link: "/blog",
+      },
+      {
+        text: "Knowledge Base",
+        link: "https://zinc.dev/kb",
+        target: "_blank"
       },
     ],
   },
