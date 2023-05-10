@@ -53,11 +53,9 @@
         <div class="mb-4">
           <div
             class="inline-block text-5xl font-semibold mb-1 text-center"
-            >
-            {{ item?.price }}
+            v-html="item?.price">
           </div>
-          <div>
-            {{  item.priceUnit }}
+          <div v-html="item.priceUnit">
           </div>
         </div>
         <div class="pt-3">
