@@ -1,12 +1,12 @@
 ---
-title: Simple, yet sophisticated observability - ZincObserve
-seoTitle: Simple, yet sophisticated observability - ZincObserve
+title: 3 Observability pillars in One binary - ZincObserve
+seoTitle: 3 Observability pillars in One binary - ZincObserve
 description: "ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: img/homepage/hero1.png
-alt: Zincobserve
+alt: ZincObserve
 slug: launching-zincobserve
 author: prabhat
-publishDate: 2023-04-27
+publishDate: 2023-05-10
 tags:
   - launch
   - cost
@@ -106,7 +106,7 @@ Next step was to build the actual system which took us several months.
 We built an open source observability platform “ZincObserve” that is:
 
 1. Super easy to use
-   1. Users can try it on a laptop in less than two minutes and notice the superior performance.
+   1. Users can try it on a laptop in less than two minutes utilizing less than 100 MB RAM and notice the superior performance.
    1. Users can install it in a k8s cluster in under two minutes and get the system up and running.
    1. Users will love the full featured no-nonsense powerful GUI.
    1. Users can use their existing skills of SQL for advanced query if they wish to do so.
