@@ -1,7 +1,7 @@
 ---
 title: 3 Observability pillars in One binary - ZincObserve
 seoTitle: 3 Observability pillars in One binary - ZincObserve
-description: "ZincObserve’ is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
+description: "ZincObserve’ is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: img/homepage/hero1.png
 alt: ZincObserve
 slug: launching-zincobserve

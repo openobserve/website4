@@ -1,6 +1,6 @@
 {
   "seotitle": "ZincObserve",
-  "seodesc": "ZincObserve is a cloud-based observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
+  "seodesc": "ZincObserve is a cloud-based open source observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
   "breadcrumbs": [
     {
       "name": "Home",
@@ -32,7 +32,7 @@
   },
   "details": {
     "title": "Logs, Metrics, Traces",
-    "desc": "ZincObserve is an observability platform that allows you to monitor logs, metrics, and traces efficiently. ZincObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
+    "desc": "ZincObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. ZincObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
     "image": "/img/products/zincobserve/doubleproductivity.svg"
   },
   "content": {
