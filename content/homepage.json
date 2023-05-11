@@ -7,7 +7,7 @@
       {
         "title": "<span class='highlight'>ZincObserve</span>",
         "subtitle": "",
-        "desc": "ZincObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much loser resource utilization resulting much lower costs.",
+        "desc": "ZincObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower costs.",
         "btnText": "",
         "btnTo": "",
         "btnVariant": "secondary"
