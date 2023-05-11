@@ -19,7 +19,7 @@
     }
   ],
   "content": {
-    "title":"Traces",
+    "title": "Traces",
     "items": [
       {
         "title": "Troubleshoot performance issues with distributed tracing",
@@ -50,7 +50,7 @@
   },
   "faqData": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "subtitle": "",
     "items": [
       {
         "question": "How many programmers does it take to screw a lightbulb?",

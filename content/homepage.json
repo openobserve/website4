@@ -7,8 +7,7 @@
       {
         "title": "<span class='highlight'>ZincObserve</span>",
         "subtitle": "",
-        "desc": "ZincObserve and Zinc Cloud provide a comprehensive solution for achieving application observability goals with ease. With the option of self-hosted ZincObserve or Zinc Cloud, getting started takes less than two minutes. <br /><br />By consolidating logs, metrics, and traces in a single system, ZincObserve enables full observability for applications at petabyte scale. ZincObserve's Embedded UI, Dashboards, Alerting, Stateless nodes, and other advanced features facilitate faster resolution of application issues and simplified day-two operations. Additionally,ZincObserve's unique approach to data storage and indexing results in upto 140x lower storage costs, making it a cost-effective solution for managing observability.",
-        "image": "/img/homepage/zincobserve1.png",
+        "desc": "ZincObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much loser resource utilization resulting much lower costs.",
         "btnText": "",
         "btnTo": "",
         "btnVariant": "secondary"

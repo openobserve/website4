@@ -79,7 +79,7 @@
   },
   "faqData": {
     "title": "Frequently Asked Questions",
-    "subtitle": "Everything you need to know so you can use ZincObserve as a FastSearch.",
+    "subtitle": "",
     "items": [
       {
         "question": "q1?",
