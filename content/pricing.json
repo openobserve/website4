@@ -135,7 +135,8 @@
           "SLAs",
           "Custom contract",
           "Single tenancy",
-          "Privatelink"
+          "Privatelink",
+          "Grafana plugin for logs, metrics and traces"
         ],
         "btnText": "Get in touch",
         "btnLink": "/contactus"
