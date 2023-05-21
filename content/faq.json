@@ -94,7 +94,7 @@
       },
       {
         "question": "How does ZincObserve compare to Elasticsearch?",
-        "answer": "ZincObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes ZincObserve can scale much faster than Elasticsearch. ZincObserve has been written in rust and enjoys its high performance and low memory footprint. ZincObserve is also much easier to operate than Elasticsearch. ZincObserve has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
+        "answer": "ZincObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes It can scale much faster than Elasticsearch. It has been written in rust and enjoys its high performance and low memory footprint. ZincObserve is also much easier to operate than Elasticsearch. It has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
         "open": false
       },
       {
