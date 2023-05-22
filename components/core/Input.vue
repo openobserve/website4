@@ -120,6 +120,8 @@ const validate = () => {
       error.value = props.requiredError;
       return false;
     }
+
+    
   }
   
 

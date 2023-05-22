@@ -68,7 +68,21 @@
     "jobs": [
       {
         "id":"hiring-for-rust-developer",
-        "title": "Software Engineer - Rust (Remote)",
+        "title": "Software Engineer - Rust",
+        "description": "We are looking to hire an experienced principal software engineer to maintain and upgrade all existing software. The principal software engineer’s responsibilities include recommending adjustments to resolve software issues, improving the functionality of existing software, and ensuring that the design, application, and maintenance of software meets the quality standards of the company. You should also be able to mentor, guide, and train other engineers.<br /><br /> To be successful as a principal software engineer, you should be able to evaluate the user’s needs, time limitations, and system limitations when developing software. A stand-out principal software Eengineer is one who is up to date on new technologies and software development practices.<br /><br />",
+        "btnText": "Apply Here",
+        "btnLink": ""
+      },
+      {
+        "id": "hiring-for-remote-job",
+        "title": "Software Engineer - Remote",
+        "description": "We are looking to hire an experienced principal software engineer to maintain and upgrade all existing software. The principal software engineer’s responsibilities include recommending adjustments to resolve software issues, improving the functionality of existing software, and ensuring that the design, application, and maintenance of software meets the quality standards of the company. You should also be able to mentor, guide, and train other engineers.<br /><br /> To be successful as a principal software engineer, you should be able to evaluate the user’s needs, time limitations, and system limitations when developing software. A stand-out principal software Eengineer is one who is up to date on new technologies and software development practices.<br /><br />",
+        "btnText": "Apply Here",
+        "btnLink": ""
+      },
+      {
+        "id": "hiring-for-react-job",
+        "title": "Software Engineer - React",
         "description": "We are looking to hire an experienced principal software engineer to maintain and upgrade all existing software. The principal software engineer’s responsibilities include recommending adjustments to resolve software issues, improving the functionality of existing software, and ensuring that the design, application, and maintenance of software meets the quality standards of the company. You should also be able to mentor, guide, and train other engineers.<br /><br /> To be successful as a principal software engineer, you should be able to evaluate the user’s needs, time limitations, and system limitations when developing software. A stand-out principal software Eengineer is one who is up to date on new technologies and software development practices.<br /><br />",
         "btnText": "Apply Here",
         "btnLink": ""
