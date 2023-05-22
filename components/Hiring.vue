@@ -5,7 +5,7 @@
             <div v-for="(item, index) in data.jobs">
                 <div class="flex flex-row md:flex-row justify-items-center justify-between py-3">
                     <div class="font-bold text-lg md:text-xl py-2 text-black">&#9673; {{ item.title }} </div>
-                    <Button variant="primary" :to="item.btnLink" target="_blank">{{ item.btnText }}</Button>
+                    <Button variant="primary" :to="`/career/apply?job=${item.id}`">{{ item.btnText }}</Button>
                 </div>
                 <div v-if="item.description">
                     <div class="text-gray-600 mb-2">Job Description</div>
