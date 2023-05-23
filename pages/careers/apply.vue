@@ -190,7 +190,10 @@ const submitdata =  (e) => {
             console.error("Error sending data:", error);
           });
         })
-});
+  })
+  }
+}
+
 
 const { data } = useAsyncData(async () => {
   return await queryContent("/jobapply").findOne();
