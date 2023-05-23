@@ -1,7 +1,9 @@
 <template>
   <Section v-if="data.jobs">
     <SectionHeading :title="data.title" :subtitle="data.subtitle" />
-    <div class="container mx-auto px-4 py-4 flex flex-col md:flex-row space-x-6 ">
+    <div
+      class="container mx-auto px-4 py-4 flex flex-col md:flex-row space-x-6"
+    >
       <!-- <div v-for="(item, index) in data.jobs">
                 <div class="flex flex-row md:flex-row justify-items-center justify-between py-3">
                     <div class="font-bold text-lg md:text-xl py-2 text-black">&#9673; {{ item.title }} </div>
@@ -25,7 +27,7 @@
             <div class="text-gray-600 mb-2">Job Description</div>
             <div v-html="item.description" class="text-sm"></div>
           </div>
-          <Button variant="primary" :to="`/career/apply?job=${item.id}`">{{
+          <Button variant="primary" :to="`/careers/apply?job=${item.id}`">{{
             item.btnText
           }}</Button>
         </div>

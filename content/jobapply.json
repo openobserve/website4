@@ -21,17 +21,6 @@
     "subheading": "We are looking to hire an experienced principal software engineer to maintain and upgrade all existing software. ",
     "btnText": "Submit",
     "btnLoadingText": "Submitting...",
-    "btnLink": "",
-    "jobs":[
-      {
-        "id": "hiring-for-rust-developer"
-      },
-      {
-        "id":"hiring-for-remote-job"
-      },
-      {
-        "id":"hiring-for-react-job"
-      }
-    ]
+    "btnLink": "" 
   }
 }
