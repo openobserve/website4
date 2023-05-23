@@ -15,8 +15,7 @@
         v-bind="$attrs"
         :value="modelValue"
         :type="type"
-        :accept="accept"
-        @input="(error = ''), $emit('update:modelValue', $event.target.value);"
+        @input="(error = ''), $emit('update:modelValue', $event.target.value)"
         @focus="$emit('focus', $event)"
         @blur="$emit('blur', $event)"
         :class="[
@@ -49,9 +48,6 @@ const props = defineProps({
   },
   required: {
     type: Boolean,
-  },
-  accept: {
-    type: String,
   },
   requiredError: {
     type: String,
@@ -120,17 +116,14 @@ const validate = () => {
       error.value = props.requiredError;
       return false;
     }
-
-    
   }
-  
 
   // check for regex validation
   if (props.regex && !new RegExp(props.regex).test(props.modelValue)) {
     error.value = props.validationError;
     return false;
   }
-  return true
+  return true;
 };
 
 defineExpose({
