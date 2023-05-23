@@ -132,16 +132,16 @@ const validate = () => {
   } else {
     return false;
   }
-}
+};
 
-const submitdata =  (e) => {
+const submitdata = (e) => {
   const file = inputUploadFile.value.files[0];
   e.preventDefault();
   if (validate()) {
     loading.value = true;
     console.log(file, "file is valid");
-     // Create a dummy Lambda function endpoint
-      const lambdaEndpoint = "https://us-east-1.lambda.amazonaws.com/my-function";
+    // Create a dummy Lambda function endpoint
+    const lambdaEndpoint = "https://us-east-1.lambda.amazonaws.com/my-function";
     // Step 1: Generate presigned URL
     fetch(lambdaEndpoint, {
       method: "POST",
@@ -149,55 +149,54 @@ const submitdata =  (e) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        filename:file.name,
-        filetype:file.type,
-      })
+        filename: file.name,
+        filetype: file.type,
+      }),
     })
-  .then(response => response.json())
-  .then(data => {
-    preSignedUrl.value = data.presignedUrl;
+      .then((response) => response.json())
+      .then((data) => {
+        preSignedUrl.value = data.presignedUrl;
 
-    // Step 2: Upload file to the presigned URL
-    return fetch(preSignedUrl.value, {
-      method: "PUT",
-      headers: {
-        'Content-Type': this.file.type
-      },
-      body: inputUploadFile.value,
-    })
-      .then((res) => {
-        // Step 3: Send additional data (name, email) to your backend or desired endpoint
-        const dataToSend = {
-          name: formValue.name,
-          email: formValue.email,
-          phone: formValue.phone,
-          pdfUrl : formValue.uploadFile
-        };
-
-       return fetch("<YOUR_BACKEND_URL>", {
-          method: "POST",
+        // Step 2: Upload file to the presigned URL
+        return fetch(preSignedUrl.value, {
+          method: "PUT",
           headers: {
-            "Content-Type": "application/json",
+            "Content-Type": this.file.type,
           },
-          body: JSON.stringify(dataToSend),
-        })
-          .then(response => {
-            // Handle response from your backend or desired endpoint
-            // ... do something with the response
-            alert(response.status)
-          })
-          .catch(error => {
-            console.error("Error sending data:", error);
-          });
-        })
-  })
-  }
-}
+          body: inputUploadFile.value,
+        }).then((res) => {
+          // Step 3: Send additional data (name, email) to your backend or desired endpoint
+          const dataToSend = {
+            name: formValue.name,
+            email: formValue.email,
+            phone: formValue.phone,
+            pdfUrl: formValue.uploadFile,
+          };
 
+          return fetch("<YOUR_BACKEND_URL>", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(dataToSend),
+          })
+            .then((response) => {
+              // Handle response from your backend or desired endpoint
+              // ... do something with the response
+              alert(response.status);
+            })
+            .catch((error) => {
+              console.error("Error sending data:", error);
+            });
+        });
+      });
+  }
+};
 
 const { data } = useAsyncData(async () => {
   return await queryContent("/jobapply").findOne();
 });
+
 const { data: content } = useAsyncData(async () => {
   return await queryContent("/career").findOne();
 });
