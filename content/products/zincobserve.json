@@ -1,6 +1,6 @@
 {
-  "seotitle": "ZincObserve",
-  "seodesc": "ZincObserve is a cloud-based open source observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
+  "seotitle": "OpenObserve",
+  "seodesc": "OpenObserve is a cloud-based open source observability platform that allows you to monitor logs, metrics, and traces efficiently. It utilizes a unique approach to data storage and indexing, which stores un-indexed data in a compressed format, resulting in upto 140 times lower storage costs.",
   "breadcrumbs": [
     {
       "name": "Home",
@@ -13,18 +13,18 @@
       "disabled": true
     },
     {
-      "name": "ZincObserve",
+      "name": "OpenObserve",
       "to": "#",
       "disabled": true
     }
   ],
   "heroSection": {
     "tagline": "",
-    "title": "ZincObserve",
+    "title": "OpenObserve",
     "subtitle": "Observe Everything. Bare metal, VMs, Containers, AWS, GCP, Azure, Kubernetes, Serverless.",
-    "image": "/img/products/zincobserve/zincobservehero.png",
+    "image": "/img/products/openobserve/zincobservehero.png",
     "btnText1": "Get started for free",
-    "btnTo1": "https://observe.zinc.dev/",
+    "btnTo1": "https://observe.openobserve.ai/",
     "btnText2": "Request a demo",
     "btnTo2": "/contactus",
     "btnTarget": "_blank",
@@ -32,47 +32,47 @@
   },
   "details": {
     "title": "Logs, Metrics, Traces",
-    "desc": "ZincObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. ZincObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
-    "image": "/img/products/zincobserve/doubleproductivity.svg"
+    "desc": "OpenObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. OpenObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
+    "image": "/img/products/openobserve/doubleproductivity.svg"
   },
   "content": {
-    "title": "ZincObserve Features",
-    "subtitle": "Discover the Game-Changing Features of ZincObserve:",
+    "title": "OpenObserve Features",
+    "subtitle": "Discover the Game-Changing Features of OpenObserve:",
     "items": [
       {
-        "image": "/img/products/zincobserve/fullstacksolution.svg",
+        "image": "/img/products/openobserve/fullstacksolution.svg",
         "title": "Full-stack observability Solution",
         "desc": "Observe everything. Front end, back end, microservices written in any language.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/fullstacksolution.svg",
+        "image": "/img/products/openobserve/fullstacksolution.svg",
         "title": "140x Lower Storage Costs",
-        "desc": "ZincObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. This strategy minimizes the compute requirements during data ingestion and results in highly efficient compression rates, translating into approximately upto 140 times lower storage costs.",
+        "desc": "OpenObserve leverages a unique approach to data storage and indexing that eschews reliance on indexing altogether. Instead, it stores un-indexed data in a compressed format, utilizing local disk or object storage in parquet columnar format. This strategy minimizes the compute requirements during data ingestion and results in highly efficient compression rates, translating into approximately upto 140 times lower storage costs.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/highlycompressedstorage.svg",
+        "image": "/img/products/openobserve/highlycompressedstorage.svg",
         "title": "Dynamic Schema Evolution",
-        "desc": "You do not need to worry about schema changes. ZincObserve supports dynamic schema evolution, which allows you to ingest logs without worrying about schema of the logs.",
+        "desc": "You do not need to worry about schema changes. OpenObserve supports dynamic schema evolution, which allows you to ingest logs without worrying about schema of the logs.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/accelerateperformance.svg",
+        "image": "/img/products/openobserve/accelerateperformance.svg",
         "title": "Accelerate performance",
-        "desc": "SIMD support and columnar storage format enables ZincObserve to deliver high performance. This is available both on x86 and ARM processors.",
+        "desc": "SIMD support and columnar storage format enables OpenObserve to deliver high performance. This is available both on x86 and ARM processors.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/alertingmechnisem.svg",
+        "image": "/img/products/openobserve/alertingmechnisem.svg",
         "title": "Comprehensive alerting mechanisms",
         "desc": "With scheduled and real-time alerts, you can stay on top of critical problems as they happen. This means that you can quickly address any issues and keep your systems running smoothly.  Additionally, it offers template-based alert targeting, enabling users to dispatch alerts seamlessly to multiple platforms such as Slack and Teams, among others. This feature enhances the user's system monitoring capabilities, enabling them to proactively track and manage their system's health.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/dataanalysis.svg",
+        "image": "/img/products/openobserve/dataanalysis.svg",
         "title": "Advanced Data Analysis",
-        "desc": "With ZincObserve, dashboards can display data from logs, metrics, and traces, providing a complete picture of system behavior. They provide a visual representation of real-time data, allowing users to quickly understand the health and performance of their systems.",
+        "desc": "With OpenObserve, dashboards can display data from logs, metrics, and traces, providing a complete picture of system behavior. They provide a visual representation of real-time data, allowing users to quickly understand the health and performance of their systems.",
         "btnText": ""
       }
     ]

@@ -173,8 +173,8 @@ const footerData = {
       },
       {
         text: "Knowledge Base",
-        link: "https://zinc.dev/kb",
-        target: "_blank"
+        link: "https://openobserve.ai/kb",
+        target: "_blank",
       },
     ],
   },
@@ -183,7 +183,7 @@ const footerData = {
     content: [
       {
         text: "Get Started For Free",
-        link: "https://observe.zinc.dev",
+        link: "https://observe.openobserve.ai",
       },
       {
         text: "Bug Bounty Program",
@@ -213,11 +213,11 @@ const footerData = {
   social: [
     {
       icon: "/img/github.svg",
-      link: "https://github.com/zinclabs/zincobserve",
+      link: "https://github.com/zinclabs/openobserve",
     },
     {
       icon: "/img/slack.svg",
-      link: "https://zincobserve.slack.com/",
+      link: "https://openobserve.slack.com/",
     },
     {
       icon: "/img/linkdin.svg",

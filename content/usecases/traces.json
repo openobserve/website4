@@ -1,6 +1,6 @@
 {
   "seotitle": "Traces",
-  "seodesc": "Troubleshoot performance issues with Traces.ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues.",
+  "seodesc": "Troubleshoot performance issues with Traces.OpenObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues.",
   "breadcrumbs": [
     {
       "name": "Home",

@@ -20,15 +20,15 @@ export default defineNuxtConfig({
           async: true,
           defer: true,
         },
-      ]
+      ],
     },
   },
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => {
-        return ['swiper-container', 'swiper-slide'].includes(tag)
-      }
-    }
+        return ["swiper-container", "swiper-slide"].includes(tag);
+      },
+    },
   },
   css: ["@/assets/css/main.css"],
   components: {
@@ -45,7 +45,7 @@ export default defineNuxtConfig({
     ],
   },
   googleFonts: {
-    display: 'swap',
+    display: "swap",
     prefetch: true,
     preconnect: true,
     preload: true,
@@ -53,16 +53,16 @@ export default defineNuxtConfig({
     families: {
       Roboto: {
         wght: [100, 300, 400, 500, 700, 900],
-        ital: [100, 300, 400, 500, 700, 900]
+        ital: [100, 300, 400, 500, 700, 900],
       },
-    }
+    },
   },
   runtimeConfig: {
     public: {
-      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://zinc.dev/",
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
       siteName: "Zinc Labs",
       siteDescription:
-        "ZincObserve is a cloud native open source observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.",
+        "OpenObserve is a cloud native open source observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.",
       language: "en",
       titleSeparator: "|",
       trailingSlash: false,
@@ -76,8 +76,6 @@ export default defineNuxtConfig({
     transpile: ["clsx"],
   },
   robots: {
-    sitemap: [
-      "https://zinc.struct.ai/sitemap.xml",
-    ],
+    sitemap: ["https://zinc.struct.ai/sitemap.xml"],
   },
 });

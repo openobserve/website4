@@ -24,7 +24,7 @@ const items = {
   logo: "/img/logo/headerLogo.svg",
   btn: {
     text: "Get started for free",
-    link: "https://observe.zinc.dev",
+    link: "https://observe.openobserve.ai",
   },
   content: [
     // {
@@ -46,12 +46,12 @@ const items = {
     {
       title: "Docs",
       link: "/docs",
-      target: "_blank"
+      target: "_blank",
     },
   ],
 
   product: {
-    //link: "/products/zincobserve",
+    //link: "/products/openobserve",
     //productName: "Product",
   },
 

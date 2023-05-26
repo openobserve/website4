@@ -1,12 +1,12 @@
 const type = "website";
-const url = "https://zinc.dev";
+const url = "https://openobserve.ai";
 const title = "ZincLab Website";
 const description = "ZincLab Website";
 const mainImage = `/img/logo.png`;
 
 // Ref: https://redfern.dev/articles/adding-social-media-seo-meta-data-using-nuxt-content/
 
-export default (article:any) => {
+export default (article: any) => {
   return [
     {
       hid: "description",
@@ -37,7 +37,6 @@ export default (article:any) => {
       hid: "og:image",
       property: "og:image",
       content: (article && `/img/blog/${article.img}`) || mainImage,
-
     },
     {
       hid: "twitter:url",

@@ -1,6 +1,6 @@
 {
   "seotitle": "zPlane",
-  "seodesc": "The zPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management.",
+  "seodesc": "The zPlane features, available exclusively in the enterprise version of OpenObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management.",
   "breadcrumbs": [
     {
       "name": "Home",
@@ -20,10 +20,10 @@
   ],
   "heroSection": {
     "title": "zPlane",
-    "subtitle": "The zPlane features, available exclusively in the enterprise version of ZincObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With zPlane, ZincObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
+    "subtitle": "The zPlane features, available exclusively in the enterprise version of OpenObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With zPlane, OpenObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
     "image": "/img/homepage/zplane2.png",
     "btnText": "Get started for free",
-    "btnTo": "https://observe.zinc.dev/",
+    "btnTo": "https://observe.openobserve.ai/",
     "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
@@ -40,19 +40,19 @@
       {
         "image": "/img/products/zplane/sso.svg",
         "title": "SSO <span class='tag'>Coming Soon</span>",
-        "desc": "SSO enables users to use their existing enterprise identity providers for seamless and secure access to ZincObserve.",
+        "desc": "SSO enables users to use their existing enterprise identity providers for seamless and secure access to OpenObserve.",
         "btnText": ""
       },
       {
         "image": "/img/products/zplane/CrossCluster.svg",
         "title": "Cross-cluster search <span class='tag'>Coming Soon</span>",
-        "desc": "Cross-cluster search allows users to search and analyze data across multiple ZincObserve clusters, providing a unified view of their observability data.",
+        "desc": "Cross-cluster search allows users to search and analyze data across multiple OpenObserve clusters, providing a unified view of their observability data.",
         "btnText": ""
       },
       {
         "image": "/img/products/zplane/PrioritySupport.svg",
         "title": "Priority support with SLAs",
-        "desc": "We ensure that enterprise customers receive timely and effective support from ZincObserve's expert support team, helping to ensure the smooth operation of their observability platform.",
+        "desc": "We ensure that enterprise customers receive timely and effective support from OpenObserve's expert support team, helping to ensure the smooth operation of their observability platform.",
         "btnText": ""
       }
     ]

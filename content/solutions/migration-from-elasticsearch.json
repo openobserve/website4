@@ -20,31 +20,29 @@
   ],
   "content": {
     "title": "Struggling with Elasticsearch/Opensearch",
-    "subtitle": "Discover 140x lower cost and extremely low maintenance of ZincObserve.",
+    "subtitle": "Discover 140x lower cost and extremely low maintenance of OpenObserve.",
     "items": [
       {
-        "title": "ZincObserve is Built for log search from ground up",
-        "desc": "ZincObserve was built from ground up for log search and is heavily optimized for it. It is not a general purpose search engine like Elasticsearch where log search and observability was an afterthought.",
+        "title": "OpenObserve is Built for log search from ground up",
+        "desc": "OpenObserve was built from ground up for log search and is heavily optimized for it. It is not a general purpose search engine like Elasticsearch where log search and observability was an afterthought.",
         "image": "/img/feature.svg"
       },
       {
         "title": "Lower your storage cost of log strage by 140x",
-        "desc": "ZincObserve does not rely on indexing of the data. It stores un-indexed data in compressed format in local disk or object store in parquet columnar format. This allows for much lower compute requirement during data ingestion and very high compression rates resulting in ~140x lower storage cost. No indexing of data means that full scan searches may be slower than Elasticsearch but should still be fast due to multiple other techniques like partitioning and caching.",
+        "desc": "OpenObserve does not rely on indexing of the data. It stores un-indexed data in compressed format in local disk or object store in parquet columnar format. This allows for much lower compute requirement during data ingestion and very high compression rates resulting in ~140x lower storage cost. No indexing of data means that full scan searches may be slower than Elasticsearch but should still be fast due to multiple other techniques like partitioning and caching.",
         "image": "/img/feature.svg"
       },
       {
         "title": "Full Elasticsearch compatibility",
-        "desc": "APIs of ZincObserve are fully compatible with Elasticsearch. This means that you can use ZincObserve as a drop-in replacement for Elasticsearch. You can use ZincObserve with any existing tooling that works with Elasticsearch.",
+        "desc": "APIs of OpenObserve are fully compatible with Elasticsearch. This means that you can use OpenObserve as a drop-in replacement for Elasticsearch. You can use OpenObserve with any existing tooling that works with Elasticsearch.",
         "image": "/img/feature.svg"
       },
       {
         "title": "Extremely low operational effort",
-        "desc": "Due to stateless nodes and no indexing, ZincObserve requires very low operational effort. You can run ZincObserve on Kubernetes or on bare metal. You can also run ZincObserve on AWS, GCP or Azure. ZincObserve is also available as a fully managed service on AWS and GCP.",
+        "desc": "Due to stateless nodes and no indexing, OpenObserve requires very low operational effort. You can run OpenObserve on Kubernetes or on bare metal. You can also run OpenObserve on AWS, GCP or Azure. OpenObserve is also available as a fully managed service on AWS and GCP.",
         "image": "/img/feature.svg"
       }
     ]
   },
-   "faqData": {
-
-  }
+  "faqData": {}
 }
