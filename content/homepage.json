@@ -125,8 +125,8 @@
       },
       {
         "image": "/img/homepage/Traces.svg",
-        "title": "Traces",
-        "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
+        "title": "Traces with Opentelemetry",
+        "desc": "Distributed tracing with opentelemetry provides a means to identify performance problems within a microservice as well across in a distributed architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
         "to": "/features/traces"
       }
     ]
