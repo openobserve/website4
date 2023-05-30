@@ -7,7 +7,7 @@
   />
 </template>
 <script setup>
-const { data } = useAsyncData(async () => {
+const { data } = await useAsyncData(async () => {
   return await queryContent("/faq").findOne();
 });
 const seotitle = "Frequently asked questions";
