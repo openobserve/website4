@@ -34,7 +34,7 @@
           onMode="hover"
         /> -->
         <div v-for="(item, index) in items.content" :key="index">
-          <Button variant="header" :class="currentRoute == item.link ? '!font-bold' : ''" :to="item.link" :target="item.target">{{
+          <Button variant="header" :class="currentRoute == item.link ? '!font-bold text-theme-primary-500' : ''" :to="item.link" :target="item.target">{{
             item.title
           }}</Button>
         </div>
