@@ -44,7 +44,7 @@
                       :href="item.link"
                       :target="item.target"
                       :key="index"
-                      class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                      class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-primary-500 transform duration-100 hover:underline hover:underline-offset-4"
                     >
                       {{ item.text }}
                     </nuxt-link>
@@ -68,7 +68,7 @@
                         item.text == 'Get Started For Free' ? '_blank' : ''
                       "
                       :key="index"
-                      class="font-medium text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                      class="font-medium text-sm hover:text-theme-primary-500 transform duration-100 hover:underline hover:underline-offset-4"
                     >
                       {{ item.text }}
                     </nuxt-link>
@@ -81,7 +81,7 @@
                     {{ footerData.items.title }}
                   </h3>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-primary-500"
                   >
                     <img
                       :src="footerData.items.emailicon"
@@ -96,7 +96,7 @@
                     >
                   </div>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-primary-500"
                   >
                     <img
                       :src="footerData.items.callicon"
