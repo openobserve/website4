@@ -31,7 +31,7 @@
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     },
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
@@ -43,7 +43,7 @@
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     },
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
@@ -55,7 +55,7 @@
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     }
   ],
   "numbers": {
