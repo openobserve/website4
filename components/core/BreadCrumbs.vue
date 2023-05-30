@@ -1,7 +1,7 @@
 <template>
-    <div class="text-white pattern-bg  ">
+    <div class="text-black pattern-bg bg-gray-100">
       <div
-        class="w-full h-full  px-4 flex flex-col text-left justify-center py-6"
+        class="w-full h-full  px-4 flex flex-col text-left justify-center py-2"
       >
         <slot name="title" :title="title">
           <div v-if="title">
@@ -46,7 +46,7 @@
   
   <style scoped>
   .pattern-bg {
-    background-image: url(/img/breadcrumbsBg.svg);
+    /* background-image: url(/img/breadcrumbsBg.svg); */
     background-position: center;
     background-size: cover;
     
