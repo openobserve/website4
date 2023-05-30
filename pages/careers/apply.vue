@@ -193,11 +193,11 @@ const submitdata = (e) => {
   }
 };
 
-const { data } = useAsyncData(async () => {
+const { data } = await useAsyncData(async () => {
   return await queryContent("/jobapply").findOne();
 });
 
-const { data: content } = useAsyncData(async () => {
+const { data: content } = await useAsyncData(async () => {
   return await queryContent("/career").findOne();
 });
 
