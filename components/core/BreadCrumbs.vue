@@ -1,5 +1,5 @@
 <template>
-    <div class="text-black pattern-bg bg-gray-100">
+    <div class="text-black pattern-bg bg-theme-primary-100 bg-opacity-40">
       <div
         class="w-full h-full  px-4 flex flex-col text-left justify-center py-2"
       >
