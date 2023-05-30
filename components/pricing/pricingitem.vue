@@ -4,7 +4,7 @@
       class="rounded-t-xl text-center py-2 text-white"
       :class="
         item.recommed
-          ? 'bg-theme-primary border-theme-primary block'
+          ? 'bg-theme-primary-400 border-theme-primary block'
           : 'invisible'
       "
     >
