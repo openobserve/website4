@@ -185,7 +185,7 @@ useHead({
 <style lang="postcss" scoped>
 :deep(.nuxt-content h1),
 .blog-content h1 {
-  @apply text-2xl md:text-4xl mb-4 text-theme-primary-600 font-medium;
+  @apply text-2xl md:text-4xl mb-4 text-black font-medium;
 }
 
 :deep(.nuxt-content h2),
@@ -241,9 +241,7 @@ useHead({
   @apply no-underline text-[#0000ee] font-normal;
 }
 
-:deep(.blog-content a:hover) {
-  @apply underline;
-}
+
 
 :deep(.blog-content h1 a),
 :deep(.blog-content h2 a),
