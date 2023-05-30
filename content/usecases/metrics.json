@@ -24,7 +24,7 @@
       {
         "title": "Monitor everything",
         "desc": "<ul class='list-disc'> <li class='py-1'>Monitor every stack</li> <li class='py-1'>Kubernetes, AWS, GCP, Azure</li> <li class='py-1'>On Premise, Hybrid, IoT</li> </ul>",
-        "image": "/img/features/metrics/trackingtrends.svg"
+        "image": "/img/features/metrics/metrics2.svg"
       },
       {
         "title": "Easiest way to monitor",
