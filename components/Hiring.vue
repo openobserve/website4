@@ -16,22 +16,20 @@
                 <hr class="border my-4">
             </div> -->
       <div
-        class="bg-white border border-theme-primary-300 p-4 shadow rounded-lg"
+        class="bg-white border border-theme-primary-300 p-4 shadow rounded-lg h-full"
         v-for="(item, index) in data.jobs"
       >
-        <div class="">
-          <div class="font-bold text-lg md:text-xl py-2 text-black">
+          <div class="font-bold text-lg md:text-xl py-2 text-black flex-1">
             &#9673; {{ item.title }}
           </div>
           <div v-if="item.description">
-            <div class="text-gray-600 mb-2">Job Description</div>
-            <div v-html="item.description" class="text-sm"></div>
+            <div class="text-gray-600 mb-2 flex-1">Job Description</div>
+            <div v-html="item.description" class="text-sm flex-1"></div>
           </div>
           <Button variant="primary" :to="`/careers/apply?job=${item.id}`">{{
             item.btnText
           }}</Button>
         </div>
-      </div>
     </div>
   </Section>
 </template>

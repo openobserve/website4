@@ -23,18 +23,6 @@
   "heroSection": [
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
-      "title": "140x <span class='highlight'>lower storage cost</span> than your existing <span class='highlight'>observability</span> tools",
-      "subtitle": "",
-      "image": "/img/homepage/herosection1.jpg",
-      "btnText1": "Get started for free",
-      "btnTo1": "https://observe.openobserve.ai/",
-      "btnText2": "Request a demo",
-      "btnTo2": "/contactus",
-      "btnTarget": "_blank",
-      "backgroundImage": ""
-    },
-    {
-      "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "Full stack observability",
       "subtitle": "Observe front end, back end, databases, network and more",
       "image": "/img/homepage/hero3.png",
@@ -47,9 +35,21 @@
     },
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
+      "title": "140x <span class='highlight'>lower storage cost</span> than your existing <span class='highlight'>observability</span> tools",
+      "subtitle": "",
+      "image": "/img/homepage/herosection2.jpg",
+      "btnText1": "Get started for free",
+      "btnTo1": "https://observe.openobserve.ai/",
+      "btnText2": "Request a demo",
+      "btnTo2": "/contactus",
+      "btnTarget": "_blank",
+      "backgroundImage": ""
+    },
+    {
+      "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "Run it on your <span class='highlight'>laptop</span>, <span class='highlight'>on-prem</span> or in the <span class='highlight'>cloud</span>",
       "subtitle": "Use object storage and stateless nodes for unlimited scale with zero maintenance",
-      "image": "/img/homepage/herosection2.jpg",
+      "image": "/img/homepage/herosection1.jpg",
       "btnText1": "Get started for free",
       "btnTo1": "https://observe.openobserve.ai/",
       "btnText2": "Request a demo",

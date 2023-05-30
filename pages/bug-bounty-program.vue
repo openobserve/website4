@@ -2,7 +2,7 @@
    <div>
     <BreadCrumbs
       class="md:pt-0 pt-3"
-      title="Bug Bounty program"
+      title="Bug Bounty Program"
       :paths="[{ name: 'Home', to: '/' }, { name: 'Bug Bounty Program' }]"
     />
   <main>
