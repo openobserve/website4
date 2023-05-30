@@ -1,5 +1,5 @@
 <template>
-  <Section v-if="data.jobs">
+  <Section v-if="data.jobs.length > 0">
     <SectionHeading :title="data.title" :subtitle="data.subtitle" />
     <div
       class="container mx-auto px-4 py-4 flex flex-col md:flex-row space-x-6"
