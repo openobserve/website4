@@ -130,13 +130,15 @@ const validate = () => {
 };
 
 const submitdata = (e) => {
+  const lambdaEndpoint = "https://us-east-1.lambda.amazonaws.com/my-function";
+  const submitRequestEndpoint = "<YOUR_BACKEND_URL>"
+
   const file = inputUploadFile.value.files[0];
   e.preventDefault();
   if (validate()) {
     loading.value = true;
-    console.log(file, "file is valid");
+    // console.log(file, "file is valid");
     // Create a dummy Lambda function endpoint
-    const lambdaEndpoint = "https://us-east-1.lambda.amazonaws.com/my-function";
     // Step 1: Generate presigned URL
     fetch(lambdaEndpoint, {
       method: "POST",
@@ -152,13 +154,16 @@ const submitdata = (e) => {
       .then((data) => {
         preSignedUrl.value = data.presignedUrl;
 
+        const formData = new FormData();
+        formData.append('file', inputUploadFile.value.files[0]);
+
         // Step 2: Upload file to the presigned URL
         return fetch(preSignedUrl.value, {
-          method: "PUT",
+          method: 'PUT',
+          body: formData,
           headers: {
-            "Content-Type": this.file.type,
+            'Content-Type': file.type, // Set the Content-Type header
           },
-          body: inputUploadFile.value,
         }).then((res) => {
           // Step 3: Send additional data (name, email) to your backend or desired endpoint
           const dataToSend = {
@@ -168,7 +173,7 @@ const submitdata = (e) => {
             pdfUrl: formValue.uploadFile,
           };
 
-          return fetch("<YOUR_BACKEND_URL>", {
+          return fetch(submitRequestEndpoint, {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
