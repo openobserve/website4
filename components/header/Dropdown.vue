@@ -7,7 +7,7 @@
       @mouseover="triggerMode == 'hover' ? isMenuOpen = true : null">
       <div class="flex">
         <button @click="triggerMode == 'click' ? isMenuOpen = !isMenuOpen : null"
-          class="font-normal text-base text-black  hover:text-emerald-700">
+          class="font-normal text-base text-black  hover:text-theme-secondary-600">
           {{ title }}
           <span class="inline-block items-center justify-center"
             :class="isMenuOpen == true ? 'transform rotate-180' : ''">

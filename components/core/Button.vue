@@ -57,7 +57,7 @@ defineProps({
       default:
         "inline-block px-2 py-1 md:px-6 md:py-3 rounded-lg border border-transparent bg-theme-primary text-center text-md transition cursor-pointer effect effect-1 ",
       header:
-        "block my-2 font-normal text-base animate-left text-black hover:text-emerald-700",
+        "block my-2 font-normal text-base animate-left text-black hover:text-theme-secondary-600",
       dropdownItem:
         "block px-4 py-2 rounded-lg hover:bg-gray-200 font-medium text-base text-black animate-left whitespace-nowrap",
       pricing:
