@@ -21,7 +21,7 @@ watch(route, (value) => {
 const { y } = useWindowScroll();
 
 const items = {
-  logo: "/img/logo/headerLogo.svg",
+  logo: "/img/logo/logo_horizontal.svg",
   btn: {
     text: "Get started for free",
     link: "https://observe.openobserve.ai",
