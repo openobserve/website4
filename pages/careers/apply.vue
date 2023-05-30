@@ -11,7 +11,7 @@
         :subtitle="data.content.subheading"
       />
       <div class="mt-10">
-        <form ref="form" @submit="submitdata">
+        <form ref="form" @submit.prevent="submitdata">
           <label for="jobSelect" class="required">Select Job:</label>
           <select
             v-model="selectedOption"
@@ -62,10 +62,8 @@
             <input
               type="file"
               id="uploadFile"
-              required
               accept=".pdf"
               ref="inputUploadFile"
-              @change="handleFileUpload()"
               class="appearance-none border border-gray-300 rounded-lg bg-gray-50 px-4 py-2 w-full"
             />
 
@@ -119,15 +117,12 @@ onMounted(() => {
   // Set the default value based on the 'jobs' query parameter
   selectedOption.value = job || null;
 });
-const handleFileUpload = () => {
-  console.log("selected file", inputUploadFile.value.files[0]);
-};
 const validate = () => {
   const fields = [inputName, inputEmail, inputPhone];
   const validateValue = fields
     .map((it) => it.value.validate())
     .every((it) => it);
-  if (validateValue && inputUploadFile) {
+  if (validateValue && inputUploadFile.value.files[0]) {
     return true;
   } else {
     return false;
