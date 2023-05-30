@@ -7,9 +7,9 @@
     />
 
     <div
-      class="blog-content container mx-auto px-4 pb-8 mt-8 flex flex-col md:flex-row"
+      class=" container mx-auto px-4 pb-8 mt-8 flex flex-col md:flex-row"
     >
-      <article style="flex: 5" class="md:pr-8">
+      <article style="flex: 5" class="blog-content md:pr-8">
        <h1 class="text-4xl text-left text-black">{{ article.title }}</h1>
 
         <div
@@ -241,7 +241,9 @@ useHead({
   @apply no-underline text-[#0000ee] font-normal;
 }
 
-
+:deep(.blog-content a:hover) {
+  @apply underline;
+}
 
 :deep(.blog-content h1 a),
 :deep(.blog-content h2 a),
