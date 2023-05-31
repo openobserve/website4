@@ -1,5 +1,5 @@
 {
-  "seotitle": "Frequently asked questions",
+  "seotitle": "Frequently Asked Questions",
   "seodesc": "",
   "breadcrumbs": [
     {
@@ -23,83 +23,83 @@
         "open": true
       },
       {
-        "question": "What is ZincObserve?",
-        "answer": "ZincObserve is an open-source observability platform that provides a unified view of logs, metrics and traces.",
+        "question": "What is OpenObserve?",
+        "answer": "OpenObserve is an open-source observability platform that provides a unified view of logs, metrics and traces.",
         "open": true
       },
       {
-        "question": "How do I send logs to/in ZincObserve?",
-        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the ZincObserve API.",
+        "question": "How do I send logs to/in OpenObserve?",
+        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the OpenObserve API.",
         "open": false
       },
       {
-        "question": "How do I send metrics data to/in ZincObserve?",
-        "answer": "You can send metrics data to ZincObserve using prometheus remote-write API or using the ZincObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
+        "question": "How do I send metrics data to/in OpenObserve?",
+        "answer": "You can send metrics data to OpenObserve using prometheus remote-write API or using the OpenObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
         "open": true
       },
       {
-        "question": "How can I ingest Amazon cloudwatch logs into ZincObserve?",
-        "answer": "You can ingest amazon cloudwatch logs into ZincObserve by subscribing a cloudwatch log-group to a kinesis firehose stream. You can then use HTTP delivery of kinesis firehose to send any logs to ZincObserve.",
+        "question": "How can I ingest Amazon cloudwatch logs into OpenObserve?",
+        "answer": "You can ingest amazon cloudwatch logs into OpenObserve by subscribing a cloudwatch log-group to a kinesis firehose stream. You can then use HTTP delivery of kinesis firehose to send any logs to OpenObserve.",
         "open": false
       },
       {
-        "question": "How do I send traces to/in ZincObserve?",
-        "answer": "You can use opentelemetry libraries to instrument your application and send traces to ZincObserve. You can also use the ZincObserve API to send traces.",
+        "question": "How do I send traces to/in OpenObserve?",
+        "answer": "You can use opentelemetry libraries to instrument your application and send traces to OpenObserve. You can also use the OpenObserve API to send traces.",
         "open": false
       },
       {
-        "question": "Do I need to install ZincObserve to use it?",
-        "answer": "You can choose to install ZincObserve in your laptop locally, in your own infrastructure (kubernetes, aws, gcp, azure, heroku, etc) or use Zinc cloud. With Zinc cloud you do not have to worry about installing, maintaining and keep up ZincObserve yourself. Zinc cloud provides generous free tier suitable for most individuals and startups.",
+        "question": "Do I need to install OpenObserve to use it?",
+        "answer": "You can choose to install OpenObserve in your laptop locally, in your own infrastructure (kubernetes, aws, gcp, azure, heroku, etc) or use OpenObserve cloud. With OpenObserve cloud you do not have to worry about installing, maintaining and keep up OpenObserve yourself. OpenObserve cloud provides generous free tier suitable for most individuals and startups.",
         "open": false
       },
       {
-        "question": "Where does ZincObserve store data?",
-        "answer": "ZincObserve can store data on local disk or s3 when run in a single node mode. In HA mode ZincObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. ZincObserve stores its metadata in sled for single node installation and in etcd for HA installation.",
+        "question": "Where does OpenObserve store data?",
+        "answer": "OpenObserve can store data on local disk or s3 when run in a single node mode. In HA mode OpenObserve requires an object store to store data. You could use s3, GCS, minio,  Azure blob and any other s3 compatible object store. OpenObserve stores its metadata in sled for single node installation and in etcd for HA installation.",
         "open": true
       },
       {
-        "question": "Can I build dashboards in ZincObserve?",
-        "answer": "Yes, You can build dashboards in ZincObserve. For Logs and traces data you can use SQL like queries to build dashboards. For metrics data you can use both PromQL and SQL to build dashboards. You can have data from logs, metrics and traces in the same dashboard giving you a unified view of all data.",
+        "question": "Can I build dashboards in OpenObserve?",
+        "answer": "Yes, You can build dashboards in OpenObserve. For Logs and traces data you can use SQL like queries to build dashboards. For metrics data you can use both PromQL and SQL to build dashboards. You can have data from logs, metrics and traces in the same dashboard giving you a unified view of all data.",
         "open": false
       },
       {
-        "question": "Can ZincObserve send alerts?",
-        "answer": "Yes, ou can send alerts to many sources like slack, teams, prometheus alertmanager and more.. ZincObserve can send alerts to various destinations using its highly configurable destination builder. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data.",
+        "question": "Can OpenObserve send alerts?",
+        "answer": "Yes, ou can send alerts to many sources like slack, teams, prometheus alertmanager and more.. OpenObserve can send alerts to various destinations using its highly configurable destination builder. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data.",
         "open": false
       },
       {
-        "question": "Is ZincObserve multi-tenant?",
-        "answer": "Yes, You can use ZincObserve in a multi-tenant mode. You can create multiple organizations and each organization can have multiple users. Each organizations users and data are isolated for that organization.",
+        "question": "Is OpenObserve multi-tenant?",
+        "answer": "Yes, You can use OpenObserve in a multi-tenant mode. You can create multiple organizations and each organization can have multiple users. Each organizations users and data are isolated for that organization.",
         "open": false
       },
       {
-        "question": "Can I deploy ZincObserve on Kubernetes?",
-        "answer": "Yes, You can use the official helm chart to deploy ZincObserve on Kubernetes. You can also use the zctl to deploy ZincObserve on Kubernetes.",
+        "question": "Can I deploy OpenObserve on Kubernetes?",
+        "answer": "Yes, You can use the official helm chart to deploy OpenObserve on Kubernetes. You can also use the zctl to deploy OpenObserve on Kubernetes.",
         "open": false
       },
       {
         "question": "What are ingest functions?",
-        "answer": "Ingest functions in ZincObserve are created using VRL a javascript like language. Ingest functions can be used to parse, filter, transform and enrich data at the time of ingestion. You can use ingest functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Ingest functions run on the incoming data before it is stored in ZincObserve",
+        "answer": "Ingest functions in OpenObserve are created using VRL a javascript like language. Ingest functions can be used to parse, filter, transform and enrich data at the time of ingestion. You can use ingest functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Ingest functions run on the incoming data before it is stored in OpenObserve",
         "open": false
       },
       {
         "question": "What are query functions?",
-        "answer": "Query functions in ZincObserve are created using VRL a javascript like language. Query functions can be used to parse, filter, transform and enrich data. You can use query functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Query functions are used at the time of query when data has already been ingested into ZincObserve.",
+        "answer": "Query functions in OpenObserve are created using VRL a javascript like language. Query functions can be used to parse, filter, transform and enrich data. You can use query functions to parse logs, extract metrics from logs, filter logs, transform logs and more. Query functions are used at the time of query when data has already been ingested into OpenObserve.",
         "open": false
       },
       {
-        "question": "Does ZincObserve provide a GUI?",
-        "answer": "ZincObserve  provide a very advanced WebUI. You can use the WebUI to build dashboards, alerts, ingest functions, query functions and more. You can also use the WebUI to view logs, metrics and traces data.",
+        "question": "Does OpenObserve provide a GUI?",
+        "answer": "OpenObserve  provide a very advanced WebUI. You can use the WebUI to build dashboards, alerts, ingest functions, query functions and more. You can also use the WebUI to view logs, metrics and traces data.",
         "open": false
       },
       {
-        "question": "How does ZincObserve compare to Elasticsearch?",
-        "answer": "ZincObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes It can scale much faster than Elasticsearch. It has been written in rust and enjoys its high performance and low memory footprint. ZincObserve is also much easier to operate than Elasticsearch. It has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
+        "question": "How does OpenObserve compare to Elasticsearch?",
+        "answer": "OpenObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes It can scale much faster than Elasticsearch. It has been written in rust and enjoys its high performance and low memory footprint. OpenObserve is also much easier to operate than Elasticsearch. It has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
         "open": false
       },
       {
-        "question": "Can I install ZincObserve on my laptop?",
-        "answer": "Yes, You can install ZincObserve on your laptop and get started in under 2 minutes. Follow the quickstart guide in documentation.",
+        "question": "Can I install OpenObserve on my laptop?",
+        "answer": "Yes, You can install OpenObserve on your laptop and get started in under 2 minutes. Follow the quickstart guide in documentation.",
         "open": false
       }
     ]

@@ -2,7 +2,7 @@
   <div>
     <BreadCrumbs
       class="md:pt-0 pt-3"
-      title="Privacy-Policy"
+      title="Privacy Policy"
       :paths="[{ name: 'Home', to: '/' }, { name: 'Privacy-Policy' }]"
     />
     <main>

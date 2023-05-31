@@ -4,7 +4,7 @@
       class="rounded-t-xl text-center py-2 text-white"
       :class="
         item.recommed
-          ? 'bg-theme-primary border-theme-primary block'
+          ? 'bg-theme-primary-400 border-theme-primary block'
           : 'invisible'
       "
     >
@@ -22,12 +22,7 @@
         <div class="flex flex-row justify-between">
           <div class="flex flex-row-reverse justify-between w-full">
             <div
-              class="rounded-xl flex items-center"
-              :class="
-                item.key === 'primary'
-                  ? 'bg-theme-primary-100'
-                  : 'bg-theme-secondary-100'
-              "
+              class="rounded-xl flex items-center bg-theme-primary-50"
             >
               <img
                 :src="item.image"
@@ -37,12 +32,8 @@
             </div>
             <div class="flex">
               <h2
-                class="text-3xl mt-4 font-bold leading-none"
-                :class="
-                  item.key === 'primary'
-                    ? 'text-theme-primary'
-                    : 'text-theme-secondary'
-                "
+                class="text-3xl mt-4 font-bold leading-none text-theme-primary"
+              
               >
                 {{ item.subtitle }}
               </h2>
@@ -71,11 +62,9 @@
               <img
                 src="/img/Check.svg"
                 alt="check icon"
-                class="p-2 rounded-full h-7 w-7"
+                class="p-2 rounded-full h-7 w-7 bg-theme-primary"
                 :class="
-                  [item.key === 'primary'
-                    ? 'bg-theme-primary'
-                    : 'bg-theme-secondary',
+                  [
                     !it ? 'invisible' : ''
                   ]
                 "

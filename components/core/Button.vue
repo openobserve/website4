@@ -57,7 +57,7 @@ defineProps({
       default:
         "inline-block px-2 py-1 md:px-6 md:py-3 rounded-lg border border-transparent bg-theme-primary text-center text-md transition cursor-pointer effect effect-1 ",
       header:
-        "block my-2 font-normal text-base animate-left text-black hover:text-emerald-700",
+        "block my-2 font-normal text-base animate-left text-black hover:text-theme-primary-500",
       dropdownItem:
         "block px-4 py-2 rounded-lg hover:bg-gray-200 font-medium text-base text-black animate-left whitespace-nowrap",
       pricing:
@@ -70,9 +70,9 @@ defineProps({
         "inline-block px-6 py-2 font-bold text-base rounded-full cursor-pointer text-black hover:text-white border border-theme-primary hover:bg-theme-primary-600 focus:ring-2 ring-offset-1 ring-theme-primary-500",
       blog: "cursor-pointer mt-4 hover:text-theme-primary-400",
       tryitfree:
-        "inline-block px-4 py-2 rounded-lg bg-theme-secondary-600 hover:bg-theme-secondary-700 font-normal text-base text-white animate-left whitespace-nowrap",
+        "inline-block px-4 py-2 rounded-lg bg-theme-secondary-500 hover:bg-theme-secondary-600 font-normal text-base text-white animate-left whitespace-nowrap",
       requestdemo:
-        "inline-block px-4 py-2 rounded-lg bg-theme-primary-600 hover:bg-theme-primary-700 font-normal text-base text-white animate-left whitespace-nowrap",
+        "inline-block px-4 py-2 rounded-lg bg-theme-primary-500 hover:bg-theme-primary-600 font-normal text-base text-white animate-left whitespace-nowrap",
     }),
   },
 });

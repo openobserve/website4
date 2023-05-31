@@ -5,18 +5,18 @@
     "title": "",
     "items": [
       {
-        "title": "<span class='highlight'>ZincObserve</span>",
+        "title": "<span class='highlight'>OpenObserve</span>",
         "subtitle": "",
-        "desc": "ZincObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower costs.",
-        "image": "/img/homepage/zincobserve1.png",
+        "desc": "OpenObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower costs.",
+        "image": "/img/homepage/openobserve1.jpg",
         "btnText": "",
         "btnTo": "",
         "btnVariant": "secondary"
       },
       {
         "title": "<span class='highlight'>Logs, Metrics, Traces</span>",
-        "desc": "ZincObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. ZincObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also supported for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). Tracing using Opentelemetry is natively supported so you can get started troubleshooting your applications with open standards quickly. It is built in rust for high performance and memory safety.",
-        "image": "/img/products/zincobserve/doubleproductivity.svg"
+        "desc": "OpenObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. OpenObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
+        "image": "/img/products/openobserve/doubleproductivity.svg"
       }
     ]
   },
@@ -27,35 +27,35 @@
       "subtitle": "Observe front end, back end, databases, network and more",
       "image": "/img/homepage/hero3.png",
       "btnText1": "Get started for free",
-      "btnTo1": "https://observe.zinc.dev/",
+      "btnTo1": "https://observe.openobserve.ai/",
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     },
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "140x <span class='highlight'>lower storage cost</span> than your existing <span class='highlight'>observability</span> tools",
       "subtitle": "",
-      "image": "/img/homepage/hero1.png",
+      "image": "/img/homepage/herosection2.jpg",
       "btnText1": "Get started for free",
-      "btnTo1": "https://observe.zinc.dev/",
+      "btnTo1": "https://observe.openobserve.ai/",
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     },
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "Run it on your <span class='highlight'>laptop</span>, <span class='highlight'>on-prem</span> or in the <span class='highlight'>cloud</span>",
       "subtitle": "Use object storage and stateless nodes for unlimited scale with zero maintenance",
-      "image": "/img/homepage/hero2.png",
+      "image": "/img/homepage/herosection1.jpg",
       "btnText1": "Get started for free",
-      "btnTo1": "https://observe.zinc.dev/",
+      "btnTo1": "https://observe.openobserve.ai/",
       "btnText2": "Request a demo",
       "btnTo2": "/contactus",
       "btnTarget": "_blank",
-      "backgroundImage": "/img/homepage/homepagebg3.svg"
+      "backgroundImage": ""
     }
   ],
   "numbers": {
@@ -95,7 +95,7 @@
         "image": "/img/homepage/budgetfriendly.svg",
         "tagline": "BUDGET FRIENDLY",
         "title": "Affordable Pricing for Optimum Value",
-        "desc": "We believe that one should not have to spend a fortune to run a piece of software, either in self-hosted mode or for the SaaS platform. ZincObserve has a distinct method of storing and organizing data that leads to a significant reduction in storage costs, ~140 times lower than other options. As a result, it is an economical solution for overseeing and managing observability.",
+        "desc": "We believe that one should not have to spend a fortune to run a piece of software, either in self-hosted mode or for the SaaS platform. OpenObserve has a distinct method of storing and organizing data that leads to a significant reduction in storage costs, ~140 times lower than other options. As a result, it is an economical solution for overseeing and managing observability.",
         "btnText": ""
       },
       {
@@ -109,7 +109,7 @@
   },
   "useCases": {
     "title": "Logs, Metrics and Traces",
-    "subtitle": "Accelerate your cloud operations with ZincObserve's Search, Observability, and Analysis platform",
+    "subtitle": "Accelerate your cloud operations with OpenObserve's Search, Observability, and Analysis platform",
     "items": [
       {
         "image": "/img/homepage/Logs.svg",
@@ -133,7 +133,7 @@
   },
   "useCases2": {
     "title": "Features",
-    "subtitle": "Get more from your data with ZincObserve",
+    "subtitle": "Get more from your data with OpenObserve",
     "items": [
       {
         "image": "/img/homepage/Logs.svg",
@@ -156,59 +156,59 @@
     ]
   },
   "features": {
-    "title": "ZincObserve Features",
-    "subtitle": "Explore the transformative functionalities of ZincObserve and experience a new level of data observation",
+    "title": "OpenObserve Features",
+    "subtitle": "Explore the transformative functionalities of OpenObserve and experience a new level of data observation",
     "items": [
       {
-        "image": "/img/products/zincobserve/SQL.svg",
+        "image": "/img/products/openobserve/SQL.svg",
         "title": "SQL based query language",
         "desc": "Utilize what you already know. Nothing new to learn here.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/Alerts.svg",
+        "image": "/img/products/openobserve/Alerts.svg",
         "title": "Alerts",
         "desc": "Provides scheduled and real-time alerts that allow users to promptly address critical issues and dispatch alerts to multiple platforms using templates, which improves system monitoring capabilities.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/dashboard.svg",
+        "image": "/img/products/openobserve/dashboard.svg",
         "title": "Dashboards",
         "desc": "Dashboards provide a comprehensive view of system behavior by presenting real-time data from logs, metrics, and traces in a visually appealing and efficient manner.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/DataStorage.svg",
+        "image": "/img/products/openobserve/DataStorage.svg",
         "title": "Data Storage in Obect Store",
         "desc": "Provides Storage functionality support in local Disk, s3, MinIO, GCS resulting in 140x lower storage cost.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/schemaevolution.svg",
+        "image": "/img/products/openobserve/schemaevolution.svg",
         "title": "Dynamic Schema Evolution",
         "desc": "Ingest any and all logs without worrying about schema changes.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/Security.svg",
+        "image": "/img/products/openobserve/Security.svg",
         "title": "Security",
         "desc": "Fine grained role based access control (RBAC) for users and teams.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/AdvancedGUI.svg",
+        "image": "/img/products/openobserve/AdvancedGUI.svg",
         "title": "Advanced GUI",
         "desc": "Provides a user-friendly and intuitive graphical user interface for easier navigation and use of the platform.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/UserDefined.svg",
+        "image": "/img/products/openobserve/UserDefined.svg",
         "title": "User defined Ingest & Query functions",
         "desc": "Offers efficient data analysis by transforming large datasets into valuable insights while enabling users to customize ingestion and querying functions using the Lua scripting language.",
         "btnText": ""
       },
       {
-        "image": "/img/products/zincobserve/Localization.svg",
+        "image": "/img/products/openobserve/Localization.svg",
         "title": "Localization",
         "desc": "Supports 10+ popular languages for the UI.",
         "btnText": ""

@@ -42,7 +42,7 @@
                         <img
                           src="/img/Check.svg"
                           alt="check icon"
-                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          class="p-2 rounded-full h-7 w-7 bg-emerald-500"
                           v-if="it.developer === true"
                         />
                         <div v-show="typeof(it.developer) === 'string'">{{ it.developer }}</div>
@@ -55,7 +55,7 @@
                         <img
                           src="/img/Check.svg"
                           alt="check icon"
-                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          class="p-2 rounded-full h-7 w-7 bg-emerald-500"
                           v-if="it.pro === true"
                         />
                         <div v-show="typeof(it.pro) === 'string'">{{ it.pro }}</div>
@@ -69,7 +69,7 @@
                         <img
                           src="/img/Check.svg"
                           alt="check icon"
-                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          class="p-2 rounded-full h-7 w-7 bg-emerald-500"
                           v-if="it.business === true"
                         />
                         <div v-show="typeof(it.business) === 'string'">{{ it.business }}</div>
@@ -83,7 +83,7 @@
                         <img
                           src="/img/Check.svg"
                           alt="check icon"
-                          class="p-2 rounded-full h-7 w-7 bg-theme-secondary"
+                          class="p-2 rounded-full h-7 w-7 bg-emerald-500"
                           v-if="it.enterprise === true"
                         />
                         <div v-show="typeof(it.enterprise) === 'string'">{{ it.enterprise }}</div>

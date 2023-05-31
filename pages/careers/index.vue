@@ -14,7 +14,7 @@
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {
-  return await queryContent("/careers").findOne();
+  return await queryContent("/career").findOne();
 });
 const seotitle = "Careers";
 const seodesc ="Revolutionizing the Way Businesses Optimize Their Systems.Experience the Next Generation of Observability and Search Technology"

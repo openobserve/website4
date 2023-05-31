@@ -1,7 +1,7 @@
 <template>
   <!-- <SlideIn> -->
   <div
-    class="bg-gradient-to-tr from-theme-secondary-800 via-theme-secondary-500 to-theme-primary-500 w-full py-20"
+    class="bg-gradient-to-tr from-theme-primary-500 via-theme-primary-400 to-theme-primary-300 w-full py-20"
   >
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4 container mx-auto px-4">
       <div class="py-2 md:py-10" v-for="(item, index) in items.items">

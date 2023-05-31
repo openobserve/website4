@@ -34,12 +34,12 @@
       {
         "title": "Process, enrich, redact, and reduce logs",
         "desc": "<ul class='list-disc'> <li class='py-1'>Enrich log data</li> <li class='py-1'>Process incoming logs. Join fields, drop fields and more</li> <li class='py-1'>Remove unwanted fields cutting noise and storage costs</li> </ul>",
-        "image": "/img/features/logs/section2.svg"
+        "image": "/img/features/logs/logs2.svg"
       },
       {
         "title": "Ensure automated compliance",
         "desc": "<ul class='list-disc'> <li class='py-1'>Redact sensitive data like SSN, email and more</li> <li class='py-1'>Use existing patterns or build your own</li> <li class='py-1'>Stop haggling with developers on compliance</li> </ul>",
-        "image": "/img/features/logs/section2.svg"
+        "image": "/img/features/logs/logs2.svg"
       }
     ]
   },

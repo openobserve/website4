@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="w-full bg-cover bg-[url('/img/homepage/footerbg5.svg')] bg-no-repeat h-full"
+      class="w-full bg-cover bg-[url('/img/footerbg.png')] bg-no-repeat h-full "
     >
       <footer class="w-full body-font pt-20">
         <div
@@ -19,7 +19,7 @@
                 />
               </div>
             </nuxt-link>
-            <p class="lg:mt-1 text-sm text-white text-center md:text-left">
+            <p class="lg:mt-1 text-sm text-black text-center md:text-left">
               {{ footerData.address }}
             </p>
           </div>
@@ -30,21 +30,21 @@
               class="flex flex-col md:space-x-10 lg:space-x-28 space-y-6 md:space-y-0 md:flex-row"
             >
               <div class="w-full">
-                <div class="flex flex-col text-white">
+                <div class="flex flex-col text-black">
                   <h3 class="font-bold text-lg pb-2 text-center md:text-left">
                     {{ footerData.quickLink.title }}
                   </h3>
                 </div>
                 <ul>
                   <li
-                    class="list-none mb-2 text-white text-center md:text-left"
+                    class="list-none mb-2 text-black text-center md:text-left"
                     v-for="(item, index) in footerData.quickLink.content"
                   >
                     <nuxt-link
                       :href="item.link"
                       :target="item.target"
                       :key="index"
-                      class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                      class="text-center font-medium tetx-white text-sm md:text-sm hover:text-theme-primary-500 transform duration-100 hover:underline hover:underline-offset-4"
                     >
                       {{ item.text }}
                     </nuxt-link>
@@ -52,14 +52,14 @@
                 </ul>
               </div>
               <div class="w-full">
-                <div class="flex flex-col text-white">
+                <div class="flex flex-col text-black">
                   <h3 class="font-bold text-xl pb-2 text-center md:text-left">
                     {{ footerData.docs.title }}
                   </h3>
                 </div>
                 <ul>
                   <li
-                    class="list-none mb-2 text-white text-center md:text-left"
+                    class="list-none mb-2 text-black text-center md:text-left"
                     v-for="(item, index) in footerData.docs.content"
                   >
                     <nuxt-link
@@ -68,7 +68,7 @@
                         item.text == 'Get Started For Free' ? '_blank' : ''
                       "
                       :key="index"
-                      class="font-medium text-sm hover:text-theme-secondary-300 transform duration-100 hover:underline hover:underline-offset-4"
+                      class="font-medium text-sm hover:text-theme-primary-500 transform duration-100 hover:underline hover:underline-offset-4"
                     >
                       {{ item.text }}
                     </nuxt-link>
@@ -76,12 +76,12 @@
                 </ul>
               </div>
               <div class="w-full">
-                <div class="flex flex-col space-y-2 text-white">
+                <div class="flex flex-col space-y-2 text-black">
                   <h3 class="font-bold text-xl text-center md:text-left">
                     {{ footerData.items.title }}
                   </h3>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-primary-500"
                   >
                     <img
                       :src="footerData.items.emailicon"
@@ -96,7 +96,7 @@
                     >
                   </div>
                   <div
-                    class="flex justify-start hover:text-theme-secondary-300"
+                    class="flex justify-start hover:text-theme-primary-500"
                   >
                     <img
                       :src="footerData.items.callicon"
@@ -129,7 +129,7 @@
           </div>
         </div>
       </footer>
-      <div class="bg-white bg-opacity-5 text-white py-4 flex">
+      <div class="bg-theme-primary-200 bg-opacity-20 text-black py-4 flex">
         <div
           class="mx-auto w self-center px-4 text-center flex flex-col md:flex-row"
         >
@@ -145,7 +145,7 @@ const currentYear = computed(() => {
   return new Date().getFullYear();
 });
 const footerData = {
-  logo: "/img/logo/footerLogo.svg",
+  logo: "/img/logo/logo_horizontal.svg",
   address:
     "315, Montgomery St, 10th Floor, San Francisco, California,94104, United States of America",
   quickLink: {
@@ -173,8 +173,8 @@ const footerData = {
       },
       {
         text: "Knowledge Base",
-        link: "https://zinc.dev/kb",
-        target: "_blank"
+        link: "https://openobserve.ai/kb",
+        target: "_blank",
       },
     ],
   },
@@ -183,7 +183,7 @@ const footerData = {
     content: [
       {
         text: "Get Started For Free",
-        link: "https://observe.zinc.dev",
+        link: "https://observe.openobserve.ai",
       },
       {
         text: "Bug Bounty Program",
@@ -213,11 +213,11 @@ const footerData = {
   social: [
     {
       icon: "/img/github.svg",
-      link: "https://github.com/zinclabs/zincobserve",
+      link: "https://github.com/zinclabs/openobserve",
     },
     {
       icon: "/img/slack.svg",
-      link: "https://zincobserve.slack.com/",
+      link: "https://openobserve.slack.com/",
     },
     {
       icon: "/img/linkdin.svg",

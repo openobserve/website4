@@ -3,13 +3,13 @@
   "seodesc": "Making Data-Driven Decisions Easier than Ever!",
   "aboutus": {
     "title": "What We Do",
-    "description": "We provide the simplest and most sophisticated open source observability platform. Our flagship product ZincObserve gives you a single unified platform to collect, process, and visualize all your logs, metrics, and traces. We are committed to building the best observability platform for developers and operators. We believe in open source and thrive on building a community around our products. We are a remote-first company with a globally distributed team. We are headquartered in Bangalore, India"
+    "description": "We provide the simplest and most sophisticated open source observability platform. Our flagship product OpenObserve gives you a single unified platform to collect, process, and visualize all your logs, metrics, and traces. We are committed to building the best observability platform for developers and operators. We believe in open source and thrive on building a community around our products. We are a remote-first company with a globally distributed team. We are headquartered in Bangalore, India"
   },
   "heroSection": {
     "title": "Simple & sophisticated observability!",
     "subtitle": "",
     "image": "/img/aboutus/aboutushero.svg",
-    "backgroundImage": "/img/aboutus/aboutusbg.png"
+    "backgroundImage": "/img/aboutus/aboutbg.png"
   },
   "data": {
     "backgroundImage": "/img/homepage/cardbg2.svg",
@@ -17,7 +17,7 @@
     "items": [
       {
         "title": "Unified observability platform",
-        "desc": "We built ZincObserve because we could not find a platform that could collect, process, and visualize all our logs, metrics, and traces in a single unified fashion. We wanted a platform that was easy to use, scalable, and cost-effective, based on open standards and covered all the pillars of observability.",
+        "desc": "We built OpenObserve because we could not find a platform that could collect, process, and visualize all our logs, metrics, and traces in a single unified fashion. We wanted a platform that was easy to use, scalable, and cost-effective, based on open standards and covered all the pillars of observability.",
         "image": "/img/aboutus/zinclabsolution.svg"
       },
       {
@@ -33,6 +33,5 @@
       "/img/aboutus/delltechnology.png",
       "/img/aboutus/nexus.png"
     ]
-   
   }
 }

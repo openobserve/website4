@@ -6,11 +6,11 @@ At Zinc Labs, we prioritize the security and reliability of our products for our
 
 This bug bounty program encompasses the following applications and websites:
 
-1.  ZincObserve
+1.  OpenObserve
 
 2.  zPlane
 
-3.  Websites: *.zinc.dev (e.g., www.zinc.dev, observe.zinc.dev), *.zinclabs.dev
+3.  Websites: _.openobserve.ai (e.g., www.openobserve.ai, observe.openobserve.ai), _.zinclabs.dev
 
 # Eligible vulnerabilities:
 

@@ -34,7 +34,7 @@ const props = defineProps({
 });
 const bgImage = computed(() => {
 
-  return props.backgroundImage ? "bg-[url('/img/cardbg2.svg')] py-40" : ""
+  return props.backgroundImage ? "bg-[url('/img/cardbg4.png')] py-40" : ""
 
 })
 </script>

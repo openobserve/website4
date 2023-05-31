@@ -1,7 +1,7 @@
 <template>
   <component :is="item.to? nuxtLink : 'div'" class="" :to="item.to">
     <div
-      class="h-full transition-all duration-150 shadow-lg hover:shadow-2xl shadow-theme-primary-300 bg-theme-secondary-50 hover:bg-theme-primary-500 hover:text-white rounded-3xl border-theme-primary-300 border"
+      class="h-full transition-all duration-150 shadow-lg hover:shadow-2xl shadow-theme-primary-200 bg-theme-primary-50 hover:bg-theme-primary-500 hover:text-white rounded-3xl border-theme-primary-200 border"
     >
       <div class="flex flex-col p-6 min-h-full w-full">
         <div class="flex justify-start items-center -translate-y-16">

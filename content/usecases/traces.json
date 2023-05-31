@@ -1,6 +1,6 @@
 {
   "seotitle": "Traces",
-  "seodesc": "Troubleshoot performance issues with Traces.ZincObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues.",
+  "seodesc": "Troubleshoot performance issues with Traces.OpenObserve and Zplane collects and analyzes trace data, allowing teams to understand the flow of requests through their systems and identify bottlenecks and latency issues.",
   "breadcrumbs": [
     {
       "name": "Home",
@@ -24,12 +24,12 @@
       {
         "title": "Troubleshoot performance issues with distributed tracing",
         "desc": "<ul class='list-disc'> <li class='py-1'>High fidelity tracing for complex distributed systems</li> <li class='py-1'>c++, .Net, Erlang, Elixir, Go, Java, Javascript, PHP, Ruby, Python, Rust, Swift and more supported </li> <li class='py-1'>Backend, frontend, and mobile performance monitoring - all in one</li> <li class='py-1'>Track performance using dashboards</li> </ul>",
-        "image": "/img/features/traces/troubleshoot.svg"
+        "image": "/img/features/traces/traces1.svg"
       },
       {
         "title": "Open standards through Opentelemetry",
         "desc": "<ul class='list-disc'> <li class='py-1'>Full opentelemetry support</li> <li class='py-1'>No vendor lock in</li> <li class='py-1'>Built with open source and open standards</li> </ul>",
-        "image": "/img/features/traces/troubleshoot.svg"
+        "image": "/img/features/traces/traces1.svg"
       }
     ]
   },

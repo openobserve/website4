@@ -1,10 +1,10 @@
 ---
-title: Revolutionizing Observability - Unveiling ZincObserve, the High-Performance, Cost-Effective, Cloud-Native Platform
-seoTitle: Revolutionizing Observability - Unveiling ZincObserve, the High-Performance, Cost-Effective, Cloud-Native Platform
-description: "ZincObserve’ is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs."
-img: img/homepage/hero1.png
-alt: ZincObserve
-slug: launching-zincobserve
+title: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cost-Effective, Cloud-Native Platform
+seoTitle: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cost-Effective, Cloud-Native Platform
+description: "OpenObserve’ is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs."
+img: img/homepage/herosection1.jpg
+alt: OpenObserve
+slug: launching-openobserve
 author: prabhat
 publishDate: 2023-05-10
 tags:
@@ -18,9 +18,9 @@ tags:
 
 ### Introduction
 
-**ZincObserve** is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at ZincObserve and how its approach towards observability could help you build better software and save money on observability costs.
+**OpenObserve** is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs.
 
-We built **ZincObserve** with the following design principles and architecture in mind:
+We built **OpenObserve** with the following design principles and architecture in mind:
 
 1. **Brute force for log search** as opposed to inverted index or bitfunnel
 1. **Rust** as the programming language for its safety and performance
@@ -31,7 +31,7 @@ We built **ZincObserve** with the following design principles and architecture i
 1. True **compute and storage decoupling** with stateless nodes
 1. Core engine designed to offer **a complete observability solution** (logs, metrics, traces) from the ground up and not just some features as an afterthought retrofitting things
 
-We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But now let’s take a look at why we even thought of building ZincObserve in the first place.
+We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But now let’s take a look at why we even thought of building OpenObserve in the first place.
 
 ### Yet another log search engine!!! Why?
 
@@ -103,7 +103,7 @@ Next step was to build the actual system which took us several months.
 
 ### So what am I getting?
 
-We built an open source observability platform “ZincObserve” that is:
+We built an open source observability platform **OpenObserve** that is:
 
 1. Super easy to use
    1. Users can try it on a laptop in less than two minutes utilizing less than 100 MB RAM and notice the superior performance.
@@ -116,8 +116,9 @@ We built an open source observability platform “ZincObserve” that is:
    1. Metadata is in etcd, a highly available key-value store.
 1. Low cost
    1. Use of S3 for data storage allows users to lower their cost of storage compared to Elasticsearch by a factor of ~140x, which is a major cost for logging systems.
+   1. Extremely low compute requirements during ingestion (~6x YMMV based on data and hardware).
 1. High performance engine
-   1. ZincObserve is built in Rust, leveraging its high performance.
+   1. OpenObserve is built in Rust, leveraging its high performance.
    1. We use automatic and manual partitioning of data for better performance.
    1. We also use in-memory caching where we store the compressed data in memory and can store 1 TB of data in under 35 GB RAM (at ~30x compression, although you get much higher compression for real life logs).
 1. Advanced features:
@@ -125,12 +126,12 @@ We built an open source observability platform “ZincObserve” that is:
    1. Logs, Metrics, Traces, Dashboards, Alerts, Functions, and more.
    1. Multi-tenancy
    1. Embedded scripting
-      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enrichment of log data as it enters ZincObserve. Users could preprocess log records as they are entering the system. Users could build whatever function they can imagine.
-      1. Query functions - think of it like a lambda function that can run on every log line during query after log records have already been ingested. E.g. if a user has a log record like “1.2.3.4 - POST prabhat@zinc https://zinc.dev”, you could parse it during query time and filter against it at query time. Users could build whatever function they can imagine.
+      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enrichment of log data as it enters OpenObserve. Users could preprocess log records as they are entering the system. Users could build whatever function they can imagine.
+      1. Query functions - think of it like a lambda function that can run on every log line during query after log records have already been ingested. E.g. if a user has a log record like “1.2.3.4 - POST prabhat@zinc https://openobserve.ai”, you could parse it during query time and filter against it at query time. Users could build whatever function they can imagine.
 
 1. Sleep better at night knowing your system will keep running even if the nodes crash through autohealing.
 
-Below is the result of storage utilization when we ingested our kubernetes cluster logs in both ZincObserve and Elasticsearch for a couple of hours.
+Below is the result of storage utilization when we ingested our kubernetes cluster logs in both OpenObserve and Elasticsearch for a couple of hours.
 
 ![](/img/blog/blog1.png)
 
@@ -138,7 +139,7 @@ Below is the result of storage utilization when we ingested our kubernetes clust
 
 We chose to do certain things differently that may affect how it will perform in your environment.
 
-ZincObserve does not index data like Elasticsearch, but compresses it and stores it on S3. This results in extremely low storage cost and very lower computing power requirement during ingestion, but requires more compute power during search. ZincObserve should use lower compute power for analytics queries and be faster due to its columnar storage. We will be running benchmarks in due course to assert this.
+OpenObserve does not index data like Elasticsearch, but compresses it and stores it on S3. This results in extremely low storage cost and very lower computing power requirement during ingestion, but requires more compute power during search. OpenObserve should use lower compute power for analytics queries and be faster due to its columnar storage. We will be running benchmarks in due course to assert this.
 
 Instead of using raft/paxos for cluster coordination, we chose to use etcd which allows much better scaling and cluster coordination. However this introduces etcd management. Etcd management is much easier due to its small footprint compared to full-fledged databases, but nevertheless, there is some work involved in taking backups and keeping it up and running. We plan to provide a hosted etcd that users can use to alleviate this in due course.
 
@@ -146,8 +147,8 @@ Instead of using raft/paxos for cluster coordination, we chose to use etcd which
 
 There are over four dozen observability tools out there (probably a lot more), some of which are open source, some are closed source, and others are available only as SaaS. But we still see people struggling with these existing tools for one or more reasons (feature, cost, difficulty in management, and so on).
 
-So we have decided to build ZincObserve to allow teams to do their job efficiently, solve problems effectively, and sleep well at night. To quote one of my mentors, Anand Babu Periasamy (CEO - MinIO), on entering the crowded market of observability -
+So we have decided to build OpenObserve to allow teams to do their job efficiently, solve problems effectively, and sleep well at night. To quote one of my mentors, Anand Babu Periasamy (CEO - MinIO), on entering the crowded market of observability -
 
 > Why build another mouse trap when so many already exist? **Because the rodent problem still exists (and existing mouse traps are not solving the problem)**.
 
-Check the [documentation](https://docs.zinc.dev/) to install ZincObserve in under two minutes or simply try the [Zinc cloud platform](https://observe.zinc.dev/).
+Check the [documentation](https://docs.openobserve.ai/) to install OpenObserve in under two minutes or simply try the [OpenObserve Cloud platform](https://observe.openobserve.ai/).

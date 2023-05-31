@@ -7,9 +7,9 @@
     />
 
     <div
-      class="blog-content container mx-auto px-4 pb-8 mt-8 flex flex-col md:flex-row"
+      class=" container mx-auto px-4 pb-8 mt-8 flex flex-col md:flex-row"
     >
-      <article style="flex: 5" class="md:pr-8">
+      <article style="flex: 5" class="blog-content md:pr-8">
        <h1 class="text-4xl text-left text-black">{{ article.title }}</h1>
 
         <div
@@ -185,7 +185,7 @@ useHead({
 <style lang="postcss" scoped>
 :deep(.nuxt-content h1),
 .blog-content h1 {
-  @apply text-2xl md:text-4xl mb-4 text-theme-primary-600 font-medium;
+  @apply text-2xl md:text-4xl mb-4 text-black font-medium;
 }
 
 :deep(.nuxt-content h2),
