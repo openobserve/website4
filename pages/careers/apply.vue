@@ -75,7 +75,20 @@
               }}
             </span>
           </p>
-
+          <TextArea
+            ref="inputMessage"
+            id="message"
+            name="message"
+            required
+            label="Message"
+            v-model="formValue.message"
+          ></TextArea>
+          <div
+            v-if="error"
+            class="px-4 py-2 bg-red-500 text-white border border-red-700 rounded-md"
+          >
+            {{ error }}
+          </div>
           <div class="flex justify-center md:justify-start py-5 w-full">
             <component
               is="button"
@@ -100,6 +113,7 @@ const form = ref(null);
 const inputName = ref(null);
 const inputEmail = ref(null);
 const inputPhone = ref(null);
+const inputMessage = ref(null);
 const selectedOption = ref(null);
 const error = ref(null);
 const inputUploadFile = ref(null);
@@ -110,15 +124,17 @@ const formValue = reactive({
   name: "",
   email: "",
   phone: "",
+  message: "",
   uploadFile: "",
 });
+const router = useRouter();
 const { job } = route.query;
 onMounted(() => {
   // Set the default value based on the 'jobs' query parameter
   selectedOption.value = job || null;
 });
 const validate = () => {
-  const fields = [inputName, inputEmail, inputPhone];
+  const fields = [inputName, inputEmail, inputPhone, inputMessage];
   const validateValue = fields
     .map((it) => it.value.validate())
     .every((it) => it);
@@ -128,62 +144,70 @@ const validate = () => {
     return false;
   }
 };
-
+const removeQueryParameters = () => {
+  const urlObj = new URL(preSignedUrl.value);
+  urlObj.search = "";
+  return urlObj.toString();
+};
 const submitdata = (e) => {
-  const lambdaEndpoint = "https://us-east-1.lambda.amazonaws.com/my-function";
-  const submitRequestEndpoint = "<YOUR_BACKEND_URL>"
-
   const file = inputUploadFile.value.files[0];
+  const lambdaEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-upload-presigned-url?objectName=${file.name}`;
+  const submitRequestEndpoint =
+    "https://1qlewft2ie.execute-api.us-west-2.amazonaws.com/default/triggerEmail";
+
   e.preventDefault();
   if (validate()) {
     loading.value = true;
     // console.log(file, "file is valid");
     // Create a dummy Lambda function endpoint
     // Step 1: Generate presigned URL
+
     fetch(lambdaEndpoint, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        filename: file.name,
-        filetype: file.type,
-      }),
+      method: "GET",
     })
       .then((response) => response.json())
       .then((data) => {
-        preSignedUrl.value = data.presignedUrl;
+        // console.log(data.uploadUrl,"================================");
+        preSignedUrl.value = data.uploadUrl;
 
         const formData = new FormData();
-        formData.append('file', inputUploadFile.value.files[0]);
+        formData.append("file", inputUploadFile.value.files[0]);
 
         // Step 2: Upload file to the presigned URL
         return fetch(preSignedUrl.value, {
-          method: 'PUT',
+          method: "PUT",
           body: formData,
           headers: {
-            'Content-Type': file.type, // Set the Content-Type header
+            "Content-Type": file.type, // Set the Content-Type header
           },
         }).then((res) => {
+          const newUrl = removeQueryParameters();
           // Step 3: Send additional data (name, email) to your backend or desired endpoint
           const dataToSend = {
-            name: formValue.name,
-            email: formValue.email,
-            phone: formValue.phone,
-            pdfUrl: formValue.uploadFile,
+            senderName: formValue.name,
+            senderEmail: formValue.email,
+            senderMobile: formValue.phone,
+            senderMessage:
+              formValue.message +
+              `\n\n--------\nResume Url:  ${newUrl}` +
+              `\nJob Position: ${selectedOption.value}`,
           };
-
+          // console.log("dataToSend: " +dataToSend);
           return fetch(submitRequestEndpoint, {
             method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
             body: JSON.stringify(dataToSend),
           })
-            .then((response) => {
+            .then(async (response) => {
               // Handle response from your backend or desired endpoint
               // ... do something with the response
-              alert(response.status);
+              // alert(response.status);
+              if (response.status >= 200 && response.status < 300) {
+                router.push("/thank-you");
+              } else {
+                //read the response body
+                const body = await response.json();
+                error.value = body.message;
+              }
             })
             .catch((error) => {
               console.error("Error sending data:", error);
