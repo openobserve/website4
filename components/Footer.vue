@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div
-      class="w-full bg-cover bg-[url('/img/footerbg.png')] bg-no-repeat h-full "
+      class="w-full bg-cover bg-[url('/img/footerbg.png')] bg-no-repeat h-full"
     >
       <footer class="w-full body-font pt-20">
         <div
@@ -80,9 +80,7 @@
                   <h3 class="font-bold text-xl text-center md:text-left">
                     {{ footerData.items.title }}
                   </h3>
-                  <div
-                    class="flex justify-start hover:text-theme-primary-500"
-                  >
+                  <div class="flex justify-start hover:text-theme-primary-500">
                     <img
                       :src="footerData.items.emailicon"
                       class="max-h-4 mr-2"
@@ -95,9 +93,7 @@
                       >{{ footerData.items.email }}</a
                     >
                   </div>
-                  <div
-                    class="flex justify-start hover:text-theme-primary-500"
-                  >
+                  <div class="flex justify-start hover:text-theme-primary-500">
                     <img
                       :src="footerData.items.callicon"
                       class="max-h-4 mr-2"
@@ -183,7 +179,7 @@ const footerData = {
     content: [
       {
         text: "Get Started For Free",
-        link: "https://observe.openobserve.ai",
+        link: "https://cloud.openobserve.ai",
       },
       {
         text: "Bug Bounty Program",

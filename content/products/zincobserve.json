@@ -24,7 +24,7 @@
     "subtitle": "Observe Everything. Bare metal, VMs, Containers, AWS, GCP, Azure, Kubernetes, Serverless.",
     "image": "/img/products/openobserve/zincobservehero.png",
     "btnText1": "Get started for free",
-    "btnTo1": "https://observe.openobserve.ai/",
+    "btnTo1": "https://cloud.openobserve.ai/",
     "btnText2": "Request a demo",
     "btnTo2": "/contactus",
     "btnTarget": "_blank",

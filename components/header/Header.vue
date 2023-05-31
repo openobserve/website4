@@ -24,7 +24,7 @@ const items = {
   logo: "/img/logo/logo_horizontal.svg",
   btn: {
     text: "Get started for free",
-    link: "https://observe.openobserve.ai",
+    link: "https://cloud.openobserve.ai",
   },
   content: [
     // {

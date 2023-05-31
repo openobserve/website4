@@ -23,7 +23,7 @@
     "subtitle": "The zPlane features, available exclusively in the enterprise version of OpenObserve, offer several benefits. Elasticsearch API compatibility enables easy integration with Elasticsearch, while single sign-on (SSO) streamlines user management. Cross-cluster search allows for searching across multiple clusters, making it easier to monitor and analyze distributed systems. Additionally, priority support with service level agreements (SLAs) ensures prompt assistance in case of any issues. With zPlane, OpenObserve provides an advanced solution for organizations with more complex use cases, helping them achieve better observability of their systems.",
     "image": "/img/homepage/zplane2.png",
     "btnText": "Get started for free",
-    "btnTo": "https://observe.openobserve.ai/",
+    "btnTo": "https://cloud.openobserve.ai/",
     "btnTarget": "_blank",
     "backgroundImage": "/img/homepage/homepagebg3.svg"
   },
