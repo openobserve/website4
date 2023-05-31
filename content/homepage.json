@@ -80,36 +80,9 @@
       }
     ]
   },
-  "cardItems": {
-    "title": "The Only observability platform you will ever need",
-    "subtitle": "No need to mix and match multiple tools to get the job done",
-    "items": [
-      {
-        "image": "/img/homepage/Efficient.svg",
-        "tagline": "EFFICIENT",
-        "title": "Functionality and features exceptionally designed to optimize efficiency and performance",
-        "desc": "We have excellent supporting functions such as Search around logs, VRL (Vector Remap Language) functions.  The advanced embedded UI and API are top-notch, providing an excellent user experience. The software provides visibility into your application with metrics and traces and the ability to correlate them. We have customized Dashboards that provide you with advanced data analytics.",
-        "btnText": ""
-      },
-      {
-        "image": "/img/homepage/budgetfriendly.svg",
-        "tagline": "BUDGET FRIENDLY",
-        "title": "Affordable Pricing for Optimum Value",
-        "desc": "We believe that one should not have to spend a fortune to run a piece of software, either in self-hosted mode or for the SaaS platform. OpenObserve has a distinct method of storing and organizing data that leads to a significant reduction in storage costs, ~140 times lower than other options. As a result, it is an economical solution for overseeing and managing observability.",
-        "btnText": ""
-      },
-      {
-        "image": "/img/homepage/seamlessexperiance.svg",
-        "tagline": "SEAMLESS USER EXPERIENCE",
-        "title": "10x easier to operate",
-        "desc": "Our software is designed to ensure that setting up and utilizing it is a straightforward and hassle-free experience for our users. You can install the self-hosted option or sign up for the SaaS platform in under two minutes. You can start ingesting data and observing the behavior of your applications without any major configuration.In addition, it supports hassle-free software upgrades, making it more convenient for users.",
-        "btnText": ""
-      }
-    ]
-  },
   "useCases": {
     "title": "Logs, Metrics and Traces",
-    "subtitle": "Accelerate your cloud operations with OpenObserve's Search, Observability, and Analysis platform",
+    "subtitle": "The Only observability platform you will ever need.No need to mix and match multiple tools to get the job done",
     "items": [
       {
         "image": "/img/homepage/Logs.svg",

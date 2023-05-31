@@ -5,18 +5,10 @@
         <HeroSection :data="item" backgroundBg="contain"></HeroSection>
       </swiper-slide>
     </Slider>
-    <!-- <HeroSection :data="data.heroSection"></HeroSection> -->
     <Numbers :items="data.numbers" />
     <Feature :items="data.products.items" :title="data.products.title" />
     <Cards :items="data.useCases" />
-    <Feature
-      :items="data.cardItems.items"
-      :title="data.cardItems.title"
-      :subtitle="data.cardItems.subtitle"
-    />
-    <Cards :items="data.features" />
-
-    <!-- <Cards :items="data.useCases2" :background-image="null" /> -->
+    <Cards :items="data.features" :backgroundImage=false />
     <LatestBlogPosts />
   </div>
 </template>
