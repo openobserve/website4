@@ -15,7 +15,7 @@
                 <img
                   :src="footerData.logo"
                   class="h-20 w-40 object-contain"
-                  alt="zinclabs logo"
+                  alt="openobserve logo"
                 />
               </div>
             </nuxt-link>

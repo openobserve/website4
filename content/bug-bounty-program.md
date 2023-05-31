@@ -10,7 +10,7 @@ This bug bounty program encompasses the following applications and websites:
 
 2.  zPlane
 
-3.  Websites: _.openobserve.ai (e.g., www.openobserve.ai, cloud.openobserve.ai), _.zinclabs.dev
+3.  Websites: _.openobserve.ai (e.g., www.openobserve.ai, cloud.openobserve.ai)
 
 # Eligible vulnerabilities:
 
