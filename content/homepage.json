@@ -82,7 +82,7 @@
   },
   "useCases": {
     "title": "Logs, Metrics and Traces",
-    "subtitle": "The Only observability platform you will ever need.No need to mix and match multiple tools to get the job done",
+    "subtitle": "The Only observability platform you will ever need. No need to mix and match multiple tools to get the job done.",
     "items": [
       {
         "image": "/img/homepage/Logs.svg",
