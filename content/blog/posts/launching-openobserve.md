@@ -151,4 +151,4 @@ So we have decided to build OpenObserve to allow teams to do their job efficient
 
 > Why build another mouse trap when so many already exist? **Because the rodent problem still exists (and existing mouse traps are not solving the problem)**.
 
-Check the [documentation](https://docs.openobserve.ai/) to install OpenObserve in under two minutes or simply try the [Zinc cloud platform](https://observe.openobserve.ai/).
+Check the [documentation](https://docs.openobserve.ai/) to install OpenObserve in under two minutes or simply try the [OpenObserve Cloud platform](https://observe.openobserve.ai/).
