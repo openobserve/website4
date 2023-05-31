@@ -76,6 +76,6 @@ export default defineNuxtConfig({
     transpile: ["clsx"],
   },
   robots: {
-    sitemap: ["https://zinc.struct.ai/sitemap.xml"],
+    // sitemap: ["https://zinc.struct.ai/sitemap.xml"],
   },
 });
