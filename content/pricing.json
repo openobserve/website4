@@ -80,7 +80,7 @@
           "Email support"
         ],
         "btnText": "Get started",
-        "btnLink": ""
+        "btnLink": "https://cloud.openobserve.ai"
       },
       {
         "id": "business",
@@ -108,7 +108,7 @@
           "Phone support"
         ],
         "btnText": "Get started",
-        "btnLink": ""
+        "btnLink": "https://cloud.openobserve.ai"
       },
       {
         "id": "enterprise",
