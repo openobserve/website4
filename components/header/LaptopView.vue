@@ -8,7 +8,7 @@
             <img
               :src="items.logo"
               class="h-10 md:h-12 p-1 my-2 text-black"
-              alt="zinc labs logo"
+              alt="openobserve logo"
             />
           </div>
         </nuxt-link>
