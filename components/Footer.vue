@@ -213,7 +213,7 @@ const footerData = {
     },
     {
       icon: "/img/slack.svg",
-      link: "https://openobserve.slack.com/",
+      link: "https://join.slack.com/t/zincobserve/shared_invite/zt-11r96hv2b-UwxUILuSJ1duzl_6mhJwVg/",
     },
     {
       icon: "/img/linkdin.svg",
