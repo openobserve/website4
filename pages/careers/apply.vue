@@ -147,8 +147,8 @@ const validate = () => {
 };
 const submitdata = (e) => {
   const file = inputUploadFile.value.files[0];
-  const uploadPresignedUrlEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-upload-presigned-url`;
-  const presignedUrlEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-presigned-url`;
+  const uploadPresignedUrlEndpoint = `https://r5himuz36c.execute-api.us-west-2.amazonaws.com/get-upload-presigned-url`;
+  const presignedUrlEndpoint = `https://r5himuz36c.execute-api.us-west-2.amazonaws.com/get-presigned-url`;
   const submitRequestEndpoint =
     "https://1qlewft2ie.execute-api.us-west-2.amazonaws.com/default/triggerEmail";
 
