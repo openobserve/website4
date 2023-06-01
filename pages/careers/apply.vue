@@ -117,7 +117,7 @@ const inputMessage = ref(null);
 const selectedOption = ref(null);
 const error = ref(null);
 const inputUploadFile = ref(null);
-const preSignedUrl = ref(null);
+// const preSignedUrl = ref(null);
 const inputUploadFileError = ref(null);
 const loading = ref(false);
 const formValue = reactive({
@@ -125,6 +125,7 @@ const formValue = reactive({
   email: "",
   phone: "",
   message: "",
+  website:"",
   uploadFile: "",
 });
 const router = useRouter();
@@ -144,75 +145,85 @@ const validate = () => {
     return false;
   }
 };
-const removeQueryParameters = () => {
-  const urlObj = new URL(preSignedUrl.value);
-  urlObj.search = "";
-  return urlObj.toString();
-};
 const submitdata = (e) => {
   const file = inputUploadFile.value.files[0];
-  const lambdaEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-upload-presigned-url?objectName=${file.name}`;
+  const uploadPresignedUrlEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-upload-presigned-url`;
+  const presignedUrlEndpoint = `https://3oq0irn9ql.execute-api.us-west-2.amazonaws.com/get-presigned-url`;
   const submitRequestEndpoint =
     "https://1qlewft2ie.execute-api.us-west-2.amazonaws.com/default/triggerEmail";
+
+  let uploadUrl = null;
 
   e.preventDefault();
   if (validate()) {
     loading.value = true;
-    // console.log(file, "file is valid");
-    // Create a dummy Lambda function endpoint
-    // Step 1: Generate presigned URL
-
-    fetch(lambdaEndpoint, {
-      method: "GET",
+    // Step 1: Generate upload presigned URL
+    fetch(uploadPresignedUrlEndpoint, {
+      method: "POST",
     })
       .then((response) => response.json())
       .then((data) => {
         // console.log(data.uploadUrl,"================================");
-        preSignedUrl.value = data.uploadUrl;
+        uploadUrl = data.uploadUrl;
 
         const formData = new FormData();
         formData.append("file", inputUploadFile.value.files[0]);
 
         // Step 2: Upload file to the presigned URL
-        return fetch(preSignedUrl.value, {
+        return fetch(uploadUrl, {
           method: "PUT",
           body: formData,
           headers: {
             "Content-Type": file.type, // Set the Content-Type header
           },
-        }).then((res) => {
-          const newUrl = removeQueryParameters();
-          // Step 3: Send additional data (name, email) to your backend or desired endpoint
-          const dataToSend = {
-            senderName: formValue.name,
-            senderEmail: formValue.email,
-            senderMobile: formValue.phone,
-            senderMessage:
-              formValue.message +
-              `\n\n--------\nResume Url:  ${newUrl}` +
-              `\nJob Position: ${selectedOption.value}`,
-          };
-          // console.log("dataToSend: " +dataToSend);
-          return fetch(submitRequestEndpoint, {
-            method: "POST",
-            body: JSON.stringify(dataToSend),
-          })
-            .then(async (response) => {
-              // Handle response from your backend or desired endpoint
-              // ... do something with the response
-              // alert(response.status);
-              if (response.status >= 200 && response.status < 300) {
-                router.push("/thank-you");
-              } else {
-                //read the response body
-                const body = await response.json();
-                error.value = body.message;
-              }
-            })
-            .catch((error) => {
-              console.error("Error sending data:", error);
-            });
         });
+      })
+      .then((res) => {
+        const urlObj = new URL(uploadUrl);
+        urlObj.search = "";
+
+        return fetch(presignedUrlEndpoint, {
+          method: "POST",
+          body: JSON.stringify({
+            objectName: urlObj.pathname.substring(1, urlObj.pathname.length),
+          }),
+        });
+      })
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        // Step 3: Send additional data (name, email) to your backend or desired endpoint
+        const dataToSend = {
+          senderName: formValue.name,
+          senderEmail: formValue.email,
+          senderMobile: formValue.phone,
+          senderWebsite:formValue.website,
+          senderMessage:
+            formValue.message +
+            `<br/><br/>--------<br/>Resume Url:  ${res.objectUrl}` +
+            `<br/>Job Position: ${selectedOption.value}`,
+        };
+        return fetch(submitRequestEndpoint, {
+          method: "POST",
+          body: JSON.stringify(dataToSend),
+        });
+      })
+      .then(async (response) => {
+        // Handle response from your backend or desired endpoint
+        // ... do something with the response
+        // alert(response.status);
+        if (response.status >= 200 && response.status < 300) {
+          router.push("/thank-you");
+        } else {
+          //read the response body
+          const body = await response.json();
+          error.value = body.message;
+        }
+      })
+      .catch((error) => {
+          error.value = error.response.message;
+         console.error("Error sending data:", error);
       });
   }
 };
