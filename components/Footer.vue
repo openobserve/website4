@@ -217,11 +217,11 @@ const footerData = {
     },
     {
       icon: "/img/linkdin.svg",
-      link: "https://www.linkedin.com/company/zinclabsinc/",
+      link: "https://www.linkedin.com/company/openobserve",
     },
     {
       icon: "/img/twitter.svg",
-      link: "https://twitter.com/ZincLabsInc",
+      link: "https://twitter.com/OpenObserve",
     },
   ],
 };
