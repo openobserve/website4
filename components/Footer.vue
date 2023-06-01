@@ -169,7 +169,7 @@ const footerData = {
       },
       {
         text: "Knowledge Base",
-        link: "https://openobserve.ai/kb",
+        link: "https://discuss.openobserve.ai/kb",
         target: "_blank",
       },
     ],
