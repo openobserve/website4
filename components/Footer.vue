@@ -209,7 +209,7 @@ const footerData = {
   social: [
     {
       icon: "/img/github.svg",
-      link: "https://github.com/zinclabs/openobserve",
+      link: "https://github.com/openobserve/openobserve",
     },
     {
       icon: "/img/slack.svg",
