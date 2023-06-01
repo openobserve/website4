@@ -41,10 +41,10 @@
               v-html="data.subtitle || ''"
             ></h3>
           </div>
-          <p
+          <div
             class="text-justify text-base leading-relaxed font-normal mt-1 md:mt-3"
             v-html="data.desc"
-          ></p>
+          ></div>
           <div
             v-if="data.btnText"
             class="flex justify-center md:justify-start py-5"
