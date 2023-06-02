@@ -20,6 +20,13 @@ export default defineNuxtConfig({
           async: true,
           defer: true,
         },
+        {
+          src: "https://plausible.io/js/script.js",
+          body: true,
+          defer: true,
+          async: true,
+          "data-domain": "openobserve.ai"
+        },
       ],
     },
   },
