@@ -201,7 +201,7 @@ const submitdata = (e) => {
           senderWebsite:formValue.website,
           senderMessage:
             formValue.message +
-            `<br/><br/>--------<br/>Resume Url: <a href="${res.objectUrl}">Click here<a/>` +
+            `<br/><br/>--------<br/>Resume Url: <a href="${res.objectUrl}">Click here</a>` +
             `<br/>Job Position: ${selectedOption.value}`,
         };
         return fetch(submitRequestEndpoint, {
