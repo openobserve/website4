@@ -101,6 +101,11 @@
         "question": "Can I install OpenObserve on my laptop?",
         "answer": "Yes, You can install OpenObserve on your laptop and get started in under 2 minutes. Follow the quickstart guide in documentation.",
         "open": false
+      },
+      {
+        "question": "Why is OpenObserve cloud service so much lower in cost compared to others in the industry?",
+        "answer": "Our unique approach to log management reduces the storage cost by 140x compared to Elasticsearch/Splunk etc. We also use stateless nodes, which makes it much easier to scale and operate. We also avoid indexing and rely on brute force during search, reducing overall compute requirements significantly. We pass on the cost savings to our customers.",
+        "open": false
       }
     ]
   }
