@@ -178,10 +178,6 @@ const footerData = {
     title: "Docs",
     content: [
       {
-        text: "Get Started For Free",
-        link: "https://cloud.openobserve.ai",
-      },
-      {
         text: "Bug Bounty Program",
         link: "/bug-bounty-program",
       },
