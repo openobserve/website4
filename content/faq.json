@@ -19,7 +19,7 @@
     "items": [
       {
         "question": "What are you folks building?",
-        "answer": "We are building the easiest, most efficient and sophisticated observability tool to monitor all your applications and infrastructure. You get a unified view of logs, metrics and traces and ability to easily navigate and correlate them. We are building a tool that is easy to operate, has great UX, and that you can start with mega bytes of data and scale to peta bytes of data. You can run this tool using a single binary on your laptop with less than 100 MB RAM.",
+        "answer": "We are building the easiest, most efficient and sophisticated observability tool to monitor all your applications and infrastructure. You get a unified view of logs, metrics and traces and ability to easily navigate and correlate them. We are building a tool that is easy to operate, has great UX, and that you can start with megabytes of data and scale to petabytes of data. You can run this tool using a single binary on your laptop with less than 100 MB RAM.",
         "open": true
       },
       {
@@ -28,12 +28,12 @@
         "open": true
       },
       {
-        "question": "How do I send logs to/in OpenObserve?",
-        "answer": "You can send logs to zincObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the OpenObserve API.",
+        "question": "How do I send logs to OpenObserve?",
+        "answer": "You can send logs to OpenObserve using log forwarders like Fluentd, Fluentbit, Vector, Logstash, Filebeat, cloudwatch logs using Kinesis Firehose etc. or using the OpenObserve API.",
         "open": false
       },
       {
-        "question": "How do I send metrics data to/in OpenObserve?",
+        "question": "How do I send metrics data to OpenObserve?",
         "answer": "You can send metrics data to OpenObserve using prometheus remote-write API or using the OpenObserve API. Promethus, OTEL collector, telegraf and possibly more tools support the remote-write API.",
         "open": true
       },
@@ -43,7 +43,7 @@
         "open": false
       },
       {
-        "question": "How do I send traces to/in OpenObserve?",
+        "question": "How do I send traces to OpenObserve?",
         "answer": "You can use opentelemetry libraries to instrument your application and send traces to OpenObserve. You can also use the OpenObserve API to send traces.",
         "open": false
       },
@@ -64,7 +64,7 @@
       },
       {
         "question": "Can OpenObserve send alerts?",
-        "answer": "Yes, ou can send alerts to many sources like slack, teams, prometheus alertmanager and more.. OpenObserve can send alerts to various destinations using its highly configurable destination builder. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data.",
+        "answer": "Yes, you can send alerts to many sources like slack, teams, prometheus alertmanager and more... OpenObserve can send alerts to various destinations using its highly configurable destination builder. You can configure alerts using SQL like queries for logs and traces data and PromQL for metrics data.",
         "open": false
       },
       {
@@ -74,7 +74,7 @@
       },
       {
         "question": "Can I deploy OpenObserve on Kubernetes?",
-        "answer": "Yes, You can use the official helm chart to deploy OpenObserve on Kubernetes. You can also use the zctl to deploy OpenObserve on Kubernetes.",
+        "answer": "Yes, You can use the official helm chart to deploy OpenObserve on Kubernetes.",
         "open": false
       },
       {
@@ -94,7 +94,7 @@
       },
       {
         "question": "How does OpenObserve compare to Elasticsearch?",
-        "answer": "OpenObserve can have 140x lower storage cost compared to Elasticsearch and much lower operational burden to maintain. Due to stateless nodes It can scale much faster than Elasticsearch. It has been written in rust and enjoys its high performance and low memory footprint. OpenObserve is also much easier to operate than Elasticsearch. It has been built specifically for observability use cases while Elasticsearch was built as a text search engine being used for observability use cases.",
+        "answer": "OpenObserve can have 140x lower storage cost than Elasticsearch and much lower operational burden to maintain. Due to stateless nodes, it can scale much faster than Elasticsearch. It has been written in rust and enjoys its high performance and low memory footprint. OpenObserve is also much easier to operate than Elasticsearch. It has been built specifically for observability use cases, while Elasticsearch was built as a text search engine being used for observability use cases.",
         "open": false
       },
       {
