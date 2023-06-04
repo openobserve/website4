@@ -177,7 +177,7 @@
       {
         "image": "/img/products/openobserve/UserDefined.svg",
         "title": "User defined Ingest & Query functions",
-        "desc": "Functions can allow you to parse, redact, and enrich your data at ingest and query time. Think about SSN or AWS keys redaction from logs and parsing already ingested logs to extract more information.",
+        "desc": "Functions allow you to parse, redact, reduce, enrich and normalize your data at ingest and query time. Think about SSN or AWS keys redaction from logs and parsing already ingested logs to extract more information.",
         "btnText": ""
       },
       {
