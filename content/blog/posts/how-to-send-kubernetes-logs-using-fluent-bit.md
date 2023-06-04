@@ -57,7 +57,7 @@ Once FluentBit is installed and running on your Kubernetes cluster, the next ste
 
 To do this, you'll need to modify the FluentBit ConfigMap, specifically the OUTPUT section, to include the HTTP output plugin and the OpenObserve endpoint details.
 
-Let's get the required config first. Head over to `OpenObserve UI > Ingestion > Fluentbit` and copy the configuration from there. 
+Let's get the required config first. Head over to `OpenObserve UI > Ingestion > Logs > Fluentbit` and copy the configuration from there. 
 
 ![OpenObserve Fluentbit Configuration](/img/blog/fluentbit/openobserve_fluebit_config.webp)
 
