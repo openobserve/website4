@@ -33,7 +33,7 @@ Fluentbit is a lightweight and open-source log forwarder for Kubernetes. It is d
 
 It works by tailing the files that contain the logs you want to forward. It then parses the logs and sends them to the destination you specify. FluentBit can also enrich your logs with additional metadata, such as the Kubernetes pod name, pod ID, and container name. 
 
-So which file should you tail? Kubernetes stores container logs in the `/var/log/containers` directory. Each container has its own log file, and the log file name is in the following format: `<pod-name>_<namespace>_<container-name>_<container-id>.log`. You will not need to do this oncifguration as part of this blog as we will be using a helm chart to install fluentbit which will take care of this for us.
+So which file should you tail? Kubernetes stores container logs in the `/var/log/containers` directory. Each container has its own log file, and the log file name is in the following format: `<pod-name>_<namespace>_<container-name>_<container-id>.log`. You will not need to do this configuration as part of this blog as we will be using a helm chart to install fluentbit which will take care of this for us.
 
 ## Step 1: Install FluentBit in Your Kubernetes Cluster
 
