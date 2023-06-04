@@ -7,7 +7,7 @@
       {
         "title": "<span class='highlight'>OpenObserve</span>",
         "subtitle": "",
-        "desc": "OpenObserve is a simple yet sophisticated log search, infrastructure monitoring and APM solution. It is a full fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower costs.",
+        "desc": "OpenObserve is a simple yet sophisticated log search, infrastructure monitoring, and APM solution. It is a full-fledged observability platform that can reduce your storage costs by ~140x compared to other solutions and requires much lower resource utilization resulting in much lower cost.",
         "image": "/img/homepage/openobserve1.jpg",
         "btnText": "",
         "btnTo": "",
@@ -15,7 +15,7 @@
       },
       {
         "title": "<span class='highlight'>Logs, Metrics, Traces</span>",
-        "desc": "OpenObserve is an open source observability platform that allows you to monitor logs, metrics, and traces efficiently. OpenObserve stores data in s3/gcs/minio/zure blob to achieve low cost data storage (~140x lower storage cost than Elasticsearch). It's stateless nodes architecture allows for extremely easly scaling. The advanced GUI for logs, metrics and traces coupled with dashboards allows you to not manage multiple systems for a different kinds of observability data (Think prometheus for metrics, Elasticsearch for logs, Jaeger for traces, grafana for dashboards). It supports SQL as primary query language, which means you do not have to learn yet another query language. PromQL is also support for querying metrics data. Inbuilt alerting mechanism allows you to send alerts to any platform (slack, teams, etc.). It is built in rust for high performance and memory safety.",
+        "desc": "OpenObserve is an innovative open-source observability platform designed to streamline the monitoring of logs, metrics, and traces. Thanks to its compatibility with storage services such as S3, GCS, Minio, and Azure Blob, OpenObserve significantly lowers storage costs - reducing them to about 140 times less than Elasticsearch. Our platform stands out due to its stateless nodes architecture, a feature that ensures hassle-free scaling. Its GUI is not only user-friendly but also advanced, facilitating the management of various systems and various types of observability data. Think of it as an amalgamation of Prometheus for metrics, Elasticsearch for logs, Jaeger for traces, and Grafana for dashboards, all in one place. OpenObserve eliminates the need to master a new query language by supporting SQL as its primary query language. Additionally, we support PromQL for querying metrics data, extending its versatility. One of the standout features of OpenObserve is its built-in alerting mechanism. This enables users to dispatch alerts to any platform, including but not limited to Slack and Teams. All this is wrapped in a package developed in Rust, ensuring high performance and memory safety. Join us at OpenObserve, where efficiency meets cost-effectiveness.",
         "image": "/img/products/openobserve/doubleproductivity.svg"
       }
     ]
@@ -87,7 +87,7 @@
       {
         "image": "/img/homepage/Logs.svg",
         "title": "Logs",
-        "desc": "OpenObserve provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
+        "desc": "OpenObserve provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query, and custom VRL functions. It also has ingest and query time functions, making it suitable for beginners and advanced users to build and run sophisticated queries.",
         "to": "/features/logs"
       },
       {
@@ -111,7 +111,7 @@
       {
         "image": "/img/homepage/Logs.svg",
         "title": "Logs",
-        "desc": "OpenObserve provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query and custom VRL functions. It also has ingest and query time functions, making it suitable for both beginners and advanced users to build and run sophisticated queries.",
+        "desc": "OpenObserve provides an advanced embedded GUI for fast log searching with features like top 10, search around, SQL for query, and custom VRL functions. It also has ingest and query time functions, making it suitable for beginners and advanced users to build and run sophisticated queries.",
         "to": "/features/logs"
       },
       {
@@ -123,7 +123,7 @@
       {
         "image": "/img/homepage/Traces.svg",
         "title": "Traces",
-        "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture with precision. Traces enables pinpointing issues that would otherwise be difficult to detect.",
+        "desc": "Distributed tracing provides a means to identify performance problems within a microservices architecture precisely. Traces enables pinpointing issues that would otherwise be difficult to detect.",
         "to": "/features/traces"
       }
     ]
@@ -177,7 +177,7 @@
       {
         "image": "/img/products/openobserve/UserDefined.svg",
         "title": "User defined Ingest & Query functions",
-        "desc": "Functions can allow you to parse, redact, and enrich your data at ingest and query time. Think aboout SSN or AWS keys redaction from logs and parsing already ingested logs to extract more information.",
+        "desc": "Functions can allow you to parse, redact, and enrich your data at ingest and query time. Think about SSN or AWS keys redaction from logs and parsing already ingested logs to extract more information.",
         "btnText": ""
       },
       {
