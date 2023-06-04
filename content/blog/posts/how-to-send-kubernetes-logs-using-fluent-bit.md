@@ -17,8 +17,6 @@ tags:
 ---
 
 
-# How to Stream Kubernetes Logs to OpenObserve using FluentBit
-
 In this blog, we are going to explore the process of sending logs from Kubernetes to OpenObserve using FluentBit. 
 
 ## Prerequisites

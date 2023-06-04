@@ -25,7 +25,7 @@ export default defineNuxtConfig({
           body: true,
           defer: true,
           async: true,
-          "data-domain": "openobserve.ai"
+          "data-domain": "openobserve.ai",
         },
       ],
     },
@@ -67,7 +67,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
-      siteName: "OpenObserve",
+      siteName:
+        "Open Source Observability Platform for Logs, Metrics, Traces, and More – Your Ultimate Dashboard for Alerts and Insights",
       siteDescription:
         "OpenObserve is a cloud native open source observability platform built specifically for logs, metrics, traces and analytics designed to work at petabyte scale.",
       language: "en",
