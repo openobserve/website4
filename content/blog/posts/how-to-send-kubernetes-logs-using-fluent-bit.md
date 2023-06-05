@@ -10,7 +10,7 @@ publishDate: 2023-06-04
 tags:
   - fluent-bit
   - fluentbit
-  - log forwading
+  - log forwarding
   - logs
   - kubernetes
   - openobserve
