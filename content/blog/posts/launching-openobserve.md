@@ -73,6 +73,7 @@ We also saw the limitations of SaaS platforms like Datadog, Loggly, Papertrail, 
 
 Drawing on the experience of our team members and mine working with hundreds of AWS customers as an AWS Solutions Architect, we built a system that's both simple for beginners and sophisticated for advanced users.
 
+
 Unlike existing systems built with outdated technologies, we're building a full observability platform using modern technologies that encompasses logs, metrics, and traces.
 
 ### Guiding principles
@@ -151,4 +152,4 @@ So we have decided to build OpenObserve to allow teams to do their job efficient
 
 > Why build another mouse trap when so many already exist? **Because the rodent problem still exists (and existing mouse traps are not solving the problem)**.
 
-Check the [documentation](https://docs.openobserve.ai/) to install OpenObserve in under two minutes or simply try the [OpenObserve Cloud platform](https://cloud.openobserve.ai/).
+Check the [documentation](https://openobserve.ai/docs) to install OpenObserve in under two minutes or simply try the [OpenObserve Cloud platform](https://cloud.openobserve.ai/).
