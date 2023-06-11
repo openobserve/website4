@@ -35,9 +35,7 @@ We will dig deeper into how we achieve massively higher efficiency compared to e
 
 ### Yet another log search engine!!! Why?
 
-When I built [ZincSearch](https://github.com/zincsearch/zincsearch) back in 2021, I did not expect that it would go on to get more than 14k stars on GitHub in about a year and become one of the [fastest growing projects of 2022 on GitHub](https://runacap.com/ross-index/annual-2022/). ZincSearch is currently used by hundreds of organizations in production for log search and analysis despite its minimal feature set.
-
-Why did these organizations choose ZincSearch? The vast majority of customers indicated the following pain points with their existing observability solutions:
+The vast majority of customers that we talked to indicated the following pain points with their existing observability solutions:
 
 1. Day 1 - Setup: Difficulty in getting started. This generally involves:
    1. Installing it in the user’s environment
