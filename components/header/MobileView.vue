@@ -78,7 +78,7 @@
       <!-- <a href="/" target="_blank">Docs</a> -->
       <div class="" v-if="isOpen">
         <Button
-          variant="requestdemo"
+          variant="tryitfree"
           target="_blank"
           :to="items.btn.link"
           classes="w-full text-center"
