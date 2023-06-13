@@ -12,7 +12,7 @@
           {{ data.subtitle }}
         </p>
         <div
-          class="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-4 justify-center items-center md:justify-start py-2 md:py-5">
+          class="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-4 justify-center items-center md:justify-start py-9 md:py-5">
           <Button v-if="data.btnText1" variant="tryitfree" :target="data.btnTarget" :to="data.btnTo1">
             {{ data.btnText1 }}
           </Button>
