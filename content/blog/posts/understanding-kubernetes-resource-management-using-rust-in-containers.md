@@ -143,3 +143,5 @@ In both cases, the host system has 4 logical CPUs and about 16GiB of RAM. The di
 This shows how the resource limits set in Kubernetes directly control how much CPU and memory the container can use, thus isolating the resources of different containers and ensuring that no single container can overwhelm the system. Meanwhile, the Rust code provides a convenient way to monitor these resources, helping you to ensure that your applications have the resources they need and alerting you when resource usage is approaching the limit.
 
 That's all for today's blog. We hope this has given you a deeper understanding of Rust and Kubernetes resource management!
+
+You can find the source code for this blog [here](https://github.com/openobserve/container_limits)
