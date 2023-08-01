@@ -1,10 +1,10 @@
 ---
-title: Setup fluentbit on Ubuntu
-seoTitle: Setup fluentbit on Ubuntu
-description: Setup fluentbit on ubuntu
+title: Setup Fluent Bit on Ubuntu for Efficient Log Forwarding
+seoTitle: Setup Fluent Bit on Ubuntu for Efficient Log Forwarding
+description: Setup Fluent Bit on Ubuntu for Efficient Log Forwarding
 img: img/blog/fluentbit/ubuntu-plus-fluentbit.webp
 alt: OpenObserve
-slug: setup-fluentbit-on-ubuntu
+slug: setup-fluent-bit-on-ubuntu-for-efficient-log-forwarding
 author: prabhat
 publishDate: 2023-07-24
 tags:
@@ -91,8 +91,8 @@ export CODENAME="jammy"
 ### 3. Update your sources lists
 
 ```shell
-echo "deb [signed-by=/usr/share/keyrings/fluentbit-keyring.gpg] https://packages.fluentbit.io/ubuntu/$CODENAME/ $CODENAME main" \
- | sudo tee /etc/apt/sources.list.d/fluentbit.list
+echo "deb [signed-by=/usr/share/keyrings/fluentbit-keyring.gpg] https://packages.fluentbit.io/ubuntu/$CODENAME/ \
+  $CODENAME main" | sudo tee /etc/apt/sources.list.d/fluentbit.list
 ```
 
 Output:
@@ -110,6 +110,7 @@ sudo apt-get install fluent-bit
 
 ### 5.  Instruct systemd to enable the service:
 
+We will use systemd to start fluentbit service. Using systemd will allow fluentbit to start everytime the server starts
 
 ```shell
 sudo systemctl start fluent-bit
@@ -136,16 +137,6 @@ ubuntu@ip-172-31-1-242:~$ systemctl status fluent-bit
      CGroup: /system.slice/fluent-bit.service
              └─2755 /opt/fluent-bit/bin/fluent-bit -c //etc/fluent-bit/fluent-bit.conf
 
-Jul 25 00:20:03 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244402.273858105, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:04 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244403.273788019, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:05 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244404.273779103, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:06 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244405.273788316, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:07 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244406.273781517, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:08 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244407.273834746, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:09 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244408.273808848, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:10 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244409.273803417, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:11 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244410.273782378, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
-Jul 25 00:20:12 ip-172-31-1-242 fluent-bit[2755]: [0] cpu.local: [[1690244411.273805623, {}], {"cpu_p"=>0.000000, "user_p"=>0.000000, "s>
 ```
 Enter `q` to exit the status view.
 
@@ -179,7 +170,7 @@ INPUT
     Skip_Long_Lines   On
 ```
 
-OUTPUT: Let's copy the output section from OpenObserve UI
+OUTPUT: Let's copy the output section from OpenObserve UI. It should look something like this:
 
 ```shell
 [OUTPUT]
@@ -192,8 +183,8 @@ OUTPUT: Let's copy the output section from OpenObserve UI
     Format json
     Json_date_key    _timestamp
     Json_date_format iso8601
-    HTTP_User justprabhat@gmail.com
-    HTTP_Passwd hbtj1wfZ320Q5Sk479t8
+    HTTP_User youremail@yourdomain.com
+    HTTP_Passwd qatj1wfZ890Q5Sk123k1
     compress gzip
 ```
 
@@ -233,8 +224,7 @@ journalctl -u fluent-bit.service
 
 ### 7. Check the logs in OpenObserve
 
-Go to OpenObserve UI and check the logs. You should see something like this:
-
+Go to OpenObserve UI and check the logs. You should see the logs now.
 
 
 ## Conclusion
