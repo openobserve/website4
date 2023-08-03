@@ -34,7 +34,7 @@ Integrating Serilog Sink for OpenObserve in your project is a smooth process. He
 Add the Serilog Sink package to your project:
 
 ```powershell
-> dotnet add package Serilog.Sinks.OpenObserve-KKP
+> dotnet add package Serilog.Sinks.OpenObserve
 ```
 
 ### 2. **Configure the Logger**
