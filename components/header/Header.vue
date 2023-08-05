@@ -39,10 +39,14 @@ const items = {
       title: "Pricing",
       link: "/pricing",
     },
-     {
-      title: "Careers",
-      link: "/careers",
+    {
+      title: "Contact Us",
+      link: "/contactus",
     },
+    // {
+    //   title: "Careers",
+    //   link: "/careers",
+    // },
     {
       title: "Blog",
       link: "/blog",
