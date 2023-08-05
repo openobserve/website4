@@ -194,7 +194,7 @@ const footerData = {
   items: {
     title: "Get In Touch",
     emailicon: "/img/gmail.svg",
-    email: "hello@zinclabs.io",
+    email: "hello@openobserve.ai",
     callicon: "/img/phone-call.svg",
     phone: "+1 (415) 429-6096",
     linkdn: "",

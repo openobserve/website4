@@ -29,12 +29,12 @@
     "mail": {
       "title": "Email",
       "icon": "/img/email_icon.svg",
-      "text": "hello@zinclabs.io"
+      "text": "hello@openobserve.ai"
     },
     "heading": "Let's talk",
     "subheading": "Get personalized help from our team",
-    "btnText":"Submit",
-    "btnLoadingText":"Submitting...",
-    "btnLink":""
+    "btnText": "Submit",
+    "btnLoadingText": "Submitting...",
+    "btnLink": ""
   }
 }

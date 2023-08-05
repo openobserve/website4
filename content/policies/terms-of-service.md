@@ -92,7 +92,7 @@ We offer a 60-day free trial to new users who register with the Site. You will a
 
 All purchases are non-refundable. You can cancel your subscription at any time by logging into your account . Your cancellation will take effect at the end of the current paid term.
 
-If you are unsatisfied with our services, please email us at [hello@zinclabs.io](mailto:hello@zinclabs.io).
+If you are unsatisfied with our services, please email us at [hello@openobserve.ai](mailto:hello@openobserve.ai).
 
 8. PROHIBITED ACTIVITIES
 
@@ -268,4 +268,4 @@ These Terms and Conditions and any policies or operating rules posted by us on t
 
 ---
 
-In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us by email at **[hello@zinclabs.io](mailto:hello@zinclabs.io)**
+In order to resolve a complaint regarding the Site or to receive further information regarding use of the Site, please contact us by email at **[hello@openobserve.ai](mailto:hello@openobserve.ai)**
