@@ -14,7 +14,7 @@ This bug bounty program encompasses the following applications and websites:
 
 # Eligible vulnerabilities:
 
-We are primarily interested in vulnerabilities that directly and demonstrably impact the security of our applications and websites. Examples of eligible vulnerabilities include, but are not limited to:
+We are primarily interested in vulnerabilities that directly and demonstrably impact the security of our applications and websites and impact business operations. Examples of eligible vulnerabilities include, but are not limited to:
 
 1.  Cross-Site Scripting (XSS)
 
@@ -48,6 +48,9 @@ The following vulnerabilities and issues are considered out of scope and will no
 
 7.  Issues that have already been reported by another researcher
 
+8.  Clickjacking
+
+
 # Reporting process:
 
 To report a vulnerability, please email us at admin@zinclabs.io with the following information:
@@ -64,7 +67,7 @@ To report a vulnerability, please email us at admin@zinclabs.io with the followi
 
 # Rewards:
 
-Rewards for eligible vulnerabilities will be determined by the severity and impact of the vulnerability, as assessed by Zinc Labs' security team. Rewards will range from $100 to $1,000, with higher rewards granted for more severe vulnerabilities. We reserve the right to adjust reward amounts based on other factors, such as the quality of the report or the complexity of the vulnerability and impact on the business.
+Rewards for eligible vulnerabilities will be determined by the severity and impact of the vulnerability, as assessed by Zinc Labs' security team. Rewards will range from $100 to $1,000, with higher rewards granted for more severe vulnerabilities that have high business impact. We reserve the right to adjust reward amounts based on other factors, such as the quality of the report or the complexity of the vulnerability and impact on the business.
 
 # Terms and conditions:
 
