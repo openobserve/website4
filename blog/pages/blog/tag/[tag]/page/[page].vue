@@ -42,6 +42,9 @@ definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
       return navigateTo("/blog/tag/" + to.params.tag, { redirectCode: 301 });
+  middleware: (to, from) => {
+    if (to.params.page == 1) {
+      return navigateTo("/blog/tag/" + to.params.tag, { redirectCode: 301 });
     }
   },
 });
@@ -81,6 +84,11 @@ const tag = tags?.value?.find((it) => it.slug == route.params.tag);
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
+const pageChanged = (pageNo) => {
+  router.push({
+    path: "/blog/tag/" + route.params.tag + "/page/" + pageNo,
+  });
+};
 useHead({
   title: "Tag | Blog",
   meta: [

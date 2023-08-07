@@ -43,6 +43,9 @@ definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
       return navigateTo("/blog/author/" + to.params.author, { redirectCode: 301 })
+  middleware: (to, from) => {
+    if (to.params.page == 1) {
+      return navigateTo("/blog/author/" + to.params.author, { redirectCode: 301 })
     }
   },
 });
@@ -81,6 +84,11 @@ const { data: allArticles } = await useAsyncData(() =>
 const author = authors?.find((it) => it.slug == route.params.author);
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
+const pageChanged = (pageNo) => {
+  router.push({
+    path: "/blog/author/"+ route.params.author + "/page/" + pageNo,
+  });
+};
 useHead({
   title: "Author | Blog",
   meta: [

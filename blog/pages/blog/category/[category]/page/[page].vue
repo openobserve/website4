@@ -43,6 +43,9 @@ definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
       return navigateTo("/blog/category/" + to.params.category, { redirectCode: 301 })
+  middleware: (to, from) => {
+    if (to.params.page == 1) {
+      return navigateTo("/blog/category/" + to.params.category, { redirectCode: 301 })
     }
   },
 });
@@ -84,6 +87,11 @@ const category = categories?.value?.find(
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
+const pageChanged = (pageNo) => {
+  router.push({
+    path: "/blog/category/" + route.params.category + "/page/" + pageNo,
+  });
+};
 useHead({
   title: "Category | Blog",
   meta: [
