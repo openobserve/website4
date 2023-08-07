@@ -84,11 +84,6 @@ const { data: allArticles } = await useAsyncData(() =>
 const author = authors?.find((it) => it.slug == route.params.author);
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
-const pageChanged = (pageNo) => {
-  router.push({
-    path: "/blog/author/"+ route.params.author + "/page/" + pageNo,
-  });
-};
 useHead({
   title: "Author | Blog",
   meta: [
