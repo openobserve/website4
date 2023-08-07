@@ -24,7 +24,7 @@
               :currentPage="currentPage"
               :total="totalArticles"
               :totalPages="lastPage"
-              @pagechanged="pageChanged"
+              :pathPrefix="'/blog/tag/' + route.params.tag + '/page'"
             />
           </div>
         </div>
@@ -81,11 +81,6 @@ const tag = tags?.value?.find((it) => it.slug == route.params.tag);
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
-const pageChanged = (pageNo) => {
-  router.push({
-    path: "/blog/tag/" + route.params.tag + "/page/" + pageNo,
-  });
-};
 useHead({
   title: "Tag | Blog",
   meta: [
