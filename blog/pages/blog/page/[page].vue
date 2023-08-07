@@ -32,9 +32,9 @@ const route = useRoute();
 const router = useRouter();
 
 definePageMeta({
-  middleware: () => {
-    if (route.params.page == 1) {
-      return navigateTo("301", "/blog/" + route.params.category);
+  middleware: (to, from) => {
+    if (to.params.page == 1) {
+      return navigateTo('/blog', { redirectCode: 301 })
     }
   },
 });
