@@ -40,9 +40,9 @@ const route = useRoute();
 const router = useRouter();
 
 definePageMeta({
-  middleware: () => {
-    if (route.params.page == 1) {
-      return navigateTo("301", "/author/" + route.params.category);
+  middleware: (to, from) => {
+    if (to.params.page == 1) {
+      return navigateTo("/blog/author/" + to.params.author, { redirectCode: 301 })
     }
   },
 });
@@ -83,7 +83,7 @@ let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
 const pageChanged = (pageNo) => {
   router.push({
-    path: "/blog/page/" + pageNo,
+    path: "/blog/author/"+ route.params.author + "/page/" + pageNo,
   });
 };
 useHead({
