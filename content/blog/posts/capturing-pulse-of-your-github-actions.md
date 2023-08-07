@@ -40,13 +40,12 @@ jobs:
       - run: |
           npm run all
       - run: npm test
-  send_logs_to_openobserve:
+  inception:
     runs-on: ubuntu-latest
     needs: build-and-test # wait until build-and-test is done
-    environment: dev
     steps:
       - uses: actions/checkout@v3
-      - uses: mdp/openobserve_github_action_logs@main
+      - uses: mdp/openobserve_github_action_logs
         with:
           openobserve_endpoint: ${{ secrets.OPENOBSERVE_ENDPOINT }} 
           openobserve_username: ${{ secrets.OPENOBSERVE_USERNAME }}
@@ -59,24 +58,14 @@ Once integrated, all your logs from GitHub Actions will be automatically piped t
 
 ## Finding OpenObserve Username and Key:
 1. **Log in to OpenObserve:** Navigate to the OpenObserve dashboard and sign in using your credentials.
-2. **Go to the Ingestion Page:** Once logged in, look for a section in the left titled "Ingestion", and click on it.
-3. **Locate Your Credentials:** On the Ingestion page, you should go to "logs > curl" . You should see something like:
-```bash
-curl -u you@yourdomain.com:18qlg4b673Rgdgd2 -k https://api.openobserve.ai/api/your_organization_254/default/_json -d [JSON-DATA]
-```
-
-In this case, values are:
-```
-OPENOBSERVE_ENDPOINT : https://api.openobserve.ai/api/your_organization_254/default/_json
-OPENOBSERVE_USERNAME : you@yourdomain.com
-OPENOBSERVE_KEY : 18qlg4b673Rgdgd2
-```
+2. **Go to the Ingestion Page:** Once logged in, look for a tab or section titled "Ingestion", and click on it.
+3. **Locate Your Credentials:** On the Ingestion page, you should be able to find details related to your account by going to logs > fluentbit. Your OpenObserve `username` and `key` should be listed here. Make a note of them.
 
 ## Adding Username and Key to GitHub Secrets:
 1. **Navigate to Your Repository:** Go to the main page of the GitHub repository where you wish to add the secrets.
 2. **Access Settings:** Click on the "Settings" tab, typically located at the top-right of the page.
-3. **Secrets Management:** Scroll down in the left sidebar until you find the "Environments". Create a new environment "dev".
-4. **New Repository Secret:** Now, click "Environment secrets > Add secret" button.
+3. **Secrets Management:** Scroll down in the left sidebar until you find the "Secrets & Tokens" section. Click on it.
+4. **New Repository Secret:** Now, click on the "New repository secret" button.
 5. **Add OpenObserve Username:** 
    - Name: Enter a name like `OPENOBSERVE_USERNAME`.
    - Value: Paste or type in the OpenObserve username you noted earlier.
@@ -85,19 +74,10 @@ OPENOBSERVE_KEY : 18qlg4b673Rgdgd2
    - Name: Enter a name like `OPENOBSERVE_KEY`.
    - Value: Paste or type in the OpenObserve key you noted earlier.
    - Click on the "Add secret" button.
-7. **Add OpenObserve endpoint:** Repeat the same process:
-   - Name: Enter a name like `OPENOBSERVE_ENDPOINT`.
-   - Value: Paste or type in the OpenObserve key you noted earlier.
-   - Click on the "Add secret" button.
-
 
 Once you've added these secrets, your GitHub Actions workflow will be able to access them using the syntax `${{ secrets.OPENOBSERVE_USERNAME }}` and `${{ secrets.OPENOBSERVE_KEY }}` respectively.
 
 By securely storing these credentials in GitHub Secrets, you ensure that your sensitive data remains private while still being accessible to the GitHub Actions that need them.
-
-Once you have all the above working you should see logs in OpenObserve.
-
-![OpenObserve Logs](/img/blog/github_actions_logs.png)
 
 ## The Long-term Vision: Gaining Insights from Your Builds
 
