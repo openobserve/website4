@@ -17,7 +17,7 @@
               :currentPage="currentPage"
               :total="totalArticles"
               :totalPages="lastPage"
-              @pagechanged="pageChanged"
+              pathPrefix="/blog/page"
             />
           </div>
         </div>
@@ -63,10 +63,6 @@ const { data: allArticles } = await useAsyncData(() =>
 );
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
-
-const pageChanged = (pageNo) => {
-  router.push("/blog/page/" + pageNo);
-};
 
 useHead({
   title: "Blog",

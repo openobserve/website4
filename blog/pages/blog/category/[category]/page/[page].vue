@@ -25,7 +25,7 @@
               :currentPage="currentPage"
               :total="totalArticles"
               :totalPages="lastPage"
-              @pagechanged="pageChanged"
+              :pathPrefix="'/blog/category/' + route.params.category + '/page'"
             />
           </div>
         </div>
@@ -84,11 +84,6 @@ const category = categories?.value?.find(
 
 let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
 
-const pageChanged = (pageNo) => {
-  router.push({
-    path: "/blog/category/" + route.params.category + "/page/" + pageNo,
-  });
-};
 useHead({
   title: "Category | Blog",
   meta: [

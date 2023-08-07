@@ -1,27 +1,29 @@
 <template>
   <div class="flex flex-row justify-end">
     <div class="pagination space-x-2">
-      <button
+      <nuxt-link
         class="pagination-item"
         type="button"
         @click="onClickFirstPage"
         :disabled="isInFirstPage"
         :class="{ disabled: isInFirstPage }"
+        :to="!isInFirstPage? pathPrefix + '/1' : ''"
       >
         First
-      </button>
+      </nuxt-link>
 
-      <button
+      <nuxt-link
         class="pagination-item"
         type="button"
         @click="onClickPreviousPage"
         :disabled="isInFirstPage"
         :class="{ disabled: isInFirstPage }"
+        :to="!isInFirstPage ? pathPrefix + '/' + (currentPage - 1) : ''"
       >
         Previous
-      </button>
+      </nuxt-link>
 
-      <button
+      <nuxt-link
         v-for="(page, index) in pages"
         :key="index"
         type="button"
@@ -29,29 +31,32 @@
         @click="onClickPage(page.name)"
         :disabled="page.isDisabled"
         :class="{ active: isPageActive(page.name) }"
+        :to="!page.isDisabled ? pathPrefix + '/' + page.name : ''"
       >
         {{ page.name }}
-      </button>
+      </nuxt-link>
 
-      <button
+      <nuxt-link
         type="button"
         class="pagination-item"
         @click="onClickNextPage"
         :disabled="isInLastPage"
         :class="{ disabled: isInLastPage }"
+        :to="!isInLastPage ? pathPrefix + '/' + (currentPage + 1) : ''"
       >
         Next
-      </button>
+      </nuxt-link>
 
-      <button
+      <nuxt-link
         class="pagination-item"
         type="button"
         @click="onClickLastPage"
         :disabled="isInLastPage"
         :class="{ disabled: isInLastPage }"
+        :to="!isInLastPage ? pathPrefix + '/' + totalPages : ''"
       >
         Last
-      </button>
+      </nuxt-link>
     </div>
   </div>
 </template>
@@ -73,6 +78,10 @@ const props = defineProps({
   // },
   currentPage: {
     type: Number,
+    required: true,
+  },
+  pathPrefix: {
+    type: String,
     required: true,
   },
 });
