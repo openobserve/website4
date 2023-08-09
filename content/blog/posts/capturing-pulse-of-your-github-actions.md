@@ -95,6 +95,10 @@ Once you've added these secrets, your GitHub Actions workflow will be able to ac
 
 By securely storing these credentials in GitHub Secrets, you ensure that your sensitive data remains private while still being accessible to the GitHub Actions that need them.
 
+Once you have all the above working you should see logs in OpenObserve.
+
+![OpenObserve Logs](/img/blog/github_actions_logs.png)
+
 ## The Long-term Vision: Gaining Insights from Your Builds
 
 Now, why might one want to capture these logs, you wonder? It's all about long-term analysis. Think of every CI/CD pipeline as a living organism. Just as doctors analyze our vitals and medical history to detect patterns and predict future health concerns, developers and DevOps teams can analyze the historical data from their builds to detect patterns, bottlenecks, and potential points of failure.
