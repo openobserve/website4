@@ -14,6 +14,13 @@
     }
   ],
   "content": {
+    "leftSection": {
+      "title": "Hi! There are two ways to get a demo",
+      "desc": "You can book some time with us on the right and we can give you a live demo, or if you want to play around with openobserve yourself, you can create a free account, and then we have an option for you to import sample data.",
+      "btnText": "Get started for free",
+      "btnLink": "https://cloud.openobserve.ai",
+      "image": "/img/contactus.svg"
+    },
     "image": "/img/contactus.svg",
     "title": "Contact Details",
     "address": {
@@ -33,8 +40,14 @@
     },
     "heading": "Let's talk",
     "subheading": "Get personalized help from our team",
-    "btnText":"Submit",
-    "btnLoadingText":"Submitting...",
-    "btnLink":""
+    "btnText": "Submit",
+    "btnLoadingText": "Submitting...",
+    "btnLink": "",
+    "contactus": {
+      "title": "Or Contact Us",
+      "subtitle": "Get personalized help from our team",
+      "btnText": "Submit",
+      "btnLoadingText": "Submitting..."
+    }
   }
 }

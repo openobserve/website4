@@ -72,7 +72,7 @@ const props = defineProps({
   classes: {
     type: [Object, String],
     default: () => ({
-      container: "w-full transition-all duration-150 my-2",
+      container: "w-full transition-all duration-150",
       tooltipHint:
         "bg-red-400 rounded-lg text-xs font-bold text-theme-primary-dark px-2 cursor-pointer",
       input:
