@@ -178,10 +178,6 @@ const footerData = {
     title: "Docs",
     content: [
       {
-        text: "Bug Bounty Program",
-        link: "/bug-bounty-program",
-      },
-      {
         text: "Privacy Policy",
         link: "/policies/privacy-policy",
       },
