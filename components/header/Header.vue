@@ -79,6 +79,11 @@ const items = {
       link: "/features/traces",
       productName: "Traces",
     },
+     {
+      label: "",
+      link: "/features/elasticsearch-compability",
+      productName: "Elasticsearch Compatibility",
+    },
   ],
   solutions: [
     {
