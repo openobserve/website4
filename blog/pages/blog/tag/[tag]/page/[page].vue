@@ -42,9 +42,6 @@ definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
       return navigateTo("/blog/tag/" + to.params.tag, { redirectCode: 301 });
-  middleware: (to, from) => {
-    if (to.params.page == 1) {
-      return navigateTo("/blog/tag/" + to.params.tag, { redirectCode: 301 });
     }
   },
 });
