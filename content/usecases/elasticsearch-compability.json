@@ -21,13 +21,8 @@
     "items": [
       {
         "title": "OpenObserve - Elasticsearch Compatibility",
-        "desc": "OpenObserve, the comprehensive open-source observability platform, has Elasticsearch compatible API support with our zPlane add-on. With this feature, you can continue to use your existing Elasticsearch tools and queries while benefiting from the high performance and cost savings that OpenObserve offers.",
+        "desc": "OpenObserve offers Elasticsearch compatible API support with our zPlane add-on. With this feature, you can continue to use your existing Elasticsearch tools and queries while benefiting from the high performance and cost savings that OpenObserve offers. Visit <a href='https://openobserve.ai/docs/zplane/'>Documentation</a> to learn more.",
         "image": "/img/features/elastic-search/elasticsearch-compatibility.svg"
-      },
-      {
-        "title": "Enterprise Features with zPlane",
-        "desc": "Our enterprise version offers exclusive features through the zPlane add-on, including Elasticsearch API compatibility, SAML support (on roadmap), cross-cluster search (on roadmap), and priority support with SLAs.zPlane is a collection of adapters & utilities to augment OpenObserve functionalities.",
-        "image": "/img/features/elastic-search/enterprise-features-with-zplane.svg"
       }
     ]
   },
@@ -40,13 +35,13 @@
         "image": "/img/features/elastic-search/elasticsearch-api-compatibility .svg"
       },
       {
-        "title": "Scalable & Cost-Effective",
-        "desc": "Built with Rust, OpenObserve delivers high performance and scales up to petabytes of data.",
+        "title": "High performance",
+        "desc": "Built in Rust, OpenObserve delivers high performance and scales up to petabytes of data.",
         "image": "/img/features/elastic-search/Scalable-&-cost-effective.svg"
       },
       {
-        "title": "Rich Data Functions",
-        "desc": "Enrich, redact, and reduce data during ingestion or query time with powerful data functions.",
+        "title": "Easy to use, built for scale",
+        "desc": "Use of s3 backed storage and a resilient design makes it easy to use and scale.",
         "image": "/img/features/elastic-search/rich-data-function.svg"
       }
     ]
