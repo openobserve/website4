@@ -32,7 +32,7 @@
       {
         "title": "Elasticsearch API Compatibility",
         "desc": "Use the same queries and tools you're familiar with, while harnessing the power of OpenObserve.",
-        "image": "/img/features/elastic-search/elasticsearch-api-compatibility .svg"
+        "image": "/img/features/elastic-search/elasticsearch-api-compatibility.svg"
       },
       {
         "title": "High performance",

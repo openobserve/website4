@@ -81,7 +81,7 @@ const items = {
     },
      {
       label: "",
-      link: "/features/elasticsearch-compability",
+      link: "/features/elasticsearch-compatibility",
       productName: "Elasticsearch Compatibility",
     },
   ],

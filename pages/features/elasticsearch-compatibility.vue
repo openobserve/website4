@@ -14,7 +14,7 @@
 </template>
 <script setup>
 const { data } = await useAsyncData(async () => {
-  return await queryContent("/usecases/elasticsearch-compability").findOne();
+  return await queryContent("/usecases/elasticsearch-compatibility").findOne();
 });
 const seotitle = "OpenObserve - Elasticsearch Compatibility";
 const seodesc =
