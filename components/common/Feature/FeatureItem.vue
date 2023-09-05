@@ -42,7 +42,7 @@
             ></h3>
           </div>
           <div
-            class="text-justify text-base leading-relaxed font-normal mt-1 md:mt-3"
+            class="desc text-justify text-base leading-relaxed font-normal mt-1 md:mt-3"
             v-html="data.desc"
           ></div>
           <div
@@ -99,4 +99,13 @@ const props = defineProps({
   },
 });
 </script>
-<style scoped></style>
+<style scoped>
+/* style anchor tag with underline */
+:deep(.desc a) {
+  @apply no-underline text-[#0000ee] font-normal;
+}
+
+:deep(.desc a:hover) {
+  @apply underline;
+}
+</style>
