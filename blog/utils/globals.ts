@@ -4,7 +4,7 @@
   access any variable via object syntax global.yourVarName
 */
 export const globals = {
-  blogsPerPage: 5,
+  blogsPerPage: 50,
   recentBlogPostsSidebar: 3,
   recentBlogPostsWebsite: 3,
 };
