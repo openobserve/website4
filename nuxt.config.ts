@@ -27,6 +27,12 @@ export default defineNuxtConfig({
           async: true,
           "data-domain": "openobserve.ai",
         },
+        {
+          src: "/js/clarity.js",
+          body: true,
+          defer: true,
+          async: true,
+        },
       ],
     },
   },
