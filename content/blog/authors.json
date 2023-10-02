@@ -8,7 +8,18 @@
         "facebookUrl": "",
         "youtubeUrl": "",
         "twitterUrl": "https://twitter.com/hiprabhat",
-        "linkedInUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/hiprabhat/",
+        "instagramUrl": ""
+      },
+      {
+        "name": "Ashish Kolhe",
+        "slug": "ashish",
+        "img": "img/blog/ashish.jpg",
+        "bio": "Ashish is obsessed with building high performance systems with simplicity in mind. He has vast experience in multiple disciplines like front end, back end, streaming, analytics and more.",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "https://twitter.com/AshishK39675384",
+        "linkedInUrl": "https://linkedin.com/in/ashish-kolhe-10605b33",
         "instagramUrl": ""
       }
     ]
