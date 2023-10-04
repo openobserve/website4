@@ -94,6 +94,6 @@ const logger = pino({ level: "info" }, streamToOpenObserve);
 
 Upon implementing these changes, your application logs are seamlessly forwarded to the designated OpenObserve \_bulk endpoint. Now, simply harness the OpenObserve UI to observe and analyze your logs, significantly enhancing the observability of your Node.js application within a Kubernetes environment.
 
-![OpenObserve Log explorer page](/img/blog/fluentbit/log_page.webp)
+![OpenObserve Log explorer page](/img/blog/pino/pino_logs.png)
 
 Thank you for following this guide, and happy logging!
