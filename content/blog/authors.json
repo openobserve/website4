@@ -4,11 +4,33 @@
         "name": "Prabhat Sharma",
         "slug": "prabhat",
         "img": "img/blog/prabhat.jpg",
-        "bio": "Prabhat Sharma is the founder of Zinc Labs. He has deep background in cloud, kubernetes, observability and more. He has interests in machine learning, liberal arts, economics and systems architecture. In his spare time he spends time playing with his kids.",
+        "bio": "Prabhat Sharma is the founder of OpenObserve. He has deep background in cloud, kubernetes, observability and more. He has interests in machine learning, liberal arts, economics and systems architecture. In his spare time he spends time playing with his kids.",
         "facebookUrl": "",
         "youtubeUrl": "",
         "twitterUrl": "https://twitter.com/hiprabhat",
         "linkedInUrl": "https://www.linkedin.com/in/hiprabhat/",
+        "instagramUrl": ""
+      },
+      {
+        "name": "Hengfei Yang",
+        "slug": "hengfei",
+        "img": "img/blog/hengfei.jpeg",
+        "bio": "Hengfei Yang is the founding engineer at OpenObserve. He has extensive experience in distributed system development. He is passionate about open source and has interests in traveling, music and photography.",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "https://twitter.com/HengfeiYang",
+        "linkedInUrl": "https://www.linkedin.com/in/hengfeiyang/",
+        "instagramUrl": ""
+      },
+      {
+        "name": "Zhao Wei",
+        "slug": "domaway",
+        "img": "img/blog/user.png",
+        "bio": "Zhao Wei is an engineer at Jidu, with a strong background in cloud computing, Kubernetes and observability. He is currently an APM expert at Jidu.",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "https://twitter.com/HengfeiYang",
+        "linkedInUrl": "https://www.linkedin.com/in/hengfeiyang/",
         "instagramUrl": ""
       },
       {
