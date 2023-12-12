@@ -7,7 +7,7 @@ alt: OpenObserve
 slug: jidu-journey-to-100-tracing-fidelity
 authors: 
   - hengfei
-  - domaway
+  - domyway
 publishDate: 2023-12-08
 tags:
   - observability
