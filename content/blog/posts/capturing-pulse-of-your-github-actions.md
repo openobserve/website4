@@ -5,7 +5,8 @@ description: Explore how OpenObserve, an open-source observability tool, collabo
 img: img/blog/devops.png
 alt: OpenObserve
 slug: capturing-pulse-of-your-github-actions
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-08-07
 tags:
   - github actions

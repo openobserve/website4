@@ -5,7 +5,8 @@ description: "Serilog Sink for OpenObserve is an extension that integrates Seril
 img: img/blog/serilog.png
 alt: OpenObserve
 slug: serilog-sink-for-openobserve
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-08-03
 tags:
   - Serilog

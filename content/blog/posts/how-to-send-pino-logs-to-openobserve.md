@@ -5,7 +5,8 @@ description: Sending logs from NodeJS application to OpenObserve using Pino is e
 img: img/blog/pino-banner.png
 alt: OpenObserve
 slug: how-to-send-pino-logs-to-openobserve
-author: ashish
+authors: 
+  - ashish
 publishDate: 2023-10-02
 tags:
   - pino

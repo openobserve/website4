@@ -173,10 +173,11 @@
             <div class="flex justify-between items-center mt-4">
               <div class="flex items-center">
                 <nuxt-link
-                  :to="'/blog/author/' + article.author"
+                  :to="'/blog/author/' + article.authors?.[0]"
                   class="text-gray-700 text-sm font-light mr-3 hover:underline"
                 >
-                  {{ authors?.find((a) => a.slug == article?.author)?.name }}
+                  {{ authors?.find((a) => a.slug == article?.authors?.[0])?.name }} 
+                  {{ article.authors?.length > 1 ? (" (+" + (article.authors.length - 1 )+ ")") : "" }}
                 </nuxt-link>
               </div>
               <span class="font-light text-sm text-gray-600">

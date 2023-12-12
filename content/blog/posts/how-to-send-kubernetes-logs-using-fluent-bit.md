@@ -5,7 +5,8 @@ description: Sending logs from Kubernetes to OpenObserve using FluentBit is easy
 img: img/blog/fluentbit/fluentbit_openobserve.webp
 alt: OpenObserve
 slug: how-to-send-kubernetes-logs-using-fluent-bit
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-06-04
 tags:
   - fluent-bit

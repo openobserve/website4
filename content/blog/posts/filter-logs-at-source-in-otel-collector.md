@@ -5,7 +5,8 @@ description: There are times when you would like to filter logs at source. This 
 img: img/opentelemetry.png
 alt: OpenObserve
 slug: filter-logs-at-source-in-otel-collector
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-12-07
 tags:
   - logs

@@ -5,7 +5,9 @@ description: Jidu acheived 100% tracing fidelity with OpenObserve by migrating f
 img: img/blog/jidu-logo1.jpeg
 alt: OpenObserve
 slug: jidu-journey-to-100-tracing-fidelity
-author: hengfei
+authors: 
+  - hengfei
+  - domaway
 publishDate: 2023-12-08
 tags:
   - observability

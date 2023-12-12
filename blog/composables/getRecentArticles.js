@@ -6,7 +6,7 @@ export default async () => {
       "categories",
       "img",
       "slug",
-      "author",
+      "authors",
       "publishDate",
       "createdAt",
       "updatedAt",

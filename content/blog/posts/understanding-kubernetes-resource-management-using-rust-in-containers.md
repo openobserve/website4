@@ -5,7 +5,8 @@ description: Understanding Kubernetes and container resource management using ru
 img: img/blog/rust_programming_in_containers.png
 alt: Understanding Kubernetes and container resource management using rust
 slug: understanding-kubernetes-resource-management-using-rust-in-containers
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-07-13
 tags:
   - rust

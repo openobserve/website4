@@ -5,7 +5,8 @@ description: Setup Fluent Bit on Ubuntu for Efficient Log Forwarding
 img: img/blog/fluentbit/ubuntu-plus-fluentbit.webp
 alt: OpenObserve
 slug: setup-fluent-bit-on-ubuntu-for-efficient-log-forwarding
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-07-24
 tags:
   - fluent-bit

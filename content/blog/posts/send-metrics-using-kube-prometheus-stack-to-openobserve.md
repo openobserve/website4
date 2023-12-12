@@ -5,7 +5,8 @@ description: Send metrics using kube-prometheus-stack to OpenObserve
 img: img/blog/devops.png
 alt: OpenObserve
 slug: send-metrics-using-kube-prometheus-stack-to-openobserve
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-08-10
 tags:
   - kube-prometheus-stack

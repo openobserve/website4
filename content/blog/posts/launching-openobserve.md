@@ -5,7 +5,8 @@ description: "OpenObserve’ is an open source, cloud native open source observa
 img: img/homepage/herosection1.jpg
 alt: OpenObserve
 slug: launching-openobserve
-author: prabhat
+authors: 
+  - prabhat
 publishDate: 2023-05-10
 tags:
   - launch

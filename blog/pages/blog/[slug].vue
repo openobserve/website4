@@ -17,13 +17,14 @@
         >
           <div>
             {{ article && formatDate(article.publishDate) }} by
-            <span class="font-bold">
+            <span v-for="author in postAuthors" class="font-bold">
               <nuxt-link
                 :to="'/blog/author/' + author.slug"
                 class="hover:underline"
               >
                 {{ author.name }}
               </nuxt-link>
+              <span v-if="author !== postAuthors[postAuthors.length - 1]">, </span>
             </span>
           </div>
           <div class="flex justify-between items-center">
@@ -69,7 +70,9 @@
           <div></div>
         </div>
 
-        <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 border mt-8">
+        <h4 class="mt-8 text-xl">{{ postAuthors.length > 1 ? 'Authors' : 'Author' }}:</h4>
+        <!-- multiple authors -->
+        <figure v-for="(author, index) in postAuthors" class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 border mt-4">
           <img
             class="w-32 h-32 md:w-64 object-cover object-top md:h-auto md:rounded-l-xl md:rounded-r-none rounded-full mx-auto"
             :src="getAuthorImage(author)"
@@ -122,6 +125,8 @@ const { data: authorsTemp } = await useAsyncData(() =>
 const author = authorsTemp?.value?.authors?.find(
   (a) => a.slug == article?.value?.author
 );
+
+const postAuthors = article?.value?.authors.map((a) => authorsTemp?.value?.authors?.find((b) => b.slug == a))
 
 const { data: prevNext } = await useAsyncData("prev-next-" + slug, () =>
   queryContent("blog/posts")

@@ -22,7 +22,7 @@ export default async (params, filter, nuxtApp) => {
         "tags",
         "img",
         "slug",
-        "author",
+        "authors",
         "publishDate",
         "createdAt",
         "updatedAt",
@@ -65,8 +65,8 @@ export default async (params, filter, nuxtApp) => {
           break;
         }
         case "author": {
-          articles.where({ author: filter.value });
-          allArticles.where({ author: filter.value });
+          articles.where({ authors: { $contains: [filter.value] } });
+          allArticles.where({ authors: { $contains: [filter.value] } });
           break;
         }
       }
