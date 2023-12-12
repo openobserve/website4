@@ -74,7 +74,7 @@
         <!-- multiple authors -->
         <figure v-for="(author, index) in postAuthors" class="md:flex bg-gray-100 rounded-xl p-8 md:p-0 border mt-4">
           <img
-            class="w-32 h-32 md:w-64 object-cover object-top md:h-auto md:rounded-l-xl md:rounded-r-none rounded-full mx-auto"
+            class="w-24 h-24 md:w-40 object-cover object-top md:h-auto md:rounded-l-xl md:rounded-r-none rounded-full mx-auto"
             :src="getAuthorImage(author)"
             alt="authorImage"
             width="384"

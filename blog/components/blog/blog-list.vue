@@ -41,7 +41,7 @@
                     <img
                       :src="`/${author?.img}`"
                       alt="author image"
-                      class="w-10 h-10 object-cover object-top rounded-full hidden sm:block"
+                      class="w-10 h-10 object-cover object-top border rounded-full hidden sm:block"
                     />
                   </nuxt-link>
                   <div>
