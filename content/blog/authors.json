@@ -12,6 +12,17 @@
         "instagramUrl": ""
       },
       {
+        "name": "Johnson Huynh",
+        "slug": "johnson",
+        "img": "img/blog/authors/johnson.jpeg",
+        "bio": "Johnson, a DevOps Engineer at Standup AI, boasts a rich tapestry of expertise across diverse Information Technology domains. Armed with a comprehensive skill set ranging from virtualization to the latest advancements in cloud technologies, he is unwaveringly committed to propelling innovation and operational efficiency within the field. With a thirst for continuous improvement, Johnson is currently focused on expanding his knowledge and mastering new dimensions within his role as a DevOps Engineer. Beyond the professional sphere, he dedicates his spare time to quality moments with his first son and wife.",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "",
+        "linkedInUrl": "https://www.linkedin.com/in/johnson-huynh-24601754/",
+        "instagramUrl": ""
+      },
+      {
         "name": "Hengfei Yang",
         "slug": "hengfei",
         "img": "img/blog/hengfei.jpeg",
