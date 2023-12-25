@@ -54,6 +54,17 @@
         "twitterUrl": "https://twitter.com/AshishK39675384",
         "linkedInUrl": "https://linkedin.com/in/ashish-kolhe-10605b33",
         "instagramUrl": ""
+      },
+      {
+        "name": "Kirtan Thakkar",
+        "slug": "kirtan",
+        "img": "img/blog/authors/kirtan.jpg",
+        "bio": "Kirtan is passionate about crafting fast and user-friendly websites and web-apps. He is dedicated to innovation and excellence in the tech realm, with expertise in harnessing the latest technologies to develop cutting-edge web solutions.",
+        "facebookUrl": "",
+        "youtubeUrl": "",
+        "twitterUrl": "https://twitter.com/kirtan_thakkar",
+        "linkedInUrl": "https://linkedin.com/in/kirtan-thakkar/",
+        "instagramUrl": ""
       }
     ]
   }
