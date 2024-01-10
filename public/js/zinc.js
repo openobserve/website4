@@ -101,8 +101,6 @@
       setCookie("uuid", uuid, 365); // set cookie to expire in 365 days
     }
     
-    var domain = window.location.hostname;
-    var pageUrl = window.location.href;
     var referrerUrl = document.referrer || '';
     var referrerDomain = referrerUrl ? getDomainFromUrl(referrerUrl) : '';
 
