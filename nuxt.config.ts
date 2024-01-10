@@ -33,6 +33,12 @@ export default defineNuxtConfig({
           defer: true,
           async: true,
         },
+        {
+          src: "/js/zinc.js",
+          body: true,
+          defer: true,
+          async: true,
+        },
       ],
     },
   },
