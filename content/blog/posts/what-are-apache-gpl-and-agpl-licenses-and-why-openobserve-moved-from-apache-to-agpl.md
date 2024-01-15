@@ -112,7 +112,7 @@ Licensing of the project also depends on who you are and what your goals are. Wh
 
 Additional guidance around building libraries is that they are extremely hard to monetize. Save yourself some heartache, and don't try to take that route.
 
-There may be scenarios where an open source license may not be appropriate for your project. There is another category of licenses called source available licenses. You can use them if you want to keep your source code available to everyone but want to have certain kind of restrictions. Companies like Elastic, Hashicorp, MongoDB  and others have used source available licenses. Some examples of source available licenses are Elastic, SSPL, BSL, Confluent Community License, Cockroach Community License, Timescale License, Redis Source Available License, and more. Scope of these licenses is out of the scope of this article and I may cover them at some point later in a separate article. 
+There may be scenarios where an open source license may not be appropriate for your project. There is another category of licenses called source available licenses. You can use them if you want to keep your source code available to everyone but want to have certain kind of restrictions. Companies like Elastic, Hashicorp, MongoDB  and others have used source available licenses. Some examples of source available licenses are Elastic, SSPL, BSL, Confluent Community License, Cockroach Community License, Timescale License, Redis Source Available License, and more. Explaining these licenses is out of the scope of this blog and I may cover them at some point later in a separate article. 
 
 ## Large company (x) is telling me that they can't use AGPL. What should I do?
 
