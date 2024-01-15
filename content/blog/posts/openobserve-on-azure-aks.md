@@ -11,7 +11,7 @@ publishDate: 2023-12-14
 tags:
   - observability
   - opentelemetry
-  - fll-stack-observability
+  - full-stack-observability
   - otel-collector
   - azure
   - cloud
