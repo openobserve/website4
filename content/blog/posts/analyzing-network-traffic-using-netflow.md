@@ -7,7 +7,7 @@ alt: OpenObserve
 slug: analyzing-network-traffic-using-netflow
 authors: 
   - prabhat
-publishDate: 2024-01-11
+publishDate: 2024-01-19
 tags:
   - netflow
   - network traffic
