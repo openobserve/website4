@@ -24,18 +24,18 @@
         "subtitle": "Developer",
         "key": "secondary",
         "price": "$0",
-        "priceUnit": "per month",
+        "priceUnit": "per month (starting at)",
         "recommed": false,
         "recommandText": "",
         "image": "/img/developer.png",
         "label": "What's included",
         "items": [
-          "200 GB Ingestion/month",
-          "200 GB Query Volume/month",
-          "200 M records function executions/month",
+          "200 GB Ingestion/month free",
+          "Additional ingestion at $0.30/GB",
+          "200 GB Query Volume/month free",
+          "200 M records function executions/month free",
           "15 Days Retention",
-          "10 users",
-          ""
+          "10 users"
         ],
         "sublabel": "",
         "features": [
