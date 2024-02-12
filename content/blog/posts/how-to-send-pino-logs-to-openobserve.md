@@ -16,6 +16,8 @@ tags:
   - openobserve
 ---
 
+> **🔥 Update: Check out our new blog post on [Sending Pino Logs to OpenObserve: A Step-by-Step Guide](/blog/sending-pino-logs-to-openobserve) for the latest and improved method of sending Pino logs to OpenObserve! We also recommend using our new npm library, `@openobserve/pino-openobserve`, for a more streamlined integration. Learn how to leverage its enhanced features and performance in the new blog post.**
+
 ## Stream Node.js application Logs to OpenObserve!
 
 In this blog, we are going to explore the process of sending NodeJS application logs to OpenObserve. Understanding how to efficiently send logs from applications, especially Node.js ones, can significantly boost observability and troubleshooting capabilities. Today, let’s dive deep into sending logs from a Node.js application to OpenObserve using the renowned Pino logger.
