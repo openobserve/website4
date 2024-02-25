@@ -1,7 +1,7 @@
 ---
 title: What are Apache, GPL and AGPL licenses and why OpenObserve moved from Apache to AGPL
 seoTitle: What are Apache, GPL and AGPL licenses - misconceptions, lies, facts - and why OpenObserve moved from Apache to AGPL
-description: Standup AI team describes, how to setup OpenObserve on Azure AKS with postgres as metastore.
+description: What are Apache, GPL and AGPL licenses and why OpenObserve moved from Apache to AGPL
 img: img/blog/agpl-license-misconceptions-2.webp
 alt: OpenObserve
 slug: what-are-apache-gpl-and-agpl-licenses-and-why-openobserve-moved-from-apache-to-agpl
@@ -13,6 +13,7 @@ tags:
   - agpl
   - gpl
   - apache
+  - license
 ---
 
 In the realm of open source software, navigating the license landscape can feel like traversing a dense forest. Terms like MIT, Apache, GPL, and AGPL flit through conversations, often shrouded in misconceptions and in half-truths.
