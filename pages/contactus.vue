@@ -14,9 +14,6 @@
         >
           <!-- START Contact Details-->
           <img :src="data.content.image" :alt="data.content.title" />
-
-          
-          
         </div>
 
         <div
@@ -31,6 +28,7 @@
             class="leading-relaxed mb-5 text-theme-text-primary"
             v-html="data.content.subheading"
           ></p>
+          <CalendarEmbed />
         </div>
       </div>
     </div>
