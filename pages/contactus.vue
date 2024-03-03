@@ -28,7 +28,69 @@
             class="leading-relaxed mb-5 text-theme-text-primary"
             v-html="data.content.subheading"
           ></p>
-          <CalendarEmbed />
+          <form ref="form" @submit="submitdata">
+            <ZInput
+              ref="inputName"
+              id="name"
+              name="name"
+              required
+              label="Name"
+              v-model="formValue.name"
+            />
+            <ZInput
+              ref="inputEmail"
+              id="email"
+              name="email"
+              required
+              label="Email"
+              v-model="formValue.email"
+            />
+            <ZInput
+              ref="inputPhone"
+              id="phone"
+              name="phone"
+              label="Phone"
+              v-model="formValue.phone"
+            />
+            <ZInput
+              ref="inputWebsiteUrl"
+              id="websiteurl"
+              name="websiteurl"
+              label="Website"
+              type="url"
+              v-model="formValue.websitelink"
+            />
+            <TextArea
+              ref="inputMessage"
+              id="message"
+              name="message"
+              required
+              label="Message"
+              v-model="formValue.message"
+            ></TextArea>
+            <div
+              v-if="error"
+              class="px-4 py-2 bg-red-500 text-white border border-red-700 rounded-md"
+            >
+              {{ error }}
+            </div>
+            <div class="flex justify-center md:justify-start py-5 w-full">
+              <component
+                is="button"
+                type="submit"
+                variant="primary"
+                class="px-6 bg-theme-primary-500 rounded-md py-2 text-white"
+                :disabled="loading"
+                :class="
+                  loading ? 'bg-theme-primary-300' : 'bg-theme-primary-500'
+                "
+              >
+                {{
+                  loading ? data.content.btnLoadingText : data.content.btnText
+                }}
+              </component>
+            </div>
+          </form>
         </div>
       </div>
     </div>
