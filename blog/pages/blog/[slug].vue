@@ -9,7 +9,7 @@
     <div
       class=" container mx-auto px-4 pb-8 mt-8 flex flex-col md:flex-row"
     >
-      <article style="flex: 5" class="blog-content md:pr-8">
+      <article style="flex: 5" class="md:w-9/12 w-auto blog-content md:pr-8">
        <h1 class="text-4xl text-left text-black">{{ article.title }}</h1>
 
         <div
