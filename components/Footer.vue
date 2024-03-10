@@ -129,7 +129,7 @@
         <div
           class="mx-auto w self-center px-4 text-center flex flex-col md:flex-row"
         >
-          <div>Zinc Labs © {{ currentYear }}</div>
+          <div>OpenObserve Inc. © {{ currentYear }}</div>
         </div>
       </div>
     </div>
