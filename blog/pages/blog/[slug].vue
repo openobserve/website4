@@ -42,6 +42,7 @@
         </div>
 
         <img
+          v-if="article.img"
           class="w-full mb-4 rounded-xl border"
           :src="getBlogImage(article)"
           :alt="article.alt"
