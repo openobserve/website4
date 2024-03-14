@@ -16,12 +16,11 @@ tags:
   - parsing
   - logs
 ---
-
 ### Introduction
 
 Internet Information Services (IIS) is a flexible, secure and manageable Web server for hosting anything on the Web. Monitoring and analyzing IIS logs can provide valuable insights into the performance and health of your web applications. In this blog, we will walk through the process of capturing IIS logs using the OpenTelemetry Collector (otel-collector) and parsing them using VRL functions in OpenObserve for analysis. You could use fluentbit or vector as well to capture the logs and send them to OpenObserve.
 
-## Step 1: Setting Up the otel-Collector
+## Step 1: Setting Up the otel-collector
 
 The OpenTelemetry Collector offers a vendor-agnostic implementation on how to receive, process, and export telemetry data. In our case, we want to capture IIS logs and send them for analysis. Here's how you can set it up:
 
@@ -42,7 +41,6 @@ receivers:
     start_at: beginning
 ```
 
-
 3. **Configure the OpenTelemetry exporter**: The otel-collector configuration file should also include an OpenTelemetry exporter to send the captured logs to OpenObserve.
 
 ```yaml
@@ -53,7 +51,6 @@ exporters:
       stream-name: iis
       Authorization: "Basic cm9vdEBleGFtcGxlLmNvbTpXbTNtdTFaS2Vma3pCa1p1"
 ```
-
 
 3. **Wire them together**: Ensure that the service pipelines are correctly wired to use the `filelog/iis` receiver and the appropriate exporter.
 
@@ -72,16 +69,15 @@ At this point, the otel-collector is set up to capture IIS logs and send them to
 
 ![otel-collector restart](/img/blog/iis/restart-otel-collector.webp)
 
-Once the otel-collector is running, it will start capturing IIS logs and sending them to OpenObserve. You should see a new stream `iis` unser streams/logs menu
+Once the otel-collector is running, it will start capturing IIS logs and sending them to OpenObserve. You should see a new stream `iis` under streams/logs menu
 
 ![OpenObserve with iis stream](/img/blog/iis/iis_stream.webp)
-
 
 ## Step 2: Parsing IIS Logs with VRL
 
 After setting up the otel-collector to capture the IIS logs, the next step is to parse these logs into a structured format that can be easily analyzed. VRL functions can be created in OpenObserve to parse the logs.
 
-The IIS logs are typically written in a space-separated format. 
+The IIS logs are typically written in a space-separated format.
 
 Here is a sample log entry from an IIS log file:
 
@@ -112,9 +108,7 @@ The body contains detailed information about a single HTTP request in a common l
 - `0`: Win32 status code, which can provide information about the status of the request at the operating system level.
 - `0`: The time taken to serve the request, in milliseconds.
 
-
 This structured logging is useful for automated processing and analysis, allowing systems and administrators to filter, search, and analyze log data efficiently.
-
 
 Here's an example of how you can parse the logs using VRL:
 
@@ -160,7 +154,6 @@ Once the logs are parsed, they should look like below:
 You should save the VRL function and associate it to the stream. This will ensure that the logs are parsed and structured as they are ingested into OpenObserve.
 
 ![OpenObserve with parsed IIS logs](/img/blog/iis/save_function.webp)
-
 
 ![Associate function to the stream](/img/blog/iis/associate_function.webp)
 
