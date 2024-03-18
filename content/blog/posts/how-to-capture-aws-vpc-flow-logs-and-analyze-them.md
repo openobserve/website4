@@ -99,7 +99,7 @@ We will do the following processing on the logs:
 3. Enrich the logs with the protocol names using the protocol enrichment table
 
 
-We will use the OpenObserve's log processing pipeline to do this. Below is the pipeline that you can use to parse and enrich the logs.
+We will use the VRL functions in OpenObserve to do this. Below is the VRL function that you can use to parse and enrich the logs.
 
 ```ruby
 . |= parse_aws_vpc_flow_log!(.message,"account_id action az_id bytes dstaddr dstport end flow_direction instance_id interface_id log_status packets pkt_dst_aws_service pkt_dstaddr pkt_src_aws_service pkt_srcaddr protocol region srcaddr srcport start sublocation_id sublocation_type subnet_id tcp_flags traffic_path type version vpc_id")
