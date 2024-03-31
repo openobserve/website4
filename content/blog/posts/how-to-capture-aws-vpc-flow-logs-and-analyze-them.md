@@ -9,12 +9,10 @@ authors:
   - prabhat
 publishDate: 2024-03-18
 tags:
-  - launch
-  - cost
-  - observability
-  - logs
-  - metrics
-  - traces
+  - networking
+  - security
+  - vpc
+  - aws
 ---
 
 Amazon Web Services (AWS) provides a wealth of data about the traffic that flows through your Virtual Private Cloud (VPC). By capturing this data, you can gain insights into network patterns, detect anomalies, and improve the security and efficiency of your cloud environment. AWS VPC Flow Logs are a feature that allows you to capture information about the IP traffic going to and from network interfaces in your VPC. In this blog, we will discuss how to capture all fields of AWS VPC Flow Logs, send them to Kinesis Firehose, and then analyze them using OpenObserve's Logs UI and Dashboards.
