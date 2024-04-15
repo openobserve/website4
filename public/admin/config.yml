@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: openobserve/website4
+  branch: main
 site_url: https://openobserve.ai
 logo_url: /img/logo/logo_horizontal.svg
 media_folder: "public/img/blog"
