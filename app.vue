@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <SeoKit />
+    <!-- <SeoKit /> -->
     <OgImageScreenshot />
     <Header />
     <NuxtPage />

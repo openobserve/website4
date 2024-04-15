@@ -2,13 +2,14 @@ export default defineNuxtConfig({
   extends: [
     // "@nuxt-themes/docus",
     "./blog",
-    "nuxt-seo-kit",
+    // "nuxt-seo-kit",
   ],
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
     "@vueuse/nuxt",
     "@nuxt/devtools",
+    "@nuxtjs/seo",
   ],
   app: {
     head: {
@@ -91,10 +92,7 @@ export default defineNuxtConfig({
   },
   linkChecker: {
     failOn404: false,
-    exclude: [
-      '/docs',
-      '/docs/**'
-    ]
+    exclude: ["/docs", "/docs/**"],
   },
   build: {
     transpile: ["clsx"],

@@ -1,0 +1,85 @@
+backend:
+  name: github
+  repo: openobserve/website4
+media_folder: "public/img/blog"
+public_folder: "img/blog"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "SEO Title", name: "seoTitle", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Banner Image", name: "img", widget: "image" }
+      - { label: "Image Alt Text", name: "alt", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - {
+          label: "Authors",
+          name: "authors",
+          widget: "list",
+          field: { label: "Author", name: "author", widget: "string" },
+        }
+      - {
+          label: "Publish Date",
+          name: "publishDate",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          time_format: false,
+        }
+      - { label: "Tags (Enter comma-separated)", name: "tags", widget: "list" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "authors"
+    label: "Authors"
+    label_singular: "Authors"
+    editor:
+      preview: false
+    delete: false
+    preview_path: "authors"
+    files:
+      - label: "Authors"
+        name: "authors"
+        file: "content/blog/authors.json"
+        fields:
+          - label: Authors
+            name: authors
+            widget: list
+            allow_add: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Slug", name: "slug", widget: "string" }
+              - { label: "Image", name: "img", widget: "image" }
+              - { label: "Bio", name: "bio", widget: "string" }
+              - {
+                  label: "Facebook Url",
+                  name: "facebookUrl",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Youtube Url",
+                  name: "youtubeUrl",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Twitter Url",
+                  name: "twitterUrl",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "LinkedIn Url",
+                  name: "linkedInUrl",
+                  widget: "string",
+                  required: false,
+                }
+              - {
+                  label: "Instagram Url",
+                  name: "instagramUrl",
+                  widget: "string",
+                  required: false,
+                }
