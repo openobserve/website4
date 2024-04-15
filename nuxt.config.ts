@@ -11,6 +11,11 @@ export default defineNuxtConfig({
     "@nuxt/devtools",
     "@nuxtjs/seo",
   ],
+  linkChecker: {
+    enabled: false,
+    failOnError: false,
+    excludeLinks: ["/docs", "/docs/**"],
+  },
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
@@ -89,11 +94,9 @@ export default defineNuxtConfig({
       trailingSlash: false,
     },
     indexable: true,
+    siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
   },
-  linkChecker: {
-    failOn404: false,
-    exclude: ["/docs", "/docs/**"],
-  },
+  
   build: {
     transpile: ["clsx"],
   },
