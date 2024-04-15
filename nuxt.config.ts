@@ -82,6 +82,10 @@ export default defineNuxtConfig({
       },
     },
   },
+  site: {
+    url: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
+    name: 'Open Source Observability Platform for Logs, Metrics, Traces, and More – Your Ultimate Dashboard for Alerts and Insights'
+  },
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
@@ -94,7 +98,6 @@ export default defineNuxtConfig({
       trailingSlash: false,
     },
     indexable: true,
-    siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
   },
   
   build: {
