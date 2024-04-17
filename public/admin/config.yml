@@ -2,6 +2,8 @@ backend:
   name: github
   repo: openobserve/website4
   branch: main
+  base_url: https://1hpdnvpqxj.execute-api.us-west-2.amazonaws.com # your apigateway endpoint
+  auth_endpoint: /prod/auth
 site_url: https://openobserve.ai
 logo_url: /img/logo/logo_horizontal.svg
 media_folder: "public/img/blog"
