@@ -45,6 +45,12 @@ export default defineNuxtConfig({
           defer: true,
           async: true,
         },
+        {
+          src: "/js/zoho.js",
+          body: true,
+          defer: true,
+          async: true,
+        },
       ],
     },
   },
