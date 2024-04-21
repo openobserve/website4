@@ -16,6 +16,11 @@ export default defineNuxtConfig({
     failOnError: false,
     excludeLinks: ["/docs", "/docs/**"],
   },
+  nitro: {
+    prerender: {
+      failOnError: false,
+    }
+  },
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
