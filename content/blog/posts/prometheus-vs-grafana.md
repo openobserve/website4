@@ -7,7 +7,7 @@ img: /img/blog/prometheus-vs-grafana-image3.png
 alt: "Prometheus vs. Grafana: In-Depth Comparison & Differences"
 slug: prometheus-vs-grafana
 authors:
-  - prabhat
+  - openobserve-team
 publishDate: 2024-04-22
 tags:
   - prometheus
