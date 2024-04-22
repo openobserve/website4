@@ -36,7 +36,7 @@ export default (article: any) => {
     {
       hid: "og:image",
       property: "og:image",
-      content: (article && article.img && `/img/blog/${article.img}`) || mainImage,
+      content: (article && article.img && `${article.img}`) || mainImage,
     },
     {
       hid: "twitter:url",
@@ -56,7 +56,7 @@ export default (article: any) => {
     {
       hid: "twitter:image",
       name: "twitter:image",
-      content: (article && article.img && `/img/blog/${article.img}`) || mainImage,
+      content: (article && article.img && `${article.img}`) || mainImage,
     },
     {
       property: "article:published_time",
