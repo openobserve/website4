@@ -165,7 +165,7 @@ const formatDate = (date) => {
 };
 const getAuthorImage = (author) => {
   // return author.img;
-  return author.img && `/${author.img}`;
+  return author.img && `${author.img}`;
 };
 const getBlogImage = (article) => {
   // return article.img;
