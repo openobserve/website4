@@ -13,6 +13,17 @@ tags:
   - prometheus
   - grafana
 ---
+
+Looking for a monitoring tool that can keep up with your growing systems?
+
+Prometheus and Grafana – both are great options.
+
+But which one should you choose? And what’s the exact difference between them?
+
+In this post, we’ll do a detailed side-by-side comparison of Prometheus vs. Grafana so that you easily pick the one that best fits your needs.
+
+Ready to learn? Grab your cup of coffee and let’s go!
+
 ## Prometheus vs. Grafana – Quick Overview
 
 Prometheus and Grafana are two popular tools used for monitoring and understanding the performance of computer systems and applications.
