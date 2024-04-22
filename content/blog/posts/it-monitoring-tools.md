@@ -90,7 +90,7 @@ Here's a rundown of the top tools to keep an eye on, each bringing unique capabi
 
 1. **OpenObserve**
 
-![](/img/blog/it-monitoring-tools-image1.png)
+![OpenObserve](/img/blog/it-monitoring-tools-image1.png)
 
 Kicking off the list is OpenObserve, a cloud-native observability platform that's gaining traction for its simplicity and sophistication. Designed for logs, metrics, traces, and analytics, OpenObserve operates at petabyte scale, making it a powerhouse for handling vast amounts of data. 
 
@@ -118,7 +118,7 @@ Ready to see OpenObserve in action? [Book a demo](https://openobserve.ai/contact
 
 2. **Datadog** 
 
-![](/img/blog/it-monitoring-tools-image2.png)
+![Datadog](/img/blog/it-monitoring-tools-image2.png)
 
 Datadog is a versatile monitoring solution for servers, applications, databases, tools, and services, with advanced alerting triggers to keep you informed about your infrastructure's health.
 
@@ -133,7 +133,7 @@ Datadog’s features include:
 
 3. **Dynatrace** 
 
-![](/img/blog/it-monitoring-tools-image5.png)
+![Dynatrace ](/img/blog/it-monitoring-tools-image5.png)
 
 Dynatrace provides advanced monitoring, analytics, and management capabilities for cloud-native and hybrid environments, offering a holistic view of your infrastructure's performance.
 
@@ -148,7 +148,7 @@ Dynatrace’s features include:
 
 4. **SolarWinds** 
 
-![](/img/blog/it-monitoring-tools-image10.png)
+![SolarWinds ](/img/blog/it-monitoring-tools-image10.png)
 
 SolarWinds offers real-time tracking of performance metrics and supports multi-vendor devices, making it a versatile choice for monitoring diverse IT environments.
 
@@ -163,7 +163,7 @@ SolarWinds’ features include:
 
 5. **New Relic** 
 
-![](/img/blog/it-monitoring-tools-image12.png)
+![New Relic](/img/blog/it-monitoring-tools-image12.png)
 
 New Relic specializes in application monitoring, error tracking, and synthetic testing, providing insights to optimize application performance and user experience.
 
@@ -178,7 +178,7 @@ New Relic’s features include:
 
 6. **Prometheus** 
 
-![](/img/blog/it-monitoring-tools-image6.png)
+![Prometheus](/img/blog/it-monitoring-tools-image6.png)
 
 Prometheus is known for its time-series database and powerful querying language (PromQL), offering a robust framework for monitoring and alerting.
 
@@ -208,7 +208,7 @@ Zabbix’s features include:
 
 8. **PRTG Network Monitor** 
 
-![](/img/blog/it-monitoring-tools-image9.png)
+![Zabbix](/img/blog/it-monitoring-tools-image9.png)
 
 PRTG Network Monitor offers comprehensive network monitoring and management capabilities, with customizable sensors to tailor monitoring to specific needs.
 
@@ -223,7 +223,7 @@ It’s features include:
 
 9. **AppDynamics** 
 
-![](/img/blog/it-monitoring-tools-image8.png)
+![AppDynamics](/img/blog/it-monitoring-tools-image8.png)
 
 AppDynamics focuses on application performance monitoring and infrastructure visibility, ensuring smooth and efficient operation of your applications.
 
@@ -238,7 +238,7 @@ Some of its features are:
 
 10. **ManageEngine OpManager** 
 
-![](/img/blog/it-monitoring-tools-image13.png)
+![ManageEngine OpManager](/img/blog/it-monitoring-tools-image13.png)
 
 ManageEngine OpManager provides comprehensive monitoring for network devices, servers, and applications, offering a unified view of your IT infrastructure.
 
@@ -253,7 +253,7 @@ Its features include:
 
 11. **Sentry** 
 
-![](/img/blog/it-monitoring-tools-image3.png)
+![Sentry](/img/blog/it-monitoring-tools-image3.png)
 
 Sentry is a dedicated tool for error monitoring and crash reporting, helping developers quickly identify and resolve issues to maintain application stability.
 
@@ -268,7 +268,7 @@ Sentry’s features include:
 
 12. **Grafana** 
 
-![](/img/blog/it-monitoring-tools-image7.png)
+![Grafana](/img/blog/it-monitoring-tools-image7.png)
 
 Grafana is renowned for its data visualization and monitoring capabilities, compatible with a wide range of data sources for flexible analytics.
 
