@@ -2,7 +2,7 @@
 title: Send Kubernetes Metrics Using Prometheus to OpenObserve
 seoTitle: Send Kubernetes Metrics Using Prometheus to OpenObserve
 description: Send metrics using kube-prometheus-stack to OpenObserve
-img: img/blog/devops.png
+img: /img/blog/devops.png
 alt: OpenObserve
 slug: send-metrics-using-kube-prometheus-stack-to-openobserve
 authors: 

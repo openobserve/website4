@@ -2,7 +2,7 @@
 title: What are Apache, GPL and AGPL licenses and why OpenObserve moved from Apache to AGPL
 seoTitle: What are Apache, GPL and AGPL licenses - misconceptions, lies, facts - and why OpenObserve moved from Apache to AGPL
 description: What are Apache, GPL and AGPL licenses and why OpenObserve moved from Apache to AGPL
-img: img/blog/agpl-license-misconceptions-2.webp
+img: /img/blog/agpl-license-misconceptions-2.webp
 alt: OpenObserve
 slug: what-are-apache-gpl-and-agpl-licenses-and-why-openobserve-moved-from-apache-to-agpl
 authors: 

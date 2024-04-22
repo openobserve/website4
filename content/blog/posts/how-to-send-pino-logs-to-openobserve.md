@@ -2,7 +2,7 @@
 title: How to stream NodeJS application logs to OpenObserve!
 seoTitle: Stream  NodeJS application Logs to OpenObserve!
 description: Sending logs from NodeJS application to OpenObserve using Pino is easy. This blog is a step by step guide to do that.
-img: img/blog/pino-banner.png
+img: /img/blog/pino-banner.png
 alt: OpenObserve
 slug: how-to-send-pino-logs-to-openobserve
 authors: 

@@ -2,7 +2,7 @@
 title: Parsing Syslog Messages
 seoTitle: "Parsing Syslog messages using VRL and regex in OpenObserve"
 description: "VRL provides a powerful way to parse syslog messages,using the built-in `parse_syslog` . Some syslog messages may not be parsed effectively using the built-in `parse_syslog` function. In such cases, `parse_regex` can be used to extract meaningful data from syslog messages."
-img: img/blog/rhino.webp
+img: /img/blog/rhino.webp
 alt: OpenObserve
 slug: parsing-syslog-messages
 authors: 

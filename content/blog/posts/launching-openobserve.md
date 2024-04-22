@@ -2,7 +2,7 @@
 title: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cloud-Native Platform
 seoTitle: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cloud-Native Platform
 description: "OpenObserve’ is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs."
-img: img/homepage/herosection1.jpg
+img: /img/homepage/herosection1.jpg
 alt: OpenObserve
 slug: launching-openobserve
 authors: 

@@ -2,7 +2,7 @@
 title: Jidu's Journey to 100% Tracing Fidelity with OpenObserve. A Case Study
 seoTitle: Jidu's Journey to 100% Tracing Fidelity with OpenObserve. A Case Study
 description: Jidu acheived 100% tracing fidelity with OpenObserve by migrating from Elasticsearch to OpenObserve. Read this case study to learn how they did it.
-img: img/blog/jidu-logo1.jpeg
+img: /img/blog/jidu-logo1.jpeg
 alt: OpenObserve
 slug: jidu-journey-to-100-tracing-fidelity
 authors: 

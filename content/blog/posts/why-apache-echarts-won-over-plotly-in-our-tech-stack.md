@@ -2,7 +2,7 @@
 title: Why Apache ECharts Won Over Plotly in Our Tech Stack 
 seoTitle: Why Apache ECharts Won Over Plotly in Our Tech Stack 
 description: We delves into our strategic shift from using Plotly to adopting Apache ECharts for our data visualization needs. It explores the reasons behind this decision, the comparative strengths and weaknesses of both tools, and the impact of this change on our user experience and technical operations
-img: img/blog/o2-echarts/o2-echarts.jpg
+img: /img/blog/o2-echarts/o2-echarts.jpg
 alt: OpenObserve ECharts
 slug: why-apache-echarts-won-over-plotly-in-our-tech-stack
 authors: 

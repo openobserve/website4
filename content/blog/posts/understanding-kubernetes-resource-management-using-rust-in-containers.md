@@ -2,7 +2,7 @@
 title: Understanding Kubernetes and container resource management using rust
 seoTitle: Understanding Kubernetes and container resource management using rust
 description: Understanding Kubernetes and container resource management using rust
-img: img/blog/rust_programming_in_containers.png
+img: /img/blog/rust_programming_in_containers.png
 alt: Understanding Kubernetes and container resource management using rust
 slug: understanding-kubernetes-resource-management-using-rust-in-containers
 authors: 

@@ -2,7 +2,7 @@
 title: Empowering Monitoring Excellence with OpenObserve on Azure AKS
 seoTitle: Empowering Monitoring Excellence with OpenObserve on Azure AKS
 description: Standup AI team describes, how to setup OpenObserve on Azure AKS with postgres as metastore.
-img: img/blog/o2-on-azure/o2-azure2.png
+img: /img/blog/o2-on-azure/o2-azure2.png
 alt: OpenObserve
 slug: openobserve-on-azure-aks
 authors: 

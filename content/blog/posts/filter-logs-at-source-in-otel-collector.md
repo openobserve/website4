@@ -2,7 +2,7 @@
 title: Filter logs at source in otel collector 
 seoTitle: Filter logs at source in otel collector 
 description: There are times when you would like to filter logs at source. This blog post shows how to do that when capturing logs using otel-collector.
-img: img/opentelemetry.png
+img: /img/opentelemetry.png
 alt: OpenObserve
 slug: filter-logs-at-source-in-otel-collector
 authors: 

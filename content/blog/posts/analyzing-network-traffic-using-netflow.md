@@ -2,7 +2,7 @@
 title: What is netflow and how to use it to analyze network traffic
 seoTitle: What is netflow and IPFIX, why is it important and how to use it open source netflow analyzer tools to analyze network traffic
 description: Netflow is a network protocol that allows you to analyze network traffic. Learn how to use it to analyze network traffic.
-img: img/blog/netflow/netflow3.png
+img: /img/blog/netflow/netflow3.png
 alt: OpenObserve
 slug: analyzing-network-traffic-using-netflow
 authors: 

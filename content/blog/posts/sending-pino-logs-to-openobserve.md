@@ -2,7 +2,7 @@
 title: "Sending Pino Logs to OpenObserve: A Step-by-Step Guide"
 seoTitle: "Sending Pino Logs to OpenObserve: A Step-by-Step Guide"
 description: "Learn how to send Pino logs to OpenObserve using the @openobserve/pino-openobserve npm library. This comprehensive guide provides step-by-step instructions, including setting up the project, configuring OpenObserve integration, and observing logs in OpenObserve."
-img: img/blog/pino-banner.png
+img: /img/blog/pino-banner.png
 alt: OpenObserve Pino Logs
 slug: sending-pino-logs-to-openobserve
 authors:

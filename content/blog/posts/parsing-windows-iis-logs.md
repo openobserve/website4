@@ -2,7 +2,7 @@
 title: Parsing windows IIS logs
 seoTitle: "Demystifying IIS Logs: A Step-by-Step Parsing Tutorial"
 description: "Internet Information Services (IIS) is a flexible, secure and manageable Web server for hosting anything on the Web. Monitoring and analyzing IIS logs can provide valuable insights into the performance and health of your web applications. In this blog, we will walk through the process of capturing IIS logs using the OpenTelemetry Collector (otel-collector), parsing them with Vector Remap Language (VRL), and sending them to OpenObserve for analysis."
-img: img/blog/iis/iis.webp
+img: /img/blog/iis/iis.webp
 alt: OpenObserve
 slug: parsing-windows-iis-logs
 authors: 

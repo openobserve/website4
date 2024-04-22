@@ -169,7 +169,7 @@ const getAuthorImage = (author) => {
 };
 const getBlogImage = (article) => {
   // return article.img;
-  return article.img && `/${article.img}`;
+  return article.img && `${article.img}`;
 };
 const getCategorySlugFromName = (name) => {
   //  * Removed 'this' before categories from 'return' statement

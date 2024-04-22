@@ -2,7 +2,7 @@
 title: How to capture AWS VPC Flow Logs and analyze them
 seoTitle: Comprehensive Guide to capturing and analyzing AWS VPC Flow Logs
 description: "Amazon Web Services (AWS) provides a wealth of data about the traffic that flows through your Virtual Private Cloud (VPC). By capturing this data, you can gain insights into network patterns, detect anomalies, and improve the security and efficiency of your cloud environment. AWS VPC Flow Logs are a feature that allows you to capture information about the IP traffic going to and from network interfaces in your VPC. In this blog, we will discuss how to capture all fields of AWS VPC Flow Logs, send them to Kinesis Firehose, and then analyze them using OpenObserve's Logs UI and Dashboards.."
-img: img/blog/vpc_flow_log/overall.webp
+img: /img/blog/vpc_flow_log/overall.webp
 alt: OpenObserve
 slug: how-to-capture-aws-vpc-flow-logs-and-analyze-them
 authors: 

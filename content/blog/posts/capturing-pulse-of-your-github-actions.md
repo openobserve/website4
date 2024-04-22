@@ -2,7 +2,7 @@
 title: Capturing the Pulse of Your GitHub Actions with OpenObserve
 seoTitle: Capturing the Pulse of Your GitHub Actions with OpenObserve
 description: Explore how OpenObserve, an open-source observability tool, collaborates seamlessly with GitHub Actions through the 'openobserve_github_action_logs' repository by Mark Percival. This integration offers developers an efficient way to capture logs, enabling long-term analysis to detect build patterns and improve CI/CD pipelines. Dive into the benefits of continuous data monitoring and how it can revolutionize your software delivery process.
-img: img/blog/devops.png
+img: /img/blog/devops.png
 alt: OpenObserve
 slug: capturing-pulse-of-your-github-actions
 authors: 

@@ -2,7 +2,7 @@
 title: Serilog Sink for OpenObserve
 seoTitle: Serilog Sink for OpenObserve
 description: "Serilog Sink for OpenObserve is an extension that integrates Serilog, a favored logging library for .NET applications, with OpenObserve. Crafted by Konrad Kaminski-Pawlak, the sink allows for effortless logging to OpenObserve, thereby enhancing the ability to store, analyze, and manage logs."
-img: img/blog/serilog.png
+img: /img/blog/serilog.png
 alt: OpenObserve
 slug: serilog-sink-for-openobserve
 authors: 
