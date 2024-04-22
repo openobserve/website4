@@ -13,7 +13,7 @@ collections:
     label: "Blog"
     folder: "content/blog/posts"
     create: true
-    slug: "{{slug}}"
+    identifier_field: "slug"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "SEO Title", name: "seoTitle", widget: "string" }
