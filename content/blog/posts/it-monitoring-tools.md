@@ -7,7 +7,7 @@ img: /img/blog/it-monitoring-tools-image4.png
 alt: Top Infrastructure and IT Monitoring Tools for 2024
 slug: it-monitoring-tools
 authors:
-  - prabhat
+  - openobserve-team
 publishDate: 2024-04-22
 tags:
   - monitoring tools
