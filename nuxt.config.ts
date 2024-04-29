@@ -23,7 +23,13 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      link: [
+        { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
+        {
+          rel: "stylesheet",
+          href: "https://static.zohocdn.com/recruit/embed_careers_site/css/v1.1/embed_jobs.css",
+        }
+      ],
       script: [
         {
           src: "https://buttons.github.io/buttons.js",
