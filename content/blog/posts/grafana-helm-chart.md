@@ -108,13 +108,9 @@ Customization is key to fitting Grafana seamlessly into your stack. The `values.
 
 * Download the default `values.yaml` file:
 
-  ````
-  ```
-  ````
-
-  helm show values grafana/grafana > myvalues.yaml
-
-````
+```
+helm show values grafana/grafana > myvalues.yaml
+```
 * Open `myvalues.yaml` in your editor and modify it to meet your needs. Whether it's setting admin passwords, configuring data sources automatically, or adjusting resource limits, this file is your configuration headquarters.
 
 **Enabling Persistent Storage and Installing Plugins**
@@ -126,7 +122,7 @@ To maintain your data across pod restarts, enabling persistent storage is crucia
 * In your `myvalues.yaml`, find the `persistence` section and set `enabled: true`. This ensures your Grafana data is safe, even if the pod goes down.
 * Specify the storage class, size, and access modes according to your cluster setup. For example:
 
-    ```
+```
 persistence:
   type: pvc
   enabled: true
@@ -134,7 +130,7 @@ persistence:
   accessModes:
     - ReadWriteOnce
   size: 10Gi
-````
+```
 
 Plugins supercharge your Grafana capabilities. Add plugins by listing them in your `values.yaml` under `plugins.`
 
