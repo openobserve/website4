@@ -32,7 +32,7 @@ onMounted(() => {
       site: "https://openobserve.zohorecruit.com",
       brand_color: "#000000",
       empty_job_msg: "No current Openings",
-      extra_fields: ["Number_of_Positions"]
+      extra_fields: ["Number_of_Positions"],
     });
   };
   document.head.appendChild(script);
@@ -40,9 +40,8 @@ onMounted(() => {
 </script>
 
 <style>
-
 .rec_filter_cls {
-  display:none
+  display: none;
 }
 
 .embed_jobs_head2 {
@@ -80,7 +79,23 @@ ul.rec-job-info:hover {
   background-color: #fdebe7;
 }
 .embed_jobs_with_style_3 .rec-group .zrsite_Job_Description {
-margin-top: 0px;
+  margin-top: 0px;
+}
+.embed_jobs_with_style_3 .rec-group .rec-job-info {
+  display: block;
+}
+.embed_jobs_with_style_3 .rec-group .rec-job-info .zrsite_Date_Opened {
+  display: block;
+}
+.rec_job_listing_div_jobs ul, .rec_job_listing_div_jobs li {
+  display: flex;
+
+}
+.embed_jobs_head{
+  background-color: transparent !important;
+}
+.embed_jobs_with_style_3 .rec-group .rec-job-info{
+flex: 0 0 33.3333%;
 }
 @media only screen and (max-width: 950px) {
   .embed_jobs_with_style_3 .rec-group .rec-job-info {
@@ -90,5 +105,8 @@ margin-top: 0px;
     display: block;
     padding-top: 5px;
   }
+  .rec_job_listing_div_jobs ul, .rec_job_listing_div_jobs li {
+    display: block;
+}
 }
 </style>
