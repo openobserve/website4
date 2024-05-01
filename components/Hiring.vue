@@ -85,28 +85,44 @@ ul.rec-job-info:hover {
   display: block;
 }
 .embed_jobs_with_style_3 .rec-group .rec-job-info .zrsite_Date_Opened {
-  display: block;
+  flex-direction: row;
+  width: max-content;
+  padding-right: 8px;
 }
-.rec_job_listing_div_jobs ul, .rec_job_listing_div_jobs li {
+.rec_job_listing_div_jobs ul,
+.rec_job_listing_div_jobs li {
   display: flex;
-
 }
-.embed_jobs_head{
+.embed_jobs_head {
   background-color: transparent !important;
 }
-.embed_jobs_with_style_3 .rec-group .rec-job-info{
-flex: 0 0 33.3333%;
+.embed_jobs_with_style_3 .rec-group .rec-job-info {
+  flex: 0 0 33.3333%;
+}
+.embed_jobs_with_style_3 .rec-group .zrsite_Location,
+.embed_jobs_with_style_3 .zrsite_Job_Description {
+  float: left;
+  margin-bottom: 10px;
+}
+.embed_jobs_with_style_1 .zrsite_Salary,
+.embed_jobs_with_style_2 .zrsite_Job_Type,
+.embed_jobs_with_style_2 .rec-group .zrsite_Salary,
+.embed_jobs_with_style_3 .zrsite_Work_Experience {
+  padding-top: 2px;
+}
+.rec_job_listing_div_jobs .rec-group .rec-job-title {
+  margin-bottom: 10px;
 }
 @media only screen and (max-width: 950px) {
   .embed_jobs_with_style_3 .rec-group .rec-job-info {
     display: block;
   }
   .embed_jobs_with_style_3 .rec-group .rec-job-info .zrsite_Date_Opened {
-    display: block;
     padding-top: 5px;
   }
-  .rec_job_listing_div_jobs ul, .rec_job_listing_div_jobs li {
+  .rec_job_listing_div_jobs ul,
+  .rec_job_listing_div_jobs li {
     display: block;
-}
+  }
 }
 </style>
