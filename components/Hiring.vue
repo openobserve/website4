@@ -1,6 +1,7 @@
 <template>
   <div class="md:space-y-7 pb-8 mx-auto container px-4">
     <SectionHeading :title="data.title" :subtitle="data.subtitle" />
+
     <div class="embed_jobs_head embed_jobs_with_style_3">
       <div class="embed_jobs_head2">
         <div class="embed_jobs_head3">
@@ -11,7 +12,7 @@
   </div>
 </template>
 <script setup>
-import { onMounted } from "vue";
+import { onMounted, onBeforeUnmount } from "vue";
 defineProps({
   data: {
     type: Object,
@@ -36,6 +37,29 @@ onMounted(() => {
     });
   };
   document.head.appendChild(script);
+});
+const handleClick = (event) => {
+  const testDiv = event.target.closest(".rec-job-info");
+  if (testDiv) {
+    const recJobTitleDiv = testDiv.querySelector(".rec-job-title");
+    if (recJobTitleDiv) {
+      const anchorTag = recJobTitleDiv.querySelector("a");
+      if (anchorTag) {
+        anchorTag.click();
+      }
+    }
+  }
+};   
+onMounted(() => {
+  document.addEventListener("click", handleClick);
+});
+
+const cleanup = () => {
+  document.removeEventListener("click", handleClick);
+};
+
+onBeforeUnmount(() => {
+  cleanup();
 });
 </script>
 
@@ -74,6 +98,7 @@ ul.rec-job-info {
   margin-top: 3px;
   border-bottom: none;
   box-sizing: border-box;
+  cursor: pointer;
 }
 ul.rec-job-info:hover {
   background-color: #fdebe7;
