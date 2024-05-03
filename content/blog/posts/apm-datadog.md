@@ -6,6 +6,8 @@ description: Explore the unique benefits of Datadog APM for optimizing app
 img: /img/blog/image1.png
 alt: Introduction to Application Performance Monitoring with Datadog
 slug: apm-datadog
+authors:
+  - openobserve-team
 publishDate: 2024-05-03
 tags:
   - application performance monitoring
