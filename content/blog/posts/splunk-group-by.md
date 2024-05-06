@@ -5,6 +5,8 @@ description: Unlock advanced data insights in Splunk with 'group by' for multipl
 img: /img/blog/splunk-group-by-image1.png
 alt: Using 'group by' For Multiple Fields in Splunk
 slug: splunk-group-by
+authors:
+  - openobserve-team
 publishDate: 2024-05-06
 tags:
   - splunk group by
