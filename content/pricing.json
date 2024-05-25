@@ -104,8 +104,7 @@
         "sublabel": "Everything in Pro Plan, plus:",
         "features": [
           "Role Based Access Control (RBAC)",
-          "SAML authentication",
-          "Phone support"
+          "SAML authentication"
         ],
         "btnText": "Get started",
         "btnLink": "https://cloud.openobserve.ai"
@@ -313,14 +312,14 @@
           "title": "Phone support",
           "developer": false,
           "pro": false,
-          "business": true,
+          "business": false,
           "enterprise": true
         },
         {
           "title": "SLAs",
           "developer": false,
           "pro": false,
-          "business": true,
+          "business": false,
           "enterprise": true
         }
       ]
