@@ -3,7 +3,7 @@ title: Deploying Grafana with Helm Charts in Kubernetes
 seoTitle: Deploying Grafana with Helm Charts in Kubernetes
 description: Simplify Grafana deployment in Kubernetes with Helm Charts. Gain
   insights & manage data visualizations effectively
-img: /img/blog/grafana-helm-chart-image3.png
+img: /img/resources/grafana-helm-chart-image3.png
 alt: Deploying Grafana with Helm Charts in Kubernetes
 slug: grafana-helm-chart
 authors:
@@ -52,7 +52,7 @@ Ready to dive deeper into how to get this set up? Let’s get into the practical
 
 ## Core Components of the Grafana Stack
 
-![Core Components of the Grafana Stack](/img/blog/grafana-helm-chart-image2.png)
+![Core Components of the Grafana Stack](/img/resources/grafana-helm-chart-image2.png)
 
 Let’s break down the essential components of the Grafana stack that enhance your observability capabilities.
 
@@ -84,7 +84,7 @@ By integrating these components through a Grafana Helm chart in your Kubernetes 
 
 ## Grafana Helm Chart Configuration
 
-![Grafana Helm Chart Configuration](/img/blog/grafana-helm-chart-image1.png)
+![Grafana Helm Chart Configuration](/img/resources/grafana-helm-chart-image1.png)
 
 Configuring Grafana with Helm in your Kubernetes cluster doesn't just elevate your monitoring capabilities; it streamlines them. Let's walk through setting up and customizing your Grafana installation using the Helm chart, ensuring you make the most out of this powerful tool.
 
@@ -264,7 +264,7 @@ By effectively deploying Grafana with a Helm chart and integrating these observa
 
 ## Monitoring Infrastructure with Grafana
 
-![Monitoring Infrastructure with Grafana](/img/blog/grafana-helm-chart-image4.png)
+![Monitoring Infrastructure with Grafana](/img/resources/grafana-helm-chart-image4.png)
 
 Deploying Grafana using Helm charts in your Kubernetes environment equips you with a robust toolset for monitoring across various platforms. Let’s expand on how you can leverage Grafana to keep a keen eye on different aspects of your infrastructure.
 

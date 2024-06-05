@@ -3,7 +3,7 @@ title: "Prometheus vs. Grafana: In-Depth Comparison & Differences"
 seoTitle: "Prometheus vs. Grafana: In-Depth Comparison & Differences"
 description: "Prometheus vs Grafana: Learn how both of these tools compare in
   crucial metrics like features, data collection and storage, UI, and more."
-img: /img/blog/prometheus-vs-grafana-image3.png
+img: /img/resources/prometheus-vs-grafana-image3.png
 alt: "Prometheus vs. Grafana: In-Depth Comparison & Differences"
 slug: prometheus-vs-grafana
 authors:
@@ -136,7 +136,7 @@ It's important to note that these tools serve different purposes and are often u
 
 ### Prometheus
 
-![Prometheus](/img/blog/prometheus-vs-grafana-image4.png)
+![Prometheus](/img/resources/prometheus-vs-grafana-image4.png)
 
 * Scrapes metrics from targets every 30-60 seconds by default, ensuring data is always fresh.
 * Stores data locally using a custom time-series database optimized for read performance.
@@ -145,7 +145,7 @@ It's important to note that these tools serve different purposes and are often u
 
 ### Grafana
 
-![Grafana](/img/blog/prometheus-vs-grafana-image1.png)
+![Grafana](/img/resources/prometheus-vs-grafana-image1.png)
 
 * Supports over 50 data sources, enabling connection to a wide variety of databases.
 * Offloads storage and querying to external databases, leveraging their specific strengths.
@@ -292,7 +292,7 @@ If you need to do complex data processing, you'll likely need to do it in your d
 
 Well, that's where OpenObserve comes in.
 
-![OpenObserve](/img/blog/prometheus-vs-grafana-image2.png)
+![OpenObserve](/img/resources/prometheus-vs-grafana-image2.png)
 
 It's like having the power of Prometheus' monitoring and alerting with the simplicity and flexibility of Grafana's dashboarding, all wrapped up in a single open-source package. And the best part? OpenObserve is designed to handle the limitations of both tools.
 
