@@ -6,7 +6,7 @@
           <div style="flex: 2" class="px-4 py-2">
             <div class="">
               <nuxt-link
-                :to="'/blog/' + article.slug"
+                :to="`/${type}/${article.slug}`"
                 class="text-2xl text-gray-700 font-medium hover:text-theme-primary transition-all duration-200"
               >
                 {{ article.title }}
@@ -16,7 +16,7 @@
                   <nuxt-link
                     v-for="(category, index) in article.categories"
                     :key="index"
-                    :to="'/blog/category/' + getCategorySlugFromName(category)"
+                    :to="`/${type}/category/${getCategorySlugFromName(category)}`"
                     class="px-2 py-1 mr-2 text-sm text-theme-text-secondary border border-theme-primary-200 bg-theme-primary-50 hover:bg-theme-primary-200 transition-all duration-150 rounded-full"
                   >
                     {{ category }}
@@ -32,7 +32,7 @@
                 <div class="flex items-center">
                   <nuxt-link
                     v-for="(author, index) in getAuthors(article)"
-                    :to="'/blog/author/' + author.slug"
+                    :to="`/${type}/author/${author.slug}`"
                     class="inline-block mr-2"
                     :class="{
                       '-ml-5': index > 0,
@@ -48,7 +48,7 @@
                     <h3 class="text-gray-700 text-sm font-bold">
                       <nuxt-link
                         v-for="(author, index) in getAuthors(article)"
-                        :to="'/blog/author/' + author.slug"
+                        :to="`/${type}/author/${author.slug}`"
                         class="hover:underline"
                       >
                         {{ author?.name 
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <nuxt-link
-                :to="'/blog/' + article.slug"
+                :to="`/${type}/${article.slug}`"
                 class="text-blue-500 hover:underline"
               >
                 Read more
@@ -77,6 +77,10 @@
 
 <script setup>
 const props = defineProps({
+  type: {
+    type: String,
+    default: () => "blog",
+  },
   articles: {
     type: Array,
     default: () => [],
@@ -94,6 +98,8 @@ const props = defineProps({
     default: () => [],
   },
 });
+
+const type = props.type;
 
 const getAuthors = (article) => {
   return article.authors?.map((authorSlug) =>

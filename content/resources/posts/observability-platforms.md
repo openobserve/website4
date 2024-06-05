@@ -3,7 +3,7 @@ title: Top 10 Observability Tools for 2024
 seoTitle: Top 10 Observability Tools for 2024
 description: Explore top continuous testing tools and learn how observability
   transforms incident management.
-img: /img/blog/observability-platforms-image8.png
+img: /img/resources/observability-platforms-image8.png
 alt: Top 10 Observability Tools for 2024
 slug: observability-platforms
 authors:
@@ -47,7 +47,7 @@ Monitoring might alert you to a spike in error rates, but observability lets you
 
 ## **Understanding Observability**
 
-![Understanding Observability](/img/blog/observability-platforms-image2.png)
+![Understanding Observability](/img/resources/observability-platforms-image2.png)
 
 **What Are Observability Tools? Peeking Under the Hood**
 
@@ -83,7 +83,7 @@ Together, these pillars support a robust observability strategy, providing the i
 
 1. **OpenObserve**
 
-![OpenObserve](/img/blog/observability-platforms-image11.png)
+![OpenObserve](/img/resources/observability-platforms-image11.png)
 
 [OpenObserve](https://openobserve.ai/) is making waves in the observability landscape with its user-friendly yet powerful approach to data monitoring. This cloud-native platform is engineered to handle logs, metrics, traces, and analytics at a massive scale, making it an ideal choice for businesses operating in data-intensive environments.
 
@@ -100,7 +100,7 @@ Features:
 
 2. **Datadog**
 
-![Datadog](/img/blog/observability-platforms-image3.png)
+![Datadog](/img/resources/observability-platforms-image3.png)
 
 Datadog excels in providing a seamless observability experience, integrating real-time metrics and performance data across your full tech stack. From infrastructure to application monitoring, it offers a unified view to streamline operations management.
 
@@ -111,7 +111,7 @@ Features:
 
 3. **New Relic**
 
-![New Relic](/img/blog/observability-platforms-image10.png)
+![New Relic](/img/resources/observability-platforms-image10.png)
 
 New Relic offers a powerful observability platform that allows teams to diagnose and fix issues before they affect the user experience. Its toolkit is designed to monitor everything from applications to server health.
 
@@ -122,7 +122,7 @@ Features:
 
 4. **Grafana**
 
-![Grafana](/img/blog/observability-platforms-image9.png)
+![Grafana](/img/resources/observability-platforms-image9.png)
 
 Grafana is renowned for its advanced data visualization capabilities, enabling teams to monitor their applications' performance effectively. Its flexibility in dashboard creation helps teams visualize complex data effortlessly.
 
@@ -133,7 +133,7 @@ Features:
 
 5. **Prometheus**
 
-![Prometheus](/img/blog/observability-platforms-image4.png)
+![Prometheus](/img/resources/observability-platforms-image4.png)
 
 Prometheus is a vital tool for monitoring cloud-native systems, offering robust support for time-series data management. It's particularly well-suited for environments running Kubernetes.
 
@@ -144,7 +144,7 @@ Features:
 
 6. **Splunk**
 
-![Splunk](/img/blog/observability-platforms-image5.png)
+![Splunk](/img/resources/observability-platforms-image5.png)
 
 Splunk remains a leader in turning data into answers with its comprehensive approach to security, IT troubleshooting, and operational intelligence. It's designed to make data accessible across all levels of an organization.
 
@@ -155,7 +155,7 @@ Features:
 
 7. **AWS Suite**
 
-![AWS Suite](/img/blog/observability-platforms-image6.png)
+![AWS Suite](/img/resources/observability-platforms-image6.png)
 
 The AWS Suite offers a robust collection of monitoring tools designed to ensure comprehensive oversight of cloud operations. From performance metrics to security management, AWS provides integrated solutions to support all aspects of cloud observability.
 
@@ -166,7 +166,7 @@ Features:
 
 8. **AppDynamics**
 
-![AppDynamics](/img/blog/observability-platforms-image12.png)
+![AppDynamics](/img/resources/observability-platforms-image12.png)
 
 AppDynamics specializes in application performance management and monitoring, providing insights into the performance of mobile and web applications to drive better business outcomes.
 
@@ -177,7 +177,7 @@ Features:
 
 9. **Dynatrace**
 
-![Dynatrace](/img/blog/observability-platforms-image1.png)
+![Dynatrace](/img/resources/observability-platforms-image1.png)
 
 Dynatrace offers an end-to-end observability platform that uses AI to automate enterprise cloud complexity and provide actionable insights into applications and infrastructure.
 
@@ -188,7 +188,7 @@ Features:
 
 10. **Sumo Logic**
 
-![Sumo Logic](/img/blog/observability-platforms-image7.png)
+![Sumo Logic](/img/resources/observability-platforms-image7.png)
 
 Sumo Logic delivers cloud-native, machine data analytics for logs and time-series metrics, helping enterprises harness their data for comprehensive real-time analytics.
 

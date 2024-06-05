@@ -5,7 +5,7 @@
         <h1
           class="text-theme-text-primary md:font-medium font-semibold title-font md:text-3xl text-xl"
         >
-          Recent Blog Posts
+          Recent {{getLabelFromType(type)}} Posts
         </h1>
         <div
           class="mb-2 border-b-4 border-theme-primary w-5/12 rounded-full"
@@ -14,9 +14,9 @@
       <div class="flex items-center">
         <nuxt-link
           class="-mt-2 md:text-lg text-sm hover:shadow-xl outline-none focus:outline-none transition-all duration-300 bg-theme-primary font-semibold rounded-lg md:px-4 px-2 py-2 shadow-lg uppercase md:mr-4 mr-0 text-white"
-          to="/blog"
+          :to="`/${type}`"
         >
-          Visit Our Blog
+          Visit Our {{getLabelFromType(type)}}
         </nuxt-link>
       </div>
     </div>
@@ -26,7 +26,7 @@
         :key="index"
         class="bg-gray-100 m-4 md:w-1/3 sm:mb-0 mb-6 border rounded-lg shadow-lg hover:shadow-2xl transition-all duration-200"
       >
-        <nuxt-link :to="`/blog/${article.slug}`">
+        <nuxt-link :to="`/${type}/${article.slug}`">
           <div class="">
             <div class="rounded-t-lg overflow-hidden">
               <img
@@ -36,7 +36,7 @@
                     ? 'http://placehold.jp/24/bebebe/ffffff/600x300.png?text=.'
                     : getBlogImage(article)
                 "
-                alt="blog recent post"
+                :alt="`${type} recent post`"
               />
             </div>
             <h2
@@ -59,11 +59,17 @@
 </template>
 
 <script>
+import { getLabelFromType } from '~/blog/utils/typeUtils';
+
 export default {
   props: {
     articles: {
       type: Array,
       default: () => [],
+    },
+    type: {
+      type: String,
+      default: 'blog',
     },
   },
   methods: {

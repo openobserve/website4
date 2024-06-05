@@ -3,7 +3,7 @@ title: Introduction to Application Performance Monitoring with Datadog
 seoTitle: Introduction to Application Performance Monitoring with Datadog
 description: Explore the unique benefits of Datadog APM for optimizing app
   performance, resource usage, and security.
-img: /img/blog/apm-datadog-image1.png
+img: /img/resources/apm-datadog-image1.png
 alt: Introduction to Application Performance Monitoring with Datadog
 slug: apm-datadog
 authors:
@@ -40,7 +40,7 @@ Here's what a robust APM solution typically monitors:
 
 ## **How APM Works with Datadog**
 
-![How APM Works with Datadog](/img/blog/apm-datadog-image2.png)
+![How APM Works with Datadog](/img/resources/apm-datadog-image2.png)
 
 As a developer or engineering manager, understanding the intricacies of Application Performance Monitoring (APM) with Datadog can be a game-changer for maintaining and enhancing the performance of your applications. 
 
@@ -145,7 +145,7 @@ Ready to optimize your observability strategy with cost-effective solutions?
 
 ## **The Benefits of Using APM with Datadog**
 
-![The Benefits of Using APM with Datadog](/img/blog/apm-datadog-image3.png)
+![The Benefits of Using APM with Datadog](/img/resources/apm-datadog-image3.png)
 
 Datadog's Application Performance Monitoring (APM) not only streamlines your monitoring processes but also enhances operational efficiency across multiple dimensions. 
 

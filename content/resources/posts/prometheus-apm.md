@@ -3,7 +3,7 @@ title: Using Prometheus APM Tools for Asset Performance Management
 seoTitle: Using Prometheus APM Tools for Asset Performance Management
 description: Learn how to optimize asset performance using Prometheus and
   OpenObserve for real-time monitoring and dynamic dashboard visualization
-img: /img/blog/prometheus-apm-image3.png
+img: /img/resources/prometheus-apm-image3.png
 alt: Using Prometheus APM Tools for Asset Performance Management
 slug: prometheus-apm
 authors:
@@ -39,7 +39,7 @@ This integration ensures that every piece of data collected not only informs but
 
 ## Monitoring Capabilities with Prometheus and OpenObserve
 
-![Monitoring Capabilities with Prometheus and OpenObserve](/img/blog/prometheus-apm-image1.png)
+![Monitoring Capabilities with Prometheus and OpenObserve](/img/resources/prometheus-apm-image1.png)
 
 **Understanding Prometheus in Collaboration with OpenObserve**
 
@@ -89,7 +89,7 @@ OpenObserve's streamlined operation eliminates the need for complex configuratio
 
 ## Integrating OpenObserve with Prometheus for Enhanced Observability
 
-![Integrating OpenObserve with Prometheus for Enhanced Observability](/img/blog/prometheus-apm-image2.png)
+![Integrating OpenObserve with Prometheus for Enhanced Observability](/img/resources/prometheus-apm-image2.png)
 
 Configuring your monitoring setup can be smooth and efficient when using the right tools. Let's dive into how you can get Prometheus and OpenObserve up and running effectively, using Docker to manage your applications seamlessly.
 
@@ -190,7 +190,7 @@ This platform offers several compelling features, especially if you’re concern
 
 ## Mastering Asset Performance Management with Prometheus and OpenObserve
 
-![Mastering Asset Performance Management with Prometheus and OpenObserve](/img/blog/prometheus-apm-image4.png)
+![Mastering Asset Performance Management with Prometheus and OpenObserve](/img/resources/prometheus-apm-image4.png)
 
 ### Here’s how you can use Prometheus in tandem with OpenObserve to keep your systems running smoothly.
 

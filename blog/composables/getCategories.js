@@ -1,6 +1,7 @@
-export default async () => {
+export default async (type) => {
+
   // get categories
-  let categoriesContent = await queryContent("blog/posts")
+  let categoriesContent = await queryContent(`${getContentFolder(type)}/posts`)
     .only(["categories"])
     .find();
 

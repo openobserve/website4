@@ -13,7 +13,9 @@ defineProps({
   },
 });
 
-let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
+const type = "blog";
+
+let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 const blogItems = {
   title: "Latest Blog Posts",

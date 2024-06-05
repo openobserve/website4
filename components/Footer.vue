@@ -168,6 +168,10 @@ const footerData = {
         link: "/blog",
       },
       {
+        text: "Resources",
+        link: "/resources",
+      },
+      {
         text: "Knowledge Base",
         link: "https://discuss.openobserve.ai/kb",
         target: "_blank",

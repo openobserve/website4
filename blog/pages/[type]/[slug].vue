@@ -2,8 +2,8 @@
   <div>
     <BreadCrumbs
       class="md:pt-0 pt-3"
-      title="Blog"
-      :paths="[{ name: 'Home', to: '/' }, { name: 'Blog' }]"
+      :title="getLabelFromType(type)"
+      :paths="[{ name: 'Home', to: '/' }, { name: getLabelFromType(type) }]"
     />
 
     <div
@@ -19,7 +19,7 @@
             {{ article && formatDate(article.publishDate) }} by
             <span v-for="author in postAuthors" class="font-bold">
               <nuxt-link
-                :to="'/blog/author/' + author.slug"
+                :to="`/${type}/author/${author.slug}`"
                 class="hover:underline"
               >
                 {{ author.name }}
@@ -32,7 +32,7 @@
               <nuxt-link
                 v-for="(category, index) in article.categories"
                 :key="index"
-                :to="'/blog/category/' + getCategorySlugFromName(category)"
+                :to="`/${type}/category/${getCategorySlugFromName(category)}`"
                 class="px-2 py-1 mr-2 text-sm text-theme-text-secondary border border-theme-primary-400 bg-theme-primary-100 hover:bg-theme-primary-300 transition-all duration-150 rounded-full"
               >
                 {{ category }}
@@ -63,7 +63,7 @@
               :key="index"
               class="border rounded-full px-2 py-1 border-blue-400 bg-blue-100 hover:bg-blue-200 text-sm mr-2 mb-1 transition-all duration-100"
             >
-              <nuxt-link :to="'/blog/tag/' + getTagSlugFromName(tag)">
+              <nuxt-link :to="`/${type}/tag/${getTagSlugFromName(tag)}`">
                 {{ tag }}
               </nuxt-link>
             </span>
@@ -93,7 +93,7 @@
               <figcaption class="font-medium">
                 <div class="text-theme-primary uppercase font-bold">Author</div>
                 <div class="text-theme-text-primary text-lg hover:underline">
-                  <nuxt-link :to="'/blog/author/' + author.slug">
+                  <nuxt-link :to="`/${type}/author/${author.slug}`">
                     {{ author.name }}
                   </nuxt-link>
                 </div>
@@ -107,7 +107,7 @@
           </div>
         </figure>
       </article>
-      <blog-sidebar />
+      <blog-sidebar :type="type"/>
     </div>
   </div>
 </template>
@@ -115,13 +115,14 @@
 <script setup>
 const route = useRoute();
 const slug = route.params.slug;
+const type = route.params.type;
 
-const { data: article } = await useAsyncData("blog-" + slug, () =>
-  queryContent(`blog/posts/${slug}`).findOne()
+const { data: article } = await useAsyncData(`${type}-${slug}`, () =>
+  queryContent(`${getContentFolder(type)}/posts/${slug}`).findOne()
 );
 
 const { data: authorsTemp } = await useAsyncData(() =>
-  queryContent("/blog/authors").findOne()
+  queryContent(`${getContentFolder(type)}/authors`).findOne()
 );
 const author = authorsTemp?.value?.authors?.find(
   (a) => a.slug == article?.value?.author
@@ -130,7 +131,7 @@ const author = authorsTemp?.value?.authors?.find(
 const postAuthors = article?.value?.authors.map((a) => authorsTemp?.value?.authors?.find((b) => b.slug == a))
 
 const { data: prevNext } = await useAsyncData("prev-next-" + slug, () =>
-  queryContent("blog/posts")
+  queryContent(`${getContentFolder(type)}/posts`)
     // .only(["title", "slug"])
     .sort({ date: -1 })
     .findSurround(slug)
@@ -149,15 +150,15 @@ const { articles, totalArticles, lastPage, currentPage } = articlesTemp.value;
 
 const authors = authorsTemp?.value?.authors;
 
-let { data: categories } = await useAsyncData(() => getCategories());
+let { data: categories } = await useAsyncData(`${type}-categories`,() => getCategories(type));
 
-let { data: tags } = await useAsyncData(() => getTags());
+let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
 const { data: allArticles } = await useAsyncData(() =>
-  queryContent("blog/posts").find()
+  queryContent(`${getContentFolder(type)}/posts`).find()
 );
 
-let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
+let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };

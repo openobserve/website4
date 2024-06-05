@@ -2,7 +2,7 @@
 title: Using 'group by' For Multiple Fields in Splunk
 seoTitle: Using 'group by' For Multiple Fields in Splunk
 description: Unlock advanced data insights in Splunk with 'group by' for multiple fields.
-img: /img/blog/splunk-group-by-image1.png
+img: /img/resources/splunk-group-by-image1.png
 alt: Using 'group by' For Multiple Fields in Splunk
 slug: splunk-group-by
 authors:
@@ -26,7 +26,7 @@ Let's understand its significance and unravel its power.
 
 ## Understanding the 'group by' Function in Splunk
 
-![Understanding the 'group by' Function in Splunk](/img/blog/splunk-group-by-image2.png)
+![Understanding the 'group by' Function in Splunk](/img/resources/splunk-group-by-image2.png)
 
 So, what exactly does "group by" entail in Splunk's domain? 
 
@@ -170,7 +170,7 @@ For instance, ensuring that dashboards are intuitive and easy to interpret, with
 
 ### **Exporting Grouped Data**
 
-![Exporting Grouped Data](/img/blog/splunk-group-by-image3.png)
+![Exporting Grouped Data](/img/resources/splunk-group-by-image3.png)
 
 Now that you've become adept at grouping data in Splunk, the next step is to share or analyze your results externally. Let’s dive into how you can actually export those well-organized results from Splunk.
 

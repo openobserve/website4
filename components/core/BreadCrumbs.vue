@@ -17,7 +17,7 @@
               <span v-if="index != 0" class="mx-2"> > </span>
               <nuxt-link
                 :to="path.to"
-                :class="path.to === '/' ? 'cursor-pointer hover:underline transition-all duration-200' : 'cursor-default'"
+                :class="path.to ? 'cursor-pointer hover:underline transition-all duration-200' : 'cursor-default'"
                 >{{ path.name }}
                 </nuxt-link>
             </span>

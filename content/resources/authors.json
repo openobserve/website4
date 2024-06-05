@@ -1,0 +1,10 @@
+{
+  "authors": [
+    {
+      "name": "OpenObserve Team",
+      "slug": "openobserve-team",
+      "img": "/img/blog/favicon.svg",
+      "bio": "The OpenObserve Team comprises dedicated professionals committed to revolutionizing system observability through their innovative platform, OpenObserve. Dedicated to streamlining data observation and system monitoring, offering high performance and cost-effective solutions for diverse use cases."
+    }
+  ]
+}

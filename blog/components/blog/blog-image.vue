@@ -11,9 +11,13 @@ const props = defineProps({
   alt: {
     type: String,
   },
+  type: {
+    type: String,
+    default: 'blog',
+  },
 });
 
 const dynamicSrc = computed(() => {
-  return `/assets/img/blog/${props.src}`;
+  return `/assets/img/${props.type}/${props.src}`;
 });
 </script>
