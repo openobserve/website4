@@ -6,13 +6,13 @@ backend:
   auth_endpoint: /prod/auth
 site_url: https://openobserve.ai
 logo_url: /img/logo/logo_horizontal.svg
-media_folder: "public/img/blog"
-public_folder: "/img/blog"
+media_folder: "public/img/resources"
+public_folder: "/img/resources"
 collections:
-  - name: "blog"
-    label: "Blog Posts"
-    label_singular: "Blog Post"
-    folder: "content/blog/posts"
+  - name: "resources"
+    label: "Resources Posts"
+    label_singular: "Resources Post"
+    folder: "content/resources/posts"
     create: true
     identifier_field: "slug"
     summary: "{{title}} ({{publishDate}})"
@@ -49,7 +49,7 @@ collections:
     files:
       - label: "Authors"
         name: "authors"
-        file: "content/blog/authors.json"
+        file: "content/resources/authors.json"
         fields:
           - label: Authors
             name: authors
