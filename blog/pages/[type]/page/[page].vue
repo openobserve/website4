@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-x-hidden">
-  <BreadCrumbs class="md:pt-0 pt-3" title="Blog" :paths="[{ name: 'Home', to: '/' }, { name: 'Blog' }]"/>
+  <BreadCrumbs class="md:pt-0 pt-3" :title="getLabelFromType(type)" :paths="[{ name: 'Home', to: '/' }, { name: getLabelFromType(type) }]"/>
   
     <div class="md:px-14 px-5 py-8">
       <div class="flex justify-between container mx-auto">
@@ -11,30 +11,35 @@
             :authors="authors"
             :categories="categories"
             :tags="tags"
+            :type="type"
           />
           <div class="mt-8">
             <blog-pagination
               :currentPage="currentPage"
               :total="totalArticles"
               :totalPages="lastPage"
-              pathPrefix="/blog/page"
+              :pathPrefix="`/${type}/page`"
             />
           </div>
         </div>
-        <blog-sidebar />
+        <blog-sidebar :type="type"/>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { getLabelFromType } from '~/blog/utils/typeUtils';
+
 const route = useRoute();
 const router = useRouter();
+
+const type = route.params.type;
 
 definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
-      return navigateTo('/blog', { redirectCode: 301 })
+      return navigateTo(`/${type}`, { redirectCode: 301 })
     }
   },
 });
@@ -48,28 +53,28 @@ const { data: articlesTemp } = await useAsyncData(
 const { articles, totalArticles, lastPage, currentPage } = articlesTemp.value;
 
 const { data: authorsTemp } = await useAsyncData(() =>
-  queryContent("/blog/authors").findOne()
+  queryContent(`/${getContentFolder(type)}/authors`).findOne()
 );
 const authors = authorsTemp?.value.authors;
 
 // get categories
-let { data: categories } = await useAsyncData(() => getCategories());
+let { data: categories } = await useAsyncData(`${type}-categories`,() => getCategories(type));
 
 // get tags
-let { data: tags } = await useAsyncData(() => getTags());
+let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
 const { data: allArticles } = await useAsyncData(() =>
-  queryContent("blog/posts").find()
+  queryContent(`/${getContentFolder(type)}/posts`).find()
 );
 
-let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
+let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 useHead({
-  title: "Blog",
+  title: getLabelFromType(type),
   meta: [
     {
       name: "description",
-      content: "Blog Posts",
+      content: `${getLabelFromType(type)} Posts`,
     },
   ],
 });

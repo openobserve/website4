@@ -1,6 +1,6 @@
-export default async () => {
+export default async (type) => {
   // get tags
-  let tagsContent = await queryContent("blog/posts").only(["tags"]).find();
+  let tagsContent = await queryContent(`${getContentFolder(type)}/posts`).only(["tags"]).find();
 
   let tags = tagsContent
     .map((obj) => obj.tags) // get only tags

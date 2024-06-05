@@ -22,7 +22,7 @@
               class="mb-2"
             >
               <nuxt-link
-                :to="'/blog/category/' + category.slug"
+                :to="`/${type}/category/${category.slug}`"
                 class="text-gray-700"
               >
                 <div class="flex flex-row">
@@ -68,7 +68,7 @@
           <ul>
             <li v-for="(tag, index) in tags" :key="index" class="mb-2">
               <nuxt-link
-                :to="'/blog/tag/' + tag.slug"
+                :to="`/${type}/tag/${tag.slug}`"
                 class="text-gray-700"
               >
                 <div class="flex flex-row">
@@ -158,7 +158,7 @@
           >
             <div class="">
               <nuxt-link
-                :to="`/blog/${article.slug}`"
+                :to="`/${type}/${article.slug}`"
                 class="
                   text-base text-gray-700
                   font-normal
@@ -173,7 +173,7 @@
             <div class="flex justify-between items-center mt-4">
               <div class="flex items-center">
                 <nuxt-link
-                  :to="'/blog/author/' + article.authors?.[0]"
+                  :to="`/${type}/author/${article.authors?.[0]}`"
                   class="text-gray-700 text-sm font-light mr-3 hover:underline"
                 >
                   {{ authors?.find((a) => a.slug == article?.authors?.[0])?.name }} 
@@ -192,24 +192,32 @@
 </template>
 
 <script setup>
-const { data: authorsTemp } = await useAsyncData(() =>
-  queryContent("/blog/authors").findOne()
+
+const { type } = defineProps({
+  type: {
+    type: String,
+    required: true,
+  },
+});
+
+const { data: authorsTemp } = await useAsyncData(`${type}-authors`, () =>
+  queryContent(`/${getContentFolder(type)}/authors`).findOne()
 );
 const authors = authorsTemp?.value.authors;
 
 // get categories
-let { data: categories } = await useAsyncData(() => getCategories());
+let { data: categories } = await useAsyncData(`${type}-categories`,() => getCategories(type));
 
 // get tags
-let { data: tags } = await useAsyncData(() => getTags());
+let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
 // get allArticles
 const { data: allArticles } = await useAsyncData(() =>
-  queryContent("blog/posts").find()
+  queryContent(`/${getContentFolder(type)}/posts`).find()
 );
 
 // get recentArticles
-let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
+let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 const dataVariables = reactive({
   selectedMonth: "",
@@ -222,7 +230,7 @@ const formatDate = (date) => {
 
 const getAuthorImage = (author) => {
   // return author.img;
-  return author.img && `/img/blog/${author.img}`;
+  return author.img && `/img/${type}/${author.img}`;
 };
 
 const formatMonth = (monthYear) => {

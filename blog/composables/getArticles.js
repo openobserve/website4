@@ -1,10 +1,13 @@
 import { callWithNuxt } from "#app";
+import { getContentFolder } from "../utils/typeUtils";
 
 export default async (params, filter, nuxtApp) => {
   try {
+    const type = params?.type || 'blog';
+
     const currentPage = parseInt(params?.page) || 1;
 
-    let allArticles = queryContent("blog/posts");
+    let allArticles = queryContent(`${getContentFolder(type)}/posts`);
     const perPage = globals.blogsPerPage;
 
     const skipNumber = () => {
@@ -14,7 +17,7 @@ export default async (params, filter, nuxtApp) => {
       return (currentPage - 1) * perPage;
     };
 
-    let articles = queryContent("blog/posts")
+    let articles = queryContent(`${getContentFolder(type)}/posts`)
       .only([
         "title",
         "description",
@@ -35,7 +38,7 @@ export default async (params, filter, nuxtApp) => {
     if (filter) {
       switch (filter.type) {
         case "category": {
-          const categories = await getCategories();
+          const categories = await getCategories(type);
           const slug = filter.value;
           let nameFromSlug = categories.find((item) => item.slug == slug);
 
@@ -50,7 +53,7 @@ export default async (params, filter, nuxtApp) => {
           break;
         }
         case "tag": {
-          const tags = await getTags();
+          const tags = await getTags(type);
           const slug = filter.value;
           let nameFromSlug = tags.find((item) => item.slug == slug);
 

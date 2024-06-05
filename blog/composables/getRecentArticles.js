@@ -1,5 +1,5 @@
-export default async () => {
-  const articles = await queryContent("blog/posts")
+export default async (type) => {
+  const articles = await queryContent(`${getContentFolder(type)}/posts`)
     .only([
       "title",
       "description",

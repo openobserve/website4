@@ -1,12 +1,11 @@
 <template>
   <div class="overflow-x-hidden">
-    <BreadCrumbs
-      class="md:pt-0 pt-3"
-     :title="'Author: ' + author.name"
+  <BreadCrumbs class="md:pt-0 pt-3" 
+    :title="'Tag: ' + tag.name"
       :paths="[
         { name: 'Home', to: '/' },
-        { name: 'Blog', to: '/blog' },
-        { name: 'Author' },
+        { name: getLabelFromType(type), to: `/${type}` },
+        { name: 'Tag' },
       ]"
     />
   
@@ -19,30 +18,35 @@
             :authors="authors"
             :categories="categories"
             :tags="tags"
+            :type="type"
           />
           <div class="mt-8">
             <blog-pagination
               :currentPage="currentPage"
               :total="totalArticles"
               :totalPages="lastPage"
-              :pathPrefix="'/blog/author/' + route.params.author + '/page'"
+              :pathPrefix="`/${type}/tag/${route.params.tag}/page`"
             />
           </div>
         </div>
-        <blog-sidebar />
+        <blog-sidebar :type="type"/>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-const route = useRoute();
+import { getContentFolder, getLabelFromType } from '~/blog/utils/typeUtils';
+
 const router = useRouter();
+const route = useRoute();
+
+const type = route.params.type;
 
 definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
-      return navigateTo("/blog/author/" + to.params.author, { redirectCode: 301 })
+      return navigateTo(`/${type}/tag/${to.params.tag}`, { redirectCode: 301 });
     }
   },
 });
@@ -55,8 +59,8 @@ const { data: articlesTemp } = await useAsyncData(
     getArticles(
       route.params,
       {
-        type: "author",
-        value: route.params.author,
+        type: "tag",
+        value: route.params.tag,
       },
       nuxtApp
     )
@@ -64,29 +68,30 @@ const { data: articlesTemp } = await useAsyncData(
 const { articles, totalArticles, lastPage, currentPage } = articlesTemp.value;
 
 const { data: authorsTemp } = await useAsyncData(() =>
-  queryContent("/blog/authors").findOne()
+  queryContent(`/${getContentFolder(type)}/authors`).findOne()
 );
 const authors = authorsTemp?.value.authors;
 
 // get categories
-let { data: categories } = await useAsyncData(() => getCategories());
+let { data: categories } = await useAsyncData(`${type}-categories`,() => getCategories(type));
 
 // get tags
-let { data: tags } = await useAsyncData(() => getTags());
+let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
 const { data: allArticles } = await useAsyncData(() =>
-  queryContent("blog/posts").find()
+  queryContent(`/${getContentFolder(type)}/posts`).find()
 );
 
-const author = authors?.find((it) => it.slug == route.params.author);
-let { data: recentArticles } = await useAsyncData(() => getRecentArticles());
+const tag = tags?.value?.find((it) => it.slug == route.params.tag);
+
+let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 useHead({
-  title: "Author | Blog",
+  title: `Tag | ${getLabelFromType(type)}`,
   meta: [
     {
       name: "description",
-      content: "Blog Posts",
+      content: `${getLabelFromType(type)} Posts`,
     },
   ],
 });

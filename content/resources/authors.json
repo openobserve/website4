@@ -1,0 +1,76 @@
+{
+  "authors": [
+    {
+      "img": "/img/blog/prabhat.jpg",
+      "bio": "Prabhat Sharma is the founder of OpenObserve. He has deep background in cloud, kubernetes, observability and more. He has interests in machine learning, liberal arts, economics and systems architecture. In his spare time he spends time playing with his kids.",
+      "facebookUrl": "",
+      "name": "Prabhat Sharma",
+      "slug": "prabhat",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/hiprabhat/",
+      "twitterUrl": "https://twitter.com/hiprabhat",
+      "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/authors/johnson.jpeg",
+      "bio": "Johnson, a DevOps Engineer at Standup AI, boasts a rich tapestry of expertise across diverse Information Technology domains. Armed with a comprehensive skill set ranging from virtualization to the latest advancements in cloud technologies, he is unwaveringly committed to propelling innovation and operational efficiency within the field. With a thirst for continuous improvement, Johnson is currently focused on expanding his knowledge and mastering new dimensions within his role as a DevOps Engineer. Beyond the professional sphere, he dedicates his spare time to quality moments with his first son and wife.",
+      "facebookUrl": "",
+      "name": "Johnson Huynh",
+      "slug": "johnson",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/johnson-huynh-24601754/",
+      "twitterUrl": "",
+      "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/hengfei.jpeg",
+      "bio": "Hengfei Yang is the founding engineer at OpenObserve. He has extensive experience in distributed system development. He is passionate about open source and has interests in traveling, music and photography.",
+      "facebookUrl": "",
+      "name": "Hengfei Yang",
+      "slug": "hengfei",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/hengfeiyang/",
+      "twitterUrl": "https://twitter.com/HengfeiYang",
+      "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/user.jpg",
+      "bio": "Zhao Wei is an engineer at Jidu, with a strong background in cloud computing, Kubernetes and observability. He is currently an APM expert at Jidu.",
+      "facebookUrl": "",
+      "name": "Zhao Wei",
+      "slug": "domyway",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/hengfeiyang/",
+      "twitterUrl": "https://twitter.com/HengfeiYang",
+      "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/ashish.jpg",
+      "bio": "Ashish is obsessed with building high performance systems with simplicity in mind. He has vast experience in multiple disciplines like front end, back end, streaming, analytics and more.",
+      "facebookUrl": "",
+      "name": "Ashish Kolhe",
+      "slug": "ashish",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://linkedin.com/in/ashish-kolhe-10605b33",
+      "twitterUrl": "https://twitter.com/AshishK39675384",
+      "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/authors/kirtan.jpg",
+      "bio": "Kirtan is passionate about crafting fast and user-friendly websites and web apps. He is dedicated to innovation and excellence in the tech realm, with expertise in harnessing the latest technologies to develop cutting-edge web solutions.",
+      "facebookUrl": "",
+      "name": "Kirtan Thakkar",
+      "slug": "kirtan",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://linkedin.com/in/kirtan-thakkar/",
+      "twitterUrl": "https://twitter.com/kirtan_thakkar",
+      "instagramUrl": ""
+    },
+    {
+      "name": "OpenObserve Team",
+      "slug": "openobserve-team",
+      "img": "/img/blog/favicon.svg",
+      "bio": "The OpenObserve Team comprises dedicated professionals committed to revolutionizing system observability through their innovative platform, OpenObserve. Dedicated to streamlining data observation and system monitoring, offering high performance and cost-effective solutions for diverse use cases."
+    }
+  ]
+}
