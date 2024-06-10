@@ -117,6 +117,7 @@ ul.rec-job-info:hover {
 .rec_job_listing_div_jobs ul,
 .rec_job_listing_div_jobs li {
   display: flex;
+  flex-wrap: wrap;
 }
 .embed_jobs_head {
   background-color: transparent !important;
