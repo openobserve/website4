@@ -113,7 +113,7 @@ We built an open source observability platform **OpenObserve** that is:
 1. Low operational overheads
    1. All user data goes to S3 (or stays local, as specified by user), nothing to manage there.
    1. Scale horizontally or vertically per users’ needs, quickly.
-   1. Metadata is in etcd, a highly available key-value store.
+   1. Metadata is in sqlite/postgres/mysql. Proven external systems that are easy to manage.
 1. Low cost
    1. Use of S3 for data storage allows users to lower their cost of storage compared to Elasticsearch by a factor of ~140x, which is a major cost for logging systems.
    1. Extremely low compute requirements during ingestion (~6x YMMV based on data and hardware).
@@ -126,7 +126,7 @@ We built an open source observability platform **OpenObserve** that is:
    1. Logs, Metrics, Traces, Dashboards, Alerts, Functions, and more.
    1. Multi-tenancy
    1. Embedded scripting
-      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enrichment of log data as it enters OpenObserve. Users could preprocess log records as they are entering the system. Users could build whatever function they can imagine.
+      1. Ingest functions - think of it like an AWS lambda function that you can run on every record to modify during ingestion. It allows for reduction, redaction, and enrichment of log data as it enters OpenObserve. Users could pre-process log records as they are entering the system. Users could build whatever function they can imagine.
       1. Query functions - think of it like a lambda function that can run on every log line during query after log records have already been ingested. E.g. if a user has a log record like “1.2.3.4 - POST prabhat@zinc https://openobserve.ai”, you could parse it during query time and filter against it at query time. Users could build whatever function they can imagine.
 
 1. Sleep better at night knowing your system will keep running even if the nodes crash through autohealing.
@@ -140,7 +140,7 @@ OpenObserve provides various indexing schemes - _partitioning, bloom filter, inv
 
 Due to it's design and the use of columnar storage, OpenObserve is much faster at ingestion, search and analytics queries compared to competitors while still providing a much lower compute and storage cost.
 
-Instead of using raft/paxos for cluster coordination, NATS is used cluster coordination which provides much easier management and better scaling.
+Instead of using raft/paxos for cluster coordination, NATS is used for cluster coordination that provides much easier management and better scaling.
 
 ### Conclusion
 
