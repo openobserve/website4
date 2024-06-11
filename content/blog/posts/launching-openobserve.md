@@ -135,13 +135,12 @@ Below is the result of storage utilization when we ingested our kubernetes clust
 
 ![](/img/blog/blog1.png)
 
-### Trade Offs
 
-We chose to do certain things differently that may affect how it will perform in your environment.
+OpenObserve provides various indexing schemes - _partitioning, bloom filter, inverted index_ - to provide the best performance for different use cases while still being highly efficient. It's design is heavily influenced by big data systems like spark and cassandra (with some of it's own twists) with the ability to scale large amount of data at scale.
 
-OpenObserve does not index data like Elasticsearch, but compresses it and stores it on S3. This results in extremely low storage cost and very lower computing power requirement during ingestion, but requires more compute power during search. OpenObserve should use lower compute power for analytics queries and be faster due to its columnar storage. We will be running benchmarks in due course to assert this.
+Due to it's design and the use of columnar storage, OpenObserve is much faster at ingestion, search and analytics queries compared to competitors while still providing a much lower compute and storage cost.
 
-Instead of using raft/paxos for cluster coordination, we chose to use etcd which allows much better scaling and cluster coordination. However this introduces etcd management. Etcd management is much easier due to its small footprint compared to full-fledged databases, but nevertheless, there is some work involved in taking backups and keeping it up and running. We plan to provide a hosted etcd that users can use to alleviate this in due course.
+Instead of using raft/paxos for cluster coordination, NATS is used cluster coordination which provides much easier management and better scaling.
 
 ### Conclusion
 
