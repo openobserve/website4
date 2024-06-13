@@ -105,7 +105,7 @@ Now that we understand the crucial role of telemetry, let's look at how to put t
 
 <p>
 
-<img src="images/image3.png" width="" alt="alt_text" title="image_tooltip">
+![Best Practices for Observability](/img/resources/best-practices-for-observability.png "Best Practices for Observability")
 
 </p>
 
@@ -138,8 +138,6 @@ Full stack observability has a lot of scope. It has everything you need to monit
 <h3><strong>Key Components And Technologies In An Observability Stack</strong></h3>
 
 <p>
-
-![Best Practices for Observability](/img/resources/best-practices-for-observability.png "Best Practices for Observability")
 
 </p>
 
