@@ -5,7 +5,7 @@ description: The blog discusses the observability stack, its core pillars and
   the importance of telemetry data in system performance.
 img: /img/resources/observability-stack.png
 alt: observability stack
-slug: observability stack
+slug: observability-stack-understanding
 authors:
   - openobserve-team
 publishDate: 2024-06-13
