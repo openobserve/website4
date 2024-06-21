@@ -1,7 +1,7 @@
 ---
 title: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cloud-Native Platform
 seoTitle: Revolutionizing Observability - Unveiling OpenObserve, the High-Performance, Cloud-Native Platform
-description: "OpenObserve’ is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs."
+description: "OpenObserve is an open source, cloud native open source observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs."
 img: /img/homepage/herosection1.jpg
 alt: OpenObserve
 slug: launching-openobserve
@@ -23,7 +23,7 @@ tags:
 
 We built **OpenObserve** with the following design principles and architecture in mind:
 
-1. **Brute force for log search** as opposed to inverted index or bitfunnel
+1. **Fast and efficient log search:** We consider efficiency as ability to do maximum data searched/processed for minimum amount of money spent on compute, storage and anything else (minus human effort).
 1. **Rust** as the programming language for its safety and performance
 1. s3/minio/gcs/azure blob for observability data storage
 1. Storage of data in **columnar format** to speed up analytics
@@ -47,7 +47,7 @@ The vast majority of customers that we talked to indicated the following pain po
    1. Provisioning
    1. Backups
    1. Upgrades
-   1. Bringing the system back up upon failures
+   1. Bringing the system back up, upon failures
    1. Scaling number of nodes up and down as need arises
 1. Features and Usability: Amazon CloudWatch has, for a long time, received logs by default from across the AWS services, but it has been so unusable that users set up logging using Elasticsearch on their own, or straight up use SaaS platforms like Datadog. When I first found Elasticsearch, I liked that the UX was vastly superior to CloudWatch. Datadog built an even better UI, and I loved using it. Point being, even if you have something as easily available as CloudWatch, it still has to be usable and should have the features to do its intended job efficiently, otherwise users will find alternatives.
 1. Cost: Some of the players like Splunk and Datadog, while providing great software, can become prohibitively expensive. Take a look at this [reddit thread about Datadog’s pricing and costs](https://www.reddit.com/r/devops/comments/zz4naq/datadog_i_do_not_understand_the_pricing_model/). In general, cost breaks down into the following categories:
