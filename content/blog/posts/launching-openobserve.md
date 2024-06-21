@@ -19,26 +19,25 @@ tags:
 
 ### Introduction
 
-**OpenObserve** is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data, significantly reduces operational costs, and improves ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs.
+**OpenObserve** is an open source, cloud native observability platform that provides ~140x (YMMV. Could be higher or lower based on data entropy) lower storage costs compared to Elasticsearch. Use cases include real-life log data search/analysis and overall observability needs with significantly reduced operational costs, and ease of use. It can scale to petabytes of data, is highly performant, and allows you to sleep better at night 😴. If you are looking for an observability tool for logs, metrics, and traces, take a look at OpenObserve and how its approach towards observability could help you build better software and save money on observability costs.
 
 We built **OpenObserve** with the following design principles and architecture in mind:
 
-1. **Fast and efficient log search:** We consider efficiency as ability to do maximum data searched/processed for minimum amount of money spent on compute, storage and anything else (minus human effort).
+1. **Fast and efficient log search:** We consider efficiency as the ability to do maximum data searches or process data for minimum amount of money spent on compute, storage and anything else (minus human effort).
 1. **Rust** as the programming language for its safety and performance
 1. s3/minio/gcs/azure blob for observability data storage
 1. Storage of data in **columnar format** to speed up analytics
 1. Support **very high cardinality**
-1. Use of SIMD instruction sets (AVX-512 and neon) for **vectorized processing** to speed up analytics
 1. True **compute and storage decoupling** with stateless nodes
 1. Core engine designed to offer **a complete observability solution** (logs, metrics, traces) from the ground up and not just some features as an afterthought retrofitting things
 
-We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But now let’s take a look at why we even thought of building OpenObserve in the first place.
+We will dig deeper into how we achieve massively higher efficiency compared to existing observability tools in a series of blogs. But for now let’s take a look at why we even thought of building OpenObserve in the first place.
 
 ### Yet another log search engine!!! Why?
 
 The vast majority of customers that we talked to indicated the following pain points with their existing observability solutions:
 
-1. **Day 1** - Setup: Difficulty in getting started. This generally involves:
+1. **Day 1 - Setup**: Difficulty in getting started. This generally involves:
    1. Installing it in the user’s environment
    1. Upfront planning, such as number of shards, which fields to index, set mappings (Elasticsearch), as well as defining labels upfront (Loki)
    1. Configuring it to be usable by the users
