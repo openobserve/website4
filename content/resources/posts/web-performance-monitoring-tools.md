@@ -7,6 +7,8 @@ description: Discover top web performance monitoring tools like OpenObserve,
 img: /img/resources/web-performance-monitoring-image1.png
 alt: web performance monitoring
 slug: web-performance-monitoring-tools
+authors:
+  - openobserve-team
 publishDate: 2024-06-28
 tags:
   - web performance monitoring
