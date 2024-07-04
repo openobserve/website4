@@ -5,7 +5,7 @@ description: Unravel the four core Prometheus metric types - Counter, Gauge,
   Histogram, Summary - their role in system monitoring.
 img: /img/resources/prometheus-metric-types-image1.png
 alt: prometheus metric types
-slug: " prometheus-metric-types-exploration"
+slug: prometheus-metric-types-exploration
 authors:
   - openobserve-team
 publishDate: 2024-06-28

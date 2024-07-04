@@ -6,7 +6,7 @@ description: Discover the power of real-time Nginx monitoring with NGINX Plus,
   analysis.
 img: /img/resources/nginx-monitoring-image1.png
 alt: Nginx Monitoring
-slug: nginxMonitoring
+slug: nginxmonitoring
 authors:
   - openobserve-team
 publishDate: 2024-06-29

@@ -5,7 +5,7 @@ description: "Get started with OTEL collector: setup the environment, generate
   and collect telemetry, explore components, and apply custom configurations."
 img: /img/resources/image1.png
 alt: otel collector
-slug: otel collector
+slug: otel-collector
 authors:
   - openobserve-team
 publishDate: 2024-06-24
