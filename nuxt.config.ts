@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/seo",
+    "@nuxt/content"
   ],
   linkChecker: {
     enabled: false,
@@ -101,7 +102,7 @@ export default defineNuxtConfig({
   },
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
-    name: 'Open Source Observability Platform for Logs, Metrics, Traces, and More – Your Ultimate Dashboard for Alerts and Insights'
+    name: "Open Source Observability Platform for Logs, Metrics, Traces, and More – Your Ultimate Dashboard for Alerts and Insights",
   },
   runtimeConfig: {
     public: {

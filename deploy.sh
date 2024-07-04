@@ -1,6 +1,6 @@
 #!/bin/sh
 
-npm run generate
+npm run generate --node-options="--max-old-space-size=8192"
 
 # Move the files to S3 bucket for hosting
 aws s3 sync ./.output/public s3://zincsearch-website/  --exclude=".git/*" --profile=prod
