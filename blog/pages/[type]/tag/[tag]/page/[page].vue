@@ -46,7 +46,7 @@ const type = route.params.type;
 definePageMeta({
   middleware: (to, from) => {
     if (to.params.page == 1) {
-      return navigateTo(`/${type}/tag/${to.params.tag}`, { redirectCode: 301 });
+      return navigateTo(`/${to.params.type}/tag/${to.params.tag}`, { redirectCode: 301 });
     }
   },
 });
