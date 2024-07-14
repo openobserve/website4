@@ -7,7 +7,7 @@ alt: OpenObserve
 slug: how-to-analyze-google-workspaces-audit-logs
 authors: 
   - prabhat
-publishDate: 2024-06-21
+publishDate: 2024-07-12
 tags:
   - gcp
   - google workspaces
