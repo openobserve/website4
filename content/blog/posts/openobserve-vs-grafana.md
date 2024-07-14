@@ -55,7 +55,7 @@ Next you would want to setup a tool for traces. You might want to start with jae
 
 There is an argument that grafana allows you to pick the best of the breed tools for each signal and that is true. But the challenge is that you would need to learn and maintain multiple systems. For most folks this is a huge challenge.
 
-You will also hear of LGTM stack (Loki, Grafana, Thanos, Mimir) which is a pretty good stack for observability. Each of these components are separate open source tools built by grafana labs.
+You will also hear of LGTM stack (Loki, Grafana, Tempo, Mimir) which is a pretty good stack for observability. Each of these components are separate open source tools built by grafana labs.
 
 ## OpenObserve
 
