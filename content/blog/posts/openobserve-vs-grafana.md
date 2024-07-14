@@ -115,6 +115,6 @@ Our goal when started building OpenObserve was to provide a simple yet sophistic
 
 Grafana has an edge if you want to connect to multiple sources and visualize data from multiple sources, but if only observability signals are needed then OpenObserve is a great choice.
 
-One might say that OpenObserve is not as powerful as grafana as it does not have the plugin ecosystem that grafana has. OpenObserve cannot connect to prometheus, graphite, elasticsearch, jaeger etc, but for observability use cases it does not need to as OpenObserve. All the observability signals are built right inside OpenObserve and you can get started with OpenObserve in minutes.
+OpenObserve cannot connect to prometheus, graphite, elasticsearch, jaeger etc, but for observability use cases it does not need to. All the observability signals are built right inside OpenObserve and you can get started with OpenObserve in minutes.
 
-OpenObserve provides a powerful and flexible platform for creating dashboards and visualizing data in real-time. With 18 different kinds of chart types and drag and drop support functionality, you will find it extremely easy to create dashboards and visualize your data. OpenObserve also provides a SQL and PromQL like query language that allows you for querying and filtering data. Grafana provides deeper functionality for the chart types compared to OpenObserve as it has been since
+OpenObserve provides a powerful and flexible platform for creating dashboards and visualizing data in real-time. With 18 different kinds of chart types and drag and drop support functionality, you will find it extremely easy to create dashboards and visualize your data. OpenObserve also provides SQL and PromQL support that allows you for querying and filtering data.
