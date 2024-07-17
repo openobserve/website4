@@ -4,7 +4,7 @@ seoTitle: Introduction to Osquery and How Does it Work
 description: Osquery operates through osqueryi for ad-hoc queries and osqueryd
   for scheduled queries. It requires system privileges for detailed information.
 img: /img/resources/osquery-receiver-image1.png
-alt: osquery receiver
+alt: Osquery Receiver
 slug: osquery-receiver-work-method
 authors:
   - openobserve-team
