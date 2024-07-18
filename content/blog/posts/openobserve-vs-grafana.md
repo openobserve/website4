@@ -111,7 +111,7 @@ When deploying in HA mode, OpenObserve can be deployed in a kubernetes cluster u
 
 ## Conclusion
 
-Our goal when started building OpenObserve was to provide a simple yet sophisticated tool for observability. To that end OpenObserves provides a powerful and flexible platform for creating dashboards and visualizing data in real-time. With 18 different kinds of chart types and drag and drop support functionality, you will find it extremely easy to create dashboards and visualize your data. OpenObserve also provides a SQL and PromQL like query language that allows you for querying and filtering data.
+Our goal when started building OpenObserve was to provide a simple yet sophisticated tool for observability. To that end OpenObserve provides a powerful and flexible platform for creating dashboards and visualizing data in real-time. With 18 different kinds of chart types and drag and drop support functionality, you will find it extremely easy to create dashboards and visualize your data. OpenObserve also provides a SQL and PromQL like query language that allows you for querying and filtering data.
 
 Grafana has an edge if you want to connect to multiple sources and visualize data from multiple sources, but if only observability signals are needed then OpenObserve is a great choice.
 
