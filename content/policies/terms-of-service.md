@@ -258,9 +258,7 @@ Visiting the Site, sending us emails, and completing online forms constitute ele
 If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.
 
 27. USE OF CUSTOMERS AS REFERENCES
-By using the Service, you agree that we may use your name, logo, and any non-confidential information about your use of the Service as a reference on our website, marketing materials, and other promotional content. If you do not wish to be used as a reference, please notify us in writing at hello@openobserve.ai, and we will remove your information from our reference materials.
-
-
+By using the Service, you agree that we may use your name, logo, and any non-confidential information about your use of the Service as a reference on our website, marketing materials, and other promotional content.
 
 28. MISCELLANEOUS
 
