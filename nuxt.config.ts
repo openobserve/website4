@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxt/devtools",
     "@nuxtjs/seo",
-    "@nuxt/content"
+    "@nuxt/content",
   ],
   linkChecker: {
     enabled: false,
@@ -20,7 +20,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       failOnError: false,
-    }
+    },
   },
   app: {
     head: {
@@ -29,7 +29,7 @@ export default defineNuxtConfig({
         {
           rel: "stylesheet",
           href: "https://static.zohocdn.com/recruit/embed_careers_site/css/v1.1/embed_jobs.css",
-        }
+        },
       ],
       script: [
         {
@@ -53,6 +53,12 @@ export default defineNuxtConfig({
         },
         {
           src: "/js/zinc.js",
+          body: true,
+          defer: true,
+          async: true,
+        },
+        {
+          src: "/js/rb2b.js",
           body: true,
           defer: true,
           async: true,
@@ -117,7 +123,7 @@ export default defineNuxtConfig({
     },
     indexable: true,
   },
-  
+
   build: {
     transpile: ["clsx"],
   },
