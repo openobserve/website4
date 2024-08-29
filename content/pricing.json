@@ -277,7 +277,7 @@
           "title": "Search and aggregation API compatibility with Elasticsearch",
           "developer": false,
           "pro": false,
-          "business": true,
+          "business": false,
           "enterprise": true
         },
         {
