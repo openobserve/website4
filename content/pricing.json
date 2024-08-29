@@ -304,8 +304,8 @@
         {
           "title": "Email support",
           "developer": false,
-          "pro": true,
-          "business": true,
+          "pro": false,
+          "business": false,
           "enterprise": true
         },
         {
