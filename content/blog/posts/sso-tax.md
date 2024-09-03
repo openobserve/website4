@@ -1,24 +1,23 @@
 ---
-title: "The SSO (Single Sign On) Tax - Understanding the Controversy and Why It is Here to Stay"
-seoTitle: "The SSO (Single Sign On) Tax - Understanding the Controversy and Why It is Here to Stay"
-description: "The SSO (Single Sign On) Tax - What it is, why it is controversial, and why it is here to stay."
+title: "The SSO (Single Sign On) Tax - Understanding the Controversy"
+seoTitle: "The SSO (Single Sign On) Tax - Understanding the Controversy"
+description: "The SSO (Single Sign On) Tax - What it is, why it is controversial"
 alt: OpenObserve
 slug: sso-tax
-authors: 
+authors:
   - prabhat
 publishDate: 2024-09-03
 tags:
   - sso
   - enterprise
   - security
-
 ---
 
 The SSO (Single Sign-On) tax has been a topic of discussion in the tech industry for some time now. While some argue that it's an unnecessary burden, others see it as a necessary evil. Let's understand what it is, why it's controversial, and why it's unlikely to disappear anytime soon.
 
 ## How do people use SSO?
 
-Most folks are familiar with SSO in the form of **Sign in with Google** or **Sign in with Facebook** buttons on websites. These buttons allow users to log in to a website using their existing Google or Facebook credentials, eliminating the need to create and remember a new password for each site. 
+Most folks are familiar with SSO in the form of **Sign in with Google** or **Sign in with Facebook** buttons on websites. These buttons allow users to log in to a website using their existing Google or Facebook credentials, eliminating the need to create and remember a new password for each site.
 
 Two broad forms of SSO include:
 
@@ -26,7 +25,6 @@ Two broad forms of SSO include:
 2. **Enterprise SSO**: Organizations can use SSO solutions to manage access to multiple applications and services for their employees. Typically uses SAML or OIDC. Most popular provider in this context is Okta followed closely by Microsoft Entra (Previously known as Azure AD). This also includes solutions with integration to LDAP solutions like Active Directory.
 
 While social logins are free for services providers to implement and provide as well as users to use, enterprise SSO solutions like Okta are not free for users and cost a lot of money for organizations to implement and use.
-
 
 ## What is the SSO Tax?
 
@@ -54,6 +52,7 @@ The SSO tax has sparked debate among tech enthusiasts and business leaders alike
 ### Why the SSO Tax is Here to Stay
 
 Despite the controversy surrounding the SSO tax, it's unlikely to disappear anytime soon. Here's why:
+
 - Vendors need to recoup costs: SSO solutions require significant investment, and vendors need to recoup these costs to remain profitable and continue innovating. Sometimes many core functionalities are provided in the free tier and SSO is a premium feature that pays for the rest of the product.
 - Customers are willing to pay: While some customers may grumble about the SSO tax, many are willing to pay for the convenience, security, and productivity benefits that SSO solutions provide.
 - Industry standards: The SSO tax has become an industry standard, with many vendors incorporating it into their pricing models. It's unlikely that vendors will abandon this revenue stream anytime soon.
@@ -61,9 +60,10 @@ Despite the controversy surrounding the SSO tax, it's unlikely to disappear anyt
 
 ## What we think of SSO Tax at OpenObserve
 
-At OpenObserve, we understand the importance of SSO. We believe that SSO is critical for ensuring seamless access to our platform and integral to improving security, which is why we strive to provide SSO capabilities to most of our customers at no additional cost. 
+At OpenObserve, we understand the importance of SSO. We believe that SSO is critical for ensuring seamless access to our platform and integral to improving security, which is why we strive to provide SSO capabilities to most of our customers at no additional cost.
 
 ### Cloud service
+
 For our cloud service we provide SSO in our free tier for following providers with plan to support more in future:
 
 - Google
@@ -75,14 +75,13 @@ SAML and OIDC are available in our enterprise tier.
 
 ### Self hosted
 
-For self hosted version of OpenObserve, SSO is available in the enterprise version, which is available to anyone for free who ingests less than 200 GB of data per day. That is 6 TB/Month of data  ingestion. Most users will never hit this limit. Most startups and small businesses will never hit this limit too. Only large enterprises will hit this limit.
+For self hosted version of OpenObserve, SSO is available in the enterprise version, which is available to anyone for free who ingests less than 200 GB of data per day. That is 6 TB/Month of data ingestion. Most users will never hit this limit. Most startups and small businesses will never hit this limit too. Only large enterprises will hit this limit.
 
 ### Why we provide SSO for free to everyone but large enterprises
 
-The way we think of it is, are you a large enterprise that is already spending a lot of money on security and SSO solutions like Okta? If yes, you should be able to pay us as well for the same level of security. 
+The way we think of it is, are you a large enterprise that is already spending a lot of money on security and SSO solutions like Okta? If yes, you should be able to pay us as well for the same level of security.
 
-If you are a small business or a startup, you should not have to pay for security or convenience as you could use all the support you can get. You should be able to use the same level of security as large enterprises without having to pay for it that you might not be able to afford. 
-
+If you are a small business or a startup, you should not have to pay for security or convenience as you could use all the support you can get. You should be able to use the same level of security as large enterprises without having to pay for it that you might not be able to afford.
 
 ## Conclusion
 
