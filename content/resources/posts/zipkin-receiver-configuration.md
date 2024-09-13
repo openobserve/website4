@@ -371,23 +371,15 @@ tags:
 
 <p><span style="font-weight: 400;">To enable the Zipkin receiver in OpenObserve, you need to add the following configuration to your OpenObserve collector configuration file:</span></p>
 
-<table>
+<p><span style="color: #00ff00;">text </span></p>
 
-<tbody>
+<p><span style="color: #00ff00;">receivers: </span></p>
 
-<tr>
+<p><span style="color: #00ff00;">zipkin: </span></p>
 
-<td>
+<p><span style="color: #00ff00;">endpoint: 0.0.0.0:9411 </span></p>
 
-<p><span style="font-weight: 400;">text</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">receivers</span><span style="font-weight: 400;">:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; </span><span style="font-weight: 400;">zipkin</span><span style="font-weight: 400;">:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; </span><span style="font-weight: 400;">endpoint</span><span style="font-weight: 400;">: 0</span><span style="font-weight: 400;">.0.0.0:9411</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; </span><span style="font-weight: 400;">format</span><span style="font-weight: 400;">: </span><span style="font-weight: 400;">proto</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">format: proto</span></p>
 
 <p><span style="font-weight: 400;">This configures the Zipkin receiver to listen on 0.0.0.0:9411 and accept spans in Protobuf format.</span></p>
 
@@ -395,45 +387,17 @@ tags:
 
 <p><span style="font-weight: 400;">To send Zipkin spans to OpenObserve, you can use the default Zipkin span submission endpoint:</span></p>
 
-<table>
 
-<tbody>
 
-<tr>
+<p><span style="color: #00ff00;">text </span></p>
 
-<td>
-
-<p><span style="font-weight: 400;">text</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">http:</span><em><span style="font-weight: 400;">//localhost:9411/api/v2/spans</span></em></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<p><span style="font-weight: 400;">The Content-Type should be application/json, and you can optionally use gzip encoding.</span></p>
+<p><span style="color: #00ff00;">http://localhost:9411/api/v2/spans</span></p><p><span style="font-weight: 400;">The Content-Type should be application/json, and you can optionally use gzip encoding.</span></p>
 
 <p><span style="font-weight: 400;">Alternatively, if you have configured the Zipkin receiver to accept Protobuf format, you would send spans to:</span></p>
 
-<table>
+<p><span style="color: #00ff00;">text&nbsp;</span></p>
 
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">text</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">http</span><span style="font-weight: 400;">://localhost:</span><span style="font-weight: 400;">9411</span><span style="font-weight: 400;">/api/v2/spans?</span><span style="font-weight: 400;">format</span><span style="font-weight: 400;">=proto</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;"><a href="http://localhost:9411/api/v2/spans?">http://localhost:9411/api/v2/spans?</a></span><span style="color: #00ff00;">format=proto&nbsp;</span></p>
 
 <h3><span style="font-weight: 400;">Visualize Traces in OpenObserve</span></h3>
 
@@ -457,23 +421,9 @@ tags:
 
 <p><span style="font-weight: 400;">Additionally, Jaeger accepts Zipkin spans in Thrift format over HTTP, with the default endpoint being:</span></p>
 
-<table>
+<p><span style="color: #00ff00;">text&nbsp;</span></p>
 
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">text</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">http</span><span style="font-weight: 400;">://localhost:</span><span style="font-weight: 400;">14268</span><span style="font-weight: 400;">/api/traces?</span><span style="font-weight: 400;">format</span><span style="font-weight: 400;">=zipkin.thrift</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;"><a href="http://localhost:14268/api/traces?">http://localhost:14268/api/traces?</a></span><span style="color: #00ff00;">format=zipkin.thrift</span></p>
 
 <p><span style="font-weight: 400;">By supporting Zipkin's B3 propagation format and providing a Zipkin-compatible API, Jaeger makes it easier to migrate from Zipkin and join traces across different instrumentation systems.</span></p>
 
