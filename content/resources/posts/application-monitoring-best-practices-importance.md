@@ -6,6 +6,8 @@ description: Discover best practices for effective application monitoring, such
 img: /img/resources/why-application-monitoring-is-important.png
 alt: Why Application Monitoring is Important
 slug: application-monitoring-best-practices-importance
+authors:
+  - OpenObserve Team
 publishDate: 2024-09-09
 tags:
   - Application Monitoring
