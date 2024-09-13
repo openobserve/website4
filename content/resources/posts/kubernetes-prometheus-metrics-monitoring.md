@@ -75,21 +75,13 @@ tags:
 
 <p><span style="font-weight: 400;">Helm is a popular package manager for Kubernetes that simplifies the deployment process. You can use the Prometheus Helm chart to deploy Prometheus quickly.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
+<p><span style="color: #00ff00;">helm repo add prometheus-community </span></p>
 
-<tbody>
+<p><span style="color: #00ff00;"><a href="https://prometheus-community.github.io/helm-charts">https://prometheus-community.github.io/helm-charts</a></span></p>
 
-<tr>
+<p><span style="color: #00ff00;">helm repo update</span></p>
 
-<td>
-
-<p><span style="font-weight: 400;">helm repo add prometheus-community https://prometheus-community.github.io/helm-charts</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">helm repo update</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">helm install prometheus prometheus-community/prometheus</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
+<p><span style="color: #00ff00;">helm install prometheus prometheus-community/prometheus</span></p>
 
 </table>
 
@@ -97,23 +89,9 @@ tags:
 
 <p><span style="font-weight: 400;">The Prometheus Operator simplifies Prometheus setup and management on Kubernetes. It automates the configuration and deployment of Prometheus instances.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
+<p><span style="color: #00ff00;">kubectl create -f</span></p>
 
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">kubectl create -f https://raw.githubusercontent.com/coreos/prometheus-operator/master/bundle.yaml</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">https://raw.githubusercontent.com/coreos/prometheus-operator/master/bundle.yaml</span></p>
 
 <h3><span style="font-weight: 400;">Configuring Prometheus to Discover and Scrape Kubernetes Metrics Endpoints</span></h3>
 
@@ -123,45 +101,13 @@ tags:
 
 <p><span style="font-weight: 400;">Configure Prometheus to automatically discover Kubernetes services and endpoints.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kubernetes-apiservers'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; kubernetes_sd_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - role: </span><span style="font-weight: 400;">endpoints</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; relabel_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - source_labels: </span><span style="font-weight: 400;">[__meta_kubernetes_namespace,</span> <span style="font-weight: 400;">__meta_kubernetes_service_name,</span> <span style="font-weight: 400;">__meta_kubernetes_endpoint_port_name]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; action: </span><span style="font-weight: 400;">keep</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; regex: </span><span style="font-weight: 400;">default;kubernetes;https</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">scrape_configs:<br /> - job_name: 'kubernetes-apiservers'<br /> kubernetes_sd_configs:<br /> - role: endpoints<br /> relabel_configs:<br /> - source_labels: \[__meta_kubernetes_namespace, __meta_kubernetes_service_name, __meta_kubernetes_endpoint_port_name]<br /> action: keep<br /> regex: default;kubernetes;https</span></p>
 
 <h4><strong>Scrape Configurations</strong><span style="font-weight: 400;">:&nbsp;</span></h4>
 
 <p><span style="font-weight: 400;">Define the intervals and specific endpoints Prometheus should scrape.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kubelets'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; scheme: </span><span style="font-weight: 400;">https</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; tls_config:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; ca_file: </span><span style="font-weight: 400;">/var/run/secrets/kubernetes.io/serviceaccount/ca.crt</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; bearer_token_file: </span><span style="font-weight: 400;">/var/run/secrets/kubernetes.io/serviceaccount/token</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; kubernetes_sd_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - role: </span><span style="font-weight: 400;">node</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; relabel_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - action: </span><span style="font-weight: 400;">labelmap</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; regex: </span><span style="font-weight: 400;">__meta_kubernetes_node\_label\_(.+)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;"><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kubelets'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; scheme: </span><span style="font-weight: 400;">https</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; tls_config:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; ca_file: </span><span style="font-weight: 400;">/var/run/secrets/kubernetes.io/serviceaccount/ca.crt</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; bearer_token_file: </span><span style="font-weight: 400;">/var/run/secrets/kubernetes.io/serviceaccount/token</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; kubernetes_sd_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - role: </span><span style="font-weight: 400;">node</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; relabel_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - action: </span><span style="font-weight: 400;">labelmap</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; regex: </span><span style="font-weight: 400;">__meta_kubernetes_node\_label\_(.+)</span></span></p>
 
 <h3><span style="font-weight: 400;">Using Prometheus Operator to Streamline Prometheus Deployments on Kubernetes</span></h3>
 
@@ -171,45 +117,15 @@ tags:
 
 <p><span style="font-weight: 400;">The Prometheus Operator can be installed using Helm or directly applying Kubernetes manifests.</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
+<p><span style="color: #00ff00;">kubectl apply -f </span></p>
 
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">kubectl</span> <span style="font-weight: 400;">apply</span> <span style="font-weight: 400;">-f</span><span style="font-weight: 400;"> https://raw.githubusercontent.com/coreos/prometheus-operator/master/bundle.yaml</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">https://raw.githubusercontent.com/coreos/prometheus-operator/master/bundle.yaml</span></p>
 
 <h4><strong>Creating Prometheus Instances</strong><span style="font-weight: 400;">:&nbsp;</span></h4>
 
 <p><span style="font-weight: 400;">Define a Prometheus instance using a Custom Resource Definition (CRD).</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">apiVersion: </span><span style="font-weight: 400;">monitoring.coreos.com/v1</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">kind: </span><span style="font-weight: 400;">Prometheus</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">metadata:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; name: </span><span style="font-weight: 400;">k8s</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; namespace: </span><span style="font-weight: 400;">monitoring</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">spec:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; serviceAccountName: </span><span style="font-weight: 400;">prometheus-k8s</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; serviceMonitorSelector:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; matchLabels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; team: </span><span style="font-weight: 400;">frontend</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">apiVersion: monitoring.coreos.com/v1<br />kind: Prometheus<br />metadata:<br /> name: k8s<br /> namespace: monitoring<br />spec:<br /> serviceAccountName: prometheus-k8s<br /> serviceMonitorSelector:<br /> matchLabels:<br /> team: frontend</span></p>
 
 <p><span style="font-weight: 400;">By following these steps, you can set up Prometheus to monitor your Kubernetes cluster effectively. This setup ensures you have comprehensive visibility into your cluster's performance and health, enabling proactive management and quick issue resolution.</span></p>
 
@@ -261,93 +177,17 @@ tags:
 
 <p><span style="font-weight: 400;">PromQL is a powerful tool for querying and aggregating Kubernetes metrics. It allows you to create custom queries that provide insights into cluster health and resource utilization. Here are a few practical examples to help you get started:</span></p>
 
-<p><strong>Querying CPU Usage</strong><span style="font-weight: 400;">:&nbsp;</span></p>
+<p>Querying CPU Usage: <br />To get the current CPU usage across all nodes, you can use the query:</p>
 
-<p><span style="font-weight: 400;">To get the current CPU usage across all nodes, you can use the query:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"></span></p>
+<p><span style="color: #00ff00;">sum(rate(node_cpu_seconds_total{mode!="idle"}\[5m])) by (node)</span></p>
 
-<table>
+<p><br />Memory Usage: <br />To monitor memory usage, you can use:<span style="color: #00ff00;"><br />sum(node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) by (node)</span></p>
 
-<tbody>
+<p>Pod Status: <br />To check the status of all pods, you can use:<span style="color: #00ff00;"><br />count(kube_pod_status_phase{phase="Running"}) by (namespace)</span></p>
 
-<tr>
+<p>Disk Space Usage:</p>
 
-<td>
-
-<p><span style="font-weight: 400;">sum(rate(node_cpu_seconds_total{mode!="idle"}\[5m])) by (node)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<p><strong>Memory Usage</strong><span style="font-weight: 400;">:&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">To monitor memory usage, you can use:</span><span style="font-weight: 400;"></span></p>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">sum(node_memory_MemTotal_bytes - node_memory_MemAvailable_bytes) by (node)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<p><strong>Pod Status</strong><span style="font-weight: 400;">:&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">To check the status of all pods, you can use:</span><span style="font-weight: 400;"></span></p>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">count(kube_pod_status_phase{phase="Running"}) by (namespace)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<p><strong>Disk Space Usage</strong><span style="font-weight: 400;">:&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">To monitor disk space, use:</span><span style="font-weight: 400;"></span></p>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">sum(node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_free_bytes{mountpoint="/"}) by (node)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p>To monitor disk space, use:<span style="color: #00ff00;"><br />sum(node_filesystem_size_bytes{mountpoint="/"} - node_filesystem_free_bytes{mountpoint="/"}) by (node)</span></p>
 
 <p><span style="font-weight: 400;">These queries provide a starting point for monitoring various aspects of your Kubernetes cluster.&nbsp;</span></p>
 
@@ -383,25 +223,9 @@ tags:
 
 <p><span style="font-weight: 400;">Ensure the </span><span style="font-weight: 400;">remote_write</span><span style="font-weight: 400;"> section of the Prometheus configuration is set to send metrics to OpenObserve.</span></p>
 
-<p><span style="font-weight: 400;"><br /><br /></span></p>
+<p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; scrape_interval: </span><span style="font-weight: 400;">15</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kubernetes'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; kubernetes_sd_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - role: </span><span style="font-weight: 400;">node</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">remote_write:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - url: </span><span style="font-weight: 400;">'https://&lt;your-openobserve-instance&gt;/api/v1/write'</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;"><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; scrape_interval: </span><span style="font-weight: 400;">15</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kubernetes'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; kubernetes_sd_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - role: </span><span style="font-weight: 400;">node</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">remote_write:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - url: </span><span style="font-weight: 400;">'https://&lt;your-openobserve-instance&gt;/api/v1/write'</span></span></p>
 
 <p><strong>Deploy OpenObserve</strong><span style="font-weight: 400;">:</span></p>
 
@@ -441,23 +265,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; resolve_timeout: </span><span style="font-weight: 400;">5</span><span style="font-weight: 400;">m</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">route:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; receiver: </span><span style="font-weight: 400;">'default-receiver'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - name: </span><span style="font-weight: 400;">'default-receiver'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; email_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - to: </span><span style="font-weight: 400;">'your-email@example.com'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; from: </span><span style="font-weight: 400;">'alertmanager@example.com'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; smarthost: </span><span style="font-weight: 400;">'smtp.example.com:587'</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;"><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; resolve_timeout: </span><span style="font-weight: 400;">5</span><span style="font-weight: 400;">m</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">route:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; receiver: </span><span style="font-weight: 400;">'default-receiver'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - name: </span><span style="font-weight: 400;">'default-receiver'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; email_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - to: </span><span style="font-weight: 400;">'your-email@example.com'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; from: </span><span style="font-weight: 400;">'alertmanager@example.com'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; smarthost: </span><span style="font-weight: 400;">'smtp.example.com:587'</span></span></p>
 
 <h4><strong>Integrate Prometheus with Alertmanager</strong><span style="font-weight: 400;">:</span></h4>
 
@@ -465,23 +273,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">alerting:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; alertmanagers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; - static_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - targets:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; -</span> <span style="font-weight: 400;">'alertmanager:9093'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">rule_files:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; -</span> <span style="font-weight: 400;">'alert_rules.yml'</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">alerting:<br /> alertmanagers:<br /> - static_configs:<br /> - targets:<br /> - 'alertmanager:9093'</span><span style="color: #00ff00;">rule_files:<br /> - 'alert_rules.yml'</span></p>
 
 <h3><span style="font-weight: 400;">Setting Up Alert Rules for Kubernetes System Components Monitoring</span></h3>
 
@@ -493,23 +285,9 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
+<p><span style="color: #00ff00;">groups:<br /> - name: cpu_alerts<br /> rules:<br /> - alert: HighCPUUsage<br /> expr: sum(rate(node_cpu_seconds_total{mode!="idle"}\[5m])) by (instance) / sum(machine_cpu_cores) by (instance) &gt; 0.8<br /> for: 5m<br /> labels:<br /> severity: critical<br /> annotations:<br /> summary: "High CPU usage on {{ $labels.instance }}"<br /> description: "CPU usage has been above 80% for more than 5 minutes."</span></p>
 
-<tbody>
 
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">groups:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - name: </span><span style="font-weight: 400;">cpu_alerts</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; rules:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - alert: </span><span style="font-weight: 400;">HighCPUUsage</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; expr: </span><span style="font-weight: 400;">sum(rate(node_cpu_seconds_total{mode!="idle"}\[5m]))</span> <span style="font-weight: 400;">by</span> <span style="font-weight: 400;">(instance)</span> <span style="font-weight: 400;">/</span> <span style="font-weight: 400;">sum(machine_cpu_cores)</span> <span style="font-weight: 400;">by</span> <span style="font-weight: 400;">(instance)</span> <span style="font-weight: 400;">&gt; 0.8</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; for: </span><span style="font-weight: 400;">5</span><span style="font-weight: 400;">m</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; labels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; severity: </span><span style="font-weight: 400;">critical</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; annotations:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; summary: </span><span style="font-weight: 400;">"High CPU usage on </span><span style="font-weight: 400;">{{ $labels.instance }}</span><span style="font-weight: 400;">"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description: </span><span style="font-weight: 400;">"CPU usage has been above 80% for more than 5 minutes."</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
 
 <h4><strong>Pod CrashLoopBackOff</strong><span style="font-weight: 400;">:</span></h4>
 
@@ -517,23 +295,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">groups:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - name: </span><span style="font-weight: 400;">pod_alerts</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; rules:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - alert: </span><span style="font-weight: 400;">PodCrashLoopBackOff</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; expr: </span><span style="font-weight: 400;">kube_pod_container_status_waiting_reason{reason="CrashLoopBackOff"}</span> <span style="font-weight: 400;">&gt; 0</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; for: </span><span style="font-weight: 400;">10</span><span style="font-weight: 400;">m</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; labels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; severity: </span><span style="font-weight: 400;">warning</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; annotations:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; summary: </span><span style="font-weight: 400;">"Pod in CrashLoopBackOff state"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; description: </span><span style="font-weight: 400;">"Pod </span><span style="font-weight: 400;">{{ $labels.pod }}</span><span style="font-weight: 400;"> in namespace </span><span style="font-weight: 400;">{{ $labels.namespace }}</span><span style="font-weight: 400;"> is in CrashLoopBackOff state."</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">groups:<br /> - name: pod_alerts<br /> rules:<br /> - alert: PodCrashLoopBackOff<br /> expr: kube_pod_container_status_waiting_reason{reason="CrashLoopBackOff"} &gt; 0<br /> for: 10m<br /> labels:<br /> severity: warning<br /> annotations:<br /> summary: "Pod in CrashLoopBackOff state"<br /> description: "Pod {{ $labels.pod }} in namespace {{ $labels.namespace }} is in CrashLoopBackOff state."</span></p>
 
 <h3><span style="font-weight: 400;">Best Practices for Managing Alerts</span></h3>
 
@@ -571,23 +333,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">helm install kube-state-metrics kube-state-metrics/kube-state-metrics</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">helm install kube-state-metrics kube-state-metrics/kube-state-metrics</span><span style="color: #00ff00;"><br /></span></p>
 
 <h4><strong>Configuring </strong><strong>kube-state-metrics</strong><span style="font-weight: 400;">:</span></h4>
 
@@ -595,23 +341,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'kube-state-metrics'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; static_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - targets: </span><span style="font-weight: 400;">\['&lt;kube-state-metrics-service&gt;:8080']</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">scrape_configs:<br /> - job_name: 'kube-state-metrics'<br /> static_configs:<br /> - targets: \['&lt;kube-state-metrics-service&gt;:8080']</span></p>
 
 <h4><strong>Utilizing Metrics</strong><span style="font-weight: 400;">:</span></h4>
 
@@ -619,23 +349,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">sum(kube_deployment_status_replicas_available) by (namespace, deployment)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">sum(kube_deployment_status_replicas_available) by (namespace, deployment)</span></p>
 
 <h3><span style="font-weight: 400;">Monitoring Kubernetes Cluster State with Prometheus and </span><span style="font-weight: 400;">kube-state-metrics</span></h3>
 
@@ -645,67 +359,21 @@ tags:
 
 <p><span style="font-weight: 400;">Monitor the number of available versus desired replicas in your deployments to ensure they are operating as expected.</span></p>
 
-<table>
+<p><span style="color: #00ff00;">kube_deployment_status_replicas_available / </span></p>
 
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">kube_deployment_status_replicas_available / kube_deployment_status_replicas_desired</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">kube_deployment_status_replicas_desired</span></p>
 
 <h4><strong>Pod Status</strong><span style="font-weight: 400;">:</span></h4>
 
 <p><span style="font-weight: 400;">Track the status of pods to identify any that are not running as expected.</span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">count(kube_pod_status_phase{phase!="Running"}) by (namespace, pod)</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">count(kube_pod_status_phase{phase!="Running"}) by (namespace, pod)</span></p>
 
 <p><strong>Node Health</strong><span style="font-weight: 400;">:</span></p>
 
 <p><span style="font-weight: 400;">Monitor node conditions and resource usage to maintain a healthy cluster.</span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">kube_node_status_condition{condition="Ready", status="true"}</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">kube_node_status_condition{condition="Ready", status="true"}</span></p>
 
 <h3><span style="font-weight: 400;">Scaling Prometheus Monitoring for Large Kubernetes Clusters</span></h3>
 
@@ -717,23 +385,7 @@ tags:
 
 <p><span style="font-weight: 400;"></span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">scrape_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - job_name: </span><span style="font-weight: 400;">'federate'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; honor_labels: </span><span style="font-weight: 400;">true</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; metrics_path: </span><span style="font-weight: 400;">'/federate'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; params:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; </span><span style="font-weight: 400;">match\[]:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; -</span> <span style="font-weight: 400;">'{job="prometheus"}'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; static_configs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - targets:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; -</span> <span style="font-weight: 400;">'prometheus-1:9090'</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; -</span> <span style="font-weight: 400;">'prometheus-2:9090'</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">scrape_configs:<br />- job_name: 'federate'<br />honor_labels: true<br />metrics_path: '/federate'<br />params:<br />match\[]:<br />- '{job="prometheus"}'<br />static_configs:<br />- targets:<br />- 'prometheus-1:9090'<br />- 'prometheus-2:9090'</span></p>
 
 <h4><strong>Sharding</strong><span style="font-weight: 400;">:</span></h4>
 
@@ -743,23 +395,7 @@ tags:
 
 <p><span style="font-weight: 400;">You can use the </span><strong>remote write</strong><span style="font-weight: 400;"> feature to send metrics to a reliable long-term storage backend like </span><strong>OpenObserve</strong><span style="font-weight: 400;">. This allows Prometheus to focus on efficient data collection and query processing, while </span><strong>OpenObserve</strong><span style="font-weight: 400;"> takes care of storing and processing these metrics at scale, ensuring better performance and long-term accessibility of your data. It's an ideal solution for offloading Prometheus while maintaining seamless observability and analysis.</span></p>
 
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">remote_write:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - url: </span><span style="font-weight: 400;">'https://your-storage-backend/api/v1/write'</span></p>
-
-</td>
-
-</tr>
-
-</tbody>
-
-</table>
+<p><span style="color: #00ff00;">remote_write:<br /> - url: 'https://your-storage-backend/api/v1/write'</span></p>
 
 <h4><strong>High Availability</strong><span style="font-weight: 400;">:</span></h4>
 
