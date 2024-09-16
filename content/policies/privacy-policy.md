@@ -15,7 +15,7 @@ This summary provides key points from our privacy notice, but you can find out m
 
 **Do we receive any information from third parties?** We do not receive any information from third parties.
 
-**How do we process your information?** We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click [here](#toc_2) to learn more.
+**How do we process your information?** We process your information to provide, improve, and administer our Services, communicate with you, for security and fraud prevention, and to comply with law. We may also process your information for other purposes with your consent. We process your information only when we have a valid legal reason to do so. Click [here](#toc_2) to learn more. ‍Our online data partners or vendors may use cookies and related technologies to connect your activities with other personal information they or others may hold about you, such as your email or online profiles. We, or our service providers, might then send you communications and marketing materials to these emails or profiles. To opt out of these communications, please email us at hello@openobserve.ai
 
 **In what situations and with which types of parties do we share personal information?** We may share information in specific situations and with specific categories of third parties. Click [here](#toc_4) to learn more.
 

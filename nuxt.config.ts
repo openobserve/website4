@@ -64,6 +64,12 @@ export default defineNuxtConfig({
           async: true,
         },
         {
+          src: "/js/vector_co.js",
+          body: true,
+          defer: true,
+          async: true,
+        },
+        {
           src: "/js/zoho.js",
           body: true,
           defer: true,
