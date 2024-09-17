@@ -70,7 +70,6 @@
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.05/1M records)",
           "30 days retention for logs and traces",
-          "120 days retention for metrics",
           "Unlimited users"
         ],
         "sublabel": "Everything in Developer Plan, plus:",
@@ -99,7 +98,6 @@
           "Query Volume ($0.01/GB)",
           "Functions execution ($0.05/1M records)",
           "60 days retention for logs and traces",
-          "13 months retention for metrics",
           "Unlimited users"
         ],
         "sublabel": "Everything in Pro Plan, plus:",
