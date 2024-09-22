@@ -71,6 +71,17 @@
       "slug": "openobserve-team",
       "img": "/img/blog/favicon.svg",
       "bio": "The OpenObserve Team comprises dedicated professionals committed to revolutionizing system observability through their innovative platform, OpenObserve. Dedicated to streamlining data observation and system monitoring, offering high performance and cost-effective solutions for diverse use cases."
+    },
+    {
+      "img": "/img/blog/manaspfp.jpg",
+      "bio": " Manas Sharma is a passionate Dev and Cloud Advocate with a strong focus on cutting-edge technologies, including web3, Cloud, Kubernetes, AWS, and open source. With a deep-rooted commitment to the developer communities. ",
+      "facebookUrl": "",
+      "name": "Manas Sharma",
+      "slug": "Manas",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/manas-sharma-a49295220/",
+      "twitterUrl": "https://x.com/manassharma__",
+      "instagramUrl": ""
     }
   ]
 }
