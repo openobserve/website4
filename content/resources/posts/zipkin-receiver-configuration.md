@@ -33,7 +33,7 @@ tags:
 
 <div style="text-align: center;">
 
-\    <img src="blob:https://openobserve.ai/90a96dc2-d38a-46b0-826a-e9ba5d88064e" alt="Description of image" width="500" height="300">
+<img src="https://zipkin.io/public/img/dependency-graph.png" alt="Description of image" width="500" height="300">
 
 </div>
 
@@ -386,8 +386,6 @@ tags:
 <h3><span style="font-weight: 400;">Send Zipkin Spans to OpenObserve</span></h3>
 
 <p><span style="font-weight: 400;">To send Zipkin spans to OpenObserve, you can use the default Zipkin span submission endpoint:</span></p>
-
-
 
 <p><span style="color: #00ff00;">text </span></p>
 
