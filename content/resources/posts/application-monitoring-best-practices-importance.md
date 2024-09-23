@@ -29,7 +29,7 @@ tags:
 <p><span style="font-weight: 400;">Imagine your application as a finely tuned race car. It's sleek, powerful, and ready to deliver an exceptional user experience. But even the best race cars need regular maintenance and monitoring to stay ahead of the competition. That's where application monitoring comes in.</span></p>
 <p><span style="font-weight: 400;">Application monitoring is crucial for ensuring the health and performance of your software systems. It provides valuable insights into your application's behavior, enabling you to identify and resolve issues quickly.</span></p>
 
-<div style="text-align: center;"><img src="blob:https://openobserve.ai/9a4de6c4-d991-4c17-9106-00af8e4a9803" alt="Description of image" width="500" height="300"></div
+<div style="text-align: center;"><img src="https://openobserve.ai/img/features/traces/traces1.svg" alt="Description of image" width="500" height="300"></div
 <p><a href="https://openobserve.ai/features/traces"><span style="font-weight: 400;">Image Credit</span></a></p>
 <h3><span style="font-weight: 400;">Overview of Application Monitoring and Its Role in Software Development</span></h3>
 <p><span style="font-weight: 400;">Application monitoring involves collecting, analyzing, and interpreting data about your application's performance, availability, and behavior. It plays a vital role in the software development lifecycle by helping you detect and troubleshoot problems, optimize resource utilization, and ensure a positive user experience.&nbsp;</span></p>
