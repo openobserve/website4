@@ -58,8 +58,6 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h4><span style="font-weight: 400;">2. Permissions to Create Services</span></h4>
 
 <p><span style="font-weight: 400;">Setting up the OpenTelemetry Collector as a service requires permissions to create and manage Windows services. Verify that you have these permissions to avoid any setup interruptions.</span></p>
@@ -74,8 +72,6 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h4><span style="font-weight: 400;">3. Download or Build the OpenTelemetry Collector</span></h4>
 
 <p><span style="font-weight: 400;">The OpenTelemetry Collector is the core component for collecting and forwarding event logs. You need to either download a pre-built version or build it from the source with the Windows Events receiver.</span></p>
@@ -89,8 +85,6 @@ publishDate: 2024-09-18
 <li style="font-weight: 400;"><strong>Build:</strong><span style="font-weight: 400;"> If you prefer building from source, follow the instructions provided in the repository&rsquo;s documentation to include the Windows Events receiver.</span></li>
 
 </ul>
-
-
 
 <h3><span style="font-weight: 400;">Streamlining Your Setup</span></h3>
 
@@ -160,8 +154,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Step 2: Installing the OpenTelemetry Collector</span></h3>
 
 <p><span style="font-weight: 400;">After downloading or building the collector, the next step is installation.&nbsp;</span></p>
@@ -208,8 +200,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Step 3: Setting Up the Collector</span></h3>
 
 <p><span style="font-weight: 400;">With the collector installed, it&rsquo;s time to configure it. You&rsquo;ll need to create and edit the configuration file to include the Windows Event Log receiver settings.</span></p>
@@ -232,7 +222,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -290,8 +280,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <ol>
 
 <li style="font-weight: 400;"><strong>Verify Operation:</strong></li>
@@ -307,8 +295,6 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">By following these steps, you&rsquo;ve successfully set up the OpenTelemetry Collector to handle Windows Event Logs. This setup positions you to gain valuable insights into your system&rsquo;s performance and security.</span></p>
 
 <p><span style="font-weight: 400;">In the next section, we&rsquo;ll delve deeper into configuring the Windows Events Receiver, including specifying log channels and understanding the configuration fields in detail.&nbsp;</span></p>
-
-
 
 <h2><span style="font-weight: 400;">Configuring the Windows Events Receiver: Tailoring Your Setup</span></h2>
 
@@ -352,7 +338,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -450,7 +436,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -460,15 +446,11 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><span style="font-weight: 400;">By meticulously configuring the Windows Events Receiver, you ensure comprehensive and efficient log collection. This setup not only captures essential event data but also provides a robust foundation for monitoring and troubleshooting your Windows systems.</span></p>
 
 <p><span style="font-weight: 400;">For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">.&nbsp;</span></p>
 
 <p><span style="font-weight: 400;">In the next section, we&rsquo;ll discuss the key signals to monitor in your event logs, helping you understand what to look for and how to interpret different types of logs.&nbsp;</span></p>
-
-
 
 <h2><span style="font-weight: 400;">What Signals Matter? Decoding Your Event Logs</span></h2>
 
@@ -511,8 +493,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <p><strong>What to Watch For:</strong></p>
 
@@ -562,8 +542,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><strong>What to Watch For:</strong></p>
 
 <ul>
@@ -611,8 +589,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <p><strong>What to Watch For:</strong></p>
 
@@ -672,8 +648,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Assigning Types and Unique IDs</span></h3>
 
 <p><span style="font-weight: 400;">To manage and differentiate between various operators, it's essential to assign types and unique IDs.&nbsp;</span></p>
@@ -710,8 +684,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Chaining Operators: Creating Efficient Pipelines</span></h3>
 
 <p><span style="font-weight: 400;">Chaining operators allows you to create complex processing pipelines where the output of one operator serves as the input for another. This method is powerful for refining and structuring your log data step by step.</span></p>
@@ -736,7 +708,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">[filter-errors,</span> <span style="font-weight: 400;">transform-logs]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">[filter-errors,</span> <span style="font-weight: 400;">transform-logs]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -780,8 +752,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><span style="font-weight: 400;">By leveraging operators effectively, you can transform raw log data into a structured, actionable format that enhances your monitoring and troubleshooting capabilities. Properly configured operators ensure that you get the most relevant and valuable insights from your logs.</span></p>
 
 <p><span style="font-weight: 400;">In the next section, we&rsquo;ll cover how to finalize your OpenTelemetry setup, including configuring service settings and validating the log forwarding process.&nbsp;</span></p>
@@ -818,7 +788,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">receivers:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; windows_event_log:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; channels:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Application</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">Security</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; - name: </span><span style="font-weight: 400;">System</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-observability-platform:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -827,8 +797,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <ol>
 
@@ -860,8 +828,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <ol>
 
 <li style="font-weight: 400;"><strong>Set Service Parameters:</strong></li>
@@ -892,8 +858,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><strong>Starting the OpenTelemetry Collector Service</strong></h3>
 
 <p><span style="font-weight: 400;">With the service configured, it&rsquo;s time to start the OpenTelemetry Collector and ensure it&rsquo;s collecting and forwarding logs as intended.</span></p>
@@ -918,8 +882,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h4><span style="font-weight: 400;">Verify the Service Status:</span></h4>
 
 <p><span style="font-weight: 400;">Ensure the service is running correctly without errors.</span></p>
@@ -941,8 +903,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h3><span style="font-weight: 400;">Validating Log Forwarding: Trust, But Verify</span></h3>
 
@@ -994,8 +954,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h4><span style="font-weight: 400;">Modify Configuration for Debugging:</span></h4>
 
 <ul>
@@ -1012,7 +970,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; logging:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; loglevel: </span><span style="font-weight: 400;">debug</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; logging:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; loglevel: </span><span style="font-weight: 400;">debug</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[windows_event_log]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -1021,8 +979,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h4><span style="font-weight: 400;">Run the Collector Manually:</span></h4>
 
@@ -1049,8 +1005,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h4><span style="font-weight: 400;">Network Troubleshooting:</span></h4>
 
@@ -1079,303 +1033,3 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">We encourage you to explore further configuration tweaks and optimizations to tailor the setup to your specific needs. Stay proactive in monitoring and troubleshooting to ensure your systems run smoothly and efficiently.</span></p>
 
 <p><span style="font-weight: 400;">For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">. </span></p>
-
-<table>
-
-<tbody>
-
-<tr>
-
-<td>
-
-<h3><strong>Element</strong></h3>
-
-</td>
-
-<td>
-
-<h3><strong>Instruction</strong></h3>
-
-</td>
-
-<td>
-
-<h3><strong>Yes/No</strong></h3>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Coherence</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">The article is coherent and has </span><strong>good transition sentences. </strong><strong>(Use Grammarly with US English)</strong></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Format</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Proxima Nova, H1, H2, H3, H4 and normal text using Ctrl + Alt + 1,2,3,4 (1.5 Line Spacing)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">References (Image or data references)</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Accurate and suitable imagery. (May use the react tool)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Introduction</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">The introduction is short, relevant, and engaging. (May use the react tool)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">The body of the article</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Neatly arranged in multiple subheadings (H2s, H3s, bullet points, tables)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Conclusion</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Has 1-2 paragraphs of 3-4 lines. Summarizes the article. Contains the CTAs.</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">CTA (in conclusion)</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">CTA is present (May use the react tool)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Suitable client section interlinking</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Interlinking at the end of a section or/and interlinking a specific phrase.&nbsp;</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">US Grammar</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Use simple, short sentences in an active voice (predominantly).</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Factual information (Preferably in Introduction)</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">The information is correct and updated. (May use the react tool). Make sure to do thorough research. </span><strong>Added code with reference/proof of work/link</strong></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Tonality</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">The tone is friendly and informative but somewhat formal. (May use the react tool)</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Plagiarism/Similarity</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Less than 5%&nbsp;</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Used appropriate and homogeneous headings (small headings)</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">Keep the tonality of headings the same. For example, if it is a question, the following headings/sub-headings should ideally have the same tone.</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Used simpler words and humanized the article&nbsp;</span></p>
-
-</td>
-
-<td>
-
-<p><strong>Avoid using </strong><span style="font-weight: 400;">(navigate, facilitate, landscape, tapestry, leverage, prowess, foster, odyssey, unlock, decode, unravel, demystify, embrace, utilize, etc) </span><strong>ChatGPT classic words</strong></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-<p><span style="font-weight: 400;">Removed fluff and active voice</span></p>
-
-</td>
-
-<td>
-
-<p><span style="font-weight: 400;">(May use the react tool). The subheadings given in the outline are just an idea of the content to be written</span></p>
-
-</td>
-
-<td>&nbsp;</td>
-
-</tr>
-
-</tbody>
-
-</table>
