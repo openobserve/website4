@@ -4,7 +4,7 @@ seoTitle: Understanding Real User Monitoring (RUM)
 description: RUM captures user interaction metrics for proactive issue
   resolution and digital performance improvement. Understand Real User
   Monitoring.
-img: /img/resources/real-user-monitoring-image1.png
+img: /img/resources/real-user-monitoring.png
 alt: Real User Monitoring
 slug: real-user-monitoring-understanding
 authors:
