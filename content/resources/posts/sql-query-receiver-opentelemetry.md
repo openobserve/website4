@@ -38,8 +38,6 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">This guide will provide you with everything you need to harness the full potential of OpenTelemetry for your SQL database monitoring needs.</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Available Features</span></h2>
 
 <p><span style="font-weight: 400;">The SQL Query Receiver in OpenTelemetry is packed with features designed to streamline the collection and management of logs and metrics from SQL databases. These features provide flexibility and control, ensuring that you can tailor the data collection process to meet your specific needs.&nbsp;</span></p>
@@ -80,8 +78,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Efficient Row Tracking with tracking_start_value and tracking_column</span></h3>
 
 <p><span style="font-weight: 400;">To prevent the ingestion of duplicate rows, the SQL Query Receiver allows you to track which rows have already been ingested using the </span><span style="font-weight: 400;">tracking_start_value</span><span style="font-weight: 400;"> and </span><span style="font-weight: 400;">tracking_column</span><span style="font-weight: 400;"> properties. This ensures that only new data is processed, making your data collection more efficient.</span></p>
@@ -115,8 +111,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h3><span style="font-weight: 400;">Persistent Tracking with storage</span></h3>
 
@@ -152,8 +146,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <h3><span style="font-weight: 400;">Enhancing Visualization and Management with OpenObserve</span></h3>
 
 <p><span style="font-weight: 400;">Integrating OpenObserve with the SQL Query Receiver can significantly enhance your ability to visualize and manage the collected logs and metrics. OpenObserve offers advanced dashboards, real-time analytics, and comprehensive visualization tools that bring your telemetry data to life.</span></p>
@@ -180,7 +172,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span><span style="font-weight: 400;"><br /><br /></span></p>
+<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span><span style="font-weight: 400;"><br /><br /></span></p>
 
 </td>
 
@@ -195,8 +187,6 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">By leveraging its customizable features and integrating with OpenObserve, you can enhance your observability setup, ensuring comprehensive and actionable insights into your database performance.</span></p>
 
 <p><span style="font-weight: 400;">For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">.</span></p>
-
-
 
 <h2><span style="font-weight: 400;">Current Implementation State: A Solid Foundation with Room to Grow</span></h2>
 
@@ -219,8 +209,6 @@ publishDate: 2024-09-18
 </ul>
 
 <p><strong>Why It&rsquo;s Important:</strong><span style="font-weight: 400;"> Deploying a stable and reliable SQL Query Receiver ensures that your telemetry data is accurate and consistent, which is critical for making informed decisions about your database&rsquo;s performance.</span></p>
-
-
 
 <h3><span style="font-weight: 400;">Development Stability: Experimentation and Feedback</span></h3>
 
@@ -245,8 +233,6 @@ publishDate: 2024-09-18
 <li style="font-weight: 400;"><strong>Feedback:</strong><span style="font-weight: 400;"> Share your experiences and suggestions with the OpenTelemetry community to influence future developments.</span></li>
 
 </ul>
-
-
 
 <h3><span style="font-weight: 400;">Future Development: What&rsquo;s Next?</span></h3>
 
@@ -276,8 +262,6 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">With exciting features on the horizon, the SQL Query Receiver is poised to become an even more powerful tool for database observability.</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Future Development</span></h2>
 
 <p><span style="font-weight: 400;">The SQL Query Receiver in OpenTelemetry is already a powerful tool for database telemetry, but its development is far from complete.&nbsp;</span></p>
@@ -292,8 +276,6 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">One of the significant upcoming features is the ability to fill in log fields like </span><span style="font-weight: 400;">Timestamp</span><span style="font-weight: 400;"> and </span><span style="font-weight: 400;">ObservedTimestamp</span><span style="font-weight: 400;">. This addition will allow for more precise tracking and analysis of your database events.</span></p>
 
-
-
 <p><span style="font-weight: 400;">Why It Matters:</span></p>
 
 <ul>
@@ -303,8 +285,6 @@ publishDate: 2024-09-18
 <li style="font-weight: 400;"><strong>Improved Analysis:</strong><span style="font-weight: 400;"> With exact timing data, you can perform detailed performance analysis and trend identification.</span></li>
 
 </ul>
-
-
 
 <p><span style="font-weight: 400;">Example Configuration (Future Feature):</span></p>
 
@@ -340,8 +320,6 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h3><span style="font-weight: 400;">Community-Driven Development: Your Role</span></h3>
 
 <p><span style="font-weight: 400;">As an OpenTelemetry user, your feedback is invaluable. The community-driven development model relies on users to test new features, report issues, and suggest improvements.</span></p>
@@ -358,8 +336,6 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h3><span style="font-weight: 400;">Looking Ahead: A Powerful Tool for Database Observability</span></h3>
 
 <p><span style="font-weight: 400;">The ongoing development of the SQL Query Receiver demonstrates a commitment to creating a comprehensive and user-friendly tool for database observability.&nbsp;</span></p>
@@ -370,13 +346,9 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">For those looking to enhance their observability setup further, integrating OpenObserve with the SQL Query Receiver can provide advanced visualization and real-time analytics. For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">.&nbsp;</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Setting Up the OpenTelemetry Collector</span></h2>
 
 <p><span style="font-weight: 400;">Setting up the OpenTelemetry Collector is essential to harness the full power of the SQL Query Receiver. This section provides a comprehensive guide on how to deploy, configure, and activate the SQL Query Receiver within the OpenTelemetry Collector.&nbsp;&nbsp;</span></p>
-
-
 
 <h3><span style="font-weight: 400;">Deploying the OpenTelemetry Collector: Choose Your Platform</span></h3>
 
@@ -476,25 +448,19 @@ publishDate: 2024-09-18
 
 </ol>
 
-
-
 <h3><span style="font-weight: 400;">Configuring and Activating the SQL Query Receiver</span></h3>
 
 <p><span style="font-weight: 400;">Once the collector is deployed, the next step is to configure and activate the SQL Query Receiver.</span></p>
 
 <p><strong>Edit the Configuration File:</strong></p>
 
-<ol>
-
-<li style="font-weight: 400;"><strong>Receivers Section:</strong></li>
+<strong>1. Receivers Section:</strong>
 
 <ul>
 
 <li style="font-weight: 400;"><span style="font-weight: 400;">Add the SQL Query Receiver configuration to the </span><span style="font-weight: 400;">receivers</span><span style="font-weight: 400;"> section of your </span><span style="font-weight: 400;">config.yaml</span><span style="font-weight: 400;"> file.</span></li>
 
 </ul>
-
-</ol>
 
 <table>
 
@@ -516,17 +482,13 @@ publishDate: 2024-09-18
 
 <p>&nbsp;</p>
 
-<ol>
-
-<li style="font-weight: 400;"><strong>Service Section:</strong></li>
+<strong>2. Service Section:</strong>
 
 <ul>
 
 <li style="font-weight: 400;"><span style="font-weight: 400;">Ensure the </span><span style="font-weight: 400;">service</span><span style="font-weight: 400;"> section includes the SQL Query Receiver.</span></li>
 
 </ul>
-
-</ol>
 
 <table>
 
@@ -536,7 +498,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -545,8 +507,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h3><span style="font-weight: 400;">Restarting the Collector</span></h3>
 
@@ -568,15 +528,11 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">By following these steps, you ensure that your telemetry data is captured accurately and consistently, providing valuable insights into your SQL databases' performance.</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Sample Configuration</span></h2>
 
 <p><span style="font-weight: 400;">To maximize the benefits of the SQL Query Receiver in OpenTelemetry, having a clear and effective configuration is crucial.&nbsp;</span></p>
 
 <p><span style="font-weight: 400;">This section provides detailed examples and explanations of the configuration settings you need to get the SQL Query Receiver up and running smoothly.&nbsp;&nbsp;</span></p>
-
-
 
 <h3><span style="font-weight: 400;">Receivers Section: Defining the Data Ingest Points</span></h3>
 
@@ -585,8 +541,6 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">This is the core setup that tells the OpenTelemetry Collector how to handle SQL queries and track logs.</span></p>
 
 <p><span style="font-weight: 400;">Example Receivers Configuration:</span></p>
-
-
 
 <table>
 
@@ -606,8 +560,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><strong>Key Components:</strong></p>
 
 <ul>
@@ -624,15 +576,11 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h3><span style="font-weight: 400;">Service Section: Orchestrating the Data Flow</span></h3>
 
 <p><span style="font-weight: 400;">The </span><span style="font-weight: 400;">service</span><span style="font-weight: 400;"> section is essential for defining how data flows through the OpenTelemetry Collector, from ingestion to processing and finally to exporting.</span></p>
 
 <p><span style="font-weight: 400;">Example Service Configuration:</span></p>
-
-
 
 <table>
 
@@ -642,7 +590,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; logs:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -651,8 +599,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <p><strong>Key Components:</strong></p>
 
@@ -670,15 +616,11 @@ publishDate: 2024-09-18
 
 </ul>
 
-
-
 <h3><span style="font-weight: 400;">Optional Settings: Fine-Tuning Your Configuration</span></h3>
 
 <p><span style="font-weight: 400;">To cater to specific needs, the SQL Query Receiver offers optional settings that can enhance functionality and customization.</span></p>
 
 <p><span style="font-weight: 400;">Example Optional Settings:</span></p>
-
-
 
 <table>
 
@@ -698,8 +640,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><strong>Additional Components:</strong></p>
 
 <ul>
@@ -714,8 +654,6 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">This setup captures critical logs and metrics from your SQL databases, providing the data you need for in-depth analysis and monitoring.</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Metrics Collection</span></h2>
 
 <p><span style="font-weight: 400;">Collecting and analyzing metrics from your SQL databases is essential for understanding their performance and identifying potential issues. The SQL Query Receiver in OpenTelemetry allows you to enable specific metrics collection, providing detailed insights into your database operations.&nbsp;</span></p>
@@ -727,8 +665,6 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">To capture relevant metrics, you can use the </span><span style="font-weight: 400;">enabled</span><span style="font-weight: 400;"> field in your configuration. This allows you to specify which metrics to collect, ensuring you gather the most pertinent data for your monitoring needs.</span></p>
 
 <p><span style="font-weight: 400;">Configuring Metrics Collection:</span></p>
-
-
 
 <table>
 
@@ -748,8 +684,6 @@ publishDate: 2024-09-18
 
 </table>
 
-
-
 <p><strong>Key Components:</strong></p>
 
 <ul>
@@ -761,8 +695,6 @@ publishDate: 2024-09-18
 </ul>
 
 <p><strong>Why It Matters:</strong><span style="font-weight: 400;"> Enabling specific metrics allows you to focus on the most critical performance indicators of your SQL databases. By collecting data on query duration, rows returned, and errors, you gain actionable insights that help optimize database performance and ensure reliability.</span></p>
-
-
 
 <h3><span style="font-weight: 400;">Visualizing and Analyzing Metrics with OpenObserve</span></h3>
 
@@ -798,7 +730,7 @@ publishDate: 2024-09-18
 
 <td>
 
-<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; metrics:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
+<p><span style="font-weight: 400;">exporters:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; otlp:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; endpoint: </span><span style="font-weight: 400;">"http://your-openobserve-instance:4317"</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; compression: </span><span style="font-weight: 400;">gzip</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">service:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; pipelines:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; metrics:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; receivers: </span><span style="font-weight: 400;">\\[sqlquery]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; processors: </span><span style="font-weight: 400;">\\[batch]</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; exporters: </span><span style="font-weight: 400;">[logging,</span> <span style="font-weight: 400;">otlp]</span></p>
 
 </td>
 
@@ -807,8 +739,6 @@ publishDate: 2024-09-18
 </tbody>
 
 </table>
-
-
 
 <h3><span style="font-weight: 400;">Benefits of Using OpenObserve for Metrics Analysis</span></h3>
 
@@ -828,8 +758,6 @@ publishDate: 2024-09-18
 
 <p><span style="font-weight: 400;">For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">.&nbsp;</span></p>
 
-
-
 <h2><span style="font-weight: 400;">Conclusion</span></h2>
 
 <p><span style="font-weight: 400;">The SQL Query Receiver in OpenTelemetry provides a robust framework for capturing, processing, and analyzing telemetry data from SQL databases. By enabling specific metrics collection and leveraging advanced configuration options, you can gain detailed insights into your database performance, ensuring reliability and efficiency.</span></p>
@@ -839,303 +767,3 @@ publishDate: 2024-09-18
 <p><span style="font-weight: 400;">Whether you are managing a small development setup or a large-scale production environment, the SQL Query Receiver and OpenObserve offer the tools and insights needed to keep your databases running smoothly. By following the steps outlined in this guide, you can set up a robust monitoring system that provides valuable, actionable data.</span></p>
 
 <p><span style="font-weight: 400;">For more detailed information and to get started with OpenObserve, visit our</span><a href="https://openobserve.ai"> <span style="font-weight: 400;">website</span></a><span style="font-weight: 400;">, check out our</span><a href="https://github.com/openobserve/openobserve"> <span style="font-weight: 400;">GitHub repository</span></a><span style="font-weight: 400;">, or</span><a href="https://cloud.openobserve.ai"> <span style="font-weight: 400;">sign up here</span></a><span style="font-weight: 400;">. </span></p>
-
-<table>
-
-<tbody>
-
-<tr style="height: 41px;">
-
-<td style="height: 41px;">
-
-<h3><strong>Element</strong></h3>
-
-</td>
-
-<td style="height: 41px;">
-
-<h3><strong>Instruction</strong></h3>
-
-</td>
-
-<td style="height: 41px;">
-
-<h3><strong>Yes/No</strong></h3>
-
-</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Coherence</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">The article is coherent and has </span><strong>good transition sentences. </strong><strong>(Use Grammarly with US English)</strong></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35.7188px;">
-
-<td style="height: 35.7188px;">
-
-<p><span style="font-weight: 400;">Format</span></p>
-
-</td>
-
-<td style="height: 35.7188px;">
-
-<p><span style="font-weight: 400;">Proxima Nova, H1, H2, H3, H4 and normal text using Ctrl + Alt + 1,2,3,4 (1.5 Line Spacing)</span></p>
-
-</td>
-
-<td style="height: 35.7188px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">References (Image or data references)</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Accurate and suitable imagery. (May use the react tool)</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Introduction</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">The introduction is short, relevant, and engaging. (May use the react tool)</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">The body of the article</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Neatly arranged in multiple subheadings (H2s, H3s, bullet points, tables)</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Conclusion</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Has 1-2 paragraphs of 3-4 lines. Summarizes the article. Contains the CTAs.</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">CTA (in conclusion)</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">CTA is present (May use the react tool)</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Suitable client section interlinking</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Interlinking at the end of a section or/and interlinking a specific phrase.&nbsp;</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">US Grammar</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Use simple, short sentences in an active voice (predominantly).</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 48px;">
-
-<td style="height: 48px;">
-
-<p><span style="font-weight: 400;">Factual information (Preferably in Introduction)</span></p>
-
-</td>
-
-<td style="height: 48px;">
-
-<p><span style="font-weight: 400;">The information is correct and updated. (May use the react tool). Make sure to do thorough research. </span><strong>Added code with reference/proof of work/link</strong></p>
-
-</td>
-
-<td style="height: 48px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Tonality</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">The tone is friendly and informative but somewhat formal. (May use the react tool)</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Plagiarism/Similarity</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Less than 5%&nbsp;</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 48px;">
-
-<td style="height: 48px;">
-
-<p><span style="font-weight: 400;">Used appropriate and homogeneous headings (small headings)</span></p>
-
-</td>
-
-<td style="height: 48px;">
-
-<p><span style="font-weight: 400;">Keep the tonality of headings the same. For example, if it is a question, the following headings/sub-headings should ideally have the same tone.</span></p>
-
-</td>
-
-<td style="height: 48px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 48px;">
-
-<td style="height: 48px;">
-
-<p><span style="font-weight: 400;">Used simpler words and humanized the article&nbsp;</span></p>
-
-</td>
-
-<td style="height: 48px;">
-
-<p><strong>Avoid using </strong><span style="font-weight: 400;">(navigate, facilitate, landscape, tapestry, leverage, prowess, foster, odyssey, unlock, decode, unravel, demystify, embrace, utilize, etc) </span><strong>ChatGPT classic words</strong></p>
-
-</td>
-
-<td style="height: 48px;">&nbsp;</td>
-
-</tr>
-
-<tr style="height: 35px;">
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">Removed fluff and active voice</span></p>
-
-</td>
-
-<td style="height: 35px;">
-
-<p><span style="font-weight: 400;">(May use the react tool). The subheadings given in the outline are just an idea of the content to be written</span></p>
-
-</td>
-
-<td style="height: 35px;">&nbsp;</td>
-
-</tr>
-
-</tbody>
-
-</table>
