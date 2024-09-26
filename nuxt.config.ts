@@ -4,6 +4,7 @@ export default defineNuxtConfig({
     "./blog",
     // "nuxt-seo-kit",
   ],
+
   modules: [
     "@nuxtjs/tailwindcss",
     "@nuxtjs/google-fonts",
@@ -12,16 +13,19 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@nuxt/content",
   ],
+
   linkChecker: {
     enabled: false,
     failOnError: false,
     excludeLinks: ["/docs", "/docs/**"],
   },
+
   nitro: {
     prerender: {
       failOnError: false,
     },
   },
+
   app: {
     head: {
       link: [
@@ -78,6 +82,7 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => {
@@ -85,7 +90,9 @@ export default defineNuxtConfig({
       },
     },
   },
+
   css: ["@/assets/css/main.css"],
+
   components: {
     // component directories with the subdirs listed first for using the default names
     dirs: [
@@ -99,6 +106,7 @@ export default defineNuxtConfig({
       "~/components",
     ],
   },
+
   googleFonts: {
     display: "swap",
     prefetch: true,
@@ -112,10 +120,12 @@ export default defineNuxtConfig({
       },
     },
   },
+
   site: {
     url: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
     name: "Open Source Observability Platform for Logs, Metrics, Traces, and More – Your Ultimate Dashboard for Alerts and Insights",
   },
+
   runtimeConfig: {
     public: {
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || "https://openobserve.ai/",
@@ -133,7 +143,10 @@ export default defineNuxtConfig({
   build: {
     transpile: ["clsx"],
   },
+
   robots: {
     // sitemap: ["https://zinc.struct.ai/sitemap.xml"],
   },
+
+  compatibilityDate: "2024-09-23",
 });

@@ -1,10 +1,10 @@
 ---
-title: "Understanding OpenTelemetry Logging"
-seoTitle: "Deep-Dive into OpenTelemetry Logs"
-description: "This blog explores how OpenTelemetry streamlines log collection and management for modern applications. Learn how to integrate OpenTelemetry, auto-instrument logs, and optimize performance, while unifying logs, traces, and metrics for better observability."
-img: \img\blog\understanding-otel-logs\image2.png.
+title: Understanding OpenTelemetry Logging
+seoTitle: Deep-Dive into OpenTelemetry Logs
+description: This blog explores how OpenTelemetry streamlines log collection and management for modern applications. Learn how to integrate OpenTelemetry, auto-instrument logs, and optimize performance, while unifying logs, traces, and metrics for better observability.
+img: /img/blog/understanding-otel-logs/image2.png
 alt: Otel-logs
-slug: understanding-otel-logs
+slug: understanding-opentelemetry-logs
 authors:
   - Manas
 publishDate: 2024-09-23
@@ -60,7 +60,7 @@ Traditional logging approaches often fall short when it comes to correlating dif
 
 With OpenTelemetry, logs can be correlated with other telemetry signals like traces and spans, offering deeper insights. This context helps teams make smarter decisions based on actual user interactions with their system.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image1.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image1.png)
 
 ### What Does OpenTelemetry Logging Unlock?
 
@@ -72,7 +72,7 @@ With OpenTelemetry, logs can be correlated with other telemetry signals like tra
 
 OpenTelemetry doesn’t ask you to ditch your existing setup. It seamlessly integrates with common logging libraries, ensuring that your system can evolve while still benefiting from your current logs.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image4.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image4.png)
 
 ## Collecting Log Data with OpenTelemetry
 
@@ -82,36 +82,34 @@ You can learn more about the data model [here](https://opentelemetry.io/docs/).
 
 Existing log formats can be **unambiguously mapped** to the OpenTelemetry Log Data Model. The OpenTelemetry Collector can read such logs and translate them to the OpenTelemetry Log Data Model.
 
-To emit LogRecords, OpenTelemetry exposes a Logs Bridge API. It is not recommended for application developers to make direct calls to this API. The API is made available to library authors so they can create log appenders, which act as a bridge between the OpenTelemetry Log Data Model and already available logging libraries. OpenTelemetry does not intend to provide a feature-rich logging library.
+To emit LogRecords, OpenTelemetry exposes a **Logs Bridge API**. It is not recommended for application developers to make direct calls to this API. The API is made available to library authors so they can create log appenders, which act as a bridge between the OpenTelemetry Log Data Model and already available logging libraries. OpenTelemetry does not intend to provide a feature-rich logging library.
 
 An **SDK Implementation** of the Bridge API defined by OpenTelemetry makes it possible to configure the processing and exporting of LogRecords.
 
-As described earlier, OpenTelemetry provides extensions for a few widely used logging library languages to facilitate manual/auto instrumentation scenarios. The modifications will make it possible to transmit logs via the OTLP protocol to the backend or the Collector and enable the inclusion of the trace context in the logs.
-
-Application-specific resource context (such as the process ID, programming language, logging library name and version, etc.) is automatically added to the output logs. For these logs, full correlation across all context dimensions will be accessible.
+As described earlier, opentelemetry provides extensions for a few widely used logging library languages to facilitate manual/auto instrumentation scenarios. The modifications will make it possible to transmit logs via the `OTLP` protocol to the backend or the Collector and enable the inclusion of the trace context in the logs.
 
 
 ### How Various Log Sources Are Handled by OpenTelemetry
 
 To minimize the number of changes needed to migrate to OpenTelemetry for logs, OpenTelemetry offers a variety of receivers and processors for gathering system and infrastructure logs, first-party, and third-party application logs via the **OpenTelemetry Collector** or already-existing agents like FluentBit.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image3.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image3.png)
 
 There are two primary ways to collect logs in OpenTelemetry:
 
 1. **File or Stdout Logs**: Read from existing logs written to files or standard output using receivers like the filelog receiver.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image6.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image6.png)
 
 2. **Direct-to-Collector**: Modify your application’s logging library to send logs directly to the OpenTelemetry Collector. This method eliminates complexity related to file logs, including parsers, log tailing, and rotation. However, the simplicity of having logs in a local file is lost.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image8.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image8.png)
 
 ## The OpenTelemetry Collector
 
 The OpenTelemetry Collector is a vendor-agnostic tool designed to collect, process, and export telemetry data. It acts as the central hub, gathering data from multiple sources and ensuring it reaches your chosen destination efficiently.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image5.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image5.png)
 
 ### Key Features Include:
 
@@ -166,9 +164,9 @@ When integrating OpenObserve into your application, it's crucial to double-check
 
 In my experience, I encountered a notable issue where the OpenTelemetry Collector failed to communicate with OpenObserve on my Windows machine. After thorough investigation, I traced the root cause to a misconfiguration in the network settings for port 5080, resulting in failed log transmissions.
 
-![observability-pipeline-without-otel](\img\blog\understanding-otel-logs\image7.png)
+![observability-pipeline-without-otel](/img/blog/understanding-otel-logs/image7.png)
 
-To resolve this issue, I manually configured the network settings for port 5080 on my Windows machine, as illustrated in the reference image above.
+To resolve this issue, I manually configured the network settings for port 5080 on my Windows machine, as shown in the reference image above.
 
 
 ## Best Practices for Performance Optimization
@@ -191,3 +189,9 @@ To get started with OpenTelemetry logs, follow these next steps:
 2. Find a development environment where you can try out OpenTelemetry. This will help you understand the data flow and identify potential issues.
 3. Join the OpenTelemetry community if you're interested in staying involved. Follow the discussions, attend virtual events, and keep up with the latest developments.
 4. Contribute to the project if you're interested. Check out the project home page, file issues, submit pull requests, or discuss your ideas on the OpenTelemetry Discussions forum.
+
+
+
+> #### Get Started with OpenObserve Today!
+> Sign up for a free trial of OpenObserve on our [website](https://openobserve.ai/).
+>Check out our [GitHub repository](https://github.com/openobserve) for self-hosting and contribution opportunities.

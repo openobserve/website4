@@ -2,12 +2,12 @@
 title: Monitoring Your FastAPI Application with OpenTelemetry and OpenObserve. 
 seoTitle: Monitoring Python application with OpenTelemetry
 description: This blog helps you in getting started with monitoring FastAPI python application with OpenTelemetry and OpenObserve.
-img: \img\blog\Fast-api\image6.jpg
+img: /img/blog/fast-api/image6.jpg
 alt: OpenObserve
-slug: FastAPI-python-monitoring-opentelemetry
+slug: monitoring-fastapi-application-using-opentelemetry-and-openobserve
 authors: 
   - Manas
-publishDate: 2024-9-22
+publishDate: 2024-9-24
 tags:
   - observability
   - opentelemetry
@@ -67,7 +67,7 @@ Collecting telemetry data is only the first step - the real value lies in the ab
 OpenTelemetry is a versatile tool that allows you to collect logs either directly or via existing log files. You can configure the OpenTelemetry Collector to process these logs and export them to a platform like OpenObserve. This setup ensures that your logs, traces, and metrics are seamlessly integrated, providing a holistic view of your application.
 
 
-![Demo-architechture](\img\blog\Fast-api\image1.png)
+![Demo-architechture](/img/blog/fast-api/image1.png)
 *Demo Architecture* 
 
 ## Getting Started
@@ -78,7 +78,7 @@ For this demo, we will perform all the tasks in a Windows environment. You can a
 
 First things first, let’s set up the OpenTelemetry Collector:
 
-1.  Run the commands below to install the opentelemetry-collector-contrib for Windows. Make sure you check that you are using the latest version.
+1.  Run the commands below to install the `opentelemetry-collector-contrib` for Windows. Make sure you check that you are using the latest version.
 
 ```bash
 cd .\otel-collector\
@@ -107,7 +107,7 @@ Next, we need to configure the OpenTelemetry Collector using a `config.yaml` fil
 ```yaml
 receivers:
   filelog:
-    include: path\to\the\file\app.log
+    include: path/to/the/file/app.log
   otlp:
     protocols:
       grpc:
@@ -142,7 +142,7 @@ Run this command below in the directory in which opentelemetry-collector-contrib
 ```
 You will get an output similar to the screenshot below:
 
-![image](\img\blog\Fast-api\image4.png)
+![image](/img/blog/fast-api/image4.png)
 
 The collector is now up and running, ready to process logs and traces like a pro.
 
@@ -167,7 +167,7 @@ $env:ZO_ROOT_USER_PASSWORD = "Complexpass#123"
 
 Boom! OpenObserve is live at http://localhost:5080. Time to dive into some data!
 
-![Open-Observe- Dashboard](\img\blog\Fast-api\image10.png)
+![Open-Observe- Dashboard](/img/blog/fast-api/image10.png)
 
 
 ### Step 4: Setting Up the FastAPI Application
@@ -242,30 +242,30 @@ curl http://localhost:8000/items/45
 
 Head over to http://localhost:5080 and explore your logs. You can filter, search, and dive deep into the data to see how your application is performing.
 
-![Dashboard](\img\blog\Fast-api\image3.png)
+![Dashboard](/img/blog/fast-api/image3.png)
 *OpenObserve Dashboard*
 
 
-![Logs](\img\blog\Fast-api\image9.png)
+![Logs](/img/blog/fast-api/image9.png)
 *Logs-Spans*
 
 
 Detailed view of Logs and Traces in OpenObserve:
 
-![Logs dashboard](\img\blog\Fast-api\image7.png)
+![Logs dashboard](/img/blog/fast-api/image7.png)
 *Logs*
 
-![Trace dashboard](\img\blog\Fast-api\image5.png)
+![Trace dashboard](/img/blog/fast-api/image5.png)
 *Traces*
 
 Use a query with the specific `trace_id` to search and filter through all logs associated with that trace, ensuring full visibility of the request flow.
 
-![Trace dashboard](\img\blog\Fast-api\image8.png)
+![Trace dashboard](/img/blog/fast-api/image8.png)
 
 
-Similarly, when viewing a trace, we can easily identify related logs by the same `trace_id`, allowing us to correlate logs with traces.
+Similarly, when viewing a trace, we can easily identify related logs by the same `trace_id`, allowing user to correlate logs with traces.
 
-![Trace dashboard](\img\blog\Fast-api\image2.png)
+![Trace dashboard](/img/blog/fast-api/image2.png)
 
 
 ## Common Pitfalls and Troubleshooting
@@ -274,7 +274,7 @@ Similarly, when viewing a trace, we can easily identify related logs by the same
 
 **Misconfigured Logging**
 
-Setting up OpenTelemetry logging can often present challenges, particularly when it comes to ensuring that all components are correctly configured. In our architecture, it is crucial to ensure that the config.yaml file is properly structured and that all necessary receiver, processor, and exporter components are configured accurately.
+Setting up OpenTelemetry logging can often present challenges, particularly when it comes to ensuring that all components are correctly configured. In our architecture, it is crucial to ensure that the `config.yaml ` file is properly structured and that all necessary receiver, processor, and exporter components are configured accurately.
 
 ### Best Practices
 
@@ -293,12 +293,7 @@ By combining OpenTelemetry with OpenObserve, you’ve set up a powerful monitori
 
 Now go forth and monitor like a pro! 🚀
 
-## Acknowledgements
 
-- [OpenTelemetry Logs](https://opentelemetry.io/docs/specs/otel/logs/#system-logs)
-
-- [Introducing Logging in OpenTelemetry](https://www.youtube.com/watch?v=a1KZwfLr2PQ&t=124s)
-
-- [Log Data Mode](https://opentelemetry.io/docs/specs/otel/logs/data-model/)
-
-- [OpenTelemetry Backends](https://uptrace.dev/blog/opentelemetry-backend.html)
+> #### Get Started with OpenObserve Today!
+> Sign up for a free trial of OpenObserve on our [website](https://openobserve.ai/).
+>Check out our [GitHub repository](https://github.com/openobserve) for self-hosting and contribution opportunities.
