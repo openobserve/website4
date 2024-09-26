@@ -7,7 +7,7 @@ img: /img/resources/top-open-source-log-analysis-tools-to-consider.png
 alt: log analysis tools open source
 slug: log-analysis-tools-open-source-evaluation
 authors:
-  - OpenObserve Team
+  - openobserve-team
 publishDate: 2024-09-13
 tags:
   - Open Source Log Analysis Tools

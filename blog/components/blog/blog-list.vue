@@ -6,7 +6,7 @@
           <div style="flex: 2" class="px-4 py-2">
             <div class="">
               <nuxt-link
-                :to="`/${type}/${article.slug}`"
+                :to="`/${type}/${article?.slug}`"
                 class="text-2xl text-gray-700 font-medium hover:text-theme-primary transition-all duration-200"
               >
                 {{ article.title }}
@@ -32,7 +32,7 @@
                 <div class="flex items-center">
                   <nuxt-link
                     v-for="(author, index) in getAuthors(article)"
-                    :to="`/${type}/author/${author.slug}`"
+                    :to="`/${type}/author/${author?.slug}`"
                     class="inline-block mr-2"
                     :class="{
                       '-ml-5': index > 0,
@@ -48,7 +48,7 @@
                     <h3 class="text-gray-700 text-sm font-bold">
                       <nuxt-link
                         v-for="(author, index) in getAuthors(article)"
-                        :to="`/${type}/author/${author.slug}`"
+                        :to="`/${type}/author/${author?.slug}`"
                         class="hover:underline"
                       >
                         {{ author?.name 
@@ -62,7 +62,7 @@
                 </div>
               </div>
               <nuxt-link
-                :to="`/${type}/${article.slug}`"
+                :to="`/${type}/${article?.slug}`"
                 class="text-blue-500 hover:underline"
               >
                 Read more

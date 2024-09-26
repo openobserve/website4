@@ -7,7 +7,7 @@ img: /img/resources/zipkin-receiver.png
 alt: Zipkin Receiver
 slug: zipkin-receiver-configuration
 authors:
-  - OpenObserve Team
+  - openobserve-team
 publishDate: 2024-09-13
 tags:
   - Zipkin Receiver
