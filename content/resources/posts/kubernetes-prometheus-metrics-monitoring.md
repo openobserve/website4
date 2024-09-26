@@ -7,7 +7,7 @@ img: /img/resources/monitoring-kubernetes-system-components-with-prometheus-metr
 alt: kubernetes prometheus metrics
 slug: kubernetes-prometheus-metrics-monitoring
 authors:
-  - OpenObserve Team
+  - openobserve-team
 publishDate: 2024-09-13
 tags:
   - Kubernetes Monitoring
