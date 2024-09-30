@@ -1,5 +1,5 @@
 ---
-title: Monitoring Your FastAPI Application with OpenTelemetry and OpenObserve. 
+title: Monitoring Your FastAPI Application with OpenTelemetry and OpenObserve
 seoTitle: Monitoring Python application with OpenTelemetry
 description: This blog helps you in getting started with monitoring FastAPI python application with OpenTelemetry and OpenObserve.
 img: /img/blog/fastapi/image6.jpg
