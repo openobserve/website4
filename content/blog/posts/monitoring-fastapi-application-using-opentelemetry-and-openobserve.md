@@ -2,7 +2,7 @@
 title: Monitoring Your FastAPI Application with OpenTelemetry and OpenObserve. 
 seoTitle: Monitoring Python application with OpenTelemetry
 description: This blog helps you in getting started with monitoring FastAPI python application with OpenTelemetry and OpenObserve.
-img: /img/blog/fast-api/image6.jpg
+img: /img/blog/fastapi/image6.jpg
 alt: OpenObserve
 slug: monitoring-fastapi-application-using-opentelemetry-and-openobserve
 authors: 
@@ -67,7 +67,7 @@ Collecting telemetry data is only the first step - the real value lies in the ab
 OpenTelemetry is a versatile tool that allows you to collect logs either directly or via existing log files. You can configure the OpenTelemetry Collector to process these logs and export them to a platform like OpenObserve. This setup ensures that your logs, traces, and metrics are seamlessly integrated, providing a holistic view of your application.
 
 
-![Demo-architechture](/img/blog/fast-api/image1.png)
+![Demo-architechture](/img/blog/fastapi/image1.png)
 *Demo Architecture* 
 
 ## Getting Started
@@ -142,7 +142,7 @@ Run this command below in the directory in which opentelemetry-collector-contrib
 ```
 You will get an output similar to the screenshot below:
 
-![image](/img/blog/fast-api/image4.png)
+![image](/img/blog/fastapi/image4.png)
 
 The collector is now up and running, ready to process logs and traces like a pro.
 
@@ -167,7 +167,7 @@ $env:ZO_ROOT_USER_PASSWORD = "Complexpass#123"
 
 Boom! OpenObserve is live at http://localhost:5080. Time to dive into some data!
 
-![Open-Observe- Dashboard](/img/blog/fast-api/image10.png)
+![Open-Observe- Dashboard](/img/blog/fastapi/image10.png)
 
 
 ### Step 4: Setting Up the FastAPI Application
@@ -242,30 +242,30 @@ curl http://localhost:8000/items/45
 
 Head over to http://localhost:5080 and explore your logs. You can filter, search, and dive deep into the data to see how your application is performing.
 
-![Dashboard](/img/blog/fast-api/image3.png)
+![Dashboard](/img/blog/fastapi/image3.png)
 *OpenObserve Dashboard*
 
 
-![Logs](/img/blog/fast-api/image9.png)
+![Logs](/img/blog/fastapi/image9.png)
 *Logs-Spans*
 
 
 Detailed view of Logs and Traces in OpenObserve:
 
-![Logs dashboard](/img/blog/fast-api/image7.png)
+![Logs dashboard](/img/blog/fastapi/image7.png)
 *Logs*
 
-![Trace dashboard](/img/blog/fast-api/image5.png)
+![Trace dashboard](/img/blog/fastapi/image5.png)
 *Traces*
 
 Use a query with the specific `trace_id` to search and filter through all logs associated with that trace, ensuring full visibility of the request flow.
 
-![Trace dashboard](/img/blog/fast-api/image8.png)
+![Trace dashboard](/img/blog/fastapi/image8.png)
 
 
 Similarly, when viewing a trace, we can easily identify related logs by the same `trace_id`, allowing user to correlate logs with traces.
 
-![Trace dashboard](/img/blog/fast-api/image2.png)
+![Trace dashboard](/img/blog/fastapi/image2.png)
 
 
 ## Common Pitfalls and Troubleshooting
