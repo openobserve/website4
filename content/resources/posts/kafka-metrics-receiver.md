@@ -5,7 +5,7 @@ description: Learn how to configure Kafka to report metrics to the OpenTelemetry
   Collector in our in-depth guide for Kafka metrics receiver.
 img: /img/resources/opentelemetry-kafka-metrics-monitoring.png
 alt: Kafka Metrics Receiver
-slug: kafka-metrics-receiver
+slug: " kafka-metrics-receiver-opentelemetry-monitoring"
 authors:
   - OpenObserve-Team
 publishDate: 2024-09-24
