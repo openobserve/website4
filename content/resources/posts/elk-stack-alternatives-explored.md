@@ -7,7 +7,7 @@ img: /img/resources/image1.png
 alt: elk stack alternatives
 slug: elk-stack-alternatives-explored
 authors:
-  - openobserve-team
+  - OpenObserve Team
 publishDate: 2024-09-18
 tags:
   - elk stack alternatives
