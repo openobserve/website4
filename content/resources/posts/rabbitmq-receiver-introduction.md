@@ -5,7 +5,7 @@ description: Learn the significance of efficiently receiving messages a RabbitMQ
   Receiver in a Spring application.
 img: /img/resources/introduction-to-rabbitmq-receiver.png
 alt: RabbitMQ Receiver
-slug: RabbitMQ Receiver Introduction
+slug: rabbitmq-receiver-introduction
 authors:
   - openobserve-team
 publishDate: 2024-10-02

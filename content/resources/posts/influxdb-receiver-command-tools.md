@@ -5,7 +5,7 @@ description: Learn to install and use InfluxDB Receiver with command line tools
   for effective database management and operations.
 img: /img/resources/using-influxdb-command-line-tools.png
 alt: InfluxDB Receiver
-slug: InfluxDB-Receiver-Command-Tools
+slug: influxdb-receiver-command-tools
 authors:
   - openobserve-team
 publishDate: 2024-10-02

@@ -5,7 +5,7 @@ description: Learn how to configure Dsquery for effective Active Directory DS
   Receiver monitoring and schedule regular checks.
 img: /img/resources/how-to-monitor-active-directory-domain-services-with-dsquery.png
 alt: Active Directory DS Receiver
-slug: Active-Directory-DS-Receiver-Monitoring
+slug: active-directory-ds-receiver-monitoring
 authors:
   - openobserve-team
 publishDate: 2024-10-02

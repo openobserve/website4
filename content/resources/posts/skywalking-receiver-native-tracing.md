@@ -5,7 +5,7 @@ description: SkyWalking Receiver accepts tracing and logging data, with common
   usage of gRPC or HTTPRestful for service.
 img: /img/resources/native-tracing-and-log-receiver-apache-skywalking.png
 alt: SkyWalking Receiver
-slug: SkyWalking-Receiver-Native-Tracing
+slug: skywalking-receiver-native-tracing
 authors:
   - openobserve-team
 publishDate: 2024-10-02

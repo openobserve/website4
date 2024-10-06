@@ -7,9 +7,11 @@ description: Explore popular open-source analytics tools web developers need,
 img: /img/resources/top-open-source-analytics-tools-for-web-developers.png
 alt: open-source analytics tools web developer
 slug: open-source-analytics-tools-web-developers-guide
+authors:
+  - openobserve-team
 publishDate: 2024-10-01
 tags:
-  - web developers.analytics
+  - web developers analytics
 ---
 <p><span style="font-weight: 400;">Whether tracking website performance, monitoring user interactions, or optimizing your product for conversions, having the right analytics tools is essential for every web developer. For those looking to avoid high-cost proprietary solutions, open-source analytics tools offer powerful, flexible alternatives. These tools give you complete control over your data, with the added benefit of transparency and customizability, which are critical elements for any web project.</span></p>
 

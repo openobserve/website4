@@ -5,7 +5,7 @@ description: Get started with Jaeger receiver by enabling supported protocols
   and endpoints, and managing Elasticsearch backend configuration.
 img: /img/resources/getting-started-with-jaeger-and-opentelemetry-documentation.png
 alt: Jaeger Receiver
-slug: Jaeger Receiver OpenTelemetry Integration
+slug: jaeger-receiver-opentelemetry-integration
 authors:
   - openobserve-team
 publishDate: 2024-10-02

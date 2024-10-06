@@ -7,7 +7,7 @@ img: /img/resources/opentelemetry-kafka-metrics-monitoring.png
 alt: Kafka Metrics Receiver
 slug: " kafka-metrics-receiver-opentelemetry-monitoring"
 authors:
-  - OpenObserve-Team
+  - openobserve-team
 publishDate: 2024-09-24
 tags:
   - Kafka Metrics Receiver

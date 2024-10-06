@@ -6,7 +6,7 @@ description: Setup and configure a Zookeeper Receiver via OpenTelemetry
   installations.
 img: /img/resources/monitoring-zookeeper-with-opentelemetry-setup.png
 alt: Zookeeper Receiver
-slug: Zookeeper Receiver Monitoring
+slug: zookeeper-receiver-monitoring
 authors:
   - openobserve-team
 publishDate: 2024-10-02

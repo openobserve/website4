@@ -5,7 +5,7 @@ description: Learn how OpenTelemetry Receiver integrates with Google Cloud
   Spanner for essential database metric monitoring and transactions.
 img: /img/resources/using-google-cloud-spanner-for-metrics-and-transactions.png
 alt: Google Cloud Spanner Receiver
-slug: Google-Cloud-Spanner-Receiver-Database-Monitoring
+slug: google-cloud-spanner-receiver-database-monitoring
 authors:
   - openobserve-team
 publishDate: 2024-10-02

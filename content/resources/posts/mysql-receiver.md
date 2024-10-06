@@ -5,7 +5,7 @@ description: Learn how the MySQL receiver plays a key role in aggregating,
   filtering, and sampling telemetry data for efficient monitoring.
 img: /img/resources/mysql-observability-—-collector-documentation.png
 alt: MySQL Receiver
-slug: MySQL Receiver
+slug: mysql-receiver
 authors:
   - openobserve-team
 publishDate: 2024-10-02

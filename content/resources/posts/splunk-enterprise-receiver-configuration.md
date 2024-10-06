@@ -5,7 +5,7 @@ description: Learn to configure a Splunk Enterprise Receiver using Splunk Web,
   the command line, or a configuration file.
 img: /img/resources/quick-guide-to-enabling-receivers-in-splunk-enterprise.png
 alt: Splunk Enterprise Receiver
-slug: Splunk-Enterprise-Receiver-Configuration
+slug: splunk-enterprise-receiver-configuration
 authors:
   - openobserve-team
 publishDate: 2024-10-02

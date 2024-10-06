@@ -5,7 +5,7 @@ description: Explore simplified JMX metric collection and precise metric
   selection with the OpenTelemetry Java agent's JMX Receiver integration.
 img: /img/resources/jmx-metrics-collection-with-opentelemetry-java-agent.png
 alt: JMX Receiver
-slug: JMX-Receiver-OpenTelemetry-Integration
+slug: jmx-receiver-opentelemetry-integration
 authors:
   - openobserve-team
 publishDate: 2024-10-02

@@ -8,7 +8,7 @@ img: /img/resources/collecting-and-monitoring-kubernetes-events-with-opentelemet
 alt: K8s Events Receiver
 slug: k8s-events-receiver-opentelemetry-monitoring
 authors:
-  - OpenObserve Team
+  - openobserve-team
 publishDate: 2024-09-25
 tags:
   - K8s Events Receiver

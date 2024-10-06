@@ -5,7 +5,7 @@ description: Discover the role and setup of SQL Server Receiver within
   OpenTelemetry for effective monitoring and performance optimization.
 img: /img/resources/setting-up-the-sql-server-receiver-for-opentelemetry.png
 alt: SQL Server Receiver
-slug: SQL-Server-Receiver-OpenTelemetry
+slug: sql-server-receiver-opentelemetry
 authors:
   - openobserve-team
 publishDate: 2024-10-02

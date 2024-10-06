@@ -5,7 +5,7 @@ description: Learn the importance of monitoring Oracle DB Receiver in cloud
   environments and converting query results into actionable metrics.
 img: /img/resources/monitoring-oracle-database-receiver-in-the-cloud.png
 alt: Oracle DB Receiver
-slug: Oracle-DB-Receiver-Cloud-Monitoring
+slug: oracle-db-receiver-cloud-monitoring
 authors:
   - openobserve-team
 publishDate: 2024-10-02

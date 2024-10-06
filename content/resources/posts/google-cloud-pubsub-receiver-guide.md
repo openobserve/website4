@@ -5,7 +5,7 @@ description: Learn to pull messages from a Google Cloud Pub/Sub Receiver and
   acknowledgement in our practical guide with examples.
 img: /img/resources/google-cloud-pub-sub-receiver.png
 alt: Google Cloud Pub/Sub Receiver
-slug: Google-Cloud-PubSub-Receiver-guide
+slug: google-cloud-pubsub-receiver-guide
 authors:
   - openobserve-team
 publishDate: 2024-10-02

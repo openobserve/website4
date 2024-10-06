@@ -5,7 +5,7 @@ description: Step-by-step process to configure and activate Splunk HEC Receiver
   for efficient data collection and management.
 img: /img/resources/using-http-event-collector-for-splunk-data.png
 alt: Splunk HEC Receiver
-slug: Splunk-HEC-Receiver-Configuration
+slug: splunk-hec-receiver-configuration
 authors:
   - openobserve-team
 publishDate: 2024-10-02
