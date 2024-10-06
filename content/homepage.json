@@ -48,7 +48,7 @@
     {
       "tagline": "Logs, Metrics, Traces and more in one platform",
       "title": "10x lower overall cost",
-      "subtitle": "We replaced 5-node OpenSearch cluster with single-node OpenObserve: same performance, 10x lower cost. Laurent S (SWE Qwello)",
+      "subtitle": "We replaced 5-node OpenSearch cluster with single-node OpenObserve: same performance, 10x lower cost. <br />- Laurent S (SWE Qwello)",
       "image": "/img/homepage/herosection1.jpg",
       "btnText1": "Get started for free",
       "btnTo1": "https://cloud.openobserve.ai/",

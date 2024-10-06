@@ -8,8 +8,7 @@
         </div>
         <h2 class="text-center md:text-left text-3xl md:text-4xl lg:text-5xl font-semibold text-black leading-tight"
           v-html="data.title"></h2>
-        <p class="text-center md:text-left mt-6 text-base md:text-xl font-normal text-black">
-          {{ data.subtitle }}
+        <p class="text-center md:text-left mt-6 text-base md:text-xl font-normal text-black" v-html="data.subtitle">
         </p>
         <div
           class="flex flex-col md:flex-row space-y-2 md:space-y-0 space-x-0 md:space-x-4 justify-center items-center md:justify-start py-9 md:py-5">
