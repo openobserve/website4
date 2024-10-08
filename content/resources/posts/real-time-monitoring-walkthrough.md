@@ -51,21 +51,45 @@ tags:
 
 <p><span style="font-weight: 400;">Here are the top 4 benefits of real-time monitoring.&nbsp;</span></p>
 
-<h3>1. Stable and Well-Maintained Operations</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Stable and Well-Maintained Operations</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">With real-time monitoring, you can ensure that your infrastructure is always stable. Whether you're managing an IT system or overseeing a fleet of vehicles, being able to detect issues as they arise keeps things running smoothly.&nbsp;</span></p>
 
 <p><span style="font-weight: 400;">For example, a logistics company reduced delivery delays by 20% after applying real-time monitoring to their vehicle tracking system.</span></p>
 
-<h3>2. Enhanced and Up-to-Date Security</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Enhanced and Up-to-Date Security</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">Security threats evolve quickly, and real-time monitoring helps you stay ahead. By keeping track of any unusual activity across your network, you can take immediate action to stop potential breaches. </span><strong>OpenObserve</strong><span style="font-weight: 400;"> enables real-time alerts that notify you instantly when something looks off, helping you avoid costly security incidents.</span></p>
 
-<h3>3. Efficient Delivery of Data-Driven Services</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Efficient Delivery of Data-Driven Services</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">The faster you can respond to data, the more efficiently you can deliver services. Real-time monitoring provides the insights you need to optimize performance and make smarter decisions.&nbsp;</span></p>
 
-<h3>4.&nbsp;<span style="font-weight: 400;">Complying with Regulatory Requirements</span></h3>
+<h3><span style="font-weight: 400;">4. Complying with Regulatory Requirements</span></h3>
 
 <p><span style="font-weight: 400;">Real-time monitoring can also assist with regulatory compliance by ensuring that systems meet security and operational standards. Many industries, such as finance and healthcare, require organizations to have real-time visibility into their systems to prevent and address potential violations or breaches, helping them maintain compliance effortlessly.</span></p>
 
@@ -81,25 +105,65 @@ tags:
 
 <p><span style="font-weight: 400;">Let&rsquo;s break down the key data types that you will benefit from the most with real-time monitoring.</span></p>
 
-<h3>1. System Metrics: CPU Usage, Memory Utilization, Disk I/O, Network Traffic</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">System Metrics: CPU Usage, Memory Utilization, Disk I/O, Network Traffic</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">System metrics give you insight into the health of your infrastructure. For example, a sudden spike in </span><strong>CPU usage</strong><span style="font-weight: 400;"> might signal that a server is under heavy load, leading to slower performance.&nbsp;</span></p>
 
 <p><span style="font-weight: 400;">Monitoring </span><strong>network traffic</strong><span style="font-weight: 400;"> can help you spot potential bottlenecks or security threats. By keeping a close eye on these metrics, teams can proactively manage resources and prevent downtime.</span></p>
 
-<h3>2. Pipeline Metrics: Data Volume, Streaming Latency, Error Rate</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Pipeline Metrics: Data Volume, Streaming Latency, Error Rate</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">For organizations managing data pipelines, metrics like </span><strong>streaming latency</strong><span style="font-weight: 400;"> and </span><strong>error rate</strong><span style="font-weight: 400;"> are critical. If data volume suddenly increases and </span><strong>latency</strong><span style="font-weight: 400;"> rises, your pipeline may struggle to keep up, potentially affecting real-time data processing. Real-time monitoring helps you catch these issues early, allowing teams to make adjustments before service interruptions occur.</span></p>
 
-<h3>3. Data Quality Metrics: Accuracy, Completeness, Timeliness, Validity, Consistency, Uniqueness</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Data Quality Metrics: Accuracy, Completeness, Timeliness, Validity, Consistency, Uniqueness</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">Monitoring the </span><strong>accuracy</strong><span style="font-weight: 400;"> and </span><strong>completeness</strong><span style="font-weight: 400;"> of your data ensures you&rsquo;re working with reliable information. If data is missing or inconsistent, it can lead to flawed analyses and poor decision-making. </span><strong>Real-time monitoring</strong><span style="font-weight: 400;"> of these metrics allows teams to spot and fix data quality issues before they impact operations, ensuring clean and actionable data.</span></p>
 
-<h3>4. Schema Evolution: Table Names, Data Fields, Data Types, Relationships</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Schema Evolution: Table Names, Data Fields, Data Types, Relationships</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">As data evolves, so do the </span><strong>schemas</strong><span style="font-weight: 400;"> that structure it. Monitoring changes in table names, field types, or data relationships in real time ensures compatibility and reduces the risk of breaking downstream systems. When schema changes are detected immediately, teams can adapt without delays or errors in processing.</span></p>
 
-<h3>5. Data Lineage: Source and Collection Process, Data Transformations, Destinations</h3>
+<ol>
+
+<li style="font-weight: 400;">
+
+<h3><span style="font-weight: 400;">Data Lineage: Source and Collection Process, Data Transformations, Destinations</span></h3>
+
+</li>
+
+</ol>
 
 <p><span style="font-weight: 400;">Understanding </span><strong>data lineage</strong><span style="font-weight: 400;"> is essential for tracking where your data comes from, how it&rsquo;s transformed, and where it&rsquo;s going. Real-time monitoring of data lineage helps you ensure that every transformation and movement is tracked and that your data is trustworthy. Any discrepancies can be spotted and addressed in real time, ensuring the integrity of your entire data pipeline.</span></p>
 
@@ -147,7 +211,7 @@ tags:
 
 <p><span style="font-weight: 400;">Here&rsquo;s a sample configuration to send real-time metrics from Prometheus (in agent mode) to </span><strong>OpenObserve</strong><span style="font-weight: 400;">:</span></p>
 
-<table>
+<table style="border-color: black; background-color: black;" border=".5">
 
 <tbody>
 
@@ -155,7 +219,7 @@ tags:
 
 <td>
 
-<p><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; scrape_interval: </span><span style="font-weight: 400;">15</span><span style="font-weight: 400;">s</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">remote_write:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - url: </span><span style="font-weight: 400;">"https://openobserve-instance-url/v1/metrics"</span></p>
+<p><span style="color: #808080;"><span style="font-weight: 400;">global:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; scrape_interval: </span><span style="color: #ffff00;"><span style="color: #00ff00;">15</span><span style="font-weight: 400;">s</span></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">remote_write:</span><span style="font-weight: 400;"><br /></span><span style="font-weight: 400;">&nbsp; - url: </span><span style="font-weight: 400; color: #ffff00;">"https://openobserve-instance-url/v1/metrics"</span></span></p>
 
 </td>
 
@@ -164,6 +228,8 @@ tags:
 </tbody>
 
 </table>
+
+<p>&nbsp;</p>
 
 <p><span style="font-weight: 400;">This setup ensures that </span><strong>Prometheus</strong><span style="font-weight: 400;"> efficiently captures real-time metrics, while </span><strong>OpenObserve</strong><span style="font-weight: 400;"> provides the dashboards and reporting tools necessary for long-term analysis and insights.</span></p>
 
@@ -184,102 +250,6 @@ tags:
 <p><span style="font-weight: 400;">Real-time monitoring transforms raw data into actionable insights by following these steps, driving operational efficiency. </span><strong>OpenObserve</strong><span style="font-weight: 400;"> enables you to visualize these metrics effectively and scales with your needs, making it a perfect solution for long-term monitoring and data analysis.</span></p>
 
 <p><span style="font-weight: 400;">Next, you'll dive into how to design dashboards for effective real-time data visualization.</span></p>
-
-<h2><strong>Designing Effective Dashboards for Real-Time Data Visualization</strong></h2>
-
-<p><span style="font-weight: 400;">When it comes to real-time monitoring, a well-designed dashboard can make all the difference. A clear and intuitive layout allows teams to quickly interpret data, spot trends, and respond to issues before they escalate.&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">Let's break down the key components of an effective dashboard, drawing from practical, real-world examples.</span></p>
-
-<h3><span style="font-weight: 400;">1. Clear and Intuitive Layout</span></h3>
-
-<p><span style="font-weight: 400;">A cluttered dashboard is a missed opportunity. Keeping your layout simple and organized is essential to ensuring that your team can find what they need at a glance.&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">For example, in a project monitoring cloud server performance, the team used a dashboard that clearly separated CPU usage, memory consumption, and network traffic. This layout made it easy to quickly spot and address performance bottlenecks.</span></p>
-
-<p><strong>Tip</strong><span style="font-weight: 400;">: Group related metrics together to avoid visual overload. Place critical metrics, such as error rates or system uptime, at the top of your dashboard, where they&rsquo;re immediately visible.</span></p>
-
-<h3><span style="font-weight: 400;">2. Color Choice and Chart Types</span></h3>
-
-<p><span style="font-weight: 400;">Color choices and chart types are more than just aesthetic considerations&mdash;they're critical for understanding your data. Use colors strategically to highlight important trends, such as spikes in resource usage or performance dips. Avoid overusing bright colors, as they can cause distractions. Instead, use color to differentiate between metrics or data states, such as red for alerts and green for normal operations.</span></p>
-
-<p><span style="font-weight: 400;">For instance, in one e-commerce project, a logistics company used heatmaps to track real-time vehicle locations and delays. The effective use of color gradients made distinguishing between on-time and delayed deliveries easy.</span></p>
-
-<p><strong>Chart Type Example</strong><span style="font-weight: 400;">:</span></p>
-
-<ul>
-
-<li style="font-weight: 400;"><span style="font-weight: 400;">Line charts work well for time-series data, like real-time monitoring of CPU usage over time.</span></li>
-
-<li style="font-weight: 400;"><span style="font-weight: 400;">Bar charts are great for comparing discrete categories, such as error rates between different services.</span></li>
-
-<li style="font-weight: 400;"><span style="font-weight: 400;">Heatmaps, as mentioned, are ideal for geographic data or for spotting trends across many variables at once.</span></li>
-
-</ul>
-
-<h3><span style="font-weight: 400;">3. Performance Influenced by the Quality of the Underlying Data Model</span></h3>
-
-<p><span style="font-weight: 400;">The performance of your dashboard is directly tied to the quality and structure of your underlying data model. For example, poorly indexed data can result in slow dashboard load times, making real-time monitoring less effective.&nbsp;&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">By properly structuring your data&mdash;whether it's logs, metrics, or events&mdash;tools like </span><strong>OpenObserve</strong><span style="font-weight: 400;"> allow you to visualise long-term trends seamlessly without performance lag. You can design dashboards that are not only fast but also scalable for growing data sets.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Use aggregation tools like materialized views for common queries to reduce query times and improve dashboard responsiveness.</span></p>
-
-<h2><strong>Best Practices for Real-Time Data Visualization</strong></h2>
-
-<p><span style="font-weight: 400;">Effective real-time monitoring relies on clear, efficient data visualizations. You must follow key practices that enhance performance and usability to get the most out of your monitoring system.&nbsp;</span></p>
-
-<p><span style="font-weight: 400;">Let&rsquo;s dive into some tried-and-tested best practices, with examples from real-world projects.</span></p>
-
-<h3><span style="font-weight: 400;">1. Optimize Queries for Efficiency</span></h3>
-
-<p><span style="font-weight: 400;">Inefficient queries can slow down your entire monitoring system when handling large volumes of data. For instance, a retail company using real-time monitoring to track inventory across multiple warehouses noticed significant delays due to unoptimized queries. By refining their SQL queries, they reduced processing times by 30%, enabling faster decision-making.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Review and optimize your database queries regularly to ensure they retrieve data quickly and without unnecessary overhead.</span></p>
-
-<h3><span style="font-weight: 400;">2. Use Materialized Views for Common Aggregations</span></h3>
-
-<p><span style="font-weight: 400;">Consider using materialized views if your dashboards frequently rely on the same aggregations (e.g., daily CPU usage). These pre-computed tables significantly speed up query times.&nbsp;&nbsp;</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Use materialized views for repetitive, resource-heavy calculations to reduce the load on your system and speed up real-time data analysis.</span></p>
-
-<h3><span style="font-weight: 400;">3. Implement Caching Strategies</span></h3>
-
-<p><span style="font-weight: 400;">Caching allows you to store frequently accessed data, reducing the need for repetitive database queries. A global streaming service reduced their latency by caching real-time monitoring data, leading to quicker response times and more seamless user experiences.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Implement caching layers to store frequently accessed data, reducing the load on your system and ensuring faster real-time performance.</span></p>
-
-<h3><span style="font-weight: 400;">4. Leverage Streaming Data Sources</span></h3>
-
-<p><span style="font-weight: 400;">Real-time monitoring depends on streaming data to provide up-to-date insights. Platforms like </span><strong>OpenObserve</strong><span style="font-weight: 400;"> allow you to integrate streaming data sources for accurate, real-time metrics.&nbsp;&nbsp;</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Use streaming data sources, such as Apache Kafka or OpenObserve, to collect and process data in real time, allowing immediate action.</span></p>
-
-<h3><span style="font-weight: 400;">5. Choose Technology that Supports Real-Time Tasks</span></h3>
-
-<p><span style="font-weight: 400;">Your choice of technology can make or break your real-time monitoring setup. Tools like </span><strong>OpenObserve</strong><span style="font-weight: 400;"> are built for real-time tasks and offer low-latency data collection, processing, and visualization.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Always select tools that can handle the real-time demands of your data streams, ensuring that you can visualize changes as they happen.</span></p>
-
-<h3><span style="font-weight: 400;">6. Conduct Audience Research</span></h3>
-
-<p><span style="font-weight: 400;">Understanding your users&rsquo; needs is essential when designing dashboards. For example, a healthcare provider could used audience research to design real-time monitoring dashboards that focused on patient vital signs, ensuring that critical data was front and center for healthcare staff.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Conduct research to identify what your users need most from the dashboard. This helps in designing interfaces that provide value immediately.</span></p>
-
-<h3><span style="font-weight: 400;">7. Ensure Data Security and Privacy</span></h3>
-
-<p><span style="font-weight: 400;">Real-time data monitoring often involves sensitive information, such as financial or personal data. For example, a large bank could implement real-time monitoring, integrated encryption and access control measures to ensure that only authorized personnel can view sensitive metrics.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Implement strong encryption protocols and access control policies to safeguard sensitive data in real-time dashboards.</span></p>
-
-<h3><span style="font-weight: 400;">8. Keeping Visualizations Simple and Inclusive</span></h3>
-
-<p><span style="font-weight: 400;">Overcomplicating your dashboard can confuse users and obscure the data's meaning. For example, a logistics company could simplify and vehicle tracking dashboard by focusing on the key metrics and reducing unnecessary elements. This approach would make it easier for teams to act quickly on the data presented.</span></p>
-
-<p><strong>Pro Tip</strong><span style="font-weight: 400;">: Keep your dashboard layouts clean and intuitive. Use simple visual elements to convey complex data clearly, making it easier for your audience to interpret and act on the information.</span></p>
-
-<p><span style="font-weight: 400;">Up next, you'll explore some of the top tools and technologies available to support your efforts.</span></p>
 
 <h2><strong>Popular Tools and Technologies for Real-Time Monitoring and Data Visualization</strong></h2>
 
@@ -345,6 +315,8 @@ tags:
 
 <p><em><span style="font-weight: 400;">Ready to enhance your real-time monitoring capabilities?</span></em></p>
 
+<p>&nbsp;</p>
+
 <ul>
 
 <li style="font-weight: 400;"><em><a href="https://cloud.openobserve.ai/"><em><span style="font-weight: 400;">Sign up for OpenObserve</span></em></a></em></li>
@@ -357,4 +329,12 @@ tags:
 
 </ul>
 
-<p><em><span style="font-weight: 400;">Check out our</span></em><a href="https://github.com/openobserve"> <em><span style="font-weight: 400;">GitHub repository</span></em></a></p>
+<ul>
+
+<li style="font-weight: 400;"><em><span style="font-weight: 400;">Check out our</span></em><a href="https://github.com/openobserve"> <em><span style="font-weight: 400;">GitHub repository</span></em></a></li>
+
+</ul>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
