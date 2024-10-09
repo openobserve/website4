@@ -20,8 +20,13 @@ export default defineNuxtConfig({
     excludeLinks: ["/docs", "/docs/**"],
   },
 
+  ogImage: {
+    enabled: false
+  },
+
   nitro: {
     prerender: {
+      concurrency: 1,
       failOnError: false,
     },
   },
