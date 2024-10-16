@@ -6,7 +6,7 @@ description: OpenTelemetry with Kubernetes Objects Receiver streamlines
   and strategic decision-making.
 img: /img/resources/collecting-and-monitoring-kubernetes-events-with-opentelemetry.png
 alt: K8s Events Receiver
-slug: k8s-events-receiver-opentelemetry-monitoring
+slug: k8s-events-receiver
 authors:
   - openobserve-team
 publishDate: 2024-09-25
