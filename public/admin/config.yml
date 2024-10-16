@@ -22,12 +22,28 @@ collections:
       - { label: "Description", name: "description", widget: "string" }
       - { label: "Banner Image", name: "img", widget: "image" }
       - { label: "Image Alt Text", name: "alt", widget: "string" }
-      - { label: "Slug", name: "slug", widget: "string" }
+      - {
+          label: "Slug",
+          name: "slug",
+          widget: "string",
+          pattern:
+            [
+              "^[a-z0-9-]+$",
+              "Slug must be in lowercase and contain only letters, numbers, and dashes.",
+            ],
+        }
       - {
           label: "Authors",
           name: "authors",
           widget: "list",
-          field: { label: "Author", name: "author", widget: "string" },
+          field:
+            {
+              label: "Author",
+              name: "author",
+              widget: "string",
+              pattern: ["^[A-Za-z-]+$", "Author name must contain only letters and '-'"],
+              default: "openobserve-team",
+            },
         }
       - {
           label: "Publish Date",
@@ -57,36 +73,25 @@ collections:
             allow_add: true
             fields:
               - { label: "Name", name: "name", widget: "string" }
-              - { label: "Slug", name: "slug", widget: "string" }
-              - { label: "Image", name: "img", widget: "image" }
+              - {
+                  label: "Slug",
+                  name: "slug",
+                  widget: "string",
+                  pattern:
+                    [
+                      "^[a-z0-9-]+$",
+                      "Slug must be in lowercase and contain only letters, numbers, and dashes.",
+                    ],
+                }
+              - {
+                  label: "Image",
+                  name: "img",
+                  widget: "image",
+                  hint: "Please upload an image under 500 KB.",
+                }
               - { label: "Bio", name: "bio", widget: "string" }
-              - {
-                  label: "Facebook Url",
-                  name: "facebookUrl",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Youtube Url",
-                  name: "youtubeUrl",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Twitter Url",
-                  name: "twitterUrl",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "LinkedIn Url",
-                  name: "linkedInUrl",
-                  widget: "string",
-                  required: false,
-                }
-              - {
-                  label: "Instagram Url",
-                  name: "instagramUrl",
-                  widget: "string",
-                  required: false,
-                }
+              - { label: "Facebook Url", name: "facebookUrl", widget: "string", required: false }
+              - { label: "Youtube Url", name: "youtubeUrl", widget: "string", required: false }
+              - { label: "Twitter Url", name: "twitterUrl", widget: "string", required: false }
+              - { label: "LinkedIn Url", name: "linkedInUrl", widget: "string", required: false }
+              - { label: "Instagram Url", name: "instagramUrl", widget: "string", required: false }

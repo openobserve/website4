@@ -33,7 +33,14 @@ export default defineNuxtConfig({
 
   app: {
     head: {
+      meta: [
+        {
+          property: "og:image",
+          content: "./img/logo/logo_horizontal.svg",
+        },
+      ],
       link: [
+        
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         {
           rel: "stylesheet",
