@@ -211,11 +211,6 @@ let { data: categories } = await useAsyncData(`${type}-categories`,() => getCate
 // get tags
 let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
-// // get allArticles
-// const { data: allArticles } = await useAsyncData(() =>
-//   queryContent(`/${getContentFolder(type)}/posts`).find()
-// );
-
 // get recentArticles
 let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
@@ -252,33 +247,6 @@ const formatMonth = (monthYear) => {
   return months[parseInt(month) - 1] + ", " + year;
 };
 
-// const archiveMonths = computed(() => {
-//   const months = new Set();
-//   allArticles?.value?.forEach((el) => {
-//     if (!el.publishDate) {
-//       return;
-//     }
-
-//     const date = new Date(el.publishDate);
-//     const dateStr =
-//       date.getFullYear() + "-" + ("0" + (date.getMonth() + 1)).slice(-2);
-//     months.add(dateStr);
-//   });
-
-//   const monthsArray = [...months].sort().reverse();
-//   if (monthsArray.length > 0) {
-//     dataVariables.selectedMonth = monthsArray[0];
-//   }
-//   return monthsArray;
-// });
-
-// const currentSelectedMonthArticles = computed(() => {
-//   const [year, month] = dataVariables.selectedMonth.split("-");
-//   return allArticles.value.filter((it) => {
-//     const date = new Date(it.publishDate);
-//     return date.getFullYear() == year && date.getMonth() == parseInt(month) - 1;
-//   });
-// });
 </script>
 
 <style></style>

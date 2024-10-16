@@ -75,11 +75,9 @@ export default async (params, filter, nuxtApp) => {
       }
     }
 
-    console.time("getArticles11");
     [allArticles, articles] = await callWithNuxt(nuxtApp, () =>
       Promise.all([allArticles.count(), articles.find()])
     );
-    console.timeEnd("getArticles11");
 
     const totalArticles = allArticles;
 
