@@ -20,15 +20,27 @@ export default defineNuxtConfig({
     excludeLinks: ["/docs", "/docs/**"],
   },
 
+  ogImage: {
+    enabled: false
+  },
+
   nitro: {
     prerender: {
+      concurrency: 1,
       failOnError: false,
     },
   },
 
   app: {
     head: {
+      meta: [
+        {
+          property: "og:image",
+          content: "./img/logo/logo_horizontal.svg",
+        },
+      ],
       link: [
+        
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         {
           rel: "stylesheet",

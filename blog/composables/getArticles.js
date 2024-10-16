@@ -76,10 +76,10 @@ export default async (params, filter, nuxtApp) => {
     }
 
     [allArticles, articles] = await callWithNuxt(nuxtApp, () =>
-      Promise.all([allArticles.only(["title"]).find(), articles.find()])
+      Promise.all([allArticles.count(), articles.find()])
     );
 
-    const totalArticles = allArticles.length;
+    const totalArticles = allArticles;
 
     // use Math.ceil to round up to the nearest whole number for total pages
     const lastPage = Math.ceil(totalArticles / perPage);

@@ -5,7 +5,7 @@ description: The SQL Query Receiver in OpenTelemetry aids in logs and metrics
   collection specifically from SQL databases.
 img: /img/resources/opentelemetry-documentation-for-sql-query-receiver.png
 alt: OpenTelemetry Documentation for SQL Query Receiver
-slug: SQL-Query-Receiver-OpenTelemetry
+slug: sql-query-receiver-opentelemetry
 authors:
   - openobserve-team
 publishDate: 2024-09-18

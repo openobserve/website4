@@ -5,7 +5,7 @@ description: OpenTelemetry, an effective observability framework for telemetry
   data in Node.js applications - tracing, metrics, and logs.
 img: /img/resources/opentelemetry-javascript-image1.png
 alt: opentelemetry javascript
-slug: " opentelemetry-javascript-nodejs-introduction"
+slug: opentelemetry-javascript-nodejs-introduction
 authors:
   - openobserve-team
 publishDate: 2024-07-18

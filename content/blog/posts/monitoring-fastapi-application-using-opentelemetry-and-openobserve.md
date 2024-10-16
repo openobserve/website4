@@ -6,7 +6,7 @@ img: /img/blog/fastapi/image6.jpg
 alt: OpenObserve
 slug: monitoring-fastapi-application-using-opentelemetry-and-openobserve
 authors: 
-  - Manas
+  - manas
 publishDate: 2024-9-24
 tags:
   - observability

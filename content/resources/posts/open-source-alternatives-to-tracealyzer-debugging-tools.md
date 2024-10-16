@@ -7,7 +7,7 @@ img: /img/resources/image1.png
 alt: open source alternatives to tracealyzer
 slug: open-source-alternatives-to-tracealyzer-debugging-tools
 authors:
-  - "openobserve-team "
+  - openobserve-team
 publishDate: 2024-10-08
 tags:
   - open-source alternatives

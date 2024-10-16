@@ -100,7 +100,7 @@
               </figcaption>
               <div>
                 <div class="space-x-2 mt-2 text-theme-text-primary">
-                  <social-media-panel-author height="25" :author="author" />
+                  <!-- <social-media-panel-author height="25" :author="author" /> -->
                 </div>
               </div>
             </div>
@@ -141,24 +141,11 @@ const prev = prevNext.value[0];
 
 const nuxtApp = useNuxtApp();
 
-// For sidebar
-const { data: articlesTemp } = await useAsyncData(
-  "get-articles-" + JSON.stringify(route.params),
-  () => getArticles(route.params, {}, nuxtApp)
-);
-const { articles, totalArticles, lastPage, currentPage } = articlesTemp.value;
-
 const authors = authorsTemp?.value?.authors;
 
 let { data: categories } = await useAsyncData(`${type}-categories`,() => getCategories(type));
 
 let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
-
-const { data: allArticles } = await useAsyncData(() =>
-  queryContent(`${getContentFolder(type)}/posts`).find()
-);
-
-let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };

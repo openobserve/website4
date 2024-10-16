@@ -5,7 +5,7 @@ description: Understand how to use OpenTelemetry to collect and forward Windows
   Event Log Receiver, specifying log channels for optimal monitoring.
 img: /img/resources/collect-and-forward-windows-event-logs-with-opentelemetry.png
 alt: Collect and Forward Windows Event Logs with OpenTelemetry
-slug: Windows-Event-Log-Receiver-OpenTelemetry
+slug: windows-event-log-receiver-opentelemetry
 authors:
   - openobserve-team
 publishDate: 2024-09-18

@@ -79,15 +79,9 @@ let { data: categories } = await useAsyncData(`${type}-categories`,() => getCate
 // get tags
 let { data: tags } = await useAsyncData(`${type}-tags`,() => getTags(type));
 
-const { data: allArticles } = await useAsyncData(() =>
-  queryContent(`/${getContentFolder(type)}/posts`).find()
-);
-
 const category = categories?.value?.find(
   (it) => it.slug == route.params.category
 );
-
-let { data: recentArticles } = await useAsyncData(`${type}-recent-articles`,() => getRecentArticles(type));
 
 useHead({
   title: `Category | ${getLabelFromType(type)}`,
