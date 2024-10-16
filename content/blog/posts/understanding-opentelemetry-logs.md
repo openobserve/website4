@@ -6,7 +6,7 @@ img: /img/blog/understanding-otel-logs/image2.png
 alt: Otel-logs
 slug: understanding-opentelemetry-logs
 authors:
-  - Manas
+  - manas
 publishDate: 2024-09-23
 tags:
   - logging
