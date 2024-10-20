@@ -7,7 +7,7 @@ alt: OpenObserve
 slug: monitoring-fastapi-application-using-opentelemetry-and-openobserve
 authors: 
   - manas
-publishDate: 2024-9-24
+publishDate: 2024-09-24
 tags:
   - observability
   - opentelemetry
