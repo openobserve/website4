@@ -63,7 +63,14 @@ To learn more about using syslog, check out our guide on [Parsing Syslog Message
     - If you require remote logging capabilities without additional tools.
     - If you prefer a widely supported, plain-text logging format.
 
-For the most part, you will be using both the systems in conjunction with each other. journald is the default logging system on most linux systems these days. Most networking devices will log to syslog though. 
+For the most part, you will be using both the systems in conjunction with each other. journald is the default logging system on most linux systems these days. Most networking devices will log to syslog though. You could even forward journal logs to syslog by configuring journald using below setting.
+
+```ini
+[ForwardToSyslog] 
+yes
+```
+
+To learn more about journald configuration, check out our guide on [journald configuration](journald-conf)
 
 ### Conclusion
 
