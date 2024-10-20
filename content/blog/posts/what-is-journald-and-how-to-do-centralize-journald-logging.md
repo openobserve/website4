@@ -3,7 +3,7 @@ title: What is Journald and how to do centralize journald logging
 seoTitle: What is Journald and how to do centralize journald logging
 description: "What is Journald, what is it's log file location, how to do log rotation for it. Also learn how OpenObserve uses otel-collector to provide centralized logging for Journald."
 img: /img/blog/journald/journald_hero.webp
-alt: OpenObserve
+alt: Journald Hero image
 slug: what-is-journald-and-how-to-do-centralize-journald-logging
 authors: 
   - prabhat
@@ -78,7 +78,14 @@ Replace **priority** with one of the following:
 
 ### Journald log location
 
-Journald stores logs in the **/var/log/journal** directory. The logs are stored in binary format and are split into multiple files. Journald rotates them automatically based on the log rotation settings.
+By default, journald stores its logs in the **/var/log/journal/** directory. However, the exact location can vary depending on the Linux distribution and configuration.
+
+Here are some common locations where journald logs can be found:
+- /var/log/journal/ (default)
+- /var/log/messages (on some systems, journald logs are written to this file)
+- /run/log/journal/ (on systems with a volatile /run filesystem)
+
+The logs are stored in binary format and are split into multiple files. Journald rotates them automatically based on the log rotation settings.
 
 ### Journald log rotation
 
@@ -105,11 +112,11 @@ In order to setup centralized logging with journald, you need to forward logs fr
 
 from the ingstion page, you can select Linux and copy the command to install the agent on your server. Once the agent is installed, it will start sending journald logs to OpenObserve. You can do it on each server for which you want to centralize logs. Ideally you would do it using a configuration management tool like Ansible, Puppet or AWS systems manager
 
-![OpenObserve Linux instructions](/img/blog/journald/journald.webp)
+![OpenObserve Linux instructions screenshot](/img/blog/journald/journald.webp)
 
 After the agent is installed on the servers, you can start seeing logs in OpenObserve in the journald stream. You can then create dashboards, alerts, reports and more to monitor your servers.
 
-![OpenObserve Dashboard](/img/blog/journald/journald_logs.webp)
+![OpenObserve Jounald logs screenshot](/img/blog/journald/journald_logs.webp)
 
 ### Conclusion
 
