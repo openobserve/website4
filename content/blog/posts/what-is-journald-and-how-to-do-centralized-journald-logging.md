@@ -1,10 +1,10 @@
 ---
-title: What is Journald and how to do centralize journald logging
-seoTitle: What is Journald and how to do centralize journald logging
+title: What is Journald and how to do centralized journald logging
+seoTitle: What is Journald and how to do centralized journald logging
 description: "What is Journald, what is it's log file location, how to do log rotation for it. Also learn how OpenObserve uses otel-collector to provide centralized logging for Journald."
 img: /img/blog/journald/journald_hero.webp
 alt: Journald Hero image
-slug: what-is-journald-and-how-to-do-centralize-journald-logging
+slug: what-is-journald-and-how-to-do-centralized-journald-logging
 authors: 
   - prabhat
 publishDate: 2024-10-20
