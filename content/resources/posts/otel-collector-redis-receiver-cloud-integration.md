@@ -6,7 +6,7 @@ description: "The blog discusses otel-collector redis receiver's deployment,
   enhanced monitoring. "
 img: /img/resources/otel-collector-redis-receiver-image1.png
 alt: otel collector redis receiver
-slug: otel collector redis receiver Cloud Integration
+slug: otel-collector-redis-receiver-cloud-integration
 authors:
   - openobserve-team
 publishDate: 2024-06-29
