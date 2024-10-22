@@ -105,7 +105,7 @@ sudo systemctl status systemd-journald
 ## Best Practices
 
 
-* Regularly review and adjust the storage and retention settings based on system requirements and disk space. Centralize your logging for easier management and analysis and reduce pressure on local disk space. Learn how to do that using our guide on [What is Journald and how to do centralize journald logging](what-is-journald-and-how-to-do-centralize-journald-logging).
+* Regularly review and adjust the storage and retention settings based on system requirements and disk space. Centralize your logging for easier management and analysis and reduce pressure on local disk space. Learn how to do that using our guide on [What is Journald and how to do centralize journald logging](what-is-journald-and-how-to-do-centralized-journald-logging).
 * Consider enabling compression to reduce storage needs but be aware of potential performance impacts.
 * Use **journalctl** commands to manage and inspect journals, such as **journalctl --disk-usage** to check disk usage.
 

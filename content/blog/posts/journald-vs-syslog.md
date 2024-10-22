@@ -31,7 +31,7 @@ journald and syslog are two popular logging systems used in Linux environments. 
 - Supports structured logging, enabling easier parsing and analysis of log data.
 - Integrates well with other systemd components, such as systemctl and systemd-analyze.
 
-To learn more about using journald, check out our guide on [What is Journald and how to do centralize journald logging](what-is-journald-and-how-to-do-centralize-journald-logging)
+To learn more about using journald, check out our guide on [What is Journald and how to do centralize journald logging](what-is-journald-and-how-to-do-centralized-journald-logging)
 
 #### syslog
 
