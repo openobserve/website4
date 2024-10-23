@@ -82,6 +82,17 @@
       "linkedInUrl": "https://www.linkedin.com/in/manas-sharma-a49295220/",
       "twitterUrl": "https://x.com/manassharma__",
       "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/authors/chaitanya.jpeg",
+      "bio": " Chaitanya Sistla, a Principal Solutions Architect, excels in DataOps, DevOps, CyberOps, and CloudOps. With startup experience and a focus on MLOps, known for building scalable solutions and driving innovation.",
+      "facebookUrl": "",
+      "name": "Chaitanya Sistla",
+      "slug": "chaitanya",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/chaitanyasistla",
+      "twitterUrl": "",
+      "instagramUrl": ""
     }
   ]
 }
