@@ -1,0 +1,44 @@
+name: Deploy to S3 and Invalidate CloudFront
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write
+      contents: read
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Adjust as needed
+
+      - name: Install NPM dependencies
+        run: npm install
+
+      - name: Generate static files
+        run: npm run generate --node-options="--max-old-space-size=40384"
+
+      - name: Configure AWS with OIDC
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::325553860333:role/github-website-deployment
+          aws-region: us-west-2
+
+      - name: Sync files to S3
+        run: |
+          aws s3 sync ./.output/public s3://zincsearch-website/ --exclude=".git/*"
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id E3KB2JN7JA8U38 --paths "/*"
+
