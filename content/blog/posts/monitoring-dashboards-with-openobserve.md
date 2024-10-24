@@ -35,7 +35,7 @@ Our open-source observability platform makes monitoring simple and intuitive, wi
 
 #### What to Expect?
 
-In this guide, we'll explore how to build monitoring dashboards in OpenObserve, we'll dive into the key features, best practices, and step-by-step instructions for creating customizable dashboards that meet your specific needs.S
+In this guide, we'll explore how to build monitoring dashboards in OpenObserve, we'll dive into the key features, best practices, and step-by-step instructions for creating customizable dashboards that meet your specific needs.
 
 ### Key Features of OpenObserve Dashboards
 
@@ -52,11 +52,11 @@ Now that you know the highlights, let's move on to creating your first dashboard
 
 ### Step 1: Installing OpenObserve
 
-1. **Using Docker (Recommended for Quick Setup):**
+**Using Docker (Recommended for Quick Setup):**
 
 If you have Docker installed on your machine, setting up OpenObserve is straightforward. Run the following command in your terminal or command prompt:
 
- Docker images are available at [https://gallery.ecr.aws/zinclabs/openobserve](https://gallery.ecr.aws/zinclabs/openobserve)
+Docker images are available at [https://gallery.ecr.aws/zinclabs/openobserve](https://gallery.ecr.aws/zinclabs/openobserve)
 
    ```bash 
    docker run -v $PWD/data:/data -e ZO_DATA_DIR="/data" -p 5080:5080 \
