@@ -3,7 +3,7 @@ title: From Elasticsearch (ELK) to OpenObserve Streamlining Log Management
 seoTitle: From Elasticsearch ELK to OpenObserve Streamlining Log Management for Better Insights
 description: This blog helps you in getting started with understanding migration from ELK to OpenObserve Streamlining Log Management for Better Insights.
 img: /img/blog/elk_to_openobserve/elk-to-o2-main.webp
-alt: OpenObserve
+alt: from-elk-to-openobserve
 slug: from-elasticsearch-to-openobserve-streaming-log-management
 authors: 
   - chaitanya
@@ -34,7 +34,7 @@ To migrate seamlessly, configure Fluent Bit (or other forwarders https://openobs
 
 ## Setting Up ELK for Log Management
 
-![ELK architecture](/img/blog/elk_to_openobserve/elk-to-o2-elk.webp)
+![from-elk-to-openobserve](/img/blog/elk_to_openobserve/elk-to-o2-elk.webp)
 
 Let's set up ELK locally using Docker. We’ll use Docker Compose to bring up Elasticsearch, Logstash, and Kibana. Follow these steps:
 
@@ -191,6 +191,32 @@ You can now view logs in OpenObserve
 
 ![ELK logs o2](/img/blog/elk_to_openobserve/elk-to-o2-logs-o2.webp)
 
+## Using Logstash to Ingest Data into OpenObserve
+
+![logstash to openobserve](/img/blog/elk_to_openobserve/logstash-openobserve.webp)
+
+Yes, you can use Logstash to ingest data into OpenObserve since it allows you to collect, parse, and transform data before sending it to various outputs. By integrating it with OpenObserve, you can ensure a seamless transition from your existing ELK stack to OpenObserve without disrupting your current workflow.
+
+### Why Use Logstash with OpenObserve?
+If you’re migrating from ELK to OpenObserve, reusing your existing Logstash configuration can significantly reduce complexity. Logstash's flexibility allows it to send data to OpenObserve without requiring major changes in your pipeline.
+
+### Logstash Output Configuration for OpenObserve
+To start sending data from Logstash to OpenObserve, simply use the following output configuration in your Logstash pipeline:
+
+```bash
+output {
+  http {
+    url => "<openobserve_ingestion_endpoint>"
+    http_method => "post"
+    format => "json_batch"
+    headers => {
+      "Authorization" => "Basic <openobserve_token>"
+      "Content-Type" => "application/json"
+    }
+  }
+}
+
+```
 ## Advantages of OpenObserve Streams vs. ELK Indices
 
 | Feature          | OpenObserve Streams                                      | ELK Indices                                            |
