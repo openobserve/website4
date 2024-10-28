@@ -1,11 +1,11 @@
 ---
-title: Send okta logs to OpenObserve
-seoTitle: Send okta logs to OpenObserve
+title: Analyze Okta events for better security and observability
+seoTitle: Analyze Okta events for better security and observability
 description: "Understanding how to send Okta logs to OpenObserve for better security and observability."
 img: /img/blog/okta/okta_logo_black.png
 alt: OpenObserve
-slug: send-okta-logs-to-openobserve
-authors: 
+slug: analyze-okta-events-for-better-security-and-observability
+authors:
   - prabhat
 publishDate: 2024-06-21
 tags:
@@ -14,9 +14,15 @@ tags:
   - security
 ---
 
+## Introduction
+
+Okta is a popular identity and access management service that provides secure access to applications and APIs. It offers a wide range of features, including single sign-on, multi-factor authentication, and user provisioning. Okta generates logs for various events, such as user logins, password changes, and application access, which can be used for monitoring, auditing, and troubleshooting purposes.
+
+We will collect Okta logs and send them to OpenObserve for analysis. OpenObserve is a cloud-native observability platform that helps you monitor, analyze, and troubleshoot your applications and infrastructure. By sending Okta logs to OpenObserve, you can gain insights into user activities, security events, and system performance, enabling you to make informed decisions and improve your security posture.
+
 ## Sending Okta Logs to OpenObserve using Amazon Eventbridge
 
-In today's cloud-centric world, monitoring and analyzing logs is crucial for maintaining security, ensuring compliance, and troubleshooting issues. Okta, a leading identity and access management service, offers streaming logs that can be sent to various destinations for further analysis. This blog will guide you through the process of sending Okta logs to Amazon EventBridge, which will then send them to Kinesis Firehose, ultimately forwarding them to OpenObserve.
+Monitoring and analyzing logs is crucial for maintaining security, ensuring compliance, and troubleshooting issues. Okta, a leading identity and access management service, offers streaming logs that can be sent to various destinations for further analysis. This blog will guide you through the process of sending Okta logs to Amazon EventBridge, which will then send them to Kinesis Firehose, ultimately forwarding them to OpenObserve.
 
 ## Prerequisites
 
@@ -25,7 +31,6 @@ Before we start, ensure you have the following:
 1. An Okta account with administrative privileges.
 2. An AWS account with appropriate permissions to create and manage EventBridge, Kinesis Firehose, and other related services.
 3. An OpenObserve instance or cloud account ready to receive logs.
-
 
 ## Step 1: Configure Kinesis Firehose
 
@@ -39,7 +44,6 @@ Before we start, ensure you have the following:
 6. Configure the HTTP endpoint to forward logs to OpenObserve by getting values from OpenObserve ingestion page.
 7. Click **Next**.
 
-
 ## Step 2: Configure Okta Streaming Logs
 
 ### 2.1 Enable System Log Streaming in Okta
@@ -51,7 +55,6 @@ Before we start, ensure you have the following:
 5. Select **Amazon EventBridge** as the destination and click **Next**.
 
 ![Okta eventbridge configuration](/img/blog/okta/okta1.png)
-
 
 ### 2.2 Configure Amazon EventBridge in Okta
 
@@ -67,12 +70,11 @@ At this point you should have an entry in your Eventbridge that you must accept.
 
 ![Okta eventbridge configuration](/img/blog/okta/eventbridge1.png)
 
-At this point you will have a custom event bus created in your AWS account. 
+At this point you will have a custom event bus created in your AWS account.
 
 ![Okta eventbridge configuration](/img/blog/okta/okta_event_bus.png)
 
 You can now create a rule to capture Okta events.
-
 
 ### 3.1 Create a Rule to Capture Okta Events
 
