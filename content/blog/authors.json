@@ -93,6 +93,17 @@
       "linkedInUrl": "https://www.linkedin.com/in/chaitanyasistla",
       "twitterUrl": "",
       "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/authors/sampath.jpeg",
+      "bio": " Sampath is a Developer Advocate at OpenObserve with a background in DevOps and Cloud, passionate about Observability and Open Source technologies",
+      "facebookUrl": "",
+      "name": "Sampath Siva Kumar Boddeti",
+      "slug": "Sampath",
+      "youtubeUrl": "",
+      "linkedInUrl": "https://www.linkedin.com/in/sampathsivakumar-boddeti/",
+      "twitterUrl": "",
+      "instagramUrl": ""
     }
   ]
 }
