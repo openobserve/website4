@@ -59,10 +59,10 @@ Navigate to the blog directory where all blog posts are stored:
 2. Write your blog content in this markdown file. Refer to previous blog posts for formatting guidance.
 
 ### Author Details:
-Update your author information in the `authors.json` file located in the `content/authors` directory. Add details like your name, bio, image, and social media links. Author images are stored in `public/images/authors/`. Make sure to add your image in this folder and reference it in `authors.json`.
+Update your author information in the `authors.json` file located in the `content/blog` directory. Add details like your name, bio, image, and social media links. Author images are stored in `public/img/blog/authors/`. Make sure to add your image to this folder and reference it in `authors.json`.
 
 ## Step 6: Add Images for Your Blog
-Save the images you plan to use in your blog in the `public/images/blog` directory. If necessary, create a folder (named after your blog post) inside this directory to organize your images. You can then reference these images in your markdown file.
+Save the images you plan to use in your blog in the `public/img/blog` directory. If necessary, create a folder (named after your blog post) inside this directory to organize your images. You can then reference these images in your markdown file.
 
 ## Step 7: Install Dependencies
 Before previewing your blog locally, install the required dependencies:
