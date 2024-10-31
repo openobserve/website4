@@ -18,11 +18,12 @@ We're excited to announce the latest release of OpenObserve, version **0.13.1-rc
 
 
 > Download [OpenObserve v0.13.1-rc1](https://github.com/openobserve/openobserve/tree/v0.13.1-rc1)
-# Features in Tracing and Logging
+
+## Features in Tracing and Logging
 
 OpenObserve v0.13.1-rc1 brings significant enhancements to unified tracing and logging, empowering seamless observability.
 
-## Seamless Trace and Log Correlation
+### Seamless Trace and Log Correlation
 
 View logs directly from the traces screen with our intuitive "View Logs" button. This effortless correlation streamlines troubleshooting, allowing you to:
 
@@ -30,54 +31,54 @@ View logs directly from the traces screen with our intuitive "View Logs" button.
 - Analyze log data in context
 - Enhance issue resolution efficiency
 
-![image](/img/blog/release_v0.13.1-rc1/image1.png)
+![image](/img/blog/release_v0.13.1-rc1/image4.png)
 
-## Advanced Traces Sidebar
+### Advanced Traces Sidebar
 
 Unlock in-depth analysis with our revamped Traces Sidebar. Key features include:
 
 - **Span-Links Tab**: Explore associated traces for comprehensive insights
 - Simplified navigation for faster root cause analysis
 
-![image](/img/blog/release_v0.13.1-rc1/image2.png)
+![image](/img/blog/release_v0.13.1-rc1/image1.png)
 
-## Efficient Logs and Traces Attributes Management
+### Efficient Logs and Traces Attributes Management
 
 Optimize organization parameters with:
 
 - `trace_id` and `span_id`: Streamline log and trace data management
 - Enhanced filtering and search 
 
-![image](/img/blog/release_v0.13.1-rc1/image3.png)
+![image](/img/blog/release_v0.13.1-rc1/image7.png)
 
-# Enhancements for OpenObserve Dashboards and Visualizations
+## Enhancements for OpenObserve Dashboards and Visualizations
 
 OpenObserve v0.13.1-rc1 introduces significant enhancements, elevating dashboard customization, data visualization, and interactive exploration for developers.
 
-## Revolutionized Table Panels
+### Revolutionized Table Panels
 
 Introducing flexible configuration options:
 
 - **Transpose**: Effortlessly pivot data for optimal visualization.
 - **Dynamic Columns**: Automatically generate columns based on query results.
 
-## Intelligent Time Management
+### Intelligent Time Management
 
 Select relative time periods with our custom date-time picker. Compare data points across chosen time ranges with enhanced time shift functionality.
 
-## Enhanced Data Visualization
+### Enhanced Data Visualization
 
 Experience refined query metadata warning handling and optimized data management with time shift support.
 
-## Advanced Chart Capabilities
+### Advanced Chart Capabilities
 
 Unlock improved label sizing, stacked chart rendering, and precise pie chart customization with new functions: **getLargestLabel**, **largestStackLabel**, and **getPieChartRadius**.
 
-# Alerts and Destinations
+## Alerts and Destinations
 
 OpenObserve v0.13.1-rc1 revolutionizes alert management, ensuring timely insights for proactive decision-making.
 
-## Enhanced Alerting Capabilities
+### Enhanced Alerting Capabilities
 
 Define alerts with unparalleled flexibility using:
 
@@ -85,49 +86,49 @@ Define alerts with unparalleled flexibility using:
 - **VRL Support**: Leverage Vector Remodeling Language for sophisticated alert logic, enabling conditional statements and data manipulation.  
   *Example*: Trigger alerts when CPU usage exceeds 80% for 5 consecutive minutes.
 
-![custom alert screen](/img/blog/release_v0.13.1-rc1/image4.png)
+![custom alert screen](/img/blog/release_v0.13.1-rc1/image2.png)
 
-## Streamlined Notification Management
+### Streamlined Notification Management
 
 Simplify alert destination setup with:
 
 - **Email Button**: Effortless notification configuration via email.
 - **Intuitive Interface**: Rapidly manage alert destinations, minimizing false positives and notification fatigue.
 
-![image](/img/blog/release_v0.13.1-rc1/image5.png)
+![image](/img/blog/release_v0.13.1-rc1/image6.png)
 
 For advanced alert configurations and best practices, refer to our [Alerting Documentation](https://openobserve.ai/docs/user-guide/alerts/alerts/).
 
 ---
 
-# User Experience Enhancements
+## User Experience Enhancements
 
 OpenObserve v0.13.1-rc1 revolutionizes user experience for effortless workflows.
 
-## Search Smarter
+### Search Smarter
 
 Revisit previous log searches instantly with **Log Search History**. Combine with **Short URL Sharing** for seamless team collaboration.
 
-![image](/img/blog/release_v0.13.1-rc1/image6.png)
+![image](/img/blog/release_v0.13.1-rc1/image5.png)
 
-## Analyze with Flexibility
+### Analyze with Flexibility
 
 Effortlessly switch between **Raw JSON Data** views (unflattened and flattened) for tailored insights.
 
-![image](/img/blog/release_v0.13.1-rc1/image7.png)
 ![image](/img/blog/release_v0.13.1-rc1/image8.png)
+![image](/img/blog/release_v0.13.1-rc1/image3.png)
 
-## Precision Time Control
+### Precision Time Control
 
 Refine searches with **Second-Unit Search Time Range** for pinpoint accuracy.
 
 ---
 
-# Turbocharged Performance
+## Turbocharged Performance
 
 OpenObserve v0.13.1-rc1 supercharges search and query performance. Unleash efficient, high-speed data retrieval, empowering rapid troubleshooting and optimized system performance.
 
-## Faster Search and Querying
+### Faster Search and Querying
 
 Unlock high-speed data retrieval through:
 
@@ -137,7 +138,7 @@ Unlock high-speed data retrieval through:
 
 *File list queries execute up to 5x faster.*
 
-## Optimized Query Performance
+### Optimized Query Performance
 
 Experience lightning-fast queries through:
 
@@ -145,7 +146,7 @@ Experience lightning-fast queries through:
 - **Concurrent Querying and Smart Caching**
 - **Enhanced Partition Query Performance** with precision filtering and null value support
 
-## Intelligent Indexing
+### Intelligent Indexing
 
 Prefix Partition Key Support and Inverted Index Optimization ensure:
 
