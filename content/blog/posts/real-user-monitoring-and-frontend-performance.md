@@ -2,7 +2,7 @@
 title: 'Supercharge Your User Experience: Real User Monitoring (RUM) and Frontend Performance Metrics'
 seoTitle: 'Supercharge Your User Experience: Real User Monitoring (RUM) and Frontend Performance Metrics'
 description: Explore the importance of Real User Monitoring (RUM) and learn how OpenObserve enhances RUM with powerful observability features. This guide walks you through building a React User Portal and integrating OpenObserve RUM to track frontend performance metrics and user interactions for optimized insights.
-img: /img/blog/real_user_monitoring/image8.png
+img: /img/blog/real_user_monitoring/rum-o2.gif
 alt: supercharge-real-user-monitoring
 slug: real-user-monitoring-and-frontend-performance
 authors: 
