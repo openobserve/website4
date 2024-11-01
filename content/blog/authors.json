@@ -104,6 +104,17 @@
       "linkedInUrl": "https://www.linkedin.com/in/sampathsivakumar-boddeti/",
       "twitterUrl": "",
       "instagramUrl": ""
+    },
+    {
+      "img": "/img/blog/authors/nitya.png",
+      "bio": "Nitya is a Developer Advocate at OpenObserve, with a diverse background in software development, technical consulting, and organizational leadership. Nitya is passionate about open-source technology, accessibility, and sustainable innovation.",
+      "facebookUrl": "",
+      "name": "Nitya Timalsina",
+      "slug": "nitya",
+      "youtubeUrl": "http://www.youtube.com/@nityatimalsina46",
+      "linkedInUrl": "https://www.linkedin.com/in/timalsina/",
+      "twitterUrl": "https://x.com/nityatimalsina",
+      "instagramUrl": ""
     }
   ]
 }
