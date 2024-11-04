@@ -86,7 +86,7 @@ Define alerts with unparalleled flexibility using:
 - **VRL Support**: Leverage Vector Remodeling Language for sophisticated alert logic, enabling conditional statements and data manipulation.  
   *Example*: Trigger alerts when CPU usage exceeds 80% for 5 consecutive minutes.
 
-![custom alert screen](/img/blog/release_v0.13.1-rc1/image2.png)
+![custom alert screen](/img/blog/release_v0.13.1-rc1/image2.jpg)
 
 ### Streamlined Notification Management
 
