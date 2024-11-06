@@ -1,10 +1,10 @@
 ---
-title: 'Understanding Jaeger: A Guide to Distributed Tracing for Beginners to Experts'
+title: 'Mastering Jaeger: A Comprehensive Guide to Distributed Tracing '
 seoTitle: 'Jaeger Distributed Tracing Guide: From Beginner to Expert'
 description: Discover the essential guide to Jaeger and learn how distributed tracing can elevate your modern applications. Ideal for DevOps professionals and developers, this guide unlocks insights for better performance, troubleshooting, and system optimization.
 img: /img/blog/Jaeger_blog/1-home.gif
 alt: Home page banner for blog on Jaeger and distributed tracing insights
-slug: understanding-jaeger-a-guide-to-distributed-tracing-for-beginners-to-experts
+slug: mastering-jaeger-a-comprehensive-guide-to-distributed-tracing
 authors: 
   - Sampath
 publishDate: 2024-11-06
