@@ -1,6 +1,6 @@
 ---
-title: 'Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems'
-seoTitle: 'Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems'
+title: "Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems"
+seoTitle: "Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems"
 description: Discover the essential guide to Jaeger and learn how distributed tracing can elevate your modern applications. Ideal for DevOps professionals and developers, this guide unlocks insights for better performance, troubleshooting, and system optimization.
 img: /img/blog/Jaeger_blog/1-home.gif
 alt: Home page banner for blog on Jaeger and distributed tracing insights
