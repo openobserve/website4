@@ -33,7 +33,7 @@
           "200 GB Ingestion/month free",
           "Additional ingestion at $0.3/GB",
           "200 GB Query Volume/month free",
-          "200 M records function executions/month free",
+          "200 GB Pipeline processing/month free",
           "15 Days Retention",
           "10 users"
         ],
@@ -68,7 +68,7 @@
         "items": [
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
-          "Functions execution ($0.05/1M records)",
+          "Pipeline processing ($0.1/GB processed)",
           "30 days retention for logs and traces",
           "Unlimited users"
         ],
@@ -95,7 +95,7 @@
         "items": [
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
-          "Functions execution ($0.05/1M records)",
+          "Pipeline processing ($0.1/GB processed)",
           "60 days retention for logs and traces",
           "Unlimited users",
           "Email support"
