@@ -159,6 +159,35 @@ onMounted(() => {
     .forEach((section) => {
       observer.value?.observe(section);
     });
+  
+  document.querySelectorAll('pre').forEach(pre => {
+    const button = document.createElement('button');
+    button.className = 'copy-button';
+    button.textContent = 'Copy';
+    pre.style.position = 'relative';
+    pre.appendChild(button);
+
+    button.style.position = 'absolute';
+    button.style.top = '10px'; // Adjust this value as needed
+    button.style.right = '10px'; 
+    
+    button.addEventListener('click', () => { // Use addEventListener for better event handling
+      // improved to handle nested code blocks gracefully
+      const codeElement = pre.querySelector('code');
+      const code = codeElement ? codeElement.textContent : pre.textContent;
+
+      navigator.clipboard.writeText(code)
+        .then(() => {
+          button.textContent = 'Copied!';
+          setTimeout(() => button.textContent = 'Copy', 2000);
+        })
+        .catch(err => {
+          console.error("Failed to copy: ", err); 
+          button.textContent = "Error!"; 
+          setTimeout(() => button.textContent = "Copy", 2000);
+        });
+    });
+  });
 });
 
 onUnmounted(() => {
@@ -219,7 +248,27 @@ useHead({
 });
 </script>
 
+
 <style lang="postcss" scoped>
+
+.copy-button {
+  position: absolute;
+  top: 10;
+  right: 10;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 1; 
+}
+
+.copy-button:hover {
+  background-color: #0056B3;
+}
+
 :deep(.nuxt-content h1),
 .blog-content h1 {
   @apply text-2xl md:text-4xl mb-4 text-black font-medium;
