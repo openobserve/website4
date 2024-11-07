@@ -7,7 +7,7 @@
       class="container mx-auto flex flex-col md:flex-row justify-between items-center py-4 space-y-4 md:space-y-0"
     >
       <p>{{ data.contactus.desc }}</p>
-      <Button>{{ data.contactus.btn }}</Button>
+      <Button to="/contactus">{{ data.contactus.btn }}</Button>
     </div>
   </div>
   <LatestBlogPosts />

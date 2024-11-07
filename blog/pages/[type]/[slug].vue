@@ -48,10 +48,12 @@
           :alt="article.alt"
         />
 
-        <ContentRenderer
-          :value="article"
-          class="prose prose-lg prose-slate max-w-none text-base"
-        />
+        <div  ref="nuxtContent">
+          <ContentRenderer
+            :value="article"
+            class="prose prose-lg prose-slate max-w-none text-base"
+          />
+        </div>
 
         <div class="border my-6"></div>
 
@@ -107,7 +109,12 @@
           </div>
         </figure>
       </article>
-      <blog-sidebar :type="type"/>
+      <blog-toc
+        :type="type"
+        :article="article"
+        :activeTocId="activeSection"
+        :lastActiveTocId="lastActiveSection"
+      ></blog-toc>
     </div>
   </div>
 </template>
@@ -116,6 +123,9 @@
 const route = useRoute();
 const slug = route.params.slug;
 const type = route.params.type;
+const activeSection = ref(new Set());
+const lastActiveSection = ref(null);
+const nuxtContent = ref(null);
 
 const { data: article } = await useAsyncData(`${type}-${slug}`, () =>
   queryContent(`${getContentFolder(type)}/posts/${slug}`).findOne()
@@ -124,11 +134,44 @@ const { data: article } = await useAsyncData(`${type}-${slug}`, () =>
 const { data: authorsTemp } = await useAsyncData(() =>
   queryContent(`${getContentFolder(type)}/authors`).findOne()
 );
+
+const observer = ref(null);
+const observerOptions = reactive({
+  root: nuxtContent.value,
+  threshold: 0,
+});
+
+onMounted(() => {
+  observer.value = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const id = entry.target.getAttribute("id");
+      if (entry.isIntersecting) {
+        activeSection.value.add(id);
+        lastActiveSection.value = id;
+      } else {
+        activeSection.value.delete(id);
+      }
+    });
+  }, observerOptions);
+
+  document
+    .querySelectorAll(".blog-content h2[id], .blog-content h3[id]")
+    .forEach((section) => {
+      observer.value?.observe(section);
+    });
+});
+
+onUnmounted(() => {
+  observer.value?.disconnect();
+});
+
 const author = authorsTemp?.value?.authors?.find(
   (a) => a.slug == article?.value?.author
 );
 
-const postAuthors = article?.value?.authors.map((a) => authorsTemp?.value?.authors?.find((b) => b.slug == a))
+const postAuthors = article?.value?.authors.map((a) =>
+  authorsTemp?.value?.authors?.find((b) => b.slug == a)
+);
 
 const { data: prevNext } = await useAsyncData("prev-next-" + slug, () =>
   queryContent(`${getContentFolder(type)}/posts`)
