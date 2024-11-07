@@ -1,10 +1,10 @@
 ---
-title: 'Mastering Jaeger: A Comprehensive Guide to Distributed Tracing '
-seoTitle: 'Jaeger Distributed Tracing Guide: From Beginner to Expert'
+title: 'Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems'
+seoTitle: 'Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems'
 description: Discover the essential guide to Jaeger and learn how distributed tracing can elevate your modern applications. Ideal for DevOps professionals and developers, this guide unlocks insights for better performance, troubleshooting, and system optimization.
 img: /img/blog/Jaeger_blog/1-home.gif
 alt: Home page banner for blog on Jaeger and distributed tracing insights
-slug: mastering-jaeger-a-comprehensive-guide-to-distributed-tracing
+slug: tracing-made-easy-a-beginners-guide-to-jaeger-and-distributed-systems 
 authors: 
   - Sampath
 publishDate: 2024-11-06
@@ -276,6 +276,6 @@ Jaeger is an excellent tool for getting started with distributed tracing and is 
 OpenObserve addresses these limitations by unifying metrics, logs, and traces in a single platform, making it a more comprehensive observability solution. With its scalability, enhanced query capabilities, and cost-effectiveness, OpenObserve empowers teams to monitor, troubleshoot, and optimise complex distributed systems more efficiently.
 
 ## Real-World Case Study: Jidu’s Journey to 100% Tracing Fidelity
-To see OpenObserve’s impact in action, read about Jidu's journey to achieving 100% tracing fidelity using OpenObserve. Their challenge with AJeger with Elasticsearch back end limited their ability to ingest traces and they were able to ingest only 10% or traces that their application generated (10 TB per day) and performance was bad for the money that was spent on the resources. After moving from Jaeger+Elasticsearch to OpenObserve they were able to increase trace ingestion to 100% (10 TB) offering higher performance on the same hardware and reduced storage cost as well. They eventually started ingesting 100 TB of traces per day in OpenObserve. Their team’s work offers valuable insights into overcoming the challenges of tracing at scale and ensuring trace fidelity. You can read the full case study [here.](https://openobserve.ai/blog/jidu-journey-to-100-tracing-fidelity/)
+To see OpenObserve’s impact in action, read about Jidu's journey to achieving **100% tracing fidelity using OpenObserve**. Their challenge with AJeger with Elasticsearch back end limited their ability to ingest traces and they were able to ingest only 10% or traces that their application generated (10 TB per day) and performance was bad for the money that was spent on the resources. After moving from Jaeger+Elasticsearch to OpenObserve they were able to increase trace ingestion to 100% (10 TB) offering higher performance on the same hardware and reduced storage cost as well. They eventually started ingesting 100 TB of traces per day in OpenObserve. Their team’s work offers valuable insights into overcoming the challenges of tracing at scale and ensuring trace fidelity. You can read the full case study [here.](https://openobserve.ai/blog/jidu-journey-to-100-tracing-fidelity/)
 
 This case demonstrates how OpenObserve’s unified approach to observability enables improved trace fidelity and facilitates better troubleshooting, performance optimization, and insight gathering across distributed systems.
