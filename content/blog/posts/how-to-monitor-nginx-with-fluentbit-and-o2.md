@@ -1,7 +1,7 @@
 ---
 title: "How to Monitor Nginx in Real-Time: Step-by-Step Guide for Tracking Logs, Metrics, and Performance Insights"
 seoTitle: "Nginx Log Monitoring with OpenObserve and Fluentbit: Real-Time Logs, and Performance Insights"
-description: Learn how to monitor NGINX in real-time with this step-by-step guide, covering essential techniques for tracking logs, metrics, and performance insights. Discover best practices to optimize NGINX performance, troubleshoot issues faster, and ensure high availability by gaining actionable visibility into your web server’s health.
+description: Learn how to monitor Nginx logs in real-time with this step-by-step guide, covering essential techniques for tracking logs, metrics, and performance insights. Discover best practices to optimize Nginx performance, troubleshoot issues faster, and ensure high availability by gaining actionable visibility into your web server’s health.
 img: /img/blog/monitor-nginx-with-fluentbit-and-openobserve/Nginx.gif
 alt: how-to-monitor-nginx-with-fluentbit-and-o2
 slug: how-to-monitor-nginx-with-fluentbit-and-o2
