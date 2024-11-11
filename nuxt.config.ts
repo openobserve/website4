@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   },
 
   ogImage: {
-    enabled: false
+    enabled: false,
   },
 
   nitro: {
@@ -30,7 +30,14 @@ export default defineNuxtConfig({
       failOnError: false,
     },
   },
-
+  content: {
+    experimental: {
+      search: {
+        ignoredTags: ["style", "script"],
+        indexed: true,
+      },
+    },
+  },
   app: {
     head: {
       meta: [
@@ -40,7 +47,6 @@ export default defineNuxtConfig({
         },
       ],
       link: [
-        
         { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" },
         {
           rel: "stylesheet",

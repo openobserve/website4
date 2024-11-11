@@ -10,6 +10,7 @@
           </nuxt-link>
         </div>
         <div class="flex-1"></div>
+        <SearchComponent @searchModalOpen="isOpen = false" />
         <div class="mr-2">
           <GithubCount />
         </div>

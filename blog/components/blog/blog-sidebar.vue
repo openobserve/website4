@@ -1,5 +1,44 @@
 <template>
-  <div class="-mx-8 w-3/12 hidden lg:block">
+  <div class="w-3/12 hidden lg:block">
+    <div class="mt-10 px-8">
+        <h4 class="mb-4 text-xl font-medium text-gray-700">Recent Posts</h4>
+        <div class="max-w-sm mx-auto">
+          <div
+            v-for="(article, index) in recentArticles"
+            :key="index"
+            class="flex flex-col py-2 mb-5"
+          >
+            <div class="">
+              <nuxt-link
+                :to="`/${type}/${article.slug}`"
+                class="
+                  text-base text-gray-700
+                  font-normal
+                  hover:text-theme-primary
+                  transition-all
+                  duration-150
+                "
+              >
+                {{ article.title }}
+              </nuxt-link>
+            </div>
+            <div class="flex justify-between items-center mt-4">
+              <div class="flex items-center">
+                <nuxt-link
+                  :to="`/${type}/author/${article.authors?.[0]}`"
+                  class="text-gray-700 text-sm font-light mr-3 hover:underline"
+                >
+                  {{ authors?.find((a) => a.slug == article?.authors?.[0])?.name }} 
+                  {{ article.authors?.length > 1 ? (" (+" + (article.authors.length - 1 )+ ")") : "" }}
+                </nuxt-link>
+              </div>
+              <span class="font-light text-sm text-gray-600">
+                {{ formatDate(article.publishDate) }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     <div class="">
       <div v-if="false" class="mt-1 px-8">
         <h4 class="mb-4 text-xl font-medium text-gray-700">Categories</h4>
@@ -99,94 +138,7 @@
           </ul>
         </div>
       </div>
-      <!-- <div class="mt-10 px-8">
-        <h4 class="mb-4 text-xl font-medium text-gray-700">Archives</h4>
-        <div
-          class="
-            flex flex-col
-            bg-white
-            max-w-sm
-            mx-auto
-            rounded-lg
-          "
-        >
-          <select
-            v-model="dataVariables.selectedMonth"
-            name="archiveMonths"
-            id="archiveMonths"
-            class="py-2 mb-2 border rounded px-2"
-          >
-            <option disabled value="">Select</option>
-            <option
-              v-for="(month, index) in archiveMonths"
-              :key="index"
-              :value="month"
-            >
-              {{ formatMonth(month) }}
-            </option>
-          </select>
-          <ul>
-            <li
-              v-for="(article, index) in currentSelectedMonthArticles"
-              :key="index"
-              class="mb-2"
-            >
-              <nuxt-link
-                :to="'/blog/' + article.slug"
-                class="text-gray-700 font-normal"
-              >
-                <div class="flex flex-row">
-                  <div>&gt;&nbsp;&nbsp;</div>
-                  <div
-                    class="hover:text-theme-primary transition-all duration-200"
-                  >
-                    {{ article.title }}
-                  </div>
-                </div>
-              </nuxt-link>
-            </li>
-          </ul>
-        </div>
-      </div> -->
-      <div class="mt-10 px-8">
-        <h4 class="mb-4 text-xl font-medium text-gray-700">Recent Posts</h4>
-        <div class="max-w-sm mx-auto">
-          <div
-            v-for="(article, index) in recentArticles"
-            :key="index"
-            class="flex flex-col py-2 mb-5"
-          >
-            <div class="">
-              <nuxt-link
-                :to="`/${type}/${article.slug}`"
-                class="
-                  text-base text-gray-700
-                  font-normal
-                  hover:text-theme-primary
-                  transition-all
-                  duration-150
-                "
-              >
-                {{ article.title }}
-              </nuxt-link>
-            </div>
-            <div class="flex justify-between items-center mt-4">
-              <div class="flex items-center">
-                <nuxt-link
-                  :to="`/${type}/author/${article.authors?.[0]}`"
-                  class="text-gray-700 text-sm font-light mr-3 hover:underline"
-                >
-                  {{ authors?.find((a) => a.slug == article?.authors?.[0])?.name }} 
-                  {{ article.authors?.length > 1 ? (" (+" + (article.authors.length - 1 )+ ")") : "" }}
-                </nuxt-link>
-              </div>
-              <span class="font-light text-sm text-gray-600">
-                {{ formatDate(article.publishDate) }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+   
     </div>
   </div>
 </template>

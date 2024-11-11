@@ -1,9 +1,9 @@
 <template>
   <div>
     <div v-for="(article, index) in articles" :key="index" class="mb-10">
-      <div class="px-2 py-2 bg-white rounded-lg transition-all duration-200">
+      <div class="py-2 bg-white rounded-lg transition-all duration-200">
         <div class="flex flex-col md:flex-row items-stretch">
-          <div style="flex: 2" class="px-4 py-2">
+          <div style="flex: 2" class="">
             <div class="">
               <nuxt-link
                 :to="`/${type}/${article?.slug}`"

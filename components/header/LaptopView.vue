@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col bg-transparent">
     <div class="w-full px-4 mx-auto flex justify-between items-center py-4">
       <!-- main nav bar -->
       <div class="">
@@ -38,9 +38,13 @@
             item.title
           }}</Button>
         </div>
+
         <!-- <a href="/" target="_blank">Docs</a> -->
       </div>
+
+
       <div class="flex items-center space-x-1">
+          <SearchComponent/>
         <GithubCount />
         <GithubForkCount />
         <Button variant="tryitfree" target="_blank" :to="items.btn.link">{{

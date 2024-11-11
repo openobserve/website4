@@ -1,7 +1,7 @@
 <template>
   <div
     class="sticky top-0 z-50 backdrop-blur-sm bg-white text-black transition-all duration-500"
-    :class="y > 20 ? 'drop-shadow-md ' : ''"
+    :class="y > 20 ? 'drop-shadow-md ' : ''" id="header-class"
   >
     <div class="lg:block hidden">
       <LaptopView :items="items" />
