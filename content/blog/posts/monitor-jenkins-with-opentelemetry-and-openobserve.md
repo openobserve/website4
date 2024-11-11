@@ -1,6 +1,6 @@
 ---
-title: "Comprehensive Guide to Monitoring Jenkins Pipelines with OpenTelemetry and OpenObserve"
-seoTitle: "Comprehensive Guide to Monitoring Jenkins Pipelines with OpenTelemetry and OpenObserve"
+title: "How to Monitor Jenkins Pipelines with OpenTelemetry and OpenObserve"
+seoTitle: "How to Monitor Jenkins Pipelines with OpenTelemetry and OpenObserve"
 description: Learn how to monitor Jenkins pipelines effectively with this comprehensive guide on integrating OpenTelemetry and OpenObserve. Discover step-by-step instructions for capturing Jenkins logs, metrics, and traces to enhance CI/CD observability and optimize pipeline performance.
 img: /img/blog/monitor-jenkins-with-otel-o2/image1.gif
 alt: monitor-jenkins-with-opentelemetry-and-openobserve
