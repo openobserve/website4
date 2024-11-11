@@ -42,14 +42,15 @@
           <!-- Search Results Section -->
           <div class="max-h-96 overflow-y-auto thin-scrollbar">
             <ul v-if="filteredResults.length && !loading">
-              <li v-for="result in filteredResults" :key="result.id" class="py-2 border-b hover:bg-gray-100">
-                <nuxt-link :to="result.id" @click="toggleSearchCloseModal"
-                  class="block text-black text-sm md:text-base p-2 space-y-1">
+              <li v-for="result in visibleItems" :key="result.id" class="py-2 border-b hover:bg-gray-100">
+                <nuxt-link :to="getResultUrl(result.id)" @click="toggleSearchCloseModal"
+                  class="block text-black text-sm md:text-base p-2 space-y-1" style="content-visibility: auto;">
                   <!-- Title -->
                   <span v-html="highlightText(result.title)"></span>
 
                   <!-- ID -->
-                  <p class="text-gray-700 text-xs md:text-xs italic" v-html="highlightText(result.id)"></p>
+                  <p class="text-gray-700 text-xs md:text-xs italic" v-html="highlightText(getResultUrl(result.id))">
+                  </p>
 
                   <!-- Content -->
                   <p class="text-gray-700 text-xs md:text-sm line-clamp-3" v-html="highlightText(result.content)"></p>
@@ -61,6 +62,7 @@
             <p v-else-if="searchQuery && !filteredResults.length && !loading" class="text-gray-500 mt-2">
               No results found.
             </p>
+            <div id="lazy-loading-sentinel"></div> <!-- Sentinel for lazy loading -->
           </div>
         </div>
       </div>
@@ -76,7 +78,10 @@ const emit = defineEmits(["searchModalOpen", "searchModalClose"]);
 const showSearchModal = ref(false);
 const searchQuery = ref("");
 const filteredResults = ref([]);
+const visibleItemCount = ref(20); // Number of items to show initially
+const loadedItemCount = ref(20); // Current number of loaded items
 const loading = ref(false);
+let observer = null;
 
 function highlightText(text) {
   if (!searchQuery.value) return text;
@@ -88,25 +93,81 @@ function highlightText(text) {
 }
 
 const debouncedSearch = async () => {
-  if (searchQuery.value) {
-    loading.value = true;
-    const results = await searchContent(searchQuery.value);
-    filteredResults.value = results?.value.map((result) => {
-      if (
-        result.id.startsWith("/resources/posts") ||
-        result.id.startsWith("/blog/posts")
-      ) {
-        return { ...result, id: result.id.replace("/posts", "") };
-      }
-      return result;
-    });
-    loading.value = false;
-  } else {
+  if (!searchQuery.value) {
     filteredResults.value = [];
+    loading.value = false;
+    loadedItemCount.value = 20; // Reset the loaded items
+    return;
+  }
+
+  loading.value = true;
+  try {
+    const results = await searchContent(searchQuery.value);
+    filteredResults.value = results?.value || [];
+    loadedItemCount.value = visibleItemCount.value; // Set initial load count
+  } catch (error) {
+    console.error("Error fetching search results:", error);
+  } finally {
     loading.value = false;
   }
 };
 watch(searchQuery, debounce(debouncedSearch, 300));
+
+const visibleItems = computed(() =>
+  filteredResults.value.slice(0, loadedItemCount.value)
+);
+
+// Intersection Observer to detect when the user reaches the end of the list
+async function setupLazyLoadingObserver() {
+  await nextTick();
+
+  const sentinel = document.querySelector("#lazy-loading-sentinel");
+  const container = document.querySelector(".thin-scrollbar");
+
+  if (!sentinel || !container) return;
+
+  observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        loadMoreItems();
+      }
+    },
+    { root: container, rootMargin: "120px" } // Adjust rootMargin as needed
+  );
+
+  observer.observe(sentinel);
+}
+
+function loadMoreItems() {
+  // Load more items if there are more items available
+  if (loadedItemCount.value < filteredResults.value.length) {
+    loadedItemCount.value += visibleItemCount.value;
+  }
+}
+
+watch(showSearchModal, (newValue) => {
+  if (newValue) {
+    setupLazyLoadingObserver();
+  } else {
+    // remove observer
+    if (observer) {
+      observer.disconnect();
+      observer = null;
+    }
+  }
+})
+
+// Set up the lazy loading observer when the component is mounted
+onMounted(setupLazyLoadingObserver);
+
+const getResultUrl = (url) => {
+  const postsPathRegex = /^\/(resources|blog)\/posts/;
+
+  if (postsPathRegex.test(url)) {
+    return url.replace("/posts", "")
+  }
+  return url;
+}
 
 function toggleSearchModal() {
   showSearchModal.value = true;
