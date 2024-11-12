@@ -103,7 +103,9 @@ const debouncedSearch = async () => {
   loading.value = true;
   try {
     const results = await searchContent(searchQuery.value);
-    filteredResults.value = results?.value || [];
+    filteredResults.value = (results?.value || []).filter(
+      (item) => !item.id?.includes('/resources') // Check only the 'id' property
+    );
     loadedItemCount.value = visibleItemCount.value; // Set initial load count
   } catch (error) {
     console.error("Error fetching search results:", error);
