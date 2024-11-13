@@ -96,7 +96,7 @@
           "Ingestion ($0.3/GB)",
           "Query Volume ($0.01/GB)",
           "Pipeline processing ($0.1/GB processed)",
-          "60 days retention for logs and traces",
+          "30 days retention for logs and traces",
           "Unlimited users",
           "Email support"
         ],
