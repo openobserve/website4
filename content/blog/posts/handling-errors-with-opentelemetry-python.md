@@ -1,6 +1,6 @@
 ---
 title: "Error Handling With Opentelemetry Python SDK: A Step-by-Step Guide"
-seoTitle: How to handle errors with Opentelemetry Python SDK
+seoTitle: How to handle errors with Opentelemetry Python
 description: Enhance your understanding of error handling in Python with OpenTelemetry. This detailed guide offers step-by-step instructions to use Global Error Handler in Otel Python SDK.
 img: /img/blog/otel-python-error/Flowchart.png
 alt: erorr-handling-otel-python
@@ -16,11 +16,11 @@ tags:
 
 ## Introduction
 
-Error handling is a fundamental aspect of robust software development. However, the concept of errors and exceptions varies significantly across programming languages. For instance, languages like **Java** and **Python** provide built-in support for exceptions, while **Go** discourages their use, treating errors as ordinary issues. This disparity poses challenges when developing microservices in multiple languages. Each language's unique error handling mechanisms complicate unified telemetry and error reporting.
+Error handling is a fundamental aspect of robust software development. However, the concept of **errors and exceptions** varies significantly across programming languages. For instance, languages like **Java** and **Python** provide built-in support for exceptions, while **Go** discourages their use, treating errors as ordinary issues. This disparity poses challenges when developing microservices in multiple languages. Each language's unique error handling mechanisms complicate unified telemetry and error reporting.
 
 **OpenTelemetry (OTel)** stands out as a powerful open-source tool that brings all these observability signals together in a standardized, vendor-neutral way. Managed by the **Cloud Native Computing Foundation (CNCF)**, OpenTelemetry provides an observability framework that supports seamless tracking, monitoring, and troubleshooting of distributed applications across various languages and platforms.
 
-In this blog, we’ll take a deep dive into the **OpenTelemetry Python SDK** and focus on its **Global Error Handler**, which provides a structured way to manage and log exceptions in Python applications.
+In this blog, we’ll take a deep dive into the **OpenTelemetry Python** and focus on its **Global Error Handler**, which provides a structured way to manage and log exceptions in Python applications.
 
 ## OpenTelemetry and Python SDK Overview
 

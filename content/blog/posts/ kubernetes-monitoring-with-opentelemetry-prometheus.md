@@ -1,10 +1,10 @@
 ---
 title: "Enhancing Kubernetes Metrics Collection With Opentelemetry and Prometheus"
-seoTitle: "Kubernetes Observability With Opentelemetry and Prometheus"
+seoTitle: "Monitoring Kubernetes With Opentelemetry and Prometheus"
 description: Enhance your Kubernetes observability using OpenTelemetry and Prometheus. TargetAllocator optimizes target discovery, ensuring reliable monitoring in dynamic settings.
 img: /img/blog/otel-prometheus-blog/image4.png
 alt: otel-prometheus-blog
-slug: kubernetes-observability-with-opentelemetry-prometheus
+slug:  kubernetes-monitoring-with-opentelemetry-prometheus
 authors: 
   - manas
 publishDate: 2024-11-13
@@ -17,7 +17,7 @@ tags:
   - performance
 ---
 
-**OpenTelemetry** and **Prometheus** are two powerful tools that many developers rely on to generate and collect telemetry data. However, as applications scale and environments become more dynamic, challenges arise—particularly when it comes to configuring Prometheus receivers to capture all dynamic scrape endpoints.
+Kubernetes has revolutionized how we deploy and manage applications, but effective monitoring in these dynamic environments can be challenging. **Kubernetes observability** is crucial for scaling these applications, and tools like **OpenTelemetry** and **Prometheus** have become the preferred choices for developers looking to efficiently generate and collect telemetry data. However, as applications scale and become more complex, configuring Prometheus receivers to capture all dynamic scrape endpoints can become a significant hurdle.
 
 ## The Challenge
 
