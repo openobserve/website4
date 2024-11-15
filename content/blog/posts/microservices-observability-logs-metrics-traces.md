@@ -28,20 +28,6 @@ tags:
 *Picture this:* It's Black Friday, and you're the lead developer at an e-commerce powerhouse. Suddenly, orders start failing, and customer complaints flood in faster than bargain hunters at a flash sale. Your team scrambles to identify the issue, but with dozens of microservices working together, pinpointing the problem feels like finding a needle in a haystack of needles.
 
 This scenario is all too familiar for teams managing complex microservices architectures. *The solution?* Microservices observability. In this comprehensive guide, we'll explore how observability can transform your ability to understand, troubleshoot, and optimize your microservices-based applications.
-
-## Table of Contents
-
-1. [Understanding Microservices Observability](understanding-microservices-observability)  
-2. [The Three Pillars of Observability](the-three-pillars-of-observability)  
-3. [Benefits of Microservices Observability](benefits-of-microservices-observability)  
-4. [Real-World Example: E-Commerce Platform](#real-world-example-e-commerce-platform)  
-5. [Logging Best Practices](logging-best-practices)  
-6. [Metrics Collection Best Practices](metrics-collection-best-practices)  
-7. [Distributed Tracing](distributed-tracing)  
-8. [Common Challenges and Solutions](common-challenges-and-solutions-in-microservices-observability)  
-9. [Future Directions in Microservices Observability](future-directions-in-microservices-observability)  
-10. [Comprehensive Observability with OpenObserve](comprehensive-observability-with-openobserve)  
-
 ---
 
 <h2 id="understanding-microservices-observability">Understanding Microservices Observability</h2>
