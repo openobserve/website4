@@ -7,7 +7,7 @@ alt: OpenObserve blog banner showing distributed tracing concepts with connected
 slug: distributed-tracing-basics-to-beyond-guide
 authors: 
   - nitya
-publishDate: 2024-11-15
+publishDate: 2024-11-14
 tags:
   - Distributed Tracing
   - Observability
