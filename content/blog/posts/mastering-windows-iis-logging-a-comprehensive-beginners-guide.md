@@ -18,7 +18,11 @@ tags:
   - log management
   - vrl
   - web server monitoring
+  - IIS Log Analysis
+  - Log Parsing in IIS
 ---
+Are you looking to unlock the full potential of Windows IIS logging? Whether you're a system admin, web developer, or IT enthusiast, understanding IIS logging is key to monitoring and optimizing your web server's performance. In this comprehensive guide, we’ll take you through everything you need to know from setting up IIS and hosting custom sites to collecting, analyzing, and parsing logs with OpenObserve. By the end of this blog, you’ll have the tools and techniques to keep your IIS server running smoothly while gaining actionable insights from your logs.
+
 ### In this blog, we will cover:
 1. Introduction to Windows IIS
 2. Why Windows IIS Logging Matters
