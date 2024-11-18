@@ -6,7 +6,7 @@ alt: OpenObserve
 slug: whats-new-in-openobserve-v0.13.1-rc1
 authors: 
   - manas
-publishDate: 2024-10-31   
+publishDate: 2024-11-01   
 tags:
   - observability
   - openobserve
