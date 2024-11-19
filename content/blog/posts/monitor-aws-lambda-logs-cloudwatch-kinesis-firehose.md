@@ -112,7 +112,7 @@ def lambda_handler(event, context):
 * This will allow you to control log verbosity dynamically without needing to redeploy your function.  
 7. Click **Deploy** to save your changes.
 
-![GIF demonstrating the setup process for an AWS Lambda function in the AWS Management Console, including code editing and deploying.][public/img/blog/aws-lambda-logs/1-lambda-function-setup.gif]  
+![GIF demonstrating the setup process for an AWS Lambda function in the AWS Management Console, including code editing and deploying.][/img/blog/aws-lambda-logs/1-lambda-function-setup.gif]  
 
 ### **Why Customize Logging?**
 
@@ -276,7 +276,7 @@ First things first, to test that everything is working correctly, invoke your La
 
 Optionally, you can also leverage a wide variety of test templates available within the AWS Lambda Console to test additional scenarios suitable for your specific Lambda function(s):
 
-![public/img/blog/aws-lambda-logs/10-lambda-additional-tests.gif](/img/blog/aws-lambda-logs/10-lambda-additional-tests.gif)  
+![GIF showing the creation of additional test events in the AWS Lambda console, including entering event JSON and saving configurations.](/img/blog/aws-lambda-logs/10-lambda-additional-tests.gif)  
 
 ## Step 5: View AWS Lambda Log Data in OpenObserve
 
