@@ -112,7 +112,7 @@ def lambda_handler(event, context):
 * This will allow you to control log verbosity dynamically without needing to redeploy your function.  
 7. Click **Deploy** to save your changes.
 
-![GIF demonstrating the setup process for an AWS Lambda function in the AWS Management Console, including code editing and deploying.][/img/blog/aws-lambda-logs/1-lambda-function-setup.gif]  
+![GIF demonstrating the setup process for an AWS Lambda function in the AWS Management Console, including code editing and deploying.](/img/blog/aws-lambda-logs/1-lambda-function-setup.gif) 
 
 ### **Why Customize Logging?**
 
