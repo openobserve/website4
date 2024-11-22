@@ -148,9 +148,7 @@ AWS_REGION = 'us-east-1'
 # Initialize the EventBridge client with credentials
 eventbridge_client = boto3.client(
    'events',
-   region_name=AWS_REGION,
-   aws_access_key_id='ADD_ACCESS_KEY_ID',
-   aws_secret_access_key='ADD_SECRET_ACCESS_KEY'
+   region_name=AWS_REGION
 )
 
 # Function to generate a simulated EC2 state change event
@@ -240,7 +238,9 @@ if __name__ == "__main__":
 * Includes proper error handling and logging  
 * Uses bulk sending capabilities to simulate high-volume scenarios
 
-4. Finally, run the script:
+4. Run `aws configure` to set up your AWS credentials.
+
+5. Finally, run the script with `python simulate_events.py`.
 
 ![Python script execution for sending an event to Amazon EventBridge, displaying the code, console output, and successful event response details.](/img/blog/cloudwatch-events-eventbridge/image4.gif) 
 
