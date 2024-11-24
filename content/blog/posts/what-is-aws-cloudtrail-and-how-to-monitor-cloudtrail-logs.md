@@ -42,8 +42,6 @@ Enabling CloudTrail in your AWS environment involves setting up trails to delive
    * Click on **Trails** and then **Create trail**.  
    * Provide a name for your trail.
 
-   ![aws dashboard](/img/blog/what-is-aws-cloudtrail/image10.png)
-
 3. **S3 Bucket for Storage**:  
    * Select an existing S3 bucket or create a new one for storing CloudTrail logs.  
    * Configure permissions to allow CloudTrail to write logs to the bucket.  
@@ -139,6 +137,19 @@ Once the above steps are completed, logs are ingested into OpenObserve, you can 
 * **Scalability**: Handles large volumes of logs seamlessly.  
 * **Insights**: Provides a real-time view of your AWS environment.
 
-### Achieve AWS Security Goals with OpenObserve
+#### Comparing AWS CloudTrail Logs: With vs. Without Enhanced Observability
 
+| Feature | Without OpenObserve | With OpenObserve |
+| :---- | :---- | :---- |
+| Log Storage | Stored in S3 with basic search capabilities | Centralized in OpenObserve with advanced indexing and search |
+| Real-Time Monitoring | Not available, relies on manual log analysis | Real-time log ingestion, monitoring, and visualization |
+| Search Capabilities | Limited to S3 and CloudTrail console filtering | Full-text search, filtering, and custom queries |
+| Data Correlation | Requires manual efforts and external tools | Correlate logs and data events seamlessly in dashboards |
+| Alerting and Notifications | Requires custom scripts or additional AWS services | Integrated real-time alerts based on log patterns |
+| Visualization and Insights | Requires external visualization tools like QuickSight | Built-in dashboards and panels for actionable insights |
+| Scalability | Limited by S3 and manual processing pipelines | Scales efficiently for large volumes of logs |
+| Security Incident Response | Slower due to manual log retrieval and analysis | Faster with real-time alerts and context-rich dashboards |
+
+### Achieve AWS Security Goals with OpenObserve
+![aws s3 storage](/img/blog/what-is-aws-cloudtrail/aws-and-o2.png)
 AWS CloudTrail is indispensable for monitoring and securing your AWS environment. By leveraging a CloudFormation template, you can automate the setup of an efficient log pipeline to OpenObserve. This not only saves time but also provides a powerful way to analyze and visualize your AWS activities. With detailed dashboards and log analysis, you can ensure compliance, detect anomalies, and optimize your cloud operations. [Get started with OpenObserve](https://cloud.openobserve.ai/) and gain control of your AWS cloudtrail logs.
