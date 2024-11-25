@@ -1,6 +1,6 @@
 ---
-title: 'Nginx Log Management: From Data Collection to Insightful Analysis'
-seoTitle: Nginx Log Management with OpenObserve and Vector:From Data Collection to Analysis
+title: "Nginx Log Management: From Data Collection to Insightful Analysis"
+seoTitle: "Nginx Logging Made Easy: How to Configure Error and Access Logs"
 description: This blog guides you through effective Nginx log management and analysis using OpenObserve and Vector, providing insights on enhancing observability and streamlining your logging process.
 img: /img/blog/nginx_blog/1-flow-diagram.png 
 alt: Nginx log management and analysis using OpenObserve and Vector
@@ -20,7 +20,7 @@ tags:
 
 In modern infrastructure, observability plays a crucial role in monitoring the health and performance of services. Nginx, as one of the most popular web servers, generates access logs that provide valuable insights into traffic, requests, and errors. By forwarding Nginx logs to a centralised observability platform like OpenObserve and using a log processing tool such as Vector, you can gain deeper insights into your web traffic and server performance.
 
-### In this blog, we will cover:
+**In this blog, we will cover:**
 - A brief overview of Nginx, Vector and OpenObserve
 - Installing Nginx, Vector, and OpenObserve.
 - How to send Nginx logs to OpenObserve using Vector.
