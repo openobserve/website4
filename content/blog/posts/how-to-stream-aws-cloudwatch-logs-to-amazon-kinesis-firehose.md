@@ -20,7 +20,7 @@ tags:
 ---
 Managing logs efficiently is crucial for monitoring, diagnosing, and optimizing applications in the cloud. AWS CloudWatch Logs integration offers a powerful solution for centralized log collection and analysis. However, by streaming CloudWatch Logs to Kinesis Firehose, you can elevate your log management strategy to a new level, enabling scalable, real-time log streaming for enhanced processing and delivery. In this blog, we’ll walk you through the benefits and a step-by-step guide on how to set up the CloudWatch Logs to Firehose pipeline for improved AWS log management.
 
-### In this blog, we will cover:
+**In this blog, we will cover:**
 1. What Are AWS CloudWatch Logs?
 2. What Is Amazon Kinesis Firehose?
 3. Step-by-Step Guide to Setting Up CloudWatch Logs to Kinesis Firehose Pipeline
