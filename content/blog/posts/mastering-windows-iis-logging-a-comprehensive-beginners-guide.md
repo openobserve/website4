@@ -1,6 +1,6 @@
 ---
 title: "Mastering Windows IIS Logging: A Comprehensive Beginner's Guide"
-seoTitle: "Mastering Windows IIS Logging: A Comprehensive Beginner's Guide"
+seoTitle: "Windows IIS Logging: Understanding and Analyzing IIS Logs"
 description: Learn everything about Windows IIS logging, from setup and configuration to log collection and parsing. Enhance your understanding and improve your IIS log management with step-by-step instructions and practical examples.
 img: /img/blog/Windows_IIS/1-Home.gif 
 alt: Mastering Windows IIS Logging
@@ -23,7 +23,7 @@ tags:
 ---
 Are you looking to unlock the full potential of Windows IIS logging? Whether you're a system admin, web developer, or IT enthusiast, understanding IIS logging is key to monitoring and optimizing your web server's performance. In this comprehensive guide, we’ll take you through everything you need to know from setting up IIS and hosting custom sites to collecting, analyzing, and parsing logs with OpenObserve. By the end of this blog, you’ll have the tools and techniques to keep your IIS server running smoothly while gaining actionable insights from your logs.
 
-### In this blog, we will cover:
+**In this blog, we will cover:**
 1. Introduction to Windows IIS
 2. Why Windows IIS Logging Matters
 3. How to Set Up Windows IIS
