@@ -22,7 +22,7 @@ As businesses and applications scale in AWS, monitoring and log management becom
 
 In this guide, we will walk you through a simple and effective way to send your AWS CloudWatch Logs to an S3 bucket using Amazon Kinesis Data Firehose. 
 
-### In This Blog, We Will Cover:
+**In This Blog, We Will Cover:**
 1. What Are AWS CloudWatch Logs?
 2. What Is Amazon Kinesis Firehose?
 3. Why Send CloudWatch Logs to S3 via Kinesis Firehose?
