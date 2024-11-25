@@ -21,7 +21,7 @@ tags:
 AWS CloudWatch Logs are essential for monitoring your cloud infrastructure, but streaming and analyzing them efficiently can be a challenge. Amazon Kinesis Firehose simplifies the process by allowing you to easily stream CloudWatch logs to various destinations for deeper analysis.
 In this guide, we'll walk you through how to run a Python script to send dummy logs to AWS CloudWatch, stream them to Amazon Kinesis Firehose using a subscription filter, and then send the logs to OpenObserve with S3 as storage for enhanced log management and actionable insights.
 
-### In this blog, we will cover:
+**In this blog, we will cover:**
 1. What are AWS CloudWatch Logs?
 2. What is Amazon Kinesis Firehose?
 3. What is Amazon S3?
