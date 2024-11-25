@@ -1,6 +1,6 @@
 ---
 title: "Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems"
-seoTitle: "Tracing Made Easy: A Beginner's Guide to Jaeger and Distributed Systems"
+seoTitle: Distributed Tracing with Jaeger
 description: Discover the essential guide to Jaeger and learn how distributed tracing can elevate your modern applications. Ideal for DevOps professionals and developers, this guide unlocks insights for better performance, troubleshooting, and system optimization.
 img: /img/blog/Jaeger_blog/1-home.gif
 alt: Home page banner for blog on Jaeger and distributed tracing insights
@@ -21,7 +21,7 @@ tags:
 
 As software systems evolve, they become increasingly complex, especially with the rise of microservices and distributed architectures. Keeping track of what's happening across different services can quickly become a daunting task. Tracing tools like Jaeger have emerged as essential solutions for debugging and monitoring distributed applications, helping developers understand and optimise their systems.
 
-### In this blog, we will cover:
+**In this blog, we will cover:**
 1. The Pillars of Observability
 2. Background on Distributed Tracing
 3. What Is Jaeger?
