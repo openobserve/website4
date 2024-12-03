@@ -43,7 +43,7 @@ Here’s the high-level workflow we’ll follow:
 4. Use Kinesis Data Firehose to deliver logs from Kinesis to OpenObserve.  
 5. Analyze the data in OpenObserve using visual dashboards.  
    
-![Diagram illustrating CloudFront logs streaming through Kinesis Data Streams and Firehose to OpenObserve for analysis.](/img/blog/cloudfront-access-logs/00-blog-banner.png) 
+![Diagram illustrating CloudFront logs streaming through Kinesis Data Streams and Firehose to OpenObserve for analysis.](/img/blog/cloudfront-access-logs/1-cloudfront-to-o2-diagram.gif) 
 
 Let’s dive into the details.
 
