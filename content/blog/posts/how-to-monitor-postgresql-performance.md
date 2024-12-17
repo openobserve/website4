@@ -16,7 +16,6 @@ tags:
   - postgreSQL
 ---
 
-
 Are you tired of juggling multiple tools to monitor your **PostgreSQL database performance**? Look no further! In this blog post, we’ll guide you through using **OpenTelemetry** and **OpenObserve** to streamline your monitoring process efficiently.
 
 ## Why Monitor Your PostgreSQL Performance?
@@ -202,7 +201,11 @@ Now that your setup is complete, head over to the OpenObserve dashboard. Click o
 
 - ![image1](/img/blog/postgresql/image8.png)
 
+Viewing PostgreSQL dashboard 
 
+- ![image1](/img/blog/postgresql/dashboard.png)
+
+Each panel is designed to provide insights into different aspects of your PostgreSQL database, helping you monitor performance and health effectively. You can download the dashboards [here](https://github.com/openobserve/dashboards).
 
 ### Step 6: Troubleshooting: Enabling SSL for PostgreSQL Metrics Collection
 
