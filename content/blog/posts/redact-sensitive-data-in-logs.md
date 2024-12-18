@@ -17,13 +17,13 @@ tags:
   - PII
 ---
 
-### How to Redact Sensitive Data in Your Logs
+## How to Redact Sensitive Data in Your Logs
 
 As you collect and store increasingly large amounts of log data, the risk of sensitive information being exposed grows. Sensitive data, such as email addresses, credit card numbers, and API keys, can be inadvertently logged, posing a significant security risk. Redacting sensitive data from logs is crucial to protect user privacy and prevent data breaches.
 
 In this blog, we'll explore the importance of redacting sensitive data from logs and provide examples of how to do so using Vector Remap Language (VRL). We'll cover redacting email addresses, credit card numbers, and AWS keys. You will be able to do it for other scenarios as well from what you learn here.
 
-### Why Redact Sensitive Data?
+## Why Redact Sensitive Data?
 
 Logging sensitive data can have severe consequences, including:
 
@@ -31,10 +31,38 @@ Logging sensitive data can have severe consequences, including:
 2. Compliance issues: Failing to protect sensitive data can result in non-compliance with regulations, such as GDPR, HIPAA, and PCI-DSS.
 3. Security risks: Logged sensitive data can be used by attackers to gain unauthorized access to systems and data.
 
-### Redacting Sensitive Data with Vector VRL
-Vector VRL is a powerful language for processing and transforming log data. Its redact function allows you to remove sensitive data from logs. 
+## Redacting Sensitive Data with VRL
+Vector VRL is a powerful language for processing and transforming log data. It's redact function allows you to remove sensitive data from logs. 
 
-### Ingest sample data
+Syntax of the redact function is:
+
+```javacript
+redact(value: <string | object | array> , filters: <array> , [redactor: <string | object> ])
+:: <string | object | array>
+```
+
+value can be either string, object or an array.
+
+### redacting single field
+In order to redact a single field you can use:
+
+```
+email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+.message = redact!(.message, filters: [ email_pattern ], redactor: "full")
+```
+
+### redacting whole log record
+In order to configure you the whole record you can use:
+
+```
+email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
+. = redact(., filters: [ email_pattern ], redactor: "full")
+```
+
+Beware of doing this for the whole record as opposed to a single field, as you might need additional whole lot more processing power during ingestion.
+
+
+## Ingest sample data
 
 Let's take an example log record:
 
@@ -63,7 +91,7 @@ Make sure to replace the credentials
 
 ![base_data](/img/blog/redact/base_data.webp)
 
-### Redacting Email Addresses
+## Redacting Email Addresses
 
 To redact email addresse, you can use the following VRL script:
 
@@ -82,7 +110,7 @@ You should see below.
 
 ![redacted_email](/img/blog/redact/redacted_email.webp)
 
-### Redacting Credit Card Numbers
+## Redacting Credit Card Numbers
 
 To redact credit card numbers,you must understand that there are various credit card number formats. We have collected various credit card number formats that you can use:
 
@@ -120,7 +148,7 @@ Now you have both email and credit card redacted.
 
 ![creditcard_redacted](/img/blog/redact/creditcard_redacted.webp)
 
-### Redacting AWS Keys
+## Redacting AWS Keys
 
 To redact AWS keys, you can use the following VRL script:
 
@@ -161,7 +189,7 @@ This script uses a regular expression to match AWS keys in the message field and
 
 ![aws_keys_redacted](/img/blog/redact/aws_keys_redacted.webp)
 
-### Save function and create the pipeline
+## Save function and create the pipeline
 
 Now that you have been able to test the function that works well, let's build a pipeline.
 
@@ -178,11 +206,11 @@ When redacting sensitive data, keep the following best practices in mind:
 1. Test your scripts: Verify that your redaction scripts are working correctly to avoid false positives or negatives.
 1. Monitor and update: Continuously monitor your logs and update your redaction scripts as needed to ensure sensitive data is protected.
 
-### How do I build or find regular expressions for other sensitive data
+## How do I build or find regular expressions for other sensitive data
 
 Check the open source pyWhat project at https://github.com/bee-san/pyWhat/tree/main/pywhat/Data
 
-### Conclusion
+## Conclusion
 
 Redacting sensitive data from logs is essential to protect user privacy and prevent data breaches. By using Vector VRL and following best practices, you can effectively remove sensitive data from your logs and ensure compliance with regulations. Remember to regularly review and update your redaction scripts to stay ahead of evolving security threats.
 
