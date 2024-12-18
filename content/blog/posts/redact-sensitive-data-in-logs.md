@@ -59,7 +59,7 @@ email_pattern = r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'
 . = redact(., filters: [ email_pattern ], redactor: "full")
 ```
 
-Beware of doing this for the whole record as opposed to a single field, as you might need additional whole lot more processing power during ingestion.
+Doing this for the whole record as opposed to a single field, would require more compute during ingestion. Hence plan accordingly.
 
 
 ## Ingest sample data
