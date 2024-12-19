@@ -72,7 +72,16 @@ Select the metrics you want to stream:
 3. Provide metric stream name
 ![aws cloudwatch metrics](/img/blog/cloudwatch-metrics-aws-rds/rds_metrics_second.png)
 
-### Step 4: Import the Prebuilt RDS Monitoring Dashboard
+### Step 4: Verify the metrics in OpenObserve
+
+Go to OpenObserve dashboard and select logs and search for the stream that you have created while providing HTTP endpoint in kinesis. 
+
+Metrics are ingested as logs within OpenObserve in OpenTelemetry 1.0 format that will allow you to use SQL to create dashboards.
+
+![aws cloudwatch metrics](/img/blog/cloudwatch-metrics-aws-rds/rds_metrics_logs.gif)
+
+
+### Step 5: Import the Prebuilt RDS Monitoring Dashboard
 
 To visualize the ingested metrics effectively, use the prebuilt RDS monitoring dashboard available in the [OpenObserve Dashboards repository](https://github.com/openobserve/dashboards/tree/main/AWS_Cloudwatch_RDS_Metrics):
 
@@ -92,6 +101,15 @@ To visualize the ingested metrics effectively, use the prebuilt RDS monitoring d
 * **Error Analysis:** Identify and resolve database issues.
 
 ## **Conclusion**
+
+| Feature/Aspect | With OpenObserve | Without OpenObserve |
+| :---- | :---- | :---- |
+| Centralized Monitoring | Multi-account and multi-region RDS instances can be monitored in a single dashboard. | Requires navigating through multiple AWS accounts and regions individually. |
+| Custom Dashboards | Build tailored dashboards with real-time visualizations and alerts for RDS metrics. | Limited to pre-defined CloudWatch views with minimal customization options. |
+| Unified Observability | Correlate RDS metrics with other system metrics in one platform. | No correlation between RDS metrics and other observability data sources. |
+| Cost Efficiency | Optimize cost by ingesting only required metrics and storing them in OpenObserve. | Increased CloudWatch costs due to prolonged retention of all metrics. |
+| Alerting and Automation | Set up advanced alerts and automated workflows based on RDS performance thresholds. | Limited alerting options with basic CloudWatch alarms. |
+| Retention and Analysis | Long-term storage of metrics with advanced querying for historical analysis. | Metrics retention limited to CloudWatch retention policies (up to 15 months). |
 
 By following these steps, you can set up an end-to-end monitoring solution for AWS RDS metrics using CloudWatch and OpenTelemetry. This approach ensures:
 
