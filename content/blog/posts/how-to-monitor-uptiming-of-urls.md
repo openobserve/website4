@@ -1,7 +1,7 @@
 ---
 title: "Uptime Monitoring Made Easy: SSL and URL Checks with OpenTelemetry"
 seoTitle: "uptime monitoring setup with opentelemetry for free"
-description: Learn how to ensure reliable uptime monitoring with SSL and URL checks. Discover the importance of proactive monitoring, set up OpenTelemetry Collector's HTTP Check Receiver, use a custom Go program for SSL monitoring, and visualize data in OpenObserve dashboards for actionable insights.
+description: Learn how to ensure reliable uptime monitoring with SSL and URL checks. Discover the importance of proactive monitoring, set up OpenTelemetry Collector's HTTP Check Receiver and visualize data in OpenObserve dashboards for actionable insights.
 img: /img/blog/uptime-monitoring/uptime_monitor_flow.gif
 alt: how-to-monitor-uptiming-of-urls
 slug: how-to-monitor-uptiming-of-urls
