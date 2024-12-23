@@ -1,6 +1,6 @@
 ---
-title: "Redis Metrics Monitoring - OpenTelemetry Collector Guide"
-seoTitle:   Monitor Your Redis Metrics with OpenTelemetry 
+title: "Monitor Your Redis Metrics with Opentelemetry and OpenObserve"
+seoTitle:  Monitor Your Redis Metrics with OpenTelemetry 
 description: Discover how to effectively monitor Redis Metrics using the OpenTelemetry Collector. Enhance performance and reliability with our comprehensive guide.
 img: /img/blog/redis/image3.png
 alt: OpenObserve

@@ -105,5 +105,6 @@ dist
 .tern-port
 
 .vite
-**/.DS_Store
+
+.DS_Store
 
