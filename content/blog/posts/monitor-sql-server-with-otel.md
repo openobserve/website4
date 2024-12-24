@@ -30,7 +30,7 @@ To get started, check out our detailed YouTube tutorial that covers:
 - Importing and using pre-built **SQL Server dashboards** in OpenObserve
 - Monitoring **key SQL Server metrics**, including batch requests, user connections, pages, locks, and transaction logs
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/U8zbnKlySFg" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">how to get embed code from youtube</a> and <a href=“https://xn--utanucln-g0a.se/>lån utan uc hög beviljandegrad</a></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U8zbnKlySFg" title="" frameBorder="0"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowFullScreen><br>Powered by <a href="https://youtubeembedcode.com">how to get embed code from youtube</a> and <a href="https://xn--utanucln-g0a.se">lån utan uc hög beviljandegrad</a></iframe>
 
 
 ## How Does the SQL Server Receiver Work?
