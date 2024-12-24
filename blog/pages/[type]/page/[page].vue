@@ -107,6 +107,14 @@ const { data: articlesTemp } = await useAsyncData(
 
 const { articles, totalArticles, lastPage, currentPage } = articlesTemp.value;
 
+// Fetch all articles for search
+const allArticlesParam = { perPage: 10000000000, type: type };
+const { data: articlesAllTemp } = await useAsyncData(
+  "get-articles-all-" + JSON.stringify(allArticlesParam),
+  () => getArticles({ perPage: 10000000000, type: type }, {}, nuxtApp)
+);
+const { articles: articlesAll } = articlesAllTemp.value;
+
 // Fetch authors
 const { data: authorsTemp } = await useAsyncData(() =>
   queryContent(`/${getContentFolder(type)}/authors`).findOne()
@@ -131,7 +139,7 @@ const debouncedSearch = async () => {
 
   // Apply filter directly to the articles array
   if (searchQuery.value) {
-    filteredResults.value = articles.filter((article) =>
+    filteredResults.value = articlesAll.filter((article) =>
       article.title.toLowerCase().includes(searchQuery.value.toLowerCase())
     );
   } else {

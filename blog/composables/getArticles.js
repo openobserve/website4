@@ -8,7 +8,7 @@ export default async (params, filter, nuxtApp) => {
     const currentPage = parseInt(params?.page) || 1;
 
     let allArticles = queryContent(`${getContentFolder(type)}/posts`);
-    const perPage = globals.blogsPerPage;
+    const perPage = params.perPage || globals.blogsPerPage;
 
     const skipNumber = () => {
       if (currentPage === 1) {
