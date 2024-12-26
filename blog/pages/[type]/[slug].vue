@@ -116,6 +116,8 @@
         :lastActiveTocId="lastActiveSection"
       ></blog-toc>
     </div>
+    <LatestBlogPosts />
+
   </div>
 </template>
 

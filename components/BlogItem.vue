@@ -5,7 +5,7 @@
     >
       <img :src="item.img || '/img/homepage/herosection1.jpg'" class="object-cover rounded-xl" :alt="item.title" />
       <div class="flex-1">
-        <p class="mt-4 text-xl font-bold max-h-16 overflow-hidden">{{ item.title }}</p>
+        <p class="mt-4 text-xl font-bold overflow-hidden">{{ item.title }}</p>
       </div>
       <div
         class="flex items-center justify-end cursor-pointer mt-4 transition-all duration-300 group-hover:text-theme-primary-400"

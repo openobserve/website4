@@ -129,7 +129,7 @@
           </ul>
         </div>
       </div> -->
-      <div class="mt-10 px-8">
+      <!-- <div class="mt-10 px-8">
         <h4 class="mb-4 text-xl font-medium text-gray-700">Recent Posts</h4>
         <div class="max-w-sm mx-auto">
           <div
@@ -167,7 +167,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>
@@ -201,11 +201,6 @@ let { data: categories } = await useAsyncData(`${type}-categories`, () =>
   getCategories(type)
 );
 
-// get recentArticles
-let { data: recentArticles } = await useAsyncData(
-  `${type}-recent-articles`,
-  () => getRecentArticles(type)
-);
 
 const formatDate = (date) => {
   const options = { year: "numeric", month: "long", day: "numeric" };
