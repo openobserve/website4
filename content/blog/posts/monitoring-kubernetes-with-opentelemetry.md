@@ -85,6 +85,8 @@ Ensure you have the following prerequisites before proceeding:
 
 > You can find the below steps in the **Data sources** section as well once you log in to OpenOsberve
 
+- ![image](/img/blog/kubernetes-monitoring/image9.png)
+
 ### Step 1: Install Cert-Manager
 
 Cert-Manager is a tool to automate the management of TLS certificates within Kubernetes. We need it for securing communication between components:
