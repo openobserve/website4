@@ -1,6 +1,6 @@
 ---
 title: "Effortlessly Visualize and Manage All Your AWS Metrics in One Place"
-seoTitle: "How to Easily Visualize All Your AWS Metrics in One Dashboard"
+seoTitle: "How to Visualize AWS CloudWatch Metrics in One Dashboard"
 description: Learn how to effortlessly bring together and visualize all your AWS metrics in one place. Step-by-step guide to creating unified dashboards for AWS monitoring.
 img: /img/blog/cloudwatch-cloudformation/cloudwatch_kinesis_flow.gif
 alt: how-to-monitor-all-aws-metrics-in-one-place
