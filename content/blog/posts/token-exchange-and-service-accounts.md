@@ -18,6 +18,28 @@ tags:
   - enterprise
 ---
 
+## Introduction
+
+Note: Applicable to enterprise version (Free to download and use if daily ingestion volume is under 200 GB)
+
+TODO: 
+
+- Why this blog? Calling APIs in SSO mode
+- How do we solve this? Through service accounts. 2 Scenarios
+
+### Making APIs accessible 
+TODO: Why service accounts?
+TOD: How OpenFGA fits in.
+
+### Local auth mode
+TODO: How does this work?
+
+### SSO mode
+TODO: How does this work?
+
+
+## What is token exchange?
+
 [OAuth 2.0 Token Exchange (RFC8693)](https://datatracker.ietf.org/doc/html/rfc8693) allows client obtaining a token in exchange of token acquired from same IdP or different IdP to access resources with newly acquired token.
 
 Token exchange is particularly useful in scenarios where token adaptation is required to meet specific access needs, such as:
