@@ -22,21 +22,32 @@ tags:
 
 Note: Applicable to enterprise version (Free to download and use if daily ingestion volume is under 200 GB)
 
-TODO: 
+When using **OpenObserve** to monitor your infrastructure, you may encounter scenarios where applications need to consume data from OpenObserve by calling its APIs.
 
-- Why this blog? Calling APIs in SSO mode
-- How do we solve this? Through service accounts. 2 Scenarios
+Currently, data ingestion in OpenObserve is secured through ingestion tokens. However, for non-ingestion APIs, users must rely on native user credentials, which poses a risk of exposing sensitive login information. To address this challenge, OpenObserve is introducing service accounts to ensure secure API access.
+
 
 ### Making APIs accessible 
-TODO: Why service accounts?
-TOD: How OpenFGA fits in.
+With the upcoming release, OpenObserve introduces **service accounts** as a secure way to invoke APIs. OpenObserve supports two types of service accounts:
+- **Native Service accounts**
+- **SSO service accounts**
+  
+Service accounts are designed exclusively for p**rogrammatic access to OpenObserve APIs** and come with the following features:
+  - Use tokens for secure programmatic access.
+  -	Are governed by ReBAC (Relationship-Based Access Control) for fine-grained permissions.
+  - Allow tokens to be rotated easily.
+  - Cannot log in to the UI.
 
-### Local auth mode
-TODO: How does this work?
+#### Role of ReBAC
 
-### SSO mode
-TODO: How does this work?
+ReBAC, powered by [OpenFGA](https://openfga.dev/), plays a key role in managing fine-grained access control for service accounts. This enables precise control over what resources and APIs a service account can access.
 
+
+### Local Authentication Mode
+In Local Auth Mode, you can create **Native Service Accounts** by navigating to **IAM → Service Accounts → Add Service Account** in OpenObserve. After creating a service account, assign appropriate permissions via **IAM Roles or User Groups**. You can then use the generated service account token to securely invoke OpenObserve APIs.
+
+### SSO Mode with Token Exchange
+If you want to use identities from your **organization’s IdP (Identity Provider)** as service accounts, OpenObserve supports **token exchange**, enabling seamless integration. Let’s dive deeper into how token exchange works.
 
 ## What is token exchange?
 
@@ -148,6 +159,6 @@ The **subject** of the exchanged token is stored as a **service account** in Ope
 
 ## Conclusion
 
-Token exchange is a powerful feature that simplifies secure integration between diverse identity systems and resource domains. In the context of OpenObserve, it ensures that applications from different trust domains can interact with OpenObserve APIs seamlessly and securely. By leveraging dexIdP and following best practices for token exchange and permission management, you can enhance observability while maintaining strict security standards.
+Service accounts offer a robust solution for securely integrating diverse identity systems and resource domains. Within OpenObserve, they allow applications from different trust domains to access OpenObserve APIs seamlessly and securely. By utilizing dexIdP, token exchange, and comprehensive permission management, you can enforce strict security and access control for API interactions.
 
-OpenObserve’s token exchange flow not only bridges identity silos but also empowers organizations to tailor access control dynamically, ensuring robust observability in complex, multi-domain environments.
+The token exchange flow in OpenObserve not only connects identity systems but also provides organizations with dynamic access control, ensuring effective observability in complex environments.Take advantage of this feature to enhance your observability efforts while maintaining complete control and security over your data.
