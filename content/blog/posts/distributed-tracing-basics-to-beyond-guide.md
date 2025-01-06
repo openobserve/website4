@@ -79,7 +79,7 @@ Distributed tracing fills this gap by stitching together the entire journey of a
 
 ![Modern observability with distributed tracing, showing three services (A, B, and C) with a continuous request path monitored by logs, metrics, and traces](/img/blog/distributed-tracing-basics/4-modern-observability.png)
 
-## Why Distributed Tracing Matters {#why-distributed-tracing-matters}
+## Why Distributed Tracing Matters
 
 For developers, SREs, and DevOps engineers managing complex systems, [choosing a monitoring solution](https://openobserve.ai/blog/saas-monitoring-tools-features-best-practices-roi) with robust distributed tracing capabilities offers several key advantages:
 
