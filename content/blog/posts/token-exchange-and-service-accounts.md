@@ -7,7 +7,7 @@ alt: openobserve-service-accounts
 slug:  token-exchange-and-service-accounts
 authors: 
   - ashish
-publishDate: 2025-01-01
+publishDate: 2025-01-06
 tags:
   - service-accounts
   - token-exchange 
