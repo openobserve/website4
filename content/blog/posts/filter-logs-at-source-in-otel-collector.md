@@ -195,6 +195,32 @@ Following actions are supported that can be used for doing more than just delete
 
 You will be able to find some additional examples in the [OTTL documentation](https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/pkg/ottl/README.md).
 
+## Challenges
+
+While you could learn OTTL and add filters to your pipeline, there are following challenges:
+
+1. Learning OTTL takes fair amount of work.
+2. Getting it right and debugging is extremely difficult.
+
+In the next section we will discuss native pipelines in OpenObserve that make this easier.
+
+## Pipelines in OpenObserve
+
+Pipelines in openobserve provide a visual interface to filter logs, metrics and traces. Not only filtering is easy but you can do a whole lot more:
+
+1. Filtering
+2. Parsing
+3. Enrichment
+4. Redaction
+5. Logs to metrics conversion
+6. Metrics downsampling
+7. GeoIP enrichment
+
+Here is an example of a pipeline that you can build visually in OpenObserve in a couple minutes.
+
+
+![openobserve pipeline](/img/blog/pipeline.webp)
+
 ## Conclusion
 
 In this blog post, we learnt how to filter logs at source using otel-collector. We specifically learned about using 2 processors - filter and attributes. Using the techniques we learned above you will be able to reduce your log volume, reduce noise and network traffic.
