@@ -84,8 +84,10 @@ The CloudFormation template automates the setup by creating the following resour
 
 ---
 ⚠️ Important Note ⚠️ 
-The provided CloudFormation stack assumes that CloudTrail logs are already enabled in your AWS account. You will need to provide the name of the S3 bucket where CloudTrail logs are stored. Setting up and enabling CloudTrail as part of the CloudFormation stack is outside the scope of this blog. |
-| :---- |
+* The provided CloudFormation stack assumes that CloudTrail logs are already enabled in your AWS account. You will need to provide the name of the S3 bucket where CloudTrail logs are stored. Setting up and enabling CloudTrail as part of the CloudFormation stack is outside the scope of this blog. 
+
+* The stream name in the HTTP endpoint should match **aws_orgs_cloudtrail** or you will not see data in the dashboard. Alternatively, ypu can also replace **aws_orgs_cloudtrail** with your custom stream name after downloading the dashboard if you want to use a different stream name
+---
 
 **Deploy the Template**:
 
