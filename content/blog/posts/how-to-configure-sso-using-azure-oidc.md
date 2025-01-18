@@ -119,7 +119,7 @@ Copy the below snippet and make needed changes that are mentioned in the comment
       connectors:
         - type: microsoft
           # Required field for connector id.
-          id: microsoft
+          id: microsoft # if you want to add multiple connectors of same tenant or multi-tenant then change the id by keeping the prefix as microsoft-
           # Required field for connector name.
           name: Microsoft
           config:
